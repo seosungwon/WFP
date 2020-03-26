@@ -1,0 +1,63 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<!-- box-gapType-1 -->
+		<div class="box-gapType-1 gap-2">
+			<!-- inner-gap-1 -->
+			<div class="inner-gap-1">
+				<!-- box-complete -->
+				<div class="box-complete">
+					<div class="inner">
+						<p class="txt-1 gap">
+							Thank you for completing your application.
+						</p>
+						<p class="txt-2">
+							You will receive a call once you pass the Pre-screening stage. Thank you.
+						</p>
+					</div>
+				</div>
+				<!-- //box-complete -->
+				<!-- btn-fixed -->
+				<a href="#none" class="common-btnType-7 waves-effect waves-light btn-fixed btnSel-bg pc-btnFixed gap"><span>GO TO WEBSITE</span></a>
+			</div>
+			<!-- //inner-gap-1 -->
+		</div>
+		<!-- //box-gapType-1 -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileSns = new HeaderSplit('mobile-none', 'mobile-none');
+
+		$('body').attr("data-target","no-nav");
+
+		// height device 분기
+		/*var $body = $('body'),
+			$wrap = $('#wrap');
+
+		$(window).on('resize load', function(){
+			if( $body.attr('data-device') == 'mobile' || $body.attr('data-device') == 'tablet' ){
+				$wrap.css({"height":"100%", "margin-bottom":""});
+			}else{
+				$wrap.css({"height":"", "margin-bottom":"100px"});
+			}
+		});*/
+
+		// data-target="footer" remove
+		var footerHide = new FooterHide('none', '');
+	});
+</script>

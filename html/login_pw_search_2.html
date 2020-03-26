@@ -1,0 +1,116 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<!-- box-gapType-1 -->
+		<div class="box-gapType-1 pc-box-2">
+			<div class="inner-gap-1 gap-2">
+				<div class="box-gapSingUp hide-on-pc">
+					<h3 class="type-2">ID/PW 찾기</h3>
+				</div>
+				<!-- common-tabType -->
+				<div class="common-tabType two">
+					<div class="inner">
+						<a href="#none">Find ID</a>
+						<a href="#none" class="sel">Find PW</a>
+					</div>
+				</div>
+				<!-- //common-tabType -->
+				<div class="mobile-width400">
+					<div class="box-gapSingUp gap-type-1">
+						<p class="txt-1">Please enter the Authentication Number.</p>
+						<div class="list-step end-fff">
+							<ol>
+								<li class="end"><span><span>1</span></span></li>
+								<li class="ing"><span><span>2</span></span></li>
+								<li><span><span>3</span></span></li>
+							</ol>
+						</div>
+					</div>
+					<!-- box-inputType-1 -->
+					<div class="box-inputType-1">
+						<ul>
+							<li>
+								<p class="tt-1">Email <strong>*</strong></p>
+							</li>
+						</ul>
+						<p class="send-email">wel****@welcome.com</p>
+						<p class="txt-2">고객님이 접수 시 등록하신 이메일 주소로 인증번호가 발송되었습니다. 이메일 확인을 부탁드립니다.<br>만약 이메일 확인이 어려울 경우 000-000-000으로 연락해주세요.<br>If you can’t remeber the authentication number issued, press the resend button.</p>
+						<a href="#none" class="common-btnType-10 gap-1">Resend</a>
+						<ul>
+							<li>
+								<p class="tt-1">Authentication Number <strong>*</strong></p>
+								<div class="txt-ct" data-error="idTest">
+									<input type="text" class="common-inputType" data-check="validation" id="idTest" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
+									<span class="txt-error">Error message</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //box-inputType-1 -->
+				</div>
+				<!-- btn-fixed -->
+				<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btn-fixed gap-mobile-1"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<!-- //btn-fixed -->
+			</div>
+		</div>
+		<!-- //box-gapType-1 -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileSns = new HeaderSplit('prev', 'home');
+
+		/*
+			* validation check button motion
+		*/
+		var $validationTg = $('[data-check="validation"]');
+
+		$validationTg.on('keypress focusout', function(){
+			var v = 0;
+
+			$validationTg.each(function(){
+				if( $(this).val().length == 0 ){
+					++v;
+					return;
+				}
+			});
+
+			if( v == 0 ){
+				var validationButton = new ValidationButton($(this));
+			}else if( v > 0 ){
+				var validationButton = new ValidationButton();
+			}
+		});
+
+		// page title
+		var headerTitle = new HeaderTitle('ID/PW 찾기');
+	});
+
+	/*
+		* error focus function
+		* new ErrorUi('에러 값 id'));
+	*/
+	function errorFocus(tg){
+		var errorUi = new ErrorUi(tg);
+	}
+
+	// error focus test
+	errorFocus('idTest');
+
+	// data-target="footer" remove
+	var footerHide = new FooterHide('none', '');
+</script>

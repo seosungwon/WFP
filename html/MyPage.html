@@ -1,0 +1,59 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap" class="gb-fff">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<!-- box-mypageIntro -->
+		<div class="box-mypageIntro">
+			<p class="txt-1 type-2">Dear Maria Christina C. Satiago,<br>Welcome to Welcome Bank!</p>
+			<ul>
+				<li class="icon-1">
+					<a href="#none">
+						<p class="t-1">Welcome</p>
+						<span class="t-2">SAVINGS BANK</span>
+						<p class="t-3"><span>Search for Details</span></p>
+					</a>
+				</li>
+				<li class="icon-2">
+					<a href="#none">
+						<p class="t-1">Welcome</p>
+						<span class="t-2">FINANCE</span>
+						<p class="t-3"><span>Search for Details</span></p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--//box-mypageIntro -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileHeader = new HeaderSplit('menu', 'home');
+
+		/*
+			* pc sub location menu
+			* var subLocation = new SubLocation('1뎁스', '2뎁스 활성화', '2뎁스 선택');
+		*/
+		var subLocation = new SubLocation(null, null, null);
+
+		// page title
+		var headerTitle = new HeaderTitle('My page');
+
+		// data-target="footer" remove
+		var footerHide = new FooterHide('none', 'bottomGapNone');
+
+		$('body').css({"background":"#fff"});
+	});
+</script>

@@ -1,0 +1,107 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<!-- box-gapType-1 -->
+		<div class="box-gapType-1 pc-box-login mobile-width400">
+			<div class="inner-gap-1">
+				<!-- box-gapLogin -->
+				<div class="box-gapLogin">
+					<h2>Sign In</h2>
+					<p class="txt-1">Please sign in to use the service</p>
+					<!-- list-login -->
+					<ul class="list-login">
+						<li class="icon-id">
+							<input type="text" class="common-inputType" placeholder="Enter your user ID" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
+							<span class="line"></span>
+						</li>
+						<li class="icon-pw">
+							<input type="password" class="common-inputType" placeholder="Enter your password" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
+							<span class="line"></span>
+						</li>
+					</ul>
+					<!-- //list-login -->
+					<p class="btn-id-pw"><a href="#none" class="layer_open_pop common-btnType-6">Forgot your ID / PW?</a></p>
+					<a href="#none" data-btn="motion" class="common-btnType-2 waves-effect waves-light">SIGN IN</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+					<p class="txt-2">Don't have an account? <a href="#none" class="layer_open_pop common-btnType-6">Registration</a></p>
+				</div>
+				<!-- //box-gapLogin -->
+			</div>
+		</div>
+		<!-- //box-gapType-1 -->
+		<!-- box-listCk -->
+		<div class="box-listCk">
+			<ul>
+				<li>
+					<p class="txt-1">Check your loan Status</p>
+					<p class="txt-2">No need to wait for your Loan Status.<br>Check directly through "My Page" now!</p>
+				</li>
+				<li>
+					<p class="txt-1">Easy Account Management</p>
+					<p class="txt-2">If you want to check your contract information, repayment schedule, and payment history without a phone call everyday, Sign up for membership NOW.</p>
+				</li>
+				<li>
+					<p class="txt-1">Fast & Easy checking your additional Loans are available.</p>
+					<p class="txt-2">You can check your additional loans are available without application for loans.</p>
+				</li>
+			</ul>
+		</div>
+		<!-- //box-listCk -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileSns = new HeaderSplit('logo', 'home');
+
+		/*
+			* validation check button motion
+		*/
+		var $validationTg = $('[data-check="validation"]');
+
+		$validationTg.on('keypress focusout', function(){
+			var v = 0;
+
+			$validationTg.each(function(){
+				if( $(this).val().length == 0 ){
+					++v;
+					return;
+				}
+			});
+
+			if( v == 0 ){
+				var validationButton = new ValidationButton($(this));
+			}else if( v > 0 ){
+				var validationButton = new ValidationButton();
+			}
+		});
+
+		// page title
+		var headerTitle = new HeaderTitle('');
+
+		// data-target="footer" remove
+		var footerHide = new FooterHide('none', 'bottomGapNone');
+
+		// body data-device="mobile" / data-device="tablet" background
+		$(window).on('resize load', function(){
+			if( $('body').attr('data-device') == 'pc' ){
+				$('[data-device="pc"], [data-device="pc"] #skipCt').css({"background":""});
+			}else{
+				$('[data-device="mobile"], [data-device="tablet"]').css({"background":"#F5F5F5"});
+				$('[data-device="mobile"] #skipCt, [data-device="tablet"] #skipCt').css({"background":"#fff"});
+			}
+		});
+	});
+</script>

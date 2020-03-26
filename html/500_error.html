@@ -1,0 +1,45 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+		<!-- box-errorPage -->
+		<div class="box-errorPage">
+			<div class="inner-error">
+				<div class="gap-error">
+					<img src="common/images/img/img_500.png" alt="" class="img-error">
+					<p class="txt-1">Sorry!</p>
+					<div class="txt-2">
+						<strong>500.</strong> That's an error.<br>The server encountered an internal error or misocnfiguration.<br>
+						And was unable to comlete your request.
+					</div>
+					<a href="#none" class="common-btnType-2 waves-effect waves-light">GO TO MAIN PAGE</a>
+				</div>
+			</div>
+		</div>
+		<!-- //box-errorPage -->
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileSns = new HeaderSplit(null, null);
+
+		// page title
+		var headerTitle = new HeaderTitle('');
+
+		// data-target="footer" remove
+		var footerHide = new FooterHide('none', 'bottomGapNone');
+
+		$('body').attr('data-page', 'h1-logo'); // logo type
+	});
+</script>

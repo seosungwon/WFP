@@ -1,0 +1,139 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<!-- box-loanIng -->
+		<div class="box-loanIng pc-common-wd940">
+			<h3 class="hide-on-pc">My page</h3>
+			<!-- cpChange -->
+			<div class="cpChange">
+				Welcome Savings Bank
+				<a href="#ex1" class="layer_open_pop">Affiliate Change</a>
+			</div>
+			<!-- //cpChange -->
+			<!-- box-menu -->
+			<div class="box-menu">
+				<!-- common-tabType-2 -->
+				<div class="common-tabType-2" data-target="tab">
+					<a href="#none" class="sel-tab"></a>
+					<ul>
+						<li><a href="#none">Check the Loan Progress</a></li>
+						<li class="sel"><a href="#none">Loan Information Inquiry</a></li>
+						<li><a href="#none">Deposit Information Inquiry</a></li>
+						<li><a href="#none">Change Password</a></li>
+					</ul>
+				</div>
+				<!-- //common-tabType-2 -->
+			</div>
+			<!-- //box-menu -->
+			<!-- pp-info -->
+			<div class="pp-info gap-1">
+				<!-- common-tabType-3 -->
+				<div class="common-tabType-3">
+					<ul>
+						<li>
+							<a href="#none">Contract Information</a>
+						</li>
+						<li>
+							<a href="#none">Pay Schedule</a>
+						</li>
+						<li>
+							<a href="#none" class="sel">Additional Loan Iquiry</a>
+						</li>
+					</ul>
+				</div>
+				<!-- box-addLoan -->
+				<div class="box-addLoan">
+					<p class="t-1">Dear, Mr. Yang</p>
+					<p class="t-2">Extra loans seems to be available to you.<br>Check out your <strong>additional loan amount</strong> with just a few clicks.</p>
+					<a href="#none" class="common-btnType-2 waves-effect waves-light">APPLY NOW</a>
+				</div>
+				<!-- //box-addLoan -->
+			</div>
+			<!-- //pp-info -->
+		</div>
+		<!-- //box-loanIng -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<!-- layerpopup -->
+<div id="ex1" class="popup_wrap rule type-2">
+	<div class="gap-rule">
+		<div class="box-rule">
+			<h3 class="header-rule">계열사 선택</h3>
+		</div>
+		<div class="inner-rule">
+			<!-- box-mypageIntro -->
+			<div class="box-mypageIntro">
+				<p class="txt-3">정보 조회를 할 계열사를 선택해 주세요.</p>
+				<ul>
+					<li class="icon-1">
+						<a href="#none">
+							<p class="t-1">Welcome</p>
+							<span class="t-2">SAVINGS BANK</span>
+							<p class="t-3"><span>정보 조회하기</span></p>
+						</a>
+					</li>
+					<li class="icon-2">
+						<a href="#none">
+							<p class="t-1">Welcome</p>
+							<span class="t-2">FINANCE</span>
+							<p class="t-3"><span>정보 조회하기</span></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--//box-mypageIntro -->
+			<div class="gap"></div><!-- 가상 공간(삭제x) -->
+		</div>
+		<a href="#none" data-button="btn-prev2" class="sel btn-close">
+			<p class="gap"><span></span><span></span><span></span></p>
+		</a>
+	</div>
+</div>
+<!-- //layerpopup -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	tabCommon.initialize(); // 공통 tabCommon load click // class="common-tabType-2"
+
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileHeader = new HeaderSplit('menu', 'home');
+
+		/*
+			* pc sub location menu
+			* var subLocation = new SubLocation('1뎁스', '2뎁스 활성화', '2뎁스 선택');
+		*/
+		var subLocation = new SubLocation(null, null, null);
+
+		// page title
+		var headerTitle = new HeaderTitle('My page');
+
+		// data-target="footer" remove
+		var footerHide = new FooterHide('none', 'bottomGapNone');
+
+		// list-php click event
+		var $listPhp = $('.list-php');
+
+		$listPhp.find('a').click(function(e){
+			e.preventDefault();
+
+			if( $(this).next().css('display') == 'none' ){
+				$(this).parent('li').addClass('sel');
+			}else{
+				$(this).parent('li').removeClass('sel');
+			}
+		});
+	});
+</script>

@@ -1,0 +1,126 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<div class="table-gap">
+			<table class="table-type-1">
+				<caption></caption>
+				<colgroup>
+					<col style="width:*;">
+					<col style="width:*;">
+					<col style="width:*;">
+					<col style="width:*;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col"></th>
+						<th scope="col">Input box</th>
+						<th scope="col">Dropdown box</th>
+						<th scope="col"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Disabled</th>
+						<td>
+							<input type="text" class="common-inputType" disabled="disabled" value="Text">
+						</td>
+						<td>
+							<select class="common-selectType" disabled="disabled">
+								<option>Text</option>
+							</select>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Read only</th>
+						<td>
+							<input type="text" class="common-inputType" readonly="readonly" data-input="readonly" value="Text">
+						</td>
+						<td>
+							<select class="common-selectType" readonly="readonly" data-input="readonly">
+								<option>Text</option>
+							</select>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Normal</th>
+						<td>
+							<input type="text" class="common-inputType" placeholder="Text">
+						</td>
+						<td>
+							<select class="common-selectType">
+								<option value="" hidden>select</option>
+								<option>Text</option>
+							</select>
+						</td>
+						<td>
+							<select class="common-selectType type-1">
+								<option value="" hidden>select</option>
+								<option>Text</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>Error Focus</th>
+						<td>
+							<!-- data-error 값 == error id 값 -->
+							<div data-error="error-text">
+								<input type="text" class="common-inputType" id="error-text" value="Error-text">
+								<span class="txt-error">Error message</span>
+							</div>
+						</td>
+						<td>
+							<!-- data-error 값 == error id 값 -->
+							<div data-error="error-text-2">
+								<select class="common-selectType" id="error-text-2">
+									<option>Error-text-2</option>
+								</select>
+								<span class="txt-error">Error message</span>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th></th>
+						<td><a href="#none" onclick="errorFocus('error-text');" style="text-decoration:underline;">Error focus 전달 버튼</a></td>
+						<td><a href="#none" onclick="errorFocus('error-text-2');" style="text-decoration:underline;">Error focus 전달 버튼</a></td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Error Focus 함수 사용은 var errorUi = new ErrorUi(); 참고</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileSns = new HeaderSplit(null, null);
+
+		$('body').attr('data-page', 'h1-logo'); // logo type
+	});
+	/*
+		* error focus function
+		* new ErrorUi('에러 값 id'));
+	*/
+	function errorFocus(tg){
+		var errorUi = new ErrorUi(tg);
+	}
+</script>
