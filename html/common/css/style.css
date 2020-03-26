@@ -1309,6 +1309,11 @@ line-height: 36px;}
 	/* [data-click="main-vsSlick"] .box-txt{padding:164px 30px 22px 140px;} */
 	[data-click="main-vsSlick"] .box-txt {/* position: absolute;top: 50%;left: 0px;right: 0px;transform: translate(0px, -49%);padding:0 0 0  94px; */
 		position: absolute;top:0;left: 0px;right: 0px;transform: translate(0px, 0px);padding:0 0 0  96px;}
+
+
+
+
+
 	[data-click="main-vsSlick"] .btn{top:unset;left:unset;bottom:unset;padding-top:43px;}
 	[data-click="main-vsSlick"] .common-btnType-1{width:220px;}
 	[data-click="main-vsSlick"] .slick-dots{bottom:40px;left:0;}
