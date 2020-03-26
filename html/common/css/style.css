@@ -706,7 +706,7 @@ line-height: 36px;}
 [data-target="footer"] .box-text .txt-2{color:#fff;opacity:0.4;margin:0 0 13px 0;}
 [data-target="footer"] .box-text .txt-3{opacity: 0.4;font-size: 12px;color: #fff;letter-spacing: -0.6px;line-height: 18px;}
 
-[data-target="footer"] .box-text2 {overflow:hidden;zoom:1;}
+[data-target="footer"] .box-text2 {overflow:hidden;}
 [data-target="footer"] .box-text2 ul li {float:left;}
 
 /* main */

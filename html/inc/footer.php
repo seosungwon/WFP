@@ -26,10 +26,10 @@
 		</div>
 		<div class="box-text2">
 			<ul>
-				<li>Personal Loan </li>
-				<li>Salary Loan </li>
-				<li>Business Loan</li>
-				<li>Auto Loan</li>
+				<li>Personal Loan<span>|</span></li>
+				<li>Salary Loan<span>|</span></li>
+				<li>Business Loan<span>|</span></li>
+				<li>Auto Loan<span>|</span></li>
 				<li>Truck loan</li>
 			</ul>
 		</div>
