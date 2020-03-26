@@ -1625,11 +1625,12 @@ line-height: 20px;}
 	/* 404 error */
 	.box-errorPage{background:#fff;}
 	.box-errorPage .inner-error{width:810px;margin:0 auto;}
-	.box-errorPage .inner-error .gap-error{padding:0 0 0 396px;position:relative;}
-	.box-errorPage .inner-error img.img-error{width:300px;position:absolute;top:50%;left:0;margin-top:-93px;}
-	.box-errorPage .inner-error .txt-1{font-size:52px;letter-spacing: -0.17px;text-align:left;}
-	.box-errorPage .inner-error .txt-2{font-size:20px;line-height:28px;text-align:left;padding-bottom:41px;}
-	.box-errorPage .inner-error .common-btnType-2{width:auto;margin:0 auto;border:0 !important;}
+	.box-errorPage .inner-error .gap-error{position:relative;}
+	/*.box-errorPage .inner-error img.img-error{width:300px;position:absolute;top:50%;left:0;margin-top:-93px;}*/
+	.box-errorPage .inner-error img.img-error{width:300px;margin-top:-93px;}
+	.box-errorPage .inner-error .txt-1{font-size:52px;letter-spacing: -0.17px;text-align:center;}
+	.box-errorPage .inner-error .txt-2{font-size:20px;line-height:28px;text-align:center;padding-bottom:41px;}
+	.box-errorPage .inner-error .common-btnType-2{margin:0 auto;border:0 !important;}
 
 	/* my page */
 	.box-mypageIntro{padding-top:138px;}
