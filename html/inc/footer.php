@@ -26,11 +26,11 @@
 		</div>
 		<div class="box-text2">
 			<ul>
-				<li>Personal Loan<span>|</span></li>
-				<li>Salary Loan<span>|</span></li>
-				<li>Business Loan<span>|</span></li>
-				<li>Auto Loan<span>|</span></li>
-				<li>Truck loan</li>
+				<li><a href="#none">Personal Loan<span>|</span></a></li>
+				<li><a href="#none"></a>Salary Loan<span>|</span></li>
+				<li><a href="#none"></a>Business Loan<span>|</span></li>
+				<li><a href="#none"></a>Auto Loan<span>|</span></li>
+				<li><a href="#none"></a>Truck loan</li>
 			</ul>
 		</div>
 		<div class="box-text">
