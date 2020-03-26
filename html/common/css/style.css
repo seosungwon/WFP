@@ -150,6 +150,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .common-btnType-14 span.icon-1:after{content:'';display:block;clear:both;background:url(../images/icon/icon_arrow_1.png) no-repeat 0 0;background-size:15px 16px;position:absolute;top:50%;right:-20px;width:15px;height:16px;margin-top:-7px;}
 /*  */
 
+
 /* common-btn fixed */
 .btn-fixed,
 .btn-fixed-inquery{position:fixed !important;bottom:0;left:0;right:0;z-index:1200 !important;}
