@@ -10,7 +10,7 @@
 			<!-- box-gapSingUp -->
 			<div class="box-gapSingUp">
 				<h3>Apply Now!</h3>
-				<p class="txt-2">Please fill out with complete details and we will contact you immediately.</p>
+				<p class="txt-2">Please fill out with complete details and<br> we will contact you immediately.</p>
 				<div class="list-step">
 					<ol>
 						<li><span><span>1</span></span></li>
@@ -27,7 +27,7 @@
 					<ul>
 						<li>
 							<div data-error="idTest">
-								<p class="tt-1">Province/NCR <strong>*</strong></p>
+								<p class="tt-3">Province/NCR <strong>*</strong></p>
 								<div class="txt-ct inp_radioGap-1">
 									<div class="gap">
 										<span class="inp_radio type-3">
@@ -51,7 +51,7 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">Town/City <strong>*</strong></p>
+							<p class="tt-3">Town/City <strong>*</strong></p>
 							<div class="txt-ct" data-error="">
 								<select class="common-selectType" data-check="validation">
 									<option value="" hidden>Select</option>
@@ -64,7 +64,7 @@
 							<div class="box-ttTwo-1">
 								<div class="gap-two" style="width:34%;">
 									<div class="two-inner">
-										<p class="tt-1">Postal Code <strong>*</strong></p>
+										<p class="tt-3">Postal Code <strong>*</strong></p>
 										<div class="txt-ct">
 											<input type="text" class="common-inputType" id="" value="8153" data-input="readonly" readonly="true">
 										</div>
@@ -72,7 +72,7 @@
 								</div>
 								<div class="gap-two" style="width:66%;">
 									<div class="two-inner">
-										<p class="tt-1">Detail Address <strong>*</strong></p>
+										<p class="tt-3">Detail Address <strong>*</strong></p>
 										<div class="txt-ct" data-error="">
 											<input type="text" class="common-inputType" id="" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
 											<span class="txt-error">Error message</span>
@@ -89,7 +89,7 @@
 				<div class="box-inputType-1">
 					<ul>
 						<li>
-							<p class="tt-1">Employment Type <strong>*</strong></p>
+							<p class="tt-3">Employment Type <strong>*</strong></p>
 							<div class="txt-ct" data-error="">
 								<select class="common-selectType" data-check="validation">
 									<option>Overseas Filipino Worker</option>
@@ -98,7 +98,7 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">Sub Type <strong>*</strong></p>
+							<p class="tt-3">Sub Type <strong>*</strong></p>
 							<div class="txt-ct" data-error="">
 								<select class="common-selectType" data-check="validation">
 									<option value="" hidden>Select</option>
@@ -108,13 +108,13 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">Company Name</p>
+							<p class="tt-3">Company Name</p>
 							<div class="txt-ct" data-error="">
 								<input type="text" class="common-inputType" id=""><!--  필수 아님 -->
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">SSS Number <strong>*</strong></p>
+							<p class="tt-3">SSS Number <strong>*</strong></p>
 							<div class="txt-ct" data-error="">
 								<input type="text" class="common-inputType" id="" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
 							</div>
@@ -127,7 +127,7 @@
 				<div class="box-inputType-1">
 					<ul>
 						<li>
-							<p class="tt-1">Month <strong>*</strong></p>
+							<p class="tt-3">Month <strong>*</strong></p>
 							<div class="txt-ct displayTableType-1" data-error="">
 								<div class="displayCell" style="width:50%;">
 									<select class="common-selectType" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
@@ -147,7 +147,7 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">Current Income(Salary) <strong>*</strong></p>
+							<p class="tt-3">Current Income(Salary) <strong>*</strong></p>
 							<div class="txt-ct" data-error="">
 								<input type="tel" class="common-inputType" id="" data-check="validation" value="24500"><!--  data-check="validation" 벨리데이션 체크 -->
 								<!--  data-check="validation" 벨리데이션 체크 -->
@@ -156,7 +156,7 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">Have Checking Accounts? <strong>*</strong></p>
+							<p class="tt-1">Do you have a Checking Account? <strong>*</strong></p>
 							<div class="txt-ct inp_radioGap-2">
 								<span class="inp_radio type-2">
 									<input id="chk3" name="test2" type="radio" checked="checked">
@@ -169,7 +169,7 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">With Credit Card Account? <strong>*</strong></p>
+							<p class="tt-1">Do you have a Credit Card Account? <strong>*</strong></p>
 							<div class="txt-ct inp_radioGap-2">
 								<span class="inp_radio type-2">
 									<input id="chk5" name="test3" type="radio" checked="checked">
@@ -225,7 +225,7 @@
 			* mobile header script common
 			* new HeaderSplit('버튼 기능', 'home 버튼'));
 		*/
-		var mobileHeader = new HeaderSplit('logo', 'home');
+		var mobileHeader = new HeaderSplit(null, null);
 
 		/*
 			* validation check button motion
@@ -249,7 +249,7 @@
 			}
 		});
 
-		$('body').attr("data-target","no-nav");
+		// $('body').attr("data-target","no-nav");
 	});
 
 	/*

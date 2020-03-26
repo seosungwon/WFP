@@ -42,6 +42,7 @@
 		var mobileSns = new HeaderSplit(null, null);
 
 		$('body').attr('data-page', 'main'); // main Type logo
+		$('body').attr('data-pageSub', ''); // sub-header="sub-header" 강제 변경
 	});
 
 	// mainScrollHeader
@@ -61,5 +62,7 @@
 
 			$('[data-slick-vs="commonTab"]').slick('slickGoTo', slideNo - 1);
 		}, 500);
+
+		$('body').css({"background":"#ccc"});
 	});
 </script>
