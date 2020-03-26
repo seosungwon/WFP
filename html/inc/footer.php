@@ -24,6 +24,15 @@
 				<li><a href="http://www.welcomefinanceph.com/" target="_blank">Welcome Finance, Inc.</a></li>
 			</ul>
 		</div>
+		<div class="box-text2">
+			<ul>
+				<li>Personal Loan </li>
+				<li>Salary Loan </li>
+				<li>Business Loan</li>
+				<li>Auto Loan</li>
+				<li>Truck loan</li>
+			</ul>
+		</div>
 		<div class="box-text">
 			<p class="txt-1">Direct No(02) 657 2400<span class="line"></span>Mobile No. Smart(02) 998 5941076
 			Mobile No. Globe(02) 917 8263957</p>
