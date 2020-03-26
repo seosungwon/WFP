@@ -26,11 +26,24 @@
 		</div>
 		<div class="box-text2">
 			<ul>
-				<li><a href="#none">Personal Loan<span>|</span></a></li>
-				<li><a href="#none"></a>Salary Loan<span>|</span></li>
-				<li><a href="#none"></a>Business Loan<span>|</span></li>
-				<li><a href="#none"></a>Auto Loan<span>|</span></li>
-				<li><a href="#none"></a>Truck loan</li>
+				<li><a href="#none">Personal Loan</a></li>
+				<li><a href="#none">Salary Loan</a></li>
+				<li><a href="#none">Business Loan</a></li>
+				<li><a href="#none">Auto Loan</a></li>
+				<li><a href="#none">Truck loan</a></li>
+			</ul>
+			<ul>
+				<li><a href="#none">FAQs</a></li>
+				<li><a href="#none">Our Story</a></li>
+				<li><a href="#none">Welcome Group Info.</a></li>
+				<li><a href="#none">Branches</a></li>
+				<li><a href="#none">Blog</a></li>
+			</ul>
+			<ul>
+				<li><a href="#none">Loan Status</a></li>
+				<li><a href="#none">Loan Possibility</a></li>
+				<li><a href="#none">Declaration</a></li>
+				<li><a href="#none">Privacy Policy</a></li>
 			</ul>
 		</div>
 		<div class="box-text">
@@ -39,7 +52,7 @@
 			<p class="txt-2">(Monday ~ Friday, 9:00am ~ 6:00pm)<br>
 			Unit 1804-1806 The Taipan Place Bldg.F.Ortigas Jr.Rd Ortigas
 			Center Pasig City</p>
-			<p class="txt-3">Copyright ⓒ 2019 Welcome Finance Inc. All rights reserved.</p>ssss
+			<p class="txt-3">Copyright ⓒ 2019 Welcome Finance Inc. All rights reserved.</p>
 		</div>
 	</div>
 	<!-- //footer -->
