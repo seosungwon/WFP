@@ -766,8 +766,85 @@ if( $('.btn-fixed').length > 0 ){
 	window.commonTab = commonTab;
 }(jQuery, window));
 
+(function ($, window, undefined){
+	"use strict";
+	/**
+		* @description 디자인 fileBox
+		* @modify 20191118 추가
+	*/
+	var fileBox = {
+		/** 플러그인명 */
+		bindjQuery: 'fileBox',
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			dataFileBox: '[data-control="fileBox"]'
+		},
+		initialize: function(){
+			var me = this;
+
+			me._change();
+		},
+		_change: function (){
+			var me = this,
+			$items = me.selectors.dataFileBox,
+			$fileBox = $($items).find('.ipt-file');
+
+			var cnt = 0;
+
+			$fileBox.on('change',function(){
+				var fileTmp = $(this).val(),
+				fileSize = Math.round((this.files[0].size/1024)); //KB
+
+				cnt ++;
+
+				// 10개 제한
+				if( $('.common-file-box').length > 9 ){ // 10개 이하로만..
+					alert('The number of files that can be selected is 10 or less.');
+					return;
+				}
+
+				// html 생성
+				$('[data-control="fileBox"]').prepend('<div class="common-file-box" data-fileIndex="' + cnt + '"><p class="file-name"></p><span class="file-size"></span><div class="common-btn-file-wrap"><a href="#none" class="btnFileDel"></a></div></div>');
+
+				// 확장자 체크
+				var ext = fileTmp.split('.').pop().toLowerCase();
+				if($.inArray(ext, ['gif','jpg','jpeg','png','bmp','pdf']) == -1) {
+					alert('The file must be in one of the following formats : jpg, jpeg, gif, png, bmp, pdf');
+					return;
+				}
+
+				// size 체크
+				if (fileSize < 5000) { // 5MB = 5000KB
+					//fileTmp = fileTmp + " (" + fileSize + "KB)";
+					fileTmp = fileTmp.replace("C:\\fakepath\\", "");
+					$(this).parents('.txt-ct').find('[data-fileIndex=' + cnt + ']').show().find('.file-name').html(fileTmp);
+					$(this).parents('.txt-ct').find('[data-fileIndex=' + cnt + '] .file-size').html("(" + fileSize + "KB)");
+				}else{
+					fileTmp = '';
+					fileSize = '';
+					alert('The file has exceeded 5000KB');
+				};
+
+			});
+
+			// remove
+			$('.btnFileDel').live('click', function(){
+				$(this).parents('.common-file-box').remove();
+			});
+		}
+	};
+
+window.fileBox = fileBox;
+}(jQuery, window));
+
 // footer sub page
 $('body').attr('data-page', 'main');
+
+// sub hader design 변경
+$('body').attr('data-pageSub', 'sub-header');
 
 // footer hide
 function FooterHide(e, gap){

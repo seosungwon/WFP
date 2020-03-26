@@ -1,0 +1,171 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+		<!-- commonTab -->
+		<section data-slick-vs="commonTab" style="display: none;">
+			<div>
+				<a href="#none" class="sel" data-index="1">Personal Loans</a>
+			</div>
+			<div>
+				<a href="#none" data-index="2">Salary Loan</a>
+			</div>
+			<div>
+				<a href="#none" data-index="3">Business Loan</a>
+			</div>
+			<div>
+				<a href="#none" data-index="4">Auto Loan</a>
+			</div>
+			<div>
+				<a href="#none" data-index="5">Truck Loan</a>
+			</div>
+		</section>
+		<!-- //commonTab -->
+
+		<!-- main-vsSlick -->
+			<div data-click="main-vsSlick">
+				<!-- 1set -->
+				<div>
+					<div class="box-txt">
+7						<p class="img-1"><img src="common/images/logo/logo_welcomebank.png" alt="Welcome Bank"></p>
+						<p class="txt-1">Your trusted Digital<br> Banking Partner.</strong></p>
+						<p class="txt-2">We will always be with you through digital<br> transformation.</p>
+					</div>
+					<div class="box-img imgC-1"><img src="common/images/@/@none_main_1.jpg" alt=""></div>
+				</div>
+				<!-- //1set -->
+				<!-- 2set -->
+				<div>
+					<div class="box-txt">
+						<p class="img-1"><img src="common/images/logo/logo_welcomebank.png" alt="Welcome Bank"></p>
+						<p class="txt-1">Your trusted Digital<br> Banking Partner.</strong></p>
+						<p class="txt-2">We will always be with you through digital<br> transformation.</p>
+					</div>
+					<div class="box-img imgC-1"><img src="common/images/@/@none_main_1.jpg" alt=""></div>
+				</div>
+				<!-- //2set -->
+			</div>
+		<!-- //main-vsSlick -->
+		<!-- box-clear -->
+		<div class="box-clear">
+			<div class="gap-savings">
+				<!-- box-savings -->
+				<div class="box-savings">
+					<div class="inner">
+						<p class="txt-1">SAVINGS</p>
+						<p class="txt-3">Earn on your own terms, with the rate and flexibility that you want</p>
+						<div class="txt-4">
+							<span class="left">Maximum<br>Interest Rate</span>
+							<span class="right">~3.6<span>%</span></span>
+						</div>
+						<a href="#none" class="common-btnType-2 waves-effect waves-light">APPLY NOW</a>
+					</div>
+				</div>
+				<!-- //box-savings -->
+			</div>
+			<!-- gap-listOur -->
+			<div class="gap-listOur">
+				<!-- box-listEtc -->
+				<ul class="box-listEtc">
+					<li>
+						<a href="#none">
+							<p class="txt-1">SAVINGS</p>
+							<span class="txt-2">Let your money grow along with you</span>
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<p class="txt-1">LOANS</p>
+							<span class="txt-2">Start Building the life you want today!</span>
+						</a>
+					</li>
+				</ul>
+				<!-- //box-listEtc -->
+				<!-- box-ourStory -->
+				<div class="box-ourStory">
+					<a href="#none">
+						<p class="txt-1">Welcome to <strong><img src="common/images/logo/logo_welcomebank.png" alt=""></strong></p>
+						<p class="txt-2">The Rural Bank for everyone.<br>Take a leap to global business!</p>
+						<p class="txt-3"><span>Our Story</span></p>
+					</a>
+				</div>
+				<!-- //box-ourStory -->
+			</div>
+			<!-- //gap-listOur -->
+		</div>
+		<!-- //box-clear -->
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<!-- main script -->
+<script src="common/js/slick.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('[data-click="main-vsSlick"]').slick({
+			dots: true,
+			infinite: true,
+			speed: 600,
+			slidesToShow: 1,
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			arrows: false
+			/*,
+			prevArrow: "<a href='#none' class='btn-prev'><span class='hidden'>이전 배너</span></a>",
+			nextArrow: "<a href='#none' class='btn-next'><span class='hidden'>다음 배너</span></a>"*/
+		});
+
+		$(window).on('load resize', function(){
+			$('[data-target="footer"]').css({"border-top":"0"});
+			$('[data-device="pc"] [data-target="footer"]').css({"border-top":"1px solid #ccc"});
+
+			var tgOffset = $('.box-savings .inner').offset().top,
+				tgOffset = tgOffset / 2.5;
+
+			$('[data-device="pc"] [data-click="main-vsSlick"] .box-txt').css({"margin-top" :tgOffset});
+
+			$('[data-device="tablet"] [data-click="main-vsSlick"] .box-txt').css({"margin-top" : "0"});
+
+			if( $(this).width() > 1010 ){
+				console.log($(this).width());
+				$('[data-click="main-vsSlick"] .box-txt').css({"margin-top" :tgOffset});
+			}
+		});
+	});
+</script>
+<!-- //main script -->
+
+<!--mobile header guide HeaderSplit -->
+<script type="text/javascript">
+	$(function(){
+		// new HeaderSplit('버튼 형태', 'home 버튼'));
+		var mobileSns = new HeaderSplit(null, null);
+
+		$('body').attr('data-page', 'main'); // main Type logo
+	});
+
+	// mainScrollHeader
+	mainScrollHeader.initialize();
+</script>
+<!-- //--mobile header guide HeaderSplit -->
+
+<script type="text/javascript">
+	$(function(){
+
+		// data-slick-vs="commonTab" prototype
+		commonTab.initialize();
+
+		setTimeout(function(){
+			// 해당 페이지 tab 활성화
+			var slideNo = $('[data-slick-vs="commonTab"] .sel').data('index');
+
+			$('[data-slick-vs="commonTab"]').slick('slickGoTo', slideNo - 1);
+		}, 500);
+	});
+</script>
