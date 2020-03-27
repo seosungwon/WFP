@@ -104,6 +104,7 @@ body{-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-higlight-color:rgba(
 .top-ttGap-1{padding:32px 20px 20px 20px;}
 .common-ttType-1{font-family: Lato-Bold;font-size:32px;color: #222;letter-spacing: -0.2px;padding:0 0 13px 0;}
 
+
 /* common-txt */
 .common-txtType-1{font-family: Lato-Regular;font-size: 12px;color: #999;letter-spacing: -0.2px;line-height: 16px;}
 .common-txtType-2{font-family: Lato-Regular;font-size: 14px;color: #222;letter-spacing: -0.2px;line-height: 20px;padding:0 0 20px 0;}
@@ -936,11 +937,11 @@ line-height: 20px;}
 .list-news li a{display:block;}
 .list-news li a:hover{text-decoration:none;}
 .list-news li img{width:100%;}
-.list-news li .box-txt{padding:20px;}
+.list-news li .box-txt{padding:20px 20px 50px 20px;}
 .list-news li .box-txt .t-1{font-family: Lato-Regular;font-size: 20px;color: #222;letter-spacing: -0.2px;padding-bottom:10px;}
 .list-news li .box-txt .t-2{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 18px;padding:0 0 10px 0;}
 .list-news li .box-txt .t-3{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 18px;padding:0 0 30px 0;}
-.list-news li .box-txt .t-4 span{font-family: Lato-Regular;font-size: 16px;color: #DF2451;letter-spacing: -0.2px;position:relative;}
+.list-news li .box-txt .t-4 span{font-family: Lato-Regular;font-size: 16px;color:#FF7A01;letter-spacing: -0.2px;position:relative;}
 .list-news li .box-txt .t-4 span:after{content:'';display:block;clear:both;background:url('../images/icon/icon_arrow_3.jpg') no-repeat 0 0;background-size:11px 17px;position:absolute;top:50%;right:-16px;width:11px;height:17px;margin-top:-7px;}
 .box-newsView{}
 .box-newsView *{vertical-align:middle;}
@@ -1126,7 +1127,7 @@ line-height: 20px;}
 	.pc-common-wd940.s_loc ul li{float:left; width:20%;border:1px solid red;}
 
 	/* common setting */
-	body{background:#F5F5F5;}
+	#body{background:#F5F5F5;}
 	#wrap{padding-bottom:120px !important;}
 	#wrap.gb-fff{background:#fff;}
 	#wrap.footer-noneGap{padding-bottom:0 !important;} /* footer 없을때 간격 */
