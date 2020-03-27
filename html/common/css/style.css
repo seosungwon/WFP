@@ -1122,7 +1122,7 @@ line-height: 20px;}
 	.mobile-width400{max-width:100%;}
 	.pc-common-wd940{width:940px;margin:120px auto 0 auto;}
 	.pc-common-wd940.gap-type-1{margin-top:63px;}
-	.pc-common-wd940.s_loc ul li{float:left; width:20%;border:1px solid red;}
+	.pc-common-wd940 .s_loc ul li{float:left; width:20%;border:1px solid red;}
 
 	/* common setting */
 	body{background:#F5F5F5;}
