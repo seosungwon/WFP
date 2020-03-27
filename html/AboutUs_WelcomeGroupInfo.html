@@ -1,9 +1,22 @@
 <?php include 'inc/header.php';?><!-- 공통 header include -->
 
 <!-- wrap -->
-<div id="wrap" class="gb-fff">
+<div id="wrap" class="gb-fff pdt0">
 	<!-- 공통 : skipCt -->
 	<div id="skipCt">
+		<!-- commonTab -->
+		<section data-slick-vs="commonTab">
+			<div>
+				<a href="#none"  data-index="1">Our Story</a>
+			</div>
+			<div>
+				<a href="#none" class="sel" data-index="2">Welcome Group Info.</a>
+			</div>
+			<div>
+				<a href="#none" data-index="3">Branch</a>
+			</div>
+		</section>
+		<!-- //commonTab -->
 
 		<!-- pc-common-wd940 -->
 		<div class="pc-common-wd940">
@@ -167,7 +180,7 @@
 <!-- //wrap -->
 
 <?php include 'inc/footer.php';?><!-- 공통 footer include -->
-
+<script src="common/js/slick.min.js"></script>
 <script type="text/javascript">
 	tabCommon.initialize(); // 공통 tabCommon load click // class="common-tabType-2"
 
@@ -198,5 +211,19 @@
 				$(this).parent('li').removeClass('sel');
 			}
 		});
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+
+		// data-slick-vs="commonTab" prototype
+		commonTab.initialize();
+
+		setTimeout(function(){
+			// 해당 페이지 tab 활성화
+			var slideNo = $('[data-slick-vs="commonTab"] .sel').data('index');
+
+			$('[data-slick-vs="commonTab"]').slick('slickGoTo', slideNo - 1);
+		}, 500);
 	});
 </script>
