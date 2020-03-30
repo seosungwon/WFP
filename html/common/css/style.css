@@ -1784,5 +1784,10 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 
 	[data-target="footer"] .ico_fb{ position: absolute; right: 56px; top:50px;}
 	[data-target="footer"] .box-text2 ul{width:38%;}
+
+	[data-slick-vs="commonTab"]{text-align:center;}
+	[data-slick-vs="commonTab"] > div{display:inline-block;}
+	[data-slick-vs="commonTab"] a{}
+
 }
 

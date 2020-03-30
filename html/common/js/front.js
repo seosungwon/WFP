@@ -745,21 +745,28 @@ if( $('.btn-fixed').length > 0 ){
 			var me = this,
 				$items = me.selectors.tg;
 
-			$($items).slick({
-				/*dots: true,
-				infinite: true,
-				speed: 600,
-				slidesToShow: 1,
-				adaptiveHeight: true,
-				autoplay: false,
-				autoplaySpeed: 4000,
-				arrows: false*/
-				dots: false,
-				infinite: true,
-				arrows: false,
-				infinite: false,
-				variableWidth: true
-			});
+			$(window).on('load on resize', function(event) {
+				if($(this).width() <= 1024) {// mobile script
+					console.log(1);
+					$($items).slick({
+						/*dots: true,
+						infinite: true,
+						speed: 600,
+						slidesToShow: 1,
+						adaptiveHeight: true,
+						autoplay: false,
+						autoplaySpeed: 4000,
+						arrows: false*/
+						dots: false,
+						infinite: true,
+						arrows: false,
+						infinite: false,
+						variableWidth: true
+					});
+				}else {// pc script
+					$('[data-slick-vs="commonTab"]').slick('unslick');
+				}
+			})
 		}
 	};
 
