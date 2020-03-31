@@ -209,7 +209,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .box-complete{position: absolute;top: 50%;left: 0px;right: 0px;transform: translate(0px, -50%);text-align: center;}
 .box-complete .inner{position:relative;padding:0 55px;}
 .box-complete .inner:after{content:'';display:block;clear:both;background-image:url('../images/icon/ic_step_complete.png');background-size:50px;position:absolute;top:0;left:50%;margin-left:-24px;width:50px;height:50px;margin-top:-44px;}
-.box-complete .inner .txt-1{font-size: 18px;color: #222;letter-spacing: -0.2px;text-align: center;line-height: 28px;padding:0 20px 12px 20px;}
+.box-complete .inner .txt-1{font-size: 20px;color: #222;letter-spacing: -0.2px;text-align: center;line-height: 28px;padding:25px 20px 12px 20px;font-weight:bold;}
 .box-complete .inner .txt-2{font-size: 16px;color: #666;letter-spacing: -0.2px;text-align: center;line-height: 22px;}
 
 /*common-icon*/
@@ -801,7 +801,7 @@ line-height: 36px;}
 .box-inputType-1 > ul > li{padding:0 0 20px 0;}
 .box-inputType-1 > ul > li *{vertical-align:middle;}
 .box-inputType-1 > ul > li .tt-1,
-.box-inputType-1 > ul > li .displayTableType-1 .displayCell .txt-1{font-size:16px;color:#222;letter-spacing:-0.23px;padding:0 0 8px 0;}
+.box-inputType-1 > ul > li .displayTableType-1 .displayCell .txt-1{font-size:14px;color:#666;letter-spacing:-0.2px;padding:0 0 8px 0;}
 .box-inputType-1 > ul > li .tt-1 strong,
 .box-inputType-1 > ul > li .displayTableType-1 .displayCell .txt-1 strong{color:#e02955;}
 
@@ -874,8 +874,8 @@ line-height: 36px;}
 
 /* about us */
 .box-contents{}
-.box-contents .inner-contents{padding:34px 20px 39px 20px;}
-.box-contents .inner-contents .ct-txt-1{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 20px;padding:0 0 20px 0;}
+.box-contents .inner-contents{padding:34px 0 39px 0; border-top:1px solid #E6E6E6; margin:0 20px;}/*padding:34px 20px 39px 20px;*/
+.box-contents .inner-contents .ct-txt-1{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 20px;padding:0 0 38px 0;}
 .box-contents .inner-contents .ct-txt-1 span{display:block;font-family: Lato-BoldItalic;font-size: 14px;color: #666666;letter-spacing: -0.2px;
 line-height: 20px;}
 .box-contents .inner-contents .ct-txt-1 a.fc_blue{color: #002E00;}
