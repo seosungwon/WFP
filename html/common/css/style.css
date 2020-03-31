@@ -350,7 +350,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .popup_wrap.type-2 .inner-rule{overflow:hidden;}
 .popup_wrap.type-2 .box-rule .header-rule{border-bottom:0;font-weight:normal;}
 .popup_wrap .inner-rule{text-align:left;padding:20px 25px;overflow:scroll;height:100%;font-family:'Lato-Regular';font-size: 12px;color: #222;letter-spacing: 0;}
-/*.popup_wrap .inner-rule .gap{height:150px;}*/
+.popup_wrap .inner-rule .gap{height:150px;}
 .popup_wrap .inner-rule .gap.type-2{height:130px;}
 
 .popup_wrap.type-3{}
