@@ -153,7 +153,7 @@
 					<!-- //box-inputType-1 -->
 				</div>
 				<!-- btn-fixed-inquery -->
-				<a href="#none" data-btn-inquery="motion" class="common-btnType-7 waves-effect waves-light btn-fixed-inquery pc-btnFixed"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<a href="#none" data-btn-inquery="motion" class="common-btnType-15 waves-effect waves-light btn-fixed-inquery pc-btnFixed"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 				<!-- //btn-fixed-inquery -->
 				<!-- 가상 공간 -->
 				<div class="gap"></div>
@@ -359,7 +359,7 @@
 						</div>
 						<!-- //box-loanStep -->
 						<!-- btn-fixed-inquery -->
-						<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">CONFIRM</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg">CONFIRM</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 						<!-- //btn-fixed-inquery -->
 						<!-- 가상 공간 -->
 						<div class="gap"></div>

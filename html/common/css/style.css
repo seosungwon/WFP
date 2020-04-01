@@ -1023,18 +1023,18 @@ line-height: 20px;}
 .box-loanIng .cpChange a{position:absolute;top:7px;right:20px;font-size: 14px;color: #666;letter-spacing: -0.2px;text-align: center;border: 1px solid #CCCCCC;border-radius: 20px;height:28px;line-height:28px;padding:0 18px;}
 .box-loanIng .box-menu{padding:15px 20px;border-top:1px solid #dcdcdc;background:#f5f5f5;}
 .box-loanIng .box-menu .common-tabType-2{margin-bottom:0;}
-.box-loanIng .pp-info{padding:19px 20px;}
+.box-loanIng .pp-info{padding:19px 20px 50px 20px}
 .box-loanIng .pp-info.gap-1{padding:0;}
 .box-loanIng .pp-info > ul{padding-bottom:12px;}
 .box-loanIng .pp-info > ul.bd_line{position: relative;}
-.box-loanIng .pp-info > ul.bd_line:after{content: '';display:both;clear:both;position: absolute;top:0;left:0;right:0;border-top:1px solid red;border-bottom:1px solid red;height:82px;}
+.box-loanIng .pp-info > ul.bd_line:after{content: '';display:both;clear:both;position: absolute;top:-15px;left:0;right:0;border-top:1px solid #E6E6E6;;border-bottom:1px solid #E6E6E6;;height:82px;}
 .box-loanIng .pp-info > ul > li{position:relative;padding:0 0 10px 84px;}
 .box-loanIng .pp-info > ul > li .txt-1{font-size:12px;font-family: Lato-Regular;color: #999;letter-spacing: -0.2px;line-height: 22px;position:absolute;top:0;left:0;}
 .box-loanIng .pp-info > ul > li .txt-2{font-family: Lato-Regular;font-size: 14px;color: #141414;letter-spacing: -0.17px;line-height: 22px;}
 
 
 
-.box-loanIng .box-loanStep{border-top:1px solid #E6E6E6;margin:20px 0 0 0;padding:20px 0 0 0;}
+.box-loanIng .box-loanStep{margin:20px 0 0 0;padding:20px 0 0 0;}/*border-top:1px solid #E6E6E6; padding:20px 0 0 0;*/
 .box-loanIng .box-loanStep > ol{}
 .box-loanIng .box-loanStep > ol > li{position:relative;padding:2px 0 10px 34px;height:57px;}
 .box-loanIng .box-loanStep > ol > li:after{content:'';display:block;clear:both;position:absolute;top:0;left:11px;bottom:0;width:1px;border-left:2px dotted #ccc;margin-left:1px;}
@@ -1045,13 +1045,13 @@ line-height: 20px;}
 .box-loanIng .box-loanStep > ol > li .tt-2{font-family: Lato-Regular;font-size: 14px;color: #999;letter-spacing: -0.23px;line-height: 18px;display:block;padding:6px 0 0 0;}
 .box-loanIng .box-loanStep > ol > li .time{font-family: Lato-Regular;font-size: 12px;color: #999;letter-spacing: -0.2px;text-align: right;line-height: 18px;position:absolute;top:5px;right:0;}
 .box-loanIng .box-loanStep > ol > li .time .day{padding-right:5px;}
-.box-loanIng .box-loanStep > ol > li.end .cnt{background:#fff url('../images/icon/icon_check_1.jpg') no-repeat center center;border: 1px solid #DF2451;}
+.box-loanIng .box-loanStep > ol > li.end .cnt{background:#fff url('../images/icon/icon_check_1.jpg') no-repeat center center;border: 1px solid #FF7A01;}
 .box-loanIng .box-loanStep > ol > li.end .cnt span{display:none;}
 .box-loanIng .box-loanStep > ol > li.ing .tt-1{font-family: Lato-Bold;color:#222;}
-.box-loanIng .box-loanStep > ol > li.ing .cnt{background: #DF2451;border:1px solid #DF2451;}
+.box-loanIng .box-loanStep > ol > li.ing .cnt{background: #FF7A01;border:1px solid #FF7A01;}
 .box-loanIng .box-loanStep > ol > li.ing .cnt span{color:#fff;}
 .box-loanIng .box-loanStep > ol > li.ing .time{display:none;}
-.box-loanIng .box-loanStep > ol > li.ing:before{content:'Ongoing';display:block;clear:both;background:url('../images/icon/icon_ongoing.png') no-repeat 0 3px;background-size:13px;font-family: Lato-Bold;color: #DF2451;letter-spacing: -0.2px;text-align: right;line-height: 18px;position:absolute;top:3px;right:0;padding-left:15px;}
+.box-loanIng .box-loanStep > ol > li.ing:before{content:'Ongoing';display:block;clear:both;background:url('../images/icon/ic_ongoing.png') no-repeat 0 3px;background-size:13px;font-family: Lato-Bold;color: #FF7A01;letter-spacing: -0.2px;text-align: right;line-height: 18px;position:absolute;top:3px;right:0;padding-left:15px;}
 .info-accountN{color: #999;letter-spacing: -0.2px;line-height: 16px;background: #F5F5F5;border-top:1px solid #E6E6E6;padding:6px 10px 6px 20px;}
 .box-totalInfo{padding:0 19px;}
 .box-totalInfo li{border-bottom:1px solid #f2f2f2;padding:13px 0 12px 0;}
