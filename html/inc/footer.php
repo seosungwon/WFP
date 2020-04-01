@@ -378,13 +378,13 @@
 	<!-- //loanStatus layerpopup -->
 
 	<!-- loanPossibility layerpopup -->
-	<div id="INQUIRY" class="popup_wrap rule type-3">
+	<div id="loanPossibility" class="popup_wrap rule type-3">
 		<div class="gap-rule">
 			<div class="box-rule">
-				<h3 class="header-rule" style="border-bottom:0;">Inquiry</h3>
+				<h3 class="header-rule" style="border-bottom:0;">loanPossibility</h3>
 			</div>
-			<!-- data-inquiryStep 1 -->
-			<div class="inner-rule" data-inquiryStep="1">
+			<!-- inner-rule -->
+			<div class="inner-rule">
 				<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
 				<div class="list-step">
 					<ol>
@@ -400,12 +400,12 @@
 								<p class="tt-1">Last Name <strong>*</strong></p>
 								<div class="txt-ct displayTableType-1" data-error="idTestIq">
 									<div class="displayCell">
-										<input type="text" class="common-inputType" id="idTestIq" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+										<input type="text" class="common-inputType" id="idTestIq">
 										<span class="txt-error">Error message</span>
 									</div>
 									<div class="displayCell">
 										<span class="txt-1">First Name <strong>*</strong></span>
-										<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+										<input type="text" class="common-inputType" id="">
 									</div>
 									<div class="displayCell">
 										<span class="txt-1">Middle Name</span>
@@ -416,7 +416,7 @@
 							<li>
 								<p class="tt-1">Contact Number <strong>*</strong></p>
 								<div class="txt-ct" data-error="">
-									<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									<input type="text" class="common-inputType" id="">
 									<span class="txt-error">Error message</span>
 									<p class="nt-1">Please provide a valid mobile number.</p>
 								</div>
@@ -424,7 +424,7 @@
 							<li>
 								<p class="tt-1">Email Address <strong>*</strong></p>
 								<div class="txt-ct" data-error="">
-									<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									<input type="text" class="common-inputType" id="">
 									<span class="txt-error">Error message</span>
 									<p class="nt-1">Please provide a valid Email address.</p>
 								</div>
@@ -434,18 +434,18 @@
 					<!-- //box-inputType-1 -->
 				</div>
 				<!-- btn-fixed-inquery -->
-				<a href="#none" data-btn-inquery="motion" class="common-btnType-15 waves-effect waves-light btn-fixed-inquery pc-btnFixed"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<a href="#none" class="common-btnType-15 waves-effect waves-light btn-fixed-inquery pc-btnFixed"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 				<!-- //btn-fixed-inquery -->
 				<!-- 가상 공간 -->
 				<div class="gap"></div>
 				<!-- //가상 공간 -->
-				<a href="#none" data-button="btn-prev2" class="sel btn-close">
+				<a href="#none" class="sel btn-close">
 					<p class="gap"><span></span><span></span><span></span></p>
 				</a>
 			</div>
-			<!-- //data-inquiryStep 1 -->
-			<!-- data-inquiryStep 2 -->
-			<div class="inner-rule" data-inquiryStep="2">
+			<!-- //inner-rule -->
+			<!-- inner-rule -->
+			<div class="inner-rule">
 				<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
 				<div class="list-step">
 					<ol>
@@ -506,12 +506,12 @@
 					<!-- //가상 공간 -->
 					<div class="btn-fixed-inquery pc-btnFixed">
 						<div class="btn-fixedTwo">
-							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev" data-btn="prev"><span class="icon-1">BACK</span></a>
-							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span>SEND</span></a>
+							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
+							<a href="#none" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span>SEND</span></a>
 						</div>
 					</div>
 				</div>
-				<!-- //data-inquiryStep 2 -->
+				<!-- //inner-rule -->
 				<a href="#none" data-button="btn-prev2" class="sel btn-close">
 					<p class="gap"><span></span><span></span><span></span></p>
 				</a>
