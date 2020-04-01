@@ -40,7 +40,7 @@
 				<li><a href="#none">Branches</a><span>|</span></li>
 				<li><a href="#none">Blog</a><span>|</span></li>
 				<li><a href="#loanStatus" class="layer_open_pop test-btn">Loan Status</a><span>|</span></li>
-				<li><a href="#none">Loan Possibility</a><span>|</span></li>
+				<li><a href="#loanPossibility" class="layer_open_pop test-btn">Loan Possibility</a><span>|</span></li>
 				<li><a href="#none">Declaration</a><span>|</span></li>
 				<li><a href="#none">Privacy Policy</a></li>
 			</ul>
@@ -376,6 +376,149 @@
 		</div>
 	</div>
 	<!-- //loanStatus layerpopup -->
+
+	<!-- loanPossibility layerpopup -->
+	<div id="INQUIRY" class="popup_wrap rule type-3">
+		<div class="gap-rule">
+			<div class="box-rule">
+				<h3 class="header-rule" style="border-bottom:0;">Inquiry</h3>
+			</div>
+			<!-- data-inquiryStep 1 -->
+			<div class="inner-rule" data-inquiryStep="1">
+				<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
+				<div class="list-step">
+					<ol>
+						<li class="ing"><span><span>1</span></span></li>
+						<li><span><span>2</span></span></li>
+					</ol>
+				</div>
+				<div class="box-gapType-1 mobile-width400">
+					<!-- box-inputType-1 -->
+					<div class="box-inputType-1">
+						<ul>
+							<li>
+								<p class="tt-1">Last Name <strong>*</strong></p>
+								<div class="txt-ct displayTableType-1" data-error="idTestIq">
+									<div class="displayCell">
+										<input type="text" class="common-inputType" id="idTestIq" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+										<span class="txt-error">Error message</span>
+									</div>
+									<div class="displayCell">
+										<span class="txt-1">First Name <strong>*</strong></span>
+										<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									</div>
+									<div class="displayCell">
+										<span class="txt-1">Middle Name</span>
+										<input type="text" class="common-inputType" id=""><!-- 필수 입력 아님 -->
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="tt-1">Contact Number <strong>*</strong></p>
+								<div class="txt-ct" data-error="">
+									<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									<span class="txt-error">Error message</span>
+									<p class="nt-1">Please provide a valid mobile number.</p>
+								</div>
+							</li>
+							<li>
+								<p class="tt-1">Email Address <strong>*</strong></p>
+								<div class="txt-ct" data-error="">
+									<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									<span class="txt-error">Error message</span>
+									<p class="nt-1">Please provide a valid Email address.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //box-inputType-1 -->
+				</div>
+				<!-- btn-fixed-inquery -->
+				<a href="#none" data-btn-inquery="motion" class="common-btnType-15 waves-effect waves-light btn-fixed-inquery pc-btnFixed"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<!-- //btn-fixed-inquery -->
+				<!-- 가상 공간 -->
+				<div class="gap"></div>
+				<!-- //가상 공간 -->
+				<a href="#none" data-button="btn-prev2" class="sel btn-close">
+					<p class="gap"><span></span><span></span><span></span></p>
+				</a>
+			</div>
+			<!-- //data-inquiryStep 1 -->
+			<!-- data-inquiryStep 2 -->
+			<div class="inner-rule" data-inquiryStep="2">
+				<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
+				<div class="list-step">
+					<ol>
+						<li class="end"><span><span>1</span></span></li>
+						<li class="ing"><span><span>2</span></span></li>
+					</ol>
+				</div>
+				<div class="box-gapType-1 mobile-width400">
+					<!-- box-inputType-1 -->
+					<div class="box-inputType-1 type-2">
+						<ul>
+							<li>
+								<p class="tt-1">What would you like to learn more about?</p>
+								<div class="txt-ct">
+									<select class="common-selectType">
+										<option value="" hidden="">Select</option>
+										<option>1</option>
+									</select>
+									<p class="nt-1">Please make a selection.</p>
+								</div>
+							</li>
+
+							<li>
+								<p class="tt-1">How can we help you?</p>
+								<div class="txt-ct">
+									<textarea class="common-textareaType-1"></textarea>
+								</div>
+							</li>
+							<li>
+								<p class="tt-1">Attachment</p>
+								<div class="txt-ct">
+									<!--
+										**
+											url 알려 주시면 모바일에서 확인 테스트 하겠습니다.
+										**
+									-->
+									<div data-control="fileBox">
+										<!-- front.js 에서 prepend로 뿌려 주고 있는 위치 -->
+										<!--
+											*** 여기여기여기 ***
+										 -->
+										<!-- //front.js 에서 prepend로 뿌려 주고 있는 위치 -->
+										<span class="btn-file"><span>Choose File</span></span>
+										<input type="file" class="ipt-file">
+									</div>
+									<p class="nt-1">
+										- File formats : gif, jpg, jpeg, png, bmp, pdf<br>
+										- Maximum file size : 5MB<br>
+										- Maximum number of files : 10
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //box-inputType-1 -->
+					<!-- 가상 공간 -->
+					<div class="gap"></div>
+					<!-- //가상 공간 -->
+					<div class="btn-fixed-inquery pc-btnFixed">
+						<div class="btn-fixedTwo">
+							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev" data-btn="prev"><span class="icon-1">BACK</span></a>
+							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span>SEND</span></a>
+						</div>
+					</div>
+				</div>
+				<!-- //data-inquiryStep 2 -->
+				<a href="#none" data-button="btn-prev2" class="sel btn-close">
+					<p class="gap"><span></span><span></span><span></span></p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- //loanPossibility layerpopup -->
 </div>
 
 <!-- 공통 : js -->
@@ -501,9 +644,9 @@
 		});
 
 		// 작업 완료시 삭제
-		$('.layer_open_pop.test-btn').click();
-		$('[data-inquirystep="3"]').hide();
-		$('[data-inquirystep="4"]').show();
+		//$('.layer_open_pop.test-btn').click();
+		//$('[data-inquirystep="3"]').hide();
+		//$('[data-inquirystep="4"]').show();
 	});
 </script>
 
