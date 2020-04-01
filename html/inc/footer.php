@@ -243,60 +243,53 @@
 	<div id="loanStatus" class="popup_wrap rule type-3">
 		<div class="gap-rule">
 			<div class="box-rule">
-				<h3 class="header-rule" style="border-bottom:0;">loanStatus</h3>
+				<h3 class="header-rule type-2" style="border-bottom:0;">Status of your loan application</h3>
 			</div>
 			<!-- data-inquiryStep 3 -->
 			<div class="inner-rule" data-inquiryStep="3">
-				<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
-				<div class="list-step">
-					<ol>
-						<li class="ing"><span><span>1</span></span></li>
-						<li><span><span>2</span></span></li>
-					</ol>
-				</div>
-				<div class="box-gapType-1 mobile-width400">
+				<div class="box-gapType-1 mobile-width400 pt0">
 					<!-- box-inputType-1 -->
 					<div class="box-inputType-1">
-						<ul>
-							<li>
-								<p class="tt-1">Last Name <strong>*</strong></p>
-								<div class="txt-ct displayTableType-1" data-error="idTestIq">
-									<div class="displayCell">
-										<input type="text" class="common-inputType" id="idTestIq" data-checkInquiry="loanStatusValidation"><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
-										<span class="txt-error">Error message</span>
-									</div>
-									<div class="displayCell">
-										<span class="txt-1">First Name <strong>*</strong></span>
-										<input type="text" class="common-inputType" id="" data-checkInquiry="loanStatusValidation"><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
-									</div>
-									<div class="displayCell">
-										<span class="txt-1">Middle Name</span>
-										<input type="text" class="common-inputType" id=""><!-- 필수 입력 아님 -->
-									</div>
-								</div>
-							</li>
+						<ul class="pcon">
 							<li>
 								<p class="tt-1">Contact Number <strong>*</strong></p>
 								<div class="txt-ct" data-error="">
 									<input type="text" class="common-inputType" id="" data-checkInquiry="loanStatusValidation"><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
 									<span class="txt-error">Error message</span>
-									<p class="nt-1">Please provide a valid mobile number.</p>
+									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
 								</div>
 							</li>
 							<li>
-								<p class="tt-1">Email Address <strong>*</strong></p>
-								<div class="txt-ct" data-error="">
-									<input type="text" class="common-inputType" id="" data-checkInquiry="loanStatusValidation"><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
-									<span class="txt-error">Error message</span>
-									<p class="nt-1">Please provide a valid Email address.</p>
+								<p class="tt-3">Month <strong>*</strong></p>
+								<div class="txt-ct displayTableType-1" data-error="">
+									<div class="displayCell" style="width:50%;">
+										<select class="common-selectType" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
+											<option value="" hidden>Month</option>
+											<option>1</option>
+										</select>
+										<span class="txt-error">Error message</span>
+									</div>
+									<div class="displayCell gap-1">
+										<p class="txt-1">Day <strong>*</strong></p>
+										<input type="tel" class="common-inputType" id="" data-check="validation">
+									</div>
+									<div class="displayCell">
+										<p class="txt-1">Year <strong>*</strong></p>
+										<input type="tel" class="common-inputType" id="" data-check="validation">
+									</div>
 								</div>
 							</li>
 						</ul>
 					</div>
 					<!-- //box-inputType-1 -->
+					<div class="common-notiList-4 nl_type1">
+						<span>※ Forget the contact No.<br>
+						On your Application?<br>
+						Please contact us by INQUIRY.</span>
+					</div>
 				</div>
 				<!-- btn-fixed-inquery -->
-				<a href="#none" data-btn-inquery="motion2" class="common-btnType-7 waves-effect waves-light btn-fixed-inquery pc-btnFixed"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">CHECK</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 				<!-- //btn-fixed-inquery -->
 				<!-- 가상 공간 -->
 				<div class="gap"></div>
@@ -308,71 +301,73 @@
 			<!-- //data-inquiryStep 3 -->
 			<!-- data-inquiryStep 4 -->
 			<div class="inner-rule" data-inquiryStep="4">
-				<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
-				<div class="list-step">
+				<!-- <p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p> -->
+				<!-- <div class="list-step">
 					<ol>
 						<li class="end"><span><span>1</span></span></li>
 						<li class="ing"><span><span>2</span></span></li>
 					</ol>
-				</div>
-				<div class="box-gapType-1 mobile-width400">
-					<!-- box-inputType-1 -->
-					<div class="box-inputType-1 type-2">
-						<ul>
-							<li>
-								<p class="tt-1">What would you like to learn more about?</p>
-								<div class="txt-ct">
-									<select class="common-selectType">
-										<option value="" hidden="">Select</option>
-										<option>1</option>
-									</select>
-									<p class="nt-1">Please make a selection.</p>
-								</div>
-							</li>
+				</div> -->
+				<!-- box-loanIng -->
+				<div class="box-loanIng mobile-width400">
 
+
+					<!-- pp-info -->
+					<div class="pp-info">
+						<ul class="bd_line">
 							<li>
-								<p class="tt-1">How can we help you?</p>
-								<div class="txt-ct">
-									<textarea class="common-textareaType-1"></textarea>
-								</div>
+								<span class="txt-1 pt0">Name</span>
+								<span class="txt-2">Maria Christina C. Satiago</span>
 							</li>
 							<li>
-								<p class="tt-1">Attachment</p>
-								<div class="txt-ct">
-									<!--
-										**
-											url 알려 주시면 모바일에서 확인 테스트 하겠습니다.
-										**
-									-->
-									<div data-control="fileBox">
-										<!-- front.js 에서 prepend로 뿌려 주고 있는 위치 -->
-										<!--
-											*** 여기여기여기 ***
-										 -->
-										<!-- //front.js 에서 prepend로 뿌려 주고 있는 위치 -->
-										<span class="btn-file"><span>Choose File</span></span>
-										<input type="file" class="ipt-file">
-									</div>
-									<p class="nt-1">
-										- File formats : gif, jpg, jpeg, png, bmp, pdf<br>
-										- Maximum file size : 5MB<br>
-										- Maximum number of files : 10
-									</p>
-								</div>
+								<span class="txt-1 pt0">Product Type</span>
+								<span class="txt-2">Salary Loan</span>
 							</li>
 						</ul>
-					</div>
-					<!-- //box-inputType-1 -->
-					<!-- 가상 공간 -->
-					<div class="gap"></div>
-					<!-- //가상 공간 -->
-					<div class="btn-fixed-inquery pc-btnFixed">
-						<div class="btn-fixedTwo">
-							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev" data-btn="prev2"><span class="icon-1">BACK</span></a>
-							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span>SEND</span></a>
+
+						<!-- box-loanStep -->
+						<div class="box-loanStep">
+							<ol>
+								<li class="end">
+									<span class="cnt"><span>1</span></span>
+									<span class="tt-1">Apply</span>
+									<span class="tt-2">Review the application from, submitted</span>
+									<span class="time"><span class="day">04/10/2019</span> 09:30</span>
+								</li>
+								<li class="end">
+									<span class="cnt"><span>2</span></span>
+									<span class="tt-1">Processing</span>
+									<span class="tt-2">Review the document submitted</span>
+									<span class="time"><span class="day">04/10/2019</span> 09:30</span>
+								</li>
+								<li class="ing">
+									<span class="cnt"><span>3</span></span>
+									<span class="tt-1">Evaluation</span>
+									<span class="tt-2">Evaluation Credit</span>
+								</li>
+								<li>
+									<span class="cnt"><span>4</span></span>
+									<span class="tt-1">Approval</span>
+									<span class="tt-2"></span>
+								</li>
+								<li>
+									<span class="cnt"><span>5</span></span>
+									<span class="tt-1">Disbursment</span>
+									<span class="tt-2"></span>
+								</li>
+							</ol>
 						</div>
+						<!-- //box-loanStep -->
+						<!-- btn-fixed-inquery -->
+						<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">CONFIRM</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						<!-- //btn-fixed-inquery -->
+						<!-- 가상 공간 -->
+						<div class="gap"></div>
+						<!-- //가상 공간 -->
 					</div>
+					<!-- //pp-info -->
 				</div>
+				<!-- //box-loanIng -->
 				<!-- //data-inquiryStep 4 -->
 				<a href="#none" data-button="btn-prev2" class="sel btn-close">
 					<p class="gap"><span></span><span></span><span></span></p>
