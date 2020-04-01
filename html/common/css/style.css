@@ -1796,6 +1796,7 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 	.box-loanIng .box-menu .common-tabType-2 *:after{display:none;}
 	.box-loanIng .pp-info{float:left;width:600px;padding:50px 50px 14px 50px;background: #FFFFFF;box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);position:relative;}
 	.box-loanIng .pp-info.gap-1{padding:30px 50px 66px 50px;}
+	.box-loanIng .pp-info.gap-2{padding:0;box-shadow:none;}/* footer loanStatus */
 	.box-loanIng .pp-info .common-btnType-11{position:absolute;top:57px;right:49px;padding:0 32px;}
 	.box-loanIng .pp-info > ul{padding-bottom:0;}
 	.box-loanIng .pp-info > ul > li{}

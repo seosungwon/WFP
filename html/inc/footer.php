@@ -39,7 +39,7 @@
 				<li><a href="#none">Welcome Group Info.</a><span>|</span></li>
 				<li><a href="#none">Branches</a><span>|</span></li>
 				<li><a href="#none">Blog</a><span>|</span></li>
-				<li><a href="#loanStatus" class="layer_open_pop">Loan Status</a><span>|</span></li>
+				<li><a href="#loanStatus" class="layer_open_pop test-btn">Loan Status</a><span>|</span></li>
 				<li><a href="#none">Loan Possibility</a><span>|</span></li>
 				<li><a href="#none">Declaration</a><span>|</span></li>
 				<li><a href="#none">Privacy Policy</a></li>
@@ -263,7 +263,7 @@
 								<p class="tt-3">Month <strong>*</strong></p>
 								<div class="txt-ct displayTableType-1" data-error="">
 									<div class="displayCell" style="width:50%;">
-										<select class="common-selectType" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
+										<select class="common-selectType" data-checkInquiry="loanStatusValidation"><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
 											<option value="" hidden>Month</option>
 											<option>1</option>
 										</select>
@@ -271,11 +271,11 @@
 									</div>
 									<div class="displayCell gap-1">
 										<p class="txt-1">Day <strong>*</strong></p>
-										<input type="tel" class="common-inputType" id="" data-check="validation">
+										<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation">
 									</div>
 									<div class="displayCell">
 										<p class="txt-1">Year <strong>*</strong></p>
-										<input type="tel" class="common-inputType" id="" data-check="validation">
+										<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation">
 									</div>
 								</div>
 							</li>
@@ -313,7 +313,7 @@
 
 
 					<!-- pp-info -->
-					<div class="pp-info">
+					<div class="pp-info gap-2">
 						<ul class="bd_line">
 							<li>
 								<span class="txt-1 pt0">Name</span>
@@ -499,6 +499,11 @@
 			$dataInquiryStep4.hide();
 			$INQUIRYtg.removeClass('type-2');
 		});
+
+		// 작업 완료시 삭제
+		$('.layer_open_pop.test-btn').click();
+		$('[data-inquirystep="3"]').hide();
+		$('[data-inquirystep="4"]').show();
 	});
 </script>
 
