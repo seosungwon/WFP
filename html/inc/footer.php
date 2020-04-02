@@ -100,7 +100,7 @@
 	<div id="INQUIRY" class="popup_wrap rule type-3">
 		<div class="gap-rule">
 			<div class="box-rule">
-				<h3 class="header-rule" style="border-bottom:0;">Inquiry</h3>
+				<h3 class="header-rule type-2" style="border-bottom:0;">Inquiry</h3>
 			</div>
 			<!-- data-inquiryStep 1 -->
 			<div class="inner-rule" data-inquiryStep="1">
@@ -381,52 +381,62 @@
 	<div id="loanPossibility" class="popup_wrap rule type-3">
 		<div class="gap-rule">
 			<div class="box-rule">
-				<h3 class="header-rule" style="border-bottom:0;">loanPossibility</h3>
+				<h3 class="header-rule type-2" style="border-bottom:0;">Check your possible loan amount</h3>
 			</div>
 			<!-- inner-rule -->
-			<div class="inner-rule">
-				<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
+			<div class="inner-rule" style="display:none;">
+				<p class="txt-3">Please fill out with complete details.<br>
+				You can confirm your loan possibility.</p>
 				<div class="list-step">
 					<ol>
 						<li class="ing"><span><span>1</span></span></li>
 						<li><span><span>2</span></span></li>
+						<li><span><span>3</span></span></li>
 					</ol>
 				</div>
 				<div class="box-gapType-1 mobile-width400">
 					<!-- box-inputType-1 -->
 					<div class="box-inputType-1">
-						<ul>
+						<ul class="pt0">
 							<li>
-								<p class="tt-1">Last Name <strong>*</strong></p>
-								<div class="txt-ct displayTableType-1" data-error="idTestIq">
-									<div class="displayCell">
-										<input type="text" class="common-inputType" id="idTestIq">
-										<span class="txt-error">Error message</span>
-									</div>
-									<div class="displayCell">
-										<span class="txt-1">First Name <strong>*</strong></span>
-										<input type="text" class="common-inputType" id="">
-									</div>
-									<div class="displayCell">
-										<span class="txt-1">Middle Name</span>
-										<input type="text" class="common-inputType" id=""><!-- 필수 입력 아님 -->
-									</div>
+								<p class="lpd_tit">Employment status</p>
+								<p class="tt-1">Contact Number <strong>*</strong></p>
+								<div class="txt-ct">
+									<select class="common-selectType">
+										<option value="" hidden="">Select</option>
+										<option>1</option>
+									</select>
 								</div>
 							</li>
 							<li>
 								<p class="tt-1">Contact Number <strong>*</strong></p>
-								<div class="txt-ct" data-error="">
-									<input type="text" class="common-inputType" id="">
-									<span class="txt-error">Error message</span>
-									<p class="nt-1">Please provide a valid mobile number.</p>
+								<div class="txt-ct">
+									<select class="common-selectType">
+										<option value="" hidden="">Select</option>
+										<option>1</option>
+									</select>
 								</div>
 							</li>
-							<li>
-								<p class="tt-1">Email Address <strong>*</strong></p>
-								<div class="txt-ct" data-error="">
-									<input type="text" class="common-inputType" id="">
-									<span class="txt-error">Error message</span>
-									<p class="nt-1">Please provide a valid Email address.</p>
+							<li class="pt40">
+								<p class="lpd_tit">Business License date</p>
+								<p class="tt-3">Month <strong>*</strong></p>
+								<div class="txt-ct displayTableType-1" data-error="">
+									<div class="displayCell" style="width:50%;">
+										<select class="common-selectType">
+											<option value="" hidden>Month</option>
+											<option>1</option>
+										</select>
+										<p class="nt-1">Please make a selection.</p>
+										<span class="txt-error">Error message</span>
+									</div>
+									<div class="displayCell gap-1">
+										<p class="txt-1">Day <strong>*</strong></p>
+										<input type="tel" class="common-inputType" id="">
+									</div>
+									<div class="displayCell">
+										<p class="txt-1">Year <strong>*</strong></p>
+										<input type="tel" class="common-inputType" id="">
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -434,91 +444,160 @@
 					<!-- //box-inputType-1 -->
 				</div>
 				<!-- btn-fixed-inquery -->
-				<a href="#none" class="common-btnType-15 waves-effect waves-light btn-fixed-inquery pc-btnFixed"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<a href="#none" data-btn-inquery="motion" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 				<!-- //btn-fixed-inquery -->
 				<!-- 가상 공간 -->
-				<div class="gap"></div>
+				<!-- <div class="gap"></div> -->
 				<!-- //가상 공간 -->
 				<a href="#none" class="sel btn-close">
 					<p class="gap"><span></span><span></span><span></span></p>
 				</a>
 			</div>
 			<!-- //inner-rule -->
+
 			<!-- inner-rule -->
-			<div class="inner-rule">
-				<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
+			<div class="inner-rule" style="display:none;">
+				<p class="txt-3">Please fill out with complete details.<br>
+				You can confirm your loan possibility.</p>
 				<div class="list-step">
 					<ol>
 						<li class="end"><span><span>1</span></span></li>
 						<li class="ing"><span><span>2</span></span></li>
+						<li><span><span>3</span></span></li>
 					</ol>
 				</div>
 				<div class="box-gapType-1 mobile-width400">
 					<!-- box-inputType-1 -->
 					<div class="box-inputType-1 type-2">
-						<ul>
+						<ul class="pt0">
 							<li>
-								<p class="tt-1">What would you like to learn more about?</p>
-								<div class="txt-ct">
-									<select class="common-selectType">
-										<option value="" hidden="">Select</option>
-										<option>1</option>
-									</select>
-									<p class="nt-1">Please make a selection.</p>
-								</div>
-							</li>
-
-							<li>
-								<p class="tt-1">How can we help you?</p>
-								<div class="txt-ct">
-									<textarea class="common-textareaType-1"></textarea>
-								</div>
+								<p class="lpd_tit">Have checking accounts?</p>
+								<div class="txt-ct inp_radioGap-2">
+								<span class="inp_radio type-2">
+									<input id="ahk1" name="" type="radio" checked="checked">
+									<label for="ahk1">Yes</label>
+								</span>
+								<span class="inp_radio type-2">
+									<input id="ahk2" name="" type="radio">
+									<label for="ahk2">No</label>
+								</span>
+							</div>
 							</li>
 							<li>
-								<p class="tt-1">Attachment</p>
-								<div class="txt-ct">
-									<!--
-										**
-											url 알려 주시면 모바일에서 확인 테스트 하겠습니다.
-										**
-									-->
-									<div data-control="fileBox">
-										<!-- front.js 에서 prepend로 뿌려 주고 있는 위치 -->
-										<!--
-											*** 여기여기여기 ***
-										 -->
-										<!-- //front.js 에서 prepend로 뿌려 주고 있는 위치 -->
-										<span class="btn-file"><span>Choose File</span></span>
-										<input type="file" class="ipt-file">
-									</div>
-									<p class="nt-1">
-										- File formats : gif, jpg, jpeg, png, bmp, pdf<br>
-										- Maximum file size : 5MB<br>
-										- Maximum number of files : 10
-									</p>
-								</div>
+								<p class="lpd_tit">With credit card account?</p>
+								<div class="txt-ct inp_radioGap-2">
+								<span class="inp_radio type-2">
+									<input id="ahk3" name="" type="radio" checked="checked">
+									<label for="ahk3">Yes</label>
+								</span>
+								<span class="inp_radio type-2">
+									<input id="ahk4" name="" type="radio">
+									<label for="ahk4">No</label>
+								</span>
+							</div>
 							</li>
 						</ul>
 					</div>
+					<!-- btn-fixed -->
+					<div class="bt_1">
+						<div class="btn-two">
+							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
+
+						</div>
+						<div class="btn-two">
+							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">next</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						</div>
+					</div>
+					<!-- //btn-fixed -->
 					<!-- //box-inputType-1 -->
 					<!-- 가상 공간 -->
 					<div class="gap"></div>
 					<!-- //가상 공간 -->
-					<div class="btn-fixed-inquery pc-btnFixed">
-						<div class="btn-fixedTwo">
-							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
-							<a href="#none" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span>SEND</span></a>
-						</div>
-					</div>
+
 				</div>
 				<!-- //inner-rule -->
 				<a href="#none" data-button="btn-prev2" class="sel btn-close">
 					<p class="gap"><span></span><span></span><span></span></p>
 				</a>
 			</div>
+			<!--  //inner-rule -->
+
+			<!-- inner-rule -->
+			<div class="inner-rule">
+				<p class="txt-3">Please fill out with complete details.<br>
+				You can confirm your loan possibility.</p>
+				<div class="list-step">
+					<ol>
+						<li class="end"><span><span>1</span></span></li>
+						<li class="end"><span><span>2</span></span></li>
+						<li class="ing"><span><span>3</span></span></li>
+					</ol>
+				</div>
+				<div class="box-gapType-1 mobile-width400">
+					<!-- box-inputType-1 -->
+					<div class="box-inputType-1 type-2">
+						<ul class="pt0">
+							<li>
+								<p class="lpd_tit">How much is your previous loan amount?</p>
+								<div class="txt-ct inp_radioGap-2">
+									<span class="inp_radio type-2">
+										<input id="bhk1" name="a" type="radio" checked="checked">
+										<label for="bhk1">Non-collateral:</label>
+									</span>
+									<div class="txt-ct" data-error="">
+										<input type="text" class="common-inputType" id=""><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
+										<span class="txt-error">Error message</span>
+										<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
+									</div>
+									<span class="inp_radio type-2">
+										<input id="bhk2" name="a" type="radio">
+										<label for="bhk2">Collateral:</label>
+									</span>
+									<span class="inp_radio type-2">
+										<input id="bhk3" name="a" type="radio">
+										<label for="bhk3">No</label>
+									</span>
+								</div>
+							</li>
+							<li>
+								<p class="lpd_tit">Do you have overdue in your previous loans?</p>
+								<div class="txt-ct inp_radioGap-2">
+									<span class="inp_radio type-2 tp1">
+										<input id="bhk4" name="b" type="radio" checked="checked">
+										<label for="bhk4">Yes</label>
+									</span>
+									<span class="inp_radio type-2 tp1">
+										<input id="bhk5" name="b" type="radio">
+										<label for="bhk5">No</label>
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- btn-fixed -->
+					<div class="bt_1">
+						<div class="btn-two">
+							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
+							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">next</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						</div>
+					</div>
+					<!-- //btn-fixed -->
+					<!-- //box-inputType-1 -->
+					<!-- 가상 공간 -->
+					<div class="gap"></div>
+					<!-- //가상 공간 -->
+
+				</div>
+				<!-- //inner-rule -->
+				<a href="#none" data-button="btn-prev2" class="sel btn-close">
+					<p class="gap"><span></span><span></span><span></span></p>
+				</a>
+			</div>
+			<!--  //inner-rule -->
 		</div>
 	</div>
 	<!-- //loanPossibility layerpopup -->
+
 </div>
 
 <!-- 공통 : js -->
@@ -644,9 +723,9 @@
 		});
 
 		// 작업 완료시 삭제
-		//$('.layer_open_pop.test-btn').click();
-		//$('[data-inquirystep="3"]').hide();
-		//$('[data-inquirystep="4"]').show();
+		$('.layer_open_pop.test-btn').click();
+		$('[data-inquirystep="3"]').hide();
+		$('[data-inquirystep="4"]').show();
 	});
 </script>
 

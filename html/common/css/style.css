@@ -78,6 +78,7 @@ body.fx{overflow:hidden;}
 /*padding*/
 .pt0{padding-top:0px !important;}
 .pt30{padding-top:30px !important;}
+.pt40{padding-top:40px !important;}
 .pt70{padding-top:70px !important;}
 
 /* common setting */
@@ -202,6 +203,10 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .btn-fixedTwo a{width:50%;float:left;}
 .btn-fixedTwo a:last-child(){width:auto;}
 
+.btn-two:after{content:'';display:block;}
+.btn-two a{width:50%;float:left;}
+.btn-two a:last-child(){width:auto;}
+
 /* common-btn select */
 .btnSel-bg{background: #FF7A01 !important;}
 .btnSel-bg span{opacity:1;}
@@ -316,8 +321,11 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .inp_radioGap-1 .inp_radio input:checked + label{color:#FF7A01;border:1px solid #FF7A01;}
 .inp_radioGap-2{padding:3px 0 0 0;}
 .inp_radioGap-2:after{content:'';display:block;clear:both;}
-.inp_radioGap-2 .inp_radio{float:left;width:30%;}
+/*.inp_radioGap-2 .inp_radio{float:left;width:30%;}*/
+.inp_radioGap-2 .inp_radio{width:100%;}
+.inp_radioGap-2 .tp1{float:left; width:30%;}
 .inp_radioGap-2 .inp_radio label:before{top:-2px;}
+
 
 /* common-textarea */
 .common-textareaType-1{background: #F0F0F0 !important;height:60px;font-family: Lato-Regular;font-size: 15px;color: #222;letter-spacing: -0.2px;line-height: 20px;border:0;width:96%;padding:2%;}
@@ -378,7 +386,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .popup_wrap.rule .gap-rule{height:100%;}
 .popup_wrap .box-rule{}
 .popup_wrap .box-rule .header-rule{text-align:center;font-family:'Lato-Regular';font-size: 30px;color: #222;letter-spacing: -0.2px;text-align: center;height:60px;line-height:60px;border-bottom:1px solid #e5e5e5;font-weight:normal;}
-.popup_wrap .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 70px 50px 70px;}/* /WFP/html/index.html padding-bottom */
+.popup_wrap .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 20px 0 20px;}/* /WFP/html/index.html padding-bottom */
 .popup_wrap.type-2 .inner-rule{overflow:hidden;}
 .popup_wrap.type-2 .box-rule .header-rule{border-bottom:0;font-weight:normal;}
 .popup_wrap .inner-rule{text-align:left;padding:20px 25px;overflow:scroll;height:100%;font-family:'Lato-Regular';font-size: 12px;color: #222;letter-spacing: 0;}
@@ -831,6 +839,7 @@ line-height: 36px;}
 .box-gapType-1.pc-box-login h3{display:none;}
 .box-inputType-1{padding: 0 0 28px 0;}
 .box-inputType-1 > ul{padding-top:70px;}
+.box-inputType-1 > ul > li > p.lpd_tit{font-family: Lato-Regular;font-size: 16px;color: #222222;letter-spacing: -0.2px;padding-bottom:14px;}
 .box-inputType-1 > ul > li{padding:0 0 20px 0;}
 .box-inputType-1 > ul > li *{vertical-align:middle;}
 .box-inputType-1 > ul > li .tt-1,
