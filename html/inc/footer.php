@@ -539,22 +539,22 @@
 						<ul class="pt0">
 							<li>
 								<p class="lpd_tit">How much is your previous loan amount?</p>
-								<div class="txt-ct inp_radioGap-2">
+								<div class="txt-ct inp_radioGap-2" data-radio="collateral">
 									<span class="inp_radio type-2">
-										<input id="bhk1" name="a" type="radio" checked="checked">
+										<input id="bhk1" data-ch="show" name="a" type="radio" checked="checked">
 										<label for="bhk1">Non-collateral:</label>
 									</span>
 									<div class="txt-ct" data-error="">
-										<input type="text" class="common-inputType" id=""><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
+										<input type="text" data-radio="collateralInput" class="common-inputType" id=""><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
 										<span class="txt-error">Error message</span>
 										<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
 									</div>
 									<span class="inp_radio type-2">
-										<input id="bhk2" name="a" type="radio">
+										<input id="bhk2" data-ch="hide" name="a" type="radio">
 										<label for="bhk2">Collateral:</label>
 									</span>
 									<span class="inp_radio type-2">
-										<input id="bhk3" name="a" type="radio">
+										<input id="bhk3"data-ch="hide" name="a" type="radio">
 										<label for="bhk3">No</label>
 									</span>
 								</div>
@@ -720,6 +720,18 @@
 			$dataInquiryStep3.show();
 			$dataInquiryStep4.hide();
 			$INQUIRYtg.removeClass('type-2');
+		});
+
+		// data-radio="collateral" click
+		var $dataRadioColl = $('[data-radio="collateral"]'),
+			$dataInput = $('[data-radio="collateralInput"]');
+
+		$dataRadioColl.find('[data-ch]').click(function(){
+			if( $(this).attr('data-ch') == 'show' ){
+				$dataInput.show();
+			}else{
+				$dataInput.hide();
+			}
 		});
 
 		// 작업 완료시 삭제
