@@ -1824,6 +1824,7 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 	.popup_wrap.type-3 .inner-rule{overflow:hidden;margin-top:-3px;height:auto;padding:24px 27px;}
 	.popup_wrap.type-3 .gap-rule{height:auto;margin-top:-313px;margin-left:-320px;}/*height:626px;*/
 	.popup_wrap.type-3 .gap-rule.type-2{height:auto;margin-top:-428px;margin-left:-320px;}
+	.popup_wrap.type-3 .gap-rule.type-3{height:500px;margin-top:-250px;}
 	.popup_wrap.type-3 .inner-rule .t-1{font-size: 14px;color: #666;line-height: 20px;background:#fff;padding:0 0 0 20px;}
 	.popup_wrap.type-3 .inner-rule .txt-3{padding:12px 0 20px 0;}
 	.popup_wrap.type-3 .inner-rule .txt-4 br{display:none;}

@@ -378,7 +378,7 @@
 
 	<!-- confirm layerpopup -->
 	<div id="confirm" class="popup_wrap rule type-3">
-		<div class="gap-rule type-2">
+		<div class="gap-rule type-3">
 
 			<!-- inner-rule -->
 			<div class="inner-rule">
