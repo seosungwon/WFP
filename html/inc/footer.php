@@ -383,9 +383,9 @@
 
 	<!-- loanPossibility layerpopup -->
 	<div id="loanPossibility" class="popup_wrap rule type-3">
-		<div class="gap-rule">
+		<div class="gap-rule type-2">
 			<div class="box-rule">
-				<h3 class="header-rule type-2" style="border-bottom:0;">Check your possible loan amount</h3>
+				<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Check your possible loan amount</h3>
 			</div>
 			<!-- inner-rule -->
 			<div class="inner-rule" style="display:none;">
@@ -527,7 +527,7 @@
 			<!--  //inner-rule -->
 
 			<!-- inner-rule -->
-			<div class="inner-rule" style="display:none;">
+			<div class="inner-rule">
 				<p class="txt-3">Please fill out with complete details.<br>
 				You can confirm your loan possibility.</p>
 				<div class="list-step">
@@ -601,20 +601,21 @@
 								</div>
 							</li>
 						</ul>
-					</div>
-					<!-- btn-fixed -->
-					<div class="btn-fixed pc-btnFixed">
-						<div class="btn-fixedTwo">
-							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
-							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span>SUBMIT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						<!-- btn-fixedTwo -->
+						<div class="btn-fixedTwo type-2">
+							<div>
+								<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
+							</div>
+							<div>
+								<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">SUBMIT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+							</div>
 						</div>
+						<!-- //btn-fixedTwo -->
 					</div>
-					<!-- //btn-fixed -->
 					<!-- //box-inputType-1 -->
 					<!-- 가상 공간 -->
 					<div class="gap"></div>
 					<!-- //가상 공간 -->
-
 				</div>
 				<!-- //inner-rule -->
 				<a href="#none" data-button="btn-prev2" class="sel btn-close">
@@ -663,7 +664,7 @@
 			<!--  //inner-rule -->
 
 			<!-- inner-rule -->
-			<div class="inner-rule">
+			<div class="inner-rule" style="display:none;">
 				<div class="box-gapType-1 mobile-width400 pt0">
 					<!-- box-inputType-1 -->
 					<div class="box-inputType-1 type-2">

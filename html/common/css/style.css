@@ -216,6 +216,14 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .btn-fixedTwo:after{content:'';display:block;}
 .btn-fixedTwo a{width:50%;float:left;}
 .btn-fixedTwo a:last-child(){width:auto;}
+/* type-2 */
+.btn-fixedTwo.type-2{}
+.btn-fixedTwo.type-2 > div{width:50%;float:left;}
+.btn-fixedTwo.type-2 a{width:auto;float:none;}
+.btn-fixedTwo.type-2 .common-btnType-7,
+.btn-fixedTwo.type-2 .common-btnType-9{height:50px;line-height:50px;font-family: Lato-Regular;font-size: 16px;letter-spacing: -0.2px;}
+.btn-fixedTwo.type-2 .common-btnType-7{border:1px solid #ccc;margin-left:4px;}
+.btn-fixedTwo.type-2 .common-btnType-9{border: 1px solid #999999;color: #666666;margin-right:4px;}
 
 .btn-two:after{content:'';display:block;}
 .btn-two a{width:50%;float:left;}
@@ -401,6 +409,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .popup_wrap .box-rule{}
 .popup_wrap .box-rule .header-rule{text-align:center;font-family:'Lato-Regular';font-size: 30px;color: #222;letter-spacing: -0.2px;text-align: center;height:60px;line-height:60px;border-bottom:1px solid #e5e5e5;font-weight:normal;}
 .popup_wrap .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 20px 0 20px;}/* /WFP/html/index.html padding-bottom */
+.popup_wrap .box-rule .header-rule.type-2.gap-1{padding-bottom:30px;}
 .popup_wrap.type-2 .inner-rule{overflow:hidden;}
 .popup_wrap.type-2 .box-rule .header-rule{border-bottom:0;font-weight:normal;}
 .popup_wrap .inner-rule{text-align:left;padding:20px 25px;overflow:scroll;height:100%;font-family:'Lato-Regular';font-size: 12px;color: #222;letter-spacing: 0;}
@@ -1796,6 +1805,7 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 	.popup_wrap.type-2 .box-mypageIntro ul li.icon-2 a:after{background-size:82px;top:13px;right:-7px;}
 	.popup_wrap.type-3 .inner-rule{overflow:hidden;margin-top:-3px;height:auto;padding:24px 27px;}
 	.popup_wrap.type-3 .gap-rule{height:auto;margin-top:-313px;margin-left:-320px;}/*height:626px;*/
+	.popup_wrap.type-3 .gap-rule.type-2{height:auto;margin-top:-428px;margin-left:-320px;}
 	.popup_wrap.type-3 .inner-rule .t-1{font-size: 14px;color: #666;line-height: 20px;background:#fff;padding:0 0 0 20px;}
 	.popup_wrap.type-3 .inner-rule .txt-3{padding:12px 0 20px 0;}
 	.popup_wrap.type-3 .inner-rule .txt-4 br{display:none;}
