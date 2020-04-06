@@ -242,6 +242,7 @@
 	</div>
 	<!-- //INQUIRY layerpopup -->
 
+
 	<!-- loanStatus layerpopup -->
 	<div id="loanStatus" class="popup_wrap rule type-3">
 		<div class="gap-rule">
@@ -305,13 +306,7 @@
 
 			<!-- data-inquiryStep 4 -->
 			<div class="inner-rule" data-inquiryStep="4">
-				<!-- <p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p> -->
-				<!-- <div class="list-step">
-					<ol>
-						<li class="end"><span><span>1</span></span></li>
-						<li class="ing"><span><span>2</span></span></li>
-					</ol>
-				</div> -->
+
 				<!-- box-loanIng -->
 				<div class="box-loanIng mobile-width400">
 					<!-- pp-info -->
@@ -361,7 +356,7 @@
 						</div>
 						<!-- //box-loanStep -->
 						<!-- btn-fixed-inquery -->
-						<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg">CONFIRM</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						<a href="#confirm" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">CONFIRM</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 						<!-- //btn-fixed-inquery -->
 						<!-- 가상 공간 -->
 						<div class="gap"></div>
@@ -376,10 +371,43 @@
 				</a>
 			</div>
 			<!-- //data-inquiryStep 4 -->
-
 		</div>
 	</div>
 	<!-- //loanStatus layerpopup -->
+
+
+	<!-- confirm layerpopup -->
+	<div id="confirm" class="popup_wrap rule type-3">
+		<div class="gap-rule type-2">
+
+			<!-- inner-rule -->
+			<div class="inner-rule">
+				<div class="box-complete">
+					<div class="inner_1">
+						<p class="txt1">
+							Thank you for completing your application.
+						</p>
+						<p class="txt2">
+							※ Forget the contact No.
+							on your Application?
+							Please contact us by INQUIRY.
+						</p>
+					</div>
+					<!-- btn-fixed -->
+					<a href="#complate" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">CONFIRM</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+					<!-- //btn-fixed -->
+				</div>
+				<!-- 닫기 버튼 -->
+				<a href="#none" data-button="btn-prev2" class="sel btn-close">
+					<p class="gap"><span></span><span></span><span></span></p>
+				</a>
+				<!-- //닫기 버튼 -->
+			</div>
+			<!-- //inner-rule -->
+		</div>
+	</div>
+	<!-- //confirm layerpopup -->
+
 
 	<!-- loanPossibility layerpopup -->
 	<div id="loanPossibility" class="popup_wrap rule type-3">
@@ -527,7 +555,7 @@
 			<!--  //inner-rule -->
 
 			<!-- inner-rule -->
-			<div class="inner-rule">
+			<div class="inner-rule" style="display:none;">
 				<p class="txt-3">Please fill out with complete details.<br>
 				You can confirm your loan possibility.</p>
 				<div class="list-step">
@@ -664,7 +692,7 @@
 			<!--  //inner-rule -->
 
 			<!-- inner-rule -->
-			<div class="inner-rule" style="display:none;">
+			<div class="inner-rule">
 				<div class="box-gapType-1 mobile-width400 pt0">
 					<!-- box-inputType-1 -->
 					<div class="box-inputType-1 type-2">
@@ -705,8 +733,6 @@
 		</div>
 	</div>
 	<!-- //loanPossibility layerpopup -->
-
-
 
 </div>
 
@@ -847,9 +873,9 @@
 		});
 
 		// 작업 완료시 삭제
-		 // $('.layer_open_pop.test-btn').click();
-		 // $('[data-inquirystep="3"]').hide();
-		 // $('[data-inquirystep="4"]').show();
+		  $('.layer_open_pop.test-btn').click();
+		  $('[data-inquirystep="3"]').hide();
+		  $('[data-inquirystep="4"]').show();
 	});
 </script>
 
