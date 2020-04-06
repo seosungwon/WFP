@@ -114,7 +114,7 @@
 				<div class="box-gapType-1 mobile-width400">
 					<!-- box-inputType-1 -->
 					<div class="box-inputType-1">
-						<ul>
+						<ul class="pt0">
 							<li>
 								<p class="tt-1">Last Name <strong>*</strong></p>
 								<div class="txt-ct displayTableType-1" data-error="idTestIq">
@@ -230,6 +230,9 @@
 						</div>
 					</div>
 				</div>
+				<!-- 가상 공간 -->
+					<div class="gap"></div>
+					<!-- //가상 공간 -->
 				<!-- //data-inquiryStep 2 -->
 				<a href="#none" data-button="btn-prev2" class="sel btn-close">
 					<p class="gap"><span></span><span></span><span></span></p>
@@ -299,6 +302,7 @@
 				</a>
 			</div>
 			<!-- //data-inquiryStep 3 -->
+
 			<!-- data-inquiryStep 4 -->
 			<div class="inner-rule" data-inquiryStep="4">
 				<!-- <p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p> -->
@@ -310,8 +314,6 @@
 				</div> -->
 				<!-- box-loanIng -->
 				<div class="box-loanIng mobile-width400">
-
-
 					<!-- pp-info -->
 					<div class="pp-info gap-2">
 						<ul class="bd_line">
@@ -373,6 +375,8 @@
 					<p class="gap"><span></span><span></span><span></span></p>
 				</a>
 			</div>
+			<!-- //data-inquiryStep 4 -->
+
 		</div>
 	</div>
 	<!-- //loanStatus layerpopup -->
@@ -523,7 +527,7 @@
 			<!--  //inner-rule -->
 
 			<!-- inner-rule -->
-			<div class="inner-rule">
+			<div class="inner-rule" style="display:none;">
 				<p class="txt-3">Please fill out with complete details.<br>
 				You can confirm your loan possibility.</p>
 				<div class="list-step">
@@ -535,7 +539,7 @@
 				</div>
 				<div class="box-gapType-1 mobile-width400">
 					<!-- box-inputType-1 -->
-					<div class="box-inputType-1 type-2">
+					<div class="box-inputType-1 type-2 tp2">
 						<ul class="pt0">
 							<li>
 								<p class="lpd_tit">How much is your previous loan amount?</p>
@@ -553,10 +557,12 @@
 										<input id="bhk2" data-ch="hide" name="a" type="radio">
 										<label for="bhk2">Collateral:</label>
 									</span>
+
 									<span class="inp_radio type-2">
 										<input id="bhk3"data-ch="hide" name="a" type="radio">
 										<label for="bhk3">No</label>
 									</span>
+
 								</div>
 							</li>
 							<li>
@@ -572,13 +578,35 @@
 									</span>
 								</div>
 							</li>
+							<li>
+								<p class="lpd_tit">Do you settle all your loans?</p>
+								<div class="txt-ct inp_radioGap-2">
+									<span class="inp_radio type-2 tp1">
+										<input id="bhk6" name="c" type="radio" checked="checked">
+										<label for="bhk6">Yes</label>
+									</span>
+									<span class="inp_radio type-2 tp1">
+										<input id="bhk7" name="c" type="radio">
+										<label for="bhk7">No</label>
+									</span>
+								</div>
+							</li>
+							<li>
+								<p class="lpd_tit">Current salary (monthly)</p>
+								<p class="lpd_stit">Input your current monthly salary</p>
+								<div class="txt-ct" data-error="">
+									<input type="text" data-radio="collateralInput" class="common-inputType" id=""><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
+									<span class="txt-error">Error message</span>
+									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
+								</div>
+							</li>
 						</ul>
 					</div>
 					<!-- btn-fixed -->
-					<div class="bt_1">
-						<div class="btn-two">
+					<div class="btn-fixed pc-btnFixed">
+						<div class="btn-fixedTwo">
 							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
-							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">next</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span>SUBMIT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 						</div>
 					</div>
 					<!-- //btn-fixed -->
@@ -594,9 +622,90 @@
 				</a>
 			</div>
 			<!--  //inner-rule -->
+
+			<!-- inner-rule -->
+			<div class="inner-rule" style="display:none;">
+				<div class="box-gapType-1 mobile-width400 pt0">
+					<!-- box-inputType-1 -->
+					<div class="box-inputType-1 type-2">
+						<ul class="pop_type1">
+							<li>
+								<div class="txt-ct peso_num">
+									<p class="txt1">Possible Loan Amount</p>
+									<p class="num">460,000</p>
+									<p class="txt2">PESO</p>
+								</div>
+							</li>
+							<li>
+								<div class="txt-ct">
+									<p class="txt3">
+										※ Estimated result only.<br>
+										The final result will be decided after<br> reviewing submitted documents.<br>
+										Thank you.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- btn-fixed -->
+					<a href="#none" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
+					<!-- //btn-fixed -->
+					<!-- //box-inputType-1 -->
+					<!-- 가상 공간 -->
+					<div class="gap"></div>
+					<!-- //가상 공간 -->
+				</div>
+				<!-- //inner-rule -->
+				<a href="#none" data-button="btn-prev2" class="sel btn-close">
+					<p class="gap"><span></span><span></span><span></span></p>
+				</a>
+			</div>
+			<!--  //inner-rule -->
+
+			<!-- inner-rule -->
+			<div class="inner-rule">
+				<div class="box-gapType-1 mobile-width400 pt0">
+					<!-- box-inputType-1 -->
+					<div class="box-inputType-1 type-2">
+						<ul class="pop_type1">
+							<li>
+								<div class="txt-ct peso_num">
+									<p class="txt1">Possible Loan Amount</p>
+									<p class="num">460,000</p>
+									<p class="txt2">PESO</p>
+								</div>
+							</li>
+							<li>
+								<div class="txt-ct">
+									<p class="txt3">
+										※ Estimated result only.<br>
+										The final result will be decided after<br> reviewing submitted documents.<br>
+										Thank you.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- btn-fixed -->
+					<a href="#none" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
+					<!-- //btn-fixed -->
+					<!-- //box-inputType-1 -->
+					<!-- 가상 공간 -->
+					<div class="gap"></div>
+					<!-- //가상 공간 -->
+				</div>
+				<!-- //inner-rule -->
+				<a href="#none" data-button="btn-prev2" class="sel btn-close">
+					<p class="gap"><span></span><span></span><span></span></p>
+				</a>
+			</div>
+			<!--  //inner-rule -->
+
 		</div>
 	</div>
 	<!-- //loanPossibility layerpopup -->
+
+
 
 </div>
 
@@ -696,12 +805,14 @@
 		var $dataInquiryStep3 = $('[data-inquiryStep="3"]'),
 			$dataInquiryStep4 = $('[data-inquiryStep="4"]');
 
+
 		var $dataBtnInquery2 = $('[data-btn-inquery="motion2"]');
 
 		var $INQUIRYtg = $('#INQUIRY .gap-rule');
 
 		$dataInquiryStep3.show();
 		$dataInquiryStep4.hide();
+
 
 		// 1step 에서 2step 넘어가기
 		$dataBtnInquery2.click(function(){
@@ -735,9 +846,9 @@
 		});
 
 		// 작업 완료시 삭제
-		$('.layer_open_pop.test-btn').click();
-		$('[data-inquirystep="3"]').hide();
-		$('[data-inquirystep="4"]').show();
+		 // $('.layer_open_pop.test-btn').click();
+		 // $('[data-inquirystep="3"]').hide();
+		 // $('[data-inquirystep="4"]').show();
 	});
 </script>
 
