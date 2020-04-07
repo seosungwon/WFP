@@ -747,8 +747,7 @@ if( $('.btn-fixed').length > 0 ){
 
 			$(window).on('load on resize', function(event) {
 				if($(this).width() <= 1024) {// mobile script
-					console.log(1);
-					$($items).slick({
+					$($items).not('.slick-initialized').slick({
 						/*dots: true,
 						infinite: true,
 						speed: 600,
