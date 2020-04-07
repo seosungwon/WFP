@@ -30,9 +30,14 @@
 	<h1 style="z-index:2000;"><a href="#none"><img src="common/images/logo/img_header_logo.png" alt=""></a></h1>
 	<h1 class="main"><a href="#none"><img src="common/images/logo/img_header_logo.png" alt=""></a></h1>
 	<!-- sub page title -->
-	<!-- <h2>Title</h2>
-	<a href="#none" class="btn-signIn">Sign in</a>
+	<!-- <h2>Title</h2> -->
+	<!-- <a href="#none" class="btn-signIn">Sign in</a>
 	<a href="#none" class="btn-home" title="home"></a> -->
+
+	<div class="common-btnType-16">
+		<a href="#none" class="btn_inquiry">Inquiry</a>
+	</div>
+
 </div>
 <!-- //header -->
 

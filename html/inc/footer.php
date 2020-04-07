@@ -376,16 +376,17 @@
 	<!-- //loanStatus layerpopup -->
 
 
-	<!-- confirm layerpopup -->
+	<!-- 경고팝업 confirm layerpopup -->
 	<div id="confirm" class="popup_wrap rule type-3">
 		<div class="gap-rule type-3">
 
+			<!-- popup1 -->
 			<!-- inner-rule -->
-			<div class="inner-rule">
+			<div class="inner-rule" style="display:none;">
 				<div class="box-complete">
 					<div class="inner_1">
 						<p class="txt1">
-							Thank you for completing your application.
+							Unable to find your loan history!
 						</p>
 						<p class="txt2">
 							※ Forget the contact No.
@@ -394,7 +395,7 @@
 						</p>
 					</div>
 					<!-- btn-fixed -->
-					<a href="#complate" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">CONFIRM</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+					<a href="#complate" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">APPLY NOW!</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 					<!-- //btn-fixed -->
 				</div>
 				<!-- 닫기 버튼 -->
@@ -404,9 +405,38 @@
 				<!-- //닫기 버튼 -->
 			</div>
 			<!-- //inner-rule -->
+			<!-- //popup1 -->
+
+			<!-- popup2 -->
+			<!-- inner-rule -->
+			<div class="inner-rule">
+				<div class="box-complete">
+					<div class="inner_2">
+						<p class="txt1">
+							Unfortunately,<br>
+							after series of evaluation you did not qualify to our current criteria for credit approval.
+						</p>
+						<p class="txt2">
+							※ If you feel that you have inquires
+							for your loan disapproval,
+							please contact us by inquiry.
+						</p>
+					</div>
+					<!-- btn-fixed -->
+					<a href="#complate" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">APPLY NOW!</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+					<!-- //btn-fixed -->
+				</div>
+				<!-- 닫기 버튼 -->
+				<a href="#none" data-button="btn-prev2" class="sel btn-close">
+					<p class="gap"><span></span><span></span><span></span></p>
+				</a>
+				<!-- //닫기 버튼 -->
+			</div>
+			<!-- //inner-rule -->
+			<!-- //popup2 -->
 		</div>
 	</div>
-	<!-- //confirm layerpopup -->
+	<!-- //경고팝업 confirm layerpopup -->
 
 
 	<!-- loanPossibility layerpopup -->
@@ -873,9 +903,9 @@
 		});
 
 		// 작업 완료시 삭제
-		  $('.layer_open_pop.test-btn').click();
-		  $('[data-inquirystep="3"]').hide();
-		  $('[data-inquirystep="4"]').show();
+		  // $('.layer_open_pop.test-btn').click();
+		  // $('[data-inquirystep="3"]').hide();
+		  // $('[data-inquirystep="4"]').show();
 	});
 </script>
 
