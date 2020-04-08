@@ -118,7 +118,7 @@
 			speed: 600,
 			slidesToShow: 1,
 			adaptiveHeight: true,
-			autoplay: true,
+			autoplay: false, // true, false
 			autoplaySpeed: 4000,
 			arrows: false
 			/*,
@@ -126,7 +126,7 @@
 			nextArrow: "<a href='#none' class='btn-next'><span class='hidden'>다음 배너</span></a>"*/
 		});
 
-		$(window).on('load resize', function(){
+		/*$(window).on('load resize', function(){
 			$('[data-target="footer"]').css({"border-top":"0"});
 			$('[data-device="pc"] [data-target="footer"]').css({"border-top":"1px solid #ccc"});
 
@@ -141,7 +141,7 @@
 				console.log($(this).width());
 				$('[data-click="main-vsSlick"] .box-txt').css({"margin-top" :tgOffset});
 			}
-		});
+		});*/
 	});
 </script>
 <!-- //main script -->
