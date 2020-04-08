@@ -34,9 +34,11 @@
 	<!-- <a href="#none" class="btn-signIn">Sign in</a>
 	<a href="#none" class="btn-home" title="home"></a> -->
 
+	<!-- btn_Inquiry -->
 	<div class="common-btnType-16">
 		<a href="#none" class="btn_inquiry">Inquiry</a>
 	</div>
+	<!-- //btn_Inquiry -->
 
 </div>
 <!-- //header -->

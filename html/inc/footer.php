@@ -153,7 +153,7 @@
 					<!-- //box-inputType-1 -->
 				</div>
 				<!-- btn-fixed-inquery -->
-				<a href="#none" data-btn-inquery="motion" class="common-btnType-15 waves-effect waves-light btn-fixed-inquery pc-btnFixed"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<a href="#none" data-btn-inquery="motion" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 				<!-- //btn-fixed-inquery -->
 				<!-- 가상 공간 -->
 				<div class="gap"></div>
@@ -585,7 +585,7 @@
 			<!--  //inner-rule -->
 
 			<!-- inner-rule -->
-			<div class="inner-rule" style="display:none;">
+			<div class="inner-rule">
 				<p class="txt-3">Please fill out with complete details.<br>
 				You can confirm your loan possibility.</p>
 				<div class="list-step">
@@ -722,7 +722,7 @@
 			<!--  //inner-rule -->
 
 			<!-- inner-rule -->
-			<div class="inner-rule">
+			<div class="inner-rule" style="display:none;">
 				<div class="box-gapType-1 mobile-width400 pt0">
 					<!-- box-inputType-1 -->
 					<div class="box-inputType-1 type-2">
