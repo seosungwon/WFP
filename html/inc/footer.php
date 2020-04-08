@@ -3,13 +3,13 @@
 	<!-- wd-inner -->
 	<div class="wd-inner">
 		<!-- box-help -->
-		<div class="box-help">
+		<!-- <div class="box-help">
 			<div class="inner">
 				<p class="txt-1">Need help?</p>
 				<p class="txt-2">Any questions about your loan application? We’re here for you!</p>
 				<p class="btn-1"><a href="#INQUIRY" class="common-btnType-3 waves-effect waves-light layer_open_pop">INQUIRY</a></p>
 			</div>
-		</div>
+		</div> -->
 		<!-- //box-help -->
 
 		<!-- footer -->

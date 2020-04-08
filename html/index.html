@@ -24,6 +24,83 @@
 		</section>
 		<!-- //commonTab -->
 
+		<!-- main-vsSlick -->
+		<section data-click="main-vsSlick">
+			<div>
+				<div class="box-txt">
+					<p class="img-1"><img src="common/images/logo/logo_welcomebank.png" alt="Welcome Bank"></p>
+					<p class="txt-1">Your trusted Digital<br> Banking Partner.</strong></p>
+					<p class="txt-2">We will always be with you through digital<br> transformation.</p>
+				</div>
+				<div class="box-img imgC-1">
+					<img src="common/images/@/@none_main_1.jpg" alt="">
+				</div>
+			</div>
+			<div>
+				<div class="box-txt">
+					<p class="txt-3">Personal Loan</p>
+					<p class="txt-4">A wise choice for a happy<br> working life!</p>
+					<div class="btn">
+						<div class="btn-gap">
+							<a href="#none" class="common-btnType-13 waves-effect waves-light"><span>LEARN MORE</span></a>
+						</div>
+						<div class="btn-gap">
+							<a href="#none" class="common-btnType-2 type-2 waves-effect waves-light"><span>APPLY NOW</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="box-img imgC-2">
+					<img src="common/images/@/@none_main_2.jpg" alt="">
+				</div>
+			</div>
+			<div>
+				<div class="box-txt">
+					<p class="txt-3">Business Loan</p>
+					<p class="txt-4">The Best way to build-up<br> your business.</p>
+					<div class="btn">
+						<div class="btn-gap">
+							<a href="#none" class="common-btnType-13 waves-effect waves-light"><span>LEARN MORE</span></a>
+						</div>
+						<div class="btn-gap">
+							<a href="#none" class="common-btnType-2 type-2 waves-effect waves-light"><span>APPLY NOW</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="box-img imgC-3">
+					<img src="common/images/@/@none_main_3.jpg" alt="">
+				</div>
+			</div>
+			<div>
+				<div class="box-txt">
+					<p class="txt-3">Savings Account</p>
+					<p class="txt-4">Enjoy our special rate<br> for you and your family!</p>
+					<div class="btn">
+						<div class="btn-gap">
+							<a href="#none" class="common-btnType-13 waves-effect waves-light"><span>LEARN MORE</span></a>
+						</div>
+						<div class="btn-gap">
+							<a href="#none" class="common-btnType-2 type-2 waves-effect waves-light"><span>APPLY NOW</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="box-img imgC-4">
+					<img src="common/images/@/@none_main_4.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<!-- //main-vsSlick -->
+
+		<!-- box-clear -->
+		<div class="box-clear">
+			<div class="gap-savings">
+
+			</div>
+
+		</div>
+		<!-- //box-clear -->
+
+
+
 	</div>
 	<!-- //공통 : skipCt -->
 </div>
@@ -33,6 +110,40 @@
 
 <!-- main script -->
 <script src="common/js/slick.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('[data-click="main-vsSlick"]').slick({
+			dots: true,
+			infinite: true,
+			speed: 600,
+			slidesToShow: 1,
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			arrows: false
+			/*,
+			prevArrow: "<a href='#none' class='btn-prev'><span class='hidden'>이전 배너</span></a>",
+			nextArrow: "<a href='#none' class='btn-next'><span class='hidden'>다음 배너</span></a>"*/
+		});
+
+		$(window).on('load resize', function(){
+			$('[data-target="footer"]').css({"border-top":"0"});
+			$('[data-device="pc"] [data-target="footer"]').css({"border-top":"1px solid #ccc"});
+
+			var tgOffset = $('.box-savings .inner').offset().top,
+				tgOffset = tgOffset / 2.5;
+
+			$('[data-device="pc"] [data-click="main-vsSlick"] .box-txt').css({"margin-top" :tgOffset});
+
+			$('[data-device="tablet"] [data-click="main-vsSlick"] .box-txt').css({"margin-top" : "0"});
+
+			if( $(this).width() > 1010 ){
+				console.log($(this).width());
+				$('[data-click="main-vsSlick"] .box-txt').css({"margin-top" :tgOffset});
+			}
+		});
+	});
+</script>
 <!-- //main script -->
 
 <!--mobile header guide HeaderSplit -->

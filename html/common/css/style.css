@@ -1042,7 +1042,7 @@ line-height: 36px;}
 .list-news li .box-txt .t-2{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 18px;padding:0 0 10px 0;}
 .list-news li .box-txt .t-3{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 18px;padding:0 0 30px 0;}
 .list-news li .box-txt .t-4 span{font-family: Lato-Regular;font-size: 16px;color:#FF7A01;letter-spacing: -0.2px;position:relative;}
-.list-news li .box-txt .t-4 span:after{content:'';display:block;clear:both;background:url('../images/icon/icon_arrow_3.jpg') no-repeat 0 0;background-size:11px 17px;position:absolute;top:50%;right:-16px;width:11px;height:17px;margin-top:-7px;}
+.list-news li .box-txt .t-4 span:after{content:'';display:block;clear:both;background:url('../images/icon/ic_arrow_map.png') no-repeat 0 0;background-size:11px 17px;position:absolute;top:50%;right:-16px;width:11px;height:17px;margin-top:-7px;}
 .box-newsView{}
 .box-newsView *{vertical-align:middle;}
 .box-newsView .img-w100{width:100%;}
@@ -1239,7 +1239,7 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 	[data-target="nav"] > ul > li:hover > a:after,
 	[data-target="nav"] > ul > li:focus > a:after{transform: rotate(180deg);opacity:1;transition:all 0.5s;}
 	/*[data-target="nav"] > ul > li > ul{position:absolute;top:72px;left:50%;width:149px;background:#fff;border:1px solid #ccc;margin-left:-67px;padding:12px 0;opacity:0;visibility:hidden;z-index:900;}*/
-	[data-target="nav"] > ul > li > ul{position:absolute;top:45px;left:32%;width:190px;background:#fff;margin-left:-23px;padding:0 0;opacity:0;visibility:hidden;z-index:900;}
+	[data-target="nav"] > ul > li > ul{position:absolute;top:45px;left:32%;width:190px;background:#fff;margin-left:-23px;padding:0 0;opacity:0;visibility:hidden;z-index:900;border:1px solid #E6E6E6;}
 	[data-target="nav"] > ul > li:nth-child(3) > ul{left:20%;}
 	[data-target="nav"] > ul > li > ul > li > a:nth-child(5){border-bottom:none;}
 	[data-target="nav"] > ul > li:nth-child(3) > ul > li a:nth-child(3){border-bottom:none;}
@@ -1475,7 +1475,7 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
     color: #ccc;
     letter-spacing: -0.2px;
     line-height: 18px;}
-	[data-click="main-vsSlick"]{position:absolute;top:119px;left:0;right:439px;bottom:145px;overflow:hidden;}
+	[data-click="main-vsSlick"]{position:absolute;top:0;left:0;right:439px;bottom:145px;overflow:hidden;}/*top:119px;*/
 	[data-click="main-vsSlick"] .txt-1{font-size:42px;line-height:52px;margin:0 0 8px 0;letter-spacing:-0.2px;}
 	[data-click="main-vsSlick"] .txt-2{font-size:18px;color:#fff;width:auto;line-height:26px;letter-spacing:-0.2px;}
 	[data-click="main-vsSlick"] .txt-3{font-size:42px;letter-spacing:-0.21px;margin-top:-5px;}
@@ -1489,7 +1489,7 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 	[data-click="main-vsSlick"] .box-img img{right:0;width:100%;/* bottom:-181px; */display:none;}
 	/* [data-click="main-vsSlick"] .box-txt{padding:164px 30px 22px 140px;} */
 	[data-click="main-vsSlick"] .box-txt {/* position: absolute;top: 50%;left: 0px;right: 0px;transform: translate(0px, -49%);padding:0 0 0  94px; */
-		position: absolute;top:0;left: 0px;right: 0px;transform: translate(0px, 0px);padding:0 0 0  96px;}
+		position: absolute;top:0;left: 0px;right: 0px;transform: translate(0px, 0px);padding:215px 0 0  96px;}
 	[data-click="main-vsSlick"] .btn{top:unset;left:unset;bottom:unset;padding-top:43px;}
 	[data-click="main-vsSlick"] .common-btnType-1{width:220px;}
 	[data-click="main-vsSlick"] .slick-dots{bottom:40px;left:0;}
@@ -1911,7 +1911,7 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 	.box-addLoan .common-btnType-2{margin:0 auto;width:320px;}
 
 	[data-target="footer"] .ico_fb{ position: absolute; right: 56px; top:50px;}
-	[data-target="footer"] .box-text2 ul{width:38%;}
+	[data-target="footer"] .box-text2 ul{width:50%;}
 
 	[data-slick-vs="commonTab"]{text-align:center;}
 	[data-slick-vs="commonTab"] > div{display:inline-block;}

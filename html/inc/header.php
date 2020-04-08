@@ -38,7 +38,7 @@
 
 		<!-- btn_Inquiry -->
 		<div class="common-btnType-16">
-			<a href="#none" class="btn_inquiry">Inquiry</a>
+			<a href="#INQUIRY" class="btn_inquiry">Inquiry</a>
 		</div>
 		<!-- //btn_Inquiry -->
 
