@@ -1210,6 +1210,7 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 
 /* pc _ 768~ */
 @media all and (min-width:768px) {
+
 	/*header Btn*/
 	.common-btnType-16{display: inline-block;text-align: center;height:29px;
 		line-height: 24px;font-size: 13px;letter-spacing: -0.2px;border: 1px solid #fff;padding: 0 12px;position:absolute;top:13px;right:20px;
