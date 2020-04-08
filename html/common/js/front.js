@@ -746,7 +746,7 @@ if( $('.btn-fixed').length > 0 ){
 				$items = me.selectors.tg;
 
 			$(window).on('load on resize', function(event) {
-				if($(this).width() <= 1024) {// mobile script
+				if($(this).width() <= 768) {// mobile script
 					$($items).not('.slick-initialized').slick({
 						/*dots: true,
 						infinite: true,
