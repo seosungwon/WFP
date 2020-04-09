@@ -846,6 +846,56 @@ if( $('.btn-fixed').length > 0 ){
 window.fileBox = fileBox;
 }(jQuery, window));
 
+(function ($, window, undefined){
+	"use strict";
+	/**
+		* @description 공통 계산기
+		* @modify 20200409 추가
+	*/
+	var cl = {
+		/** 플러그인명 */
+		bindjQuery: 'cl',
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			datacl: '[data-control="cl"]'
+		},
+		initialize: function(){
+			var me = this;
+
+			me._click();
+		},
+		_click: function (){
+			var me = this,
+			$items = me.selectors.datacl;
+
+			$($items).find('.btn-cl').click(function(){
+				if( !$(this).is('.show') ){
+					$('#loanCalculator').addClass('show');
+					$(this).addClass('show');
+				}else{
+					$('#loanCalculator').removeClass('show');
+					$(this).removeClass('show');
+				}
+			});
+
+			$('[data-control="cl-close"]').click(function(){
+				$('#loanCalculator').removeClass('show');
+				$($items).find('.btn-cl').removeClass('show');
+			});
+
+			$('#loanCalculator [data-control="cl"] a').click(function(){
+				$('#loanCalculator').removeClass('show');
+				$($items).find('.btn-cl').removeClass('show');
+			});
+		}
+	};
+
+window.cl = cl;
+}(jQuery, window));
+
 // footer sub page
 $('body').attr('data-page', 'main');
 
