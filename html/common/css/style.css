@@ -1512,13 +1512,13 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 	#loanCalculator.show .gap-rule{right:0;}
 	#loanCalculator.show [data-control="cl"] a{right:420px;}
 
-	[data-click="main-vsSlick"]{position:absolute;top:0;left:0;right:0;bottom:unset;overflow:hidden;}/*top:119px;*/
+	[data-click="main-vsSlick"]{height:1156px;}/*top:119px;*/
 	[data-click="main-vsSlick"] .txt-1{font-size:42px;line-height:52px;margin:0 0 8px 0;letter-spacing:-0.2px;}
 	[data-click="main-vsSlick"] .txt-2{font-size:18px;color:#fff;width:auto;line-height:26px;letter-spacing:-0.2px;}
 	[data-click="main-vsSlick"] .txt-3{font-size:42px;letter-spacing:-0.21px;margin-top:-5px;}
 	[data-click="main-vsSlick"] .txt-4{font-size:32px;letter-spacing:-0.19px;margin-top:18px;line-height:40px;}
 	[data-click="main-vsSlick"] .txt-2 br{display:block;}
-	[data-click="main-vsSlick"] .box-img{height:1000px;background-repeat:no-repeat;background-size:cover;background-position:center;width:100%;}
+	[data-click="main-vsSlick"] .box-img{height:1156px;background-repeat:no-repeat;background-size:cover;background-position:center;width:100%;}
 	[data-click="main-vsSlick"] .box-img.imgC-1{background-image:url(../images/img/main_01.png);}
 	[data-click="main-vsSlick"] .box-img.imgC-2{background-image:url(../images/img/main_01.png);}
 	[data-click="main-vsSlick"] .box-img.imgC-3{background-image:url(../images/img/main_01.png);}
