@@ -805,6 +805,12 @@ line-height: 36px;}
 [data-target="footer"] .box-text .txt-2{font-size: 12px;color: #ccc;letter-spacing: -0.2px;line-height: 18px;}
 [data-target="footer"] .box-text .txt-2{color:#fff;opacity:0.4;margin:0 0 13px 0;}
 
+/* footer data-event="cl" */
+[data-control="cl"] a{position:fixed;bottom:30px;right:10px;background: #FF7A01;box-shadow: 0 6px 10px 0 rgba(0,0,0,0.30);width:60px;height:60px;border-radius:100px;}
+#loanCalculator{}
+#loanCalculator.show{display:block;}
+#loanCalculator [data-button="btn-prev2"] span{background:#666;}
+#loanCalculator [data-control="cl"]{display:none;}
 
 /* main */
 .box-savings{background:#DF2451;padding:51px 40px 55px 40px;display:none;}
@@ -1485,6 +1491,20 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
     color: #ccc;
     letter-spacing: -0.2px;
     line-height: 18px;}
+
+	/* footer data-event="cl" */
+	[data-control="cl"] a{position:fixed;bottom:unset;top:50%;margin-top:-55px;right:0;background: #FF7A01;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);border-radius: 4px 0 0 5px;border-radius: 4px 0px 0px 5px;z-index:2000;height:110px;width:90px;transition:all 0.3s;}
+	#loanCalculator{width:420px;top:0;right:-100%;bottom:0;left:unset;transition:all 0.5s;display:block;}
+	#loanCalculator .gap-rule{left:unset;margin:0;width:420px;top:0;right:-100%;bottom:0;transition:all 0.5s;overflow:inherit;}
+	#loanCalculator.popup_wrap.rule [data-button="btn-prev2"]{display:none;}
+	#loanCalculator [data-control="cl"]{display:block;}
+	#loanCalculator [data-control="cl"] a{transition:0;position:absolute;top:50%;margin-top:-55px;right:0;bottom:0;}
+
+	/* [data-control="cl"] a.show{right:420px;} */
+	#loanCalculator.show,
+	#loanCalculator.show .gap-rule{right:0;}
+	#loanCalculator.show [data-control="cl"] a{right:420px;}
+
 	[data-click="main-vsSlick"]{position:absolute;top:0;left:0;right:0;bottom:unset;overflow:hidden;}/*top:119px;*/
 	[data-click="main-vsSlick"] .txt-1{font-size:42px;line-height:52px;margin:0 0 8px 0;letter-spacing:-0.2px;}
 	[data-click="main-vsSlick"] .txt-2{font-size:18px;color:#fff;width:auto;line-height:26px;letter-spacing:-0.2px;}

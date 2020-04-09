@@ -105,6 +105,33 @@
 	<!-- //footer -->
 </div>
 
+<!-- 계산기 -->
+<!-- 계산기 버튼 -->
+<div data-control="cl">
+	<a href="#loanCalculator" class="btn-cl"></a>
+</div>
+<!-- //계산기 버튼 -->
+
+<!-- loanCalculator layerpopup -->
+<div id="loanCalculator" class="popup_wrap rule type-3">
+	<div class="gap-rule">
+		<div data-control="cl">
+			<a href="#loanCalculator" class="btn-cl"></a>
+		</div>
+		<div class="box-rule">
+			<h3 class="header-rule type-2" style="border-bottom:0;">Loan Calculator</h3>
+		</div>
+		<div class="inner-rule">
+			계산기 콘텐츠 영역
+		</div>
+		<a href="#none" data-button="btn-prev2" class="sel" data-control="cl-close">
+			<p class="gap"><span></span><span></span><span></span></p>
+		</a>
+	</div>
+</div>
+<!-- //loanCalculator layerpopup -->
+<!-- //계산기 -->
+
 <!-- INQUIRY layerpopup -->
 <div id="INQUIRY" class="popup_wrap rule type-3">
 	<div class="gap-rule">
@@ -251,7 +278,6 @@
 </div>
 <!-- //INQUIRY layerpopup -->
 
-
 <!-- loanStatus layerpopup -->
 <div id="loanStatus" class="popup_wrap rule type-3">
 	<div class="gap-rule">
@@ -384,7 +410,6 @@
 </div>
 <!-- //loanStatus layerpopup -->
 
-
 <!-- 경고팝업 confirm layerpopup -->
 <div id="confirm" class="popup_wrap rule type-3">
 	<div class="gap-rule type-3">
@@ -446,7 +471,6 @@
 	</div>
 </div>
 <!-- //경고팝업 confirm layerpopup -->
-
 
 <!-- loanPossibility layerpopup -->
 <div id="loanPossibility" class="popup_wrap rule type-3">
@@ -785,6 +809,7 @@
 	gnbMenu.initialize(); // 공통 prototype header gnb
 	footerSite.initialize(); // 공통 prototype footer family site
 	fileBox.initialize(); // inquiry input file prototype script
+	cl.initialize(); // data-control="cl" prototype script
 
 	$(function(){
 		/*
