@@ -213,41 +213,53 @@
 					<p>News&amp;Blog</p>
 					<a href="#none"><span>More news</span></a>
 				</div>
-				<ul>
-					<li>
-						<div class="blog_tp">
-							<img src="common/images/img/img_blog_list_responsibility.png" alt="">
-							<p class="txt1">WFP social responsibility</p>
-							<p class="txt2">WFP Outreach Program 2016</p>
-							<p class="txt3">Welcome Finance Philippines recently held an outreach program entitled “The G ift of Smile” at Concordia Children’s Services at Sta. Mesa, Manila.</p>
-							<p class="txt4">
-								<a href="#none">See All Story</a>
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="blog_tp">
-							<img src="common/images/img/img_blog_list_responsibility.png" alt="">
-							<p class="txt1">WFP social responsibility</p>
-							<p class="txt2">WFP Outreach Program 2016</p>
-							<p class="txt3">Welcome Finance Philippines recently held an outreach program entitled “The G ift of Smile” at Concordia Children’s Services at Sta. Mesa, Manila.</p>
-							<p class="txt4">
-								<a href="#none">See All Story</a>
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="blog_tp">
-							<img src="common/images/img/img_blog_list_responsibility.png" alt="">
-							<p class="txt1">WFP social responsibility</p>
-							<p class="txt2">WFP Outreach Program 2016</p>
-							<p class="txt3">Welcome Finance Philippines recently held an outreach program entitled “The G ift of Smile” at Concordia Children’s Services at Sta. Mesa, Manila.</p>
-							<p class="txt4">
-								<a href="#none">See All Story</a>
-							</p>
-						</div>
-					</li>
-				</ul>
+				<div data-slick-vs="newsBlog">
+					<div>
+						<ul>
+							<li>
+								<div class="blog_tp">
+									<img src="common/images/img/img_blog_list_responsibility.png" alt="">
+									<p class="txt1">WFP social responsibility</p>
+									<p class="txt2">WFP Outreach Program 2016</p>
+									<p class="txt3">Welcome Finance Philippines recently held an outreach program entitled “The G ift of Smile” at Concordia Children’s Services at Sta. Mesa, Manila.</p>
+									<p class="txt4">
+										<a href="#none">See All Story</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>
+								<div class="blog_tp">
+									<img src="common/images/img/img_blog_list_responsibility.png" alt="">
+									<p class="txt1">WFP social responsibility</p>
+									<p class="txt2">WFP Outreach Program 2016</p>
+									<p class="txt3">Welcome Finance Philippines recently held an outreach program entitled “The G ift of Smile” at Concordia Children’s Services at Sta. Mesa, Manila.</p>
+									<p class="txt4">
+										<a href="#none">See All Story</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>
+								<div class="blog_tp">
+									<img src="common/images/img/img_blog_list_responsibility.png" alt="">
+									<p class="txt1">WFP social responsibility</p>
+									<p class="txt2">WFP Outreach Program 2016</p>
+									<p class="txt3">Welcome Finance Philippines recently held an outreach program entitled “The G ift of Smile” at Concordia Children’s Services at Sta. Mesa, Manila.</p>
+									<p class="txt4">
+										<a href="#none">See All Story</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- //news_blog -->
@@ -334,6 +346,10 @@
 
 			$('[data-slick-vs="commonTab"]').slick('slickGoTo', slideNo - 1);
 		}, 500);
+		// //data-slick-vs="commonTab" prototype
+
+		// data-slick-vs="newsBlog" prototype
+		newsBlog.initialize();
 
 		$('body').css({"background":"#fff"});
 	});

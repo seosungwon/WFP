@@ -723,11 +723,11 @@ if( $('.btn-fixed').length > 0 ){
 	window.tabClick = tabClick;
 }(jQuery, window));
 
-/* blog-vsSlick */
+/* commonTab */
 (function ($, window, undefined){
 	"use strict";
 	/**
-	 * @description blog-vsSlick
+	 * @description commonTab
 	 * @modify
 			@20200129 추가
 	*/
@@ -770,6 +770,56 @@ if( $('.btn-fixed').length > 0 ){
 	};
 
 	window.commonTab = commonTab;
+}(jQuery, window));
+
+/* newsBlog */
+(function ($, window, undefined){
+	"use strict";
+	/**
+	 * @description newsBlog
+	 * @modify
+			@20200414 추가
+	*/
+	var newsBlog = {
+		/** 플러그인명 */
+		bindjQuery: 'newsBlog',
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-slick-vs="newsBlog"]'
+		},
+		initialize: function(){
+			var me = this,
+				$items = me.selectors.tg;
+
+			$(window).on('load on resize scroll', function(event) {
+				console.log(event);
+				if($(this).width() <= 768) {// mobile script
+					$($items).not('.slick-initialized').slick({
+						/*dots: true,
+						infinite: true,
+						speed: 600,
+						slidesToShow: 1,
+						adaptiveHeight: true,
+						autoplay: false,
+						autoplaySpeed: 4000,
+						arrows: false*/
+						dots: true,
+						infinite: true,
+						arrows: false,
+						infinite: false,
+						variableWidth: true
+					});
+				}else {// pc script
+					$('[data-slick-vs="newsBlog"]').slick('unslick');
+				}
+			})
+		}
+	};
+
+	window.newsBlog = newsBlog;
 }(jQuery, window));
 
 (function ($, window, undefined){
