@@ -705,7 +705,7 @@ line-height: 44px;}
 .inquiry_box{position:relative;}
 .inquiry_box img{max-width:100%;}
 .inquiry_box .inquiry_txt {position:absolute;top:0;left:0;}
-.inquiry_box .inquiry_txt p{text-align:center;}
+.inquiry_box .inquiry_txt p.it_1{text-align:center;}
 
 
 /* gnb-button */
