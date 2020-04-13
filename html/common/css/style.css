@@ -679,9 +679,10 @@ line-height: 44px;}
 #ck_list_box .ck_list .ck_title li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:26px;height:26px;position:absolute;top:23px;left:-2px;background-size:26px;background-image:url('../images/icon/ic_list_check.png');}
 
 /*main : our story*/
-.our_story{position:relative;background: #F5F5F5;height:1000px;vertical}
-.our_story img{max-width:100%;}
-.our_story .st_type1{background:red;width:320px;margin:0 auto;position:absolute;top:0;left:0;padding:40px 25px 46px 25px;}
+.our_story{background: #F5F5F5;padding-bottom:70px;}
+.our_story .inner{}
+.our_story img{max-width:100%;position:relative;z-index:1;}
+.our_story .st_type1{background:#fff;padding:40px 25px 46px 25px;margin:-50px 20px 0 20px;position:relative;z-index:2;}
 .our_story .st_type1 p{font-family: Lato-Regular;font-size: 14px;color: #444444;letter-spacing: -0.2px;line-height: 20px;}
 .our_story .st_type1 p.title{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;line-height: 36px;}
 .our_story .st_type1 .title2 p{padding-top:20px;}
@@ -1482,6 +1483,17 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 	#ck_list_box .ck_list .ck_title li{position:relative;font-family: Lato-Regular;font-size:18px;color: #FFFFFF;letter-spacing: -0.18px;line-height:26px;padding:20px 10px 0 35px;}
 	#ck_list_box .ck_list .ck_title li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:26px;height:16px;position:absolute;top:20px;left:-2px;background-size:26px;background-image:url('../images/icon/ic_list_check.png');}
 
+	/*main : our story*/
+	.our_story{}
+	.our_story .inner{max-width:1000px;margin:0 auto;position:relative;text-align:right;}
+	.our_story img{width:500px;}
+	.our_story .st_type1{position:absolute;top:0;left:0;width:500px;margin:0;}
+	.our_story .st_type1 *{text-align:left;}
+	.our_story .st_type1 p{}
+	.our_story .st_type1 p.title{}
+	.our_story .st_type1 .title2 p{}
+	.our_story .st_type1 .title2 p.last{}
+
 	/* bug */
 	[data-target="nav"]:hover{height:370px;}
 	/* //bug */
@@ -1961,7 +1973,7 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 	.box-inputType-1 > ul.pop_type1{padding-top:0;}
 
 	/*main loan*/
-	.type_loan ul{width: 1000px;margin: -90px auto 0 auto;position: relative;z-index: 3000;}
+	.type_loan ul{width: 1000px;margin: -90px auto 0 auto;position: relative;}
 	.type_loan ul:after{content:''; clear: both;display: block;}
 	.type_loan ul li{margin:20px 20px 0 0;background: #FFFFFF;border: 1px solid #E6E6E6;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);float:left;width:31%;}
 	.type_loan ul. li:nth-child(3){margin-right:0;}
