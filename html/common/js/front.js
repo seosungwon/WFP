@@ -809,8 +809,8 @@ if( $('.btn-fixed').length > 0 ){
 						dots: true,
 						infinite: true,
 						arrows: false,
-						infinite: false,
-						variableWidth: true
+						infinite: false
+						//variableWidth: true
 					});
 				}else {// pc script
 					$('[data-slick-vs="newsBlog"]').slick('unslick');
