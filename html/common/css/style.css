@@ -2064,8 +2064,8 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 	.inquiry_box .inquiry_txt p.it_2{font-family: Lato-Regular;font-size: 18px;color: #FFFFFF;letter-spacing: -0.2px;text-align:left;}
 	.inquiry_box .common-btnType-18{width:260px;margin-top:15px;text-decoration:none;font-family: Lato-Bold;font-size: 18px;color: #FF7A01;letter-spacing: -0.2px;text-align: center;}
 
-
-
-	[data-click="main-vsSlick"] .loan_img .box-img.imgC-5{background-image:url(../images/img/img_loans_top_personal.png);}
+	[data-click="main-vsSlick"].loan_img,
+	[data-click="main-vsSlick"].loan_img .box-img{height:610px;}
+	[data-click="main-vsSlick"].loan_img .box-img.imgC-5{background-image:url(../images/img/img_loans_top_personal.png);}
 
 }
