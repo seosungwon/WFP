@@ -2020,11 +2020,12 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 	.type_loan .loan_list{background:#D8D8D8; height:180px; margin-top:30px;}
 
 	/*news_blog*/
-	.news_blog .inner{max-width:1000px;margin:0 auto 60px;}
+	.news_blog .inner{max-width:980px;margin:0 auto 60px;}
 	[data-slick-vs="newsBlog"] > div{float:left;width:33.3%;}
 	[data-slick-vs="newsBlog"]:after{content:''; clear: both;display: block;}
 	.news_blog ul{position: relative;}
 	.news_blog ul li{width:316px;margin:20px 0 20px 20px;background: #FFFFFF;border: 1px solid #E6E6E6;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);}/*margin:20px 0 0 0;*/
+	.news_blog ul li:nth-child(1){margin-left:0;}
 	.news_blog ul li .blog_tp img{max-width:100%;}
 	.news_blog ul li .blog_tp p.txt1{font-family: Lato-Regular;font-size: 20px;color: #222222;letter-spacing: -0.2px;padding:30px 0 0 25px;}
 	.news_blog ul li .blog_tp p.txt2{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;padding:20px 0 0 25px;}
