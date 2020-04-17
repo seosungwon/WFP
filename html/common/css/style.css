@@ -663,7 +663,64 @@ letter-spacing: -0.2px;text-align: center;line-height: 30px;margin:0 auto;}
 .amount #benefit .benefit_list p{font-family: Lato-Black;font-size: 30px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 36px;}
 .amount #benefit .benefit_list p:after{content:"";display:block;width:20%;border-bottom:3px solid #fff;padding-top:20px;}
 .amount #benefit .benefit_list .benefit_title li{font-family:Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;padding:20px 10px 0 0;}
-.amount #benefit .benefit_list .benefit_title li span{display:block;font-family: Lato-Bold;font-size: 18px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 24px;}
+.amount #benefit .benefit_list .benefit_title li span{display:block;font-family: Lato-Bold;font-size: 18px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 24px;margin-bottom:8px;}
+.amount #benefit .benefit_list .common-btnType-18{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin-top:40px;text-decoration:none;}
+.amount #personal{background:#fff;}
+.amount #personal .personal_list{background: #fff;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
+.amount #personal .personal_list p{font-family: Lato-Black;font-size: 30px;color: #222222;letter-spacing: -0.2px;line-height: 36px;}
+.amount #personal .personal_list p.personal_title:after{content:"";display:block;width:20%;border-bottom:3px solid #FF7A01;padding-top:20px;}
+.amount #personal .personal_list ul{margin-top:32px;}
+.amount #personal .personal_list ul li{position:relative;padding:0 0 0 15px;}
+.amount #personal .personal_list ul li p{display:block;font-family: Lato-Bold;font-size: 20px;color: #222222;letter-spacing: -0.2px;line-height: 26px;padding:6px 0 0 15px;}
+.amount #personal .personal_list ul li p span{display:block;font-family: Lato-Regular;font-size: 14px;color: #444444;letter-spacing: -0.2px;line-height: 20px;margin-top:8px;}
+.amount #personal .personal_list ul li span.num{position:absolute;top:3px;left:0;font-family: Lato-Black;font-size: 28px;color: #FF7A01;letter-spacing: -0.14px;}
+.amount #personal .personal_list .common-btnType-15{font-family: Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;margin-top:40px;}
+.amount #finance{background: #333333;}
+.amount #finance .finance_list{background: #333333;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
+.amount #finance .finance_list p{font-family: Lato-Black;font-size: 30px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 36px;}
+.amount #finance .finance_list p:after{content:"";display:block;width:20%;border-bottom:3px solid #FF7A01;padding-top:20px;}
+.amount #finance .finance_list .finance_title li{font-family:Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;padding:20px 10px 0 0;}
+.amount #finance .finance_list .finance_title li span{display:block;font-family: Lato-Bold;font-size: 18px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 24px;margin-bottom:8px;}
+.amount #finance .finance_list .common-btnType-18{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin-top:40px;text-decoration:none;}
+.amount #finance .finance_list .common-btnType-18:after{border:1px solid #fff;}
+.amount .faqs .faqs_title{background: #fff;margin:0 auto 0 auto;padding:60px 20px 0 20px;}
+.amount .faqs .faqs_title p{font-family: Lato-Black;font-size: 30px;color: #222222;letter-spacing: -0.2px;line-height: 36px;}
+.amount .faqs .faqs_title .box-contents {margin-top:50px;}
+.amount .faqs .faqs_title .box-contents .box-brandInfo{padding:0;}
+
+.amount #wc_finance{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);}
+.amount #wc_finance .wc_finance_list{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
+.amount #wc_finance .wc_finance_list p{font-family: Lato-Black;font-size: 28px;color: #101010;letter-spacing: -0.23px;line-height: 38px;padding-bottom:20px;}
+.amount #wc_finance .wc_finance_list p span{font-family: Lato-Regular;font-size: 22px;color: #222222;letter-spacing: -0.18px;line-height: 38px;}
+.amount #wc_finance .wc_finance_list ul li{background: #FFFFFF;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);border-radius: 3px;}
+.amount #wc_finance .wc_finance_list .wc_finance_title{width:321px;}
+
+.amount #wc_finance .wc_finance_list ul li .wcf_tp{position:relative;padding:42px 25px 16px 25px;}
+.amount #wc_finance .wc_finance_list ul li .wcf_tp p{font-family: Lato-Regular;font-size: 15px;color: #222222;letter-spacing: -0.2px;line-height: 22px;}
+.amount #wc_finance .wc_finance_list ul li .wcf_tp:after{content: '';
+    display: block;
+    clear: both;
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    background-size: 29px;
+    background-image: url(../images/icon/ic_loans_review.png);
+	opacity:0.5;}
+.amount #wc_finance .wc_finance_list ul li .wcf_tp p.wcf_txt2{font-family: Lato-Regular;font-size: 12px;color: #444444;letter-spacing: -0.17px;padding:0 0 0 0;}
+.amount #wc_finance .wc_finance_list ul li .wcf_tp p.wcf_txt3{font-family: Lato-Regular;
+font-size: 12px;
+color: #999999;
+letter-spacing: -0.2px;padding:0 0 0 0;}
+.amount #wc_finance .wc_finance_list ul li .wcf_tp .common-btnType-15{width:140px;margin-left:0;}
+[data-slick-vs="wcfinance"] .slick-dots{left:0;right:-290px;text-align:center;top:10px;}
+[data-slick-vs="wcfinance"] .slick-dots li button{outline:none;border:0;}
+[data-slick-vs="wcfinance"] .slick-dots li button:before{background: #FF8F00;border-radius:100px;width:8px;height:8px;opacity:1;transition: all 0.5s;font-size: 8px;line-height:8px;}
+[data-slick-vs="wcfinance"] .slick-dots li.slick-active{width:0;}
+
 
 
 
