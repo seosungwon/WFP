@@ -278,7 +278,6 @@
 
 <?php include 'inc/footer.php';?><!-- 공통 footer include -->
 
-<!-- main script -->
 <script src="common/js/slick.min.js"></script>
 <script type="text/javascript">
 	$(function(){
@@ -312,27 +311,15 @@
 				$('[data-click="main-vsSlick"] .box-txt').css({"margin-top" :tgOffset});
 			}
 		});*/
-	});
-</script>
-<!-- //main script -->
 
-<!--mobile header guide HeaderSplit -->
-<script type="text/javascript">
-	$(function(){
 		// new HeaderSplit('버튼 형태', 'home 버튼'));
 		var mobileSns = new HeaderSplit(null, null);
 
 		$('body').attr('data-page', 'main'); // main Type logo
 		$('body').attr('data-pageSub', 'sub-header'); // sub-header="sub-header" 강제 변경
-	});
 
-	// mainScrollHeader
-	mainScrollHeader.initialize();
-</script>
-<!-- //--mobile header guide HeaderSplit -->
-
-<script type="text/javascript">
-	$(function(){
+		// mainScrollHeader
+		mainScrollHeader.initialize();
 
 		// data-slick-vs="commonTab" prototype
 		commonTab.initialize();
@@ -345,18 +332,13 @@
 		}, 500);
 		// //data-slick-vs="commonTab" prototype
 
-		// data-slick-vs="newsBlog" prototype
-		newsBlog.initialize();
+		// data-slick-vs="wcfinance" prototype
+		wcfinance.initialize();
 
 		$('body').css({"background":"#fff"});
-	});
-</script>
 
-<!-- FAQ -->
-<script type="text/javascript">
-	tabCommon.initialize(); // 공통 tabCommon load click // class="common-tabType-2"
+		tabCommon.initialize(); // 공통 tabCommon load click // class="common-tabType-2"
 
-	$(function(){
 		/*
 			* mobile header script common
 			* new HeaderSplit('버튼 기능', 'home 버튼'));
@@ -385,4 +367,3 @@
 		});
 	});
 </script>
-

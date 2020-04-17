@@ -334,6 +334,11 @@ $(function(){
 			}
 		}
 	});
+
+	// data-slick-vs="commonTab"
+	if( $('[data-slick-vs="commonTab"]').length >= 1 ){ // 있을때
+		$('body').attr('data-page2', 'commonTabShow');
+	}
 });
 
 // mobile header guide HeaderSplit
@@ -822,15 +827,15 @@ if( $('.btn-fixed').length > 0 ){
 	window.newsBlog = newsBlog;
 }(jQuery, window));
 
-/*wcfinance*/
+/* wcfinance */
 (function ($, window, undefined){
 	"use strict";
 	/**
-	 * @description newsBlog
+	 * @description wcfinance
 	 * @modify
-			@20200414 추가
+			@20200417 추가
 	*/
-	var newsBlog = {
+	var wcfinance = {
 		/** 플러그인명 */
 		bindjQuery: 'wcfinance',
 		/** 기본 옵션값 선언부 */
@@ -845,31 +850,26 @@ if( $('.btn-fixed').length > 0 ){
 				$items = me.selectors.tg;
 
 			$(window).on('load on resize scroll', function(event) {
-				console.log(event);
-				if($(this).width() <= 768) {// mobile script
-					$($items).not('.slick-initialized').slick({
-						/*dots: true,
-						infinite: true,
-						speed: 600,
-						slidesToShow: 1,
-						adaptiveHeight: true,
-						autoplay: false,
-						autoplaySpeed: 4000,
-						arrows: false*/
-						dots: true,
-						infinite: true,
-						arrows: false,
-						infinite: false
-						//variableWidth: true
-					});
-				}else {// pc script
-					$('[data-slick-vs="wcfinance"]').slick('unslick');
-				}
+				$($items).not('.slick-initialized').slick({
+					/*dots: true,
+					infinite: true,
+					speed: 600,
+					slidesToShow: 1,
+					adaptiveHeight: true,
+					autoplay: false,
+					autoplaySpeed: 4000,
+					arrows: false*/
+					dots: true,
+					infinite: true,
+					arrows: false,
+					infinite: true // true 루프... false 루프x
+					//variableWidth: true
+				});
 			})
 		}
 	};
 
-	window.newsBlog = newsBlog;
+	window.wcfinance = wcfinance;
 }(jQuery, window));
 
 

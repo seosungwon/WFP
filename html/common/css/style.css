@@ -89,7 +89,8 @@ body.fx{overflow:hidden;}
 /* *{transition:all 0.5s;} */
 body{transition:none;background:#fff;}
 .topFixed{position:fixed !important;}
-#wrap{padding-top:60px;}
+#wrap{padding-top:55px;} /* sub pc mobile 공통 padding top */
+[data-page2="commonTabShow"] #wrap{padding-top:0;} /* sub pc mobile 공통 padding top */
 #wrap.pdt0{padding-top:0;}
 #wrap.btn-bottomFixed-padding{padding-bottom:80px;}
 #wrap.footer-noneGap{padding-bottom:0 !important;} /* footer 없을때 간격 */
