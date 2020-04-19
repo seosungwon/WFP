@@ -712,15 +712,30 @@ letter-spacing: -0.2px;text-align: center;line-height: 30px;margin:0 auto;}
     background-image: url(../images/icon/ic_loans_review.png);
 	opacity:0.5;}
 .amount #wc_finance .wc_finance_list ul li .wcf_tp p.wcf_txt2{font-family: Lato-Regular;font-size: 12px;color: #444444;letter-spacing: -0.17px;padding:0 0 0 0;}
-.amount #wc_finance .wc_finance_list ul li .wcf_tp p.wcf_txt3{font-family: Lato-Regular;
-font-size: 12px;
-color: #999999;
-letter-spacing: -0.2px;padding:0 0 0 0;}
+.amount #wc_finance .wc_finance_list ul li .wcf_tp p.wcf_txt3{font-family: Lato-Regular;font-size: 12px;color: #999999;letter-spacing: -0.2px;padding:0 0 62px 0;}
 .amount #wc_finance .wc_finance_list ul li .wcf_tp .common-btnType-15{width:140px;margin-left:0;}
-[data-slick-vs="wcfinance"] .slick-dots{left:0;right:-290px;text-align:center;top:10px;}
+[data-slick-vs="wcfinance"] .slick-dots{left:288px;right:0;text-align:center;top:10px;}
 [data-slick-vs="wcfinance"] .slick-dots li button{outline:none;border:0;}
 [data-slick-vs="wcfinance"] .slick-dots li button:before{background: #FF8F00;border-radius:100px;width:8px;height:8px;opacity:1;transition: all 0.5s;font-size: 8px;line-height:8px;}
-[data-slick-vs="wcfinance"] .slick-dots li.slick-active{width:0;}
+[data-slick-vs="wcfinance"] .slick-dots li.slick-active{background: #D8D8D8;width:0;}
+.amount .company .company_title{background: #fff;margin:0 auto 0 auto;padding:60px 20px 60px 20px;}
+.amount .company .company_title p{font-family: Lato-Black;font-size: 30px;color: #222222;letter-spacing: -0.2px;line-height: 36px;}
+.amount .company .company_title .box-contents {margin-top:50px;}
+.amount .company .company_title .box-contents .box-brandInfo{padding:0;}
+.amount #apply_nw{background:#FA8E00;}
+.amount #apply_nw .apply_nw_list{background: #FA8E00;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
+.amount #apply_nw .apply_nw_list p{font-family: Lato-Black;font-size: 30px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 36px;}
+.amount #apply_nw .apply_nw_list p.apply_nw_title {font-family:Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;}
+.amount #apply_nw .apply_nw_list .common-btnType-18{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin-top:40px;text-decoration:none;}
+
+.amount .loan_pkg .loan_pkg_title {padding:40px 20px 60px 20px;}
+.amount .loan_pkg .loan_pkg_title p{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;line-height: 32px;}
+.amount .loan_pkg .loan_pkg_title ul{display:table;}
+.amount .loan_pkg .loan_pkg_title ul li {display:table-cell;width:50%;padding:0 10px 0 0;}
+.amount .loan_pkg .loan_pkg_title ul li span{display:inline-block;width:100%;}
+.amount .loan_pkg .loan_pkg_title ul li span img{max-width:100%;}
+.amount .loan_pkg .loan_pkg_title ul li:nth-child(2){padding-right:0;}
+
 
 
 
@@ -2152,10 +2167,28 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 	.amount {max-width:1000px;margin:100px auto 0 auto;}
 	.amount .inner{}/*padding:100px 470px 0 470px;*/
 	.amount .inner p.am_txt{font-family: Lato-Black;font-size: 44px;color: #222222;letter-spacing: -0.2px;line-height: 66px;text-align:left;}
+	.amount .inner .loan{padding-top:70px;}
 	.amount .inner .loan ul{overflow:hidden;}
 	.amount .inner .loan ul li{float:left;padding:0 76px 0 0;}
 	.amount .inner .loan ul li p.tit_1{font-family: Lato-Bold;font-size: 18px;color: #222222;letter-spacing: -0.2px;line-height: 30px;}
 	.amount .inner .loan ul li p.tit_num{font-family: Lato-Black;font-size: 38px;color: #FF7A01;letter-spacing: -0.2px;line-height: 43px;}
+
+	.amount .loan_list{background:#F7F7F7;padding:0 20px;border-top:1px solid #E6E6E6;}
+	.amount .loan_list p.tit_list{font-family: Lato-Bold;font-size: 15px;color: #222222;letter-spacing: -0.17px;line-height: 30px;text-align:left;padding-top:30px;}
+
+	.amount .loan_list ul li{font-family: Lato-Regular;font-size: 15px;color: #444444;letter-spacing: -0.2px;line-height: 32px;padding:1px 0 0 10px;position:relative;}
+	.amount .loan_list ul li:after{content: '';display: block;clear: both;background: #444;width: 4px;height: 4px;position: absolute;top:15px;left: 0;}
+	.amount .loan_list ul li span{color:#ea849d;}
+	.amount .loan_list p.note{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;text-align:left;padding:11px 0 60px 0;}
+	.amount .loan_list p.note span{color:#ea849d;}
+
+	.amount .apply{overflow:hidden;}
+	.amount .apply img{width:500px;}
+	.amount .apply .apply_title {float:right;width:460px;padding:20px 0 60px 0;}
+	.amount .apply .apply_title p{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;}
+	.amount .apply .apply_title ul{padding-top:20px;}
+	.amount .apply .apply_title ul li{font-family: Lato-Regular;font-size: 15px;color: #444444;letter-spacing: -0.2px;line-height: 21px;padding:0 0 0 27px;position:relative;}
+	.amount .apply .apply_title ul li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:25px;height:25px;position:absolute;top:0;left:0;background-size:25px;background-image:url('../images/icon/ic_loans_eligilble_check.png');}
 
 
 
