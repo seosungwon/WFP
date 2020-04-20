@@ -636,12 +636,10 @@ font-size: 36px;color: #FF7A01;letter-spacing: -0.2px;line-height: 44px;}
 [data-click="main-vsSlick"] .slick-dots li button:before{opacity:0.4;}
 [data-click="main-vsSlick"] .slick-dots li.slick-active button:before{opacity:1;}
 
-
-
-
-
-
 /*sub_loan*/
+[data-click="main-vsSlick"].loan_img .box-txt{transform: none;position:absolute;}
+[data-click="main-vsSlick"].loan_img .txt-1{position:static;}
+
 .amount .inner{padding:60px 43px 70px 43px;}
 .amount .inner .loan{padding-top:5px;}
 .amount .inner .loan ul li{padding-top:35px;}
@@ -2174,9 +2172,11 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 	.inquiry_box .common-btnType-18{width:260px;margin-top:15px;text-decoration:none;font-family: Lato-Bold;font-size: 18px;color: #FF7A01;letter-spacing: -0.2px;text-align: center;}
 
 	/*sub_loan*/
+	[data-click="main-vsSlick"].loan_img .box-txt{position: absolute;top: 50%;left: 0px;right: 0px;transform: translate(0px, -50%);text-align: center;padding-top:0;}
 	[data-click="main-vsSlick"].loan_img,
 	[data-click="main-vsSlick"].loan_img .box-img{height:610px;}
 	[data-click="main-vsSlick"].loan_img .box-img.imgC-5{background-image:url(../images/img/img_loans_top_personal.png);}
+	[data-click="main-vsSlick"].loan_img .slick-slide:before{content:'';display:block;clear:both;background:#000;opacity:0.3;position:absolute;top:0;left:0;right:0;bottom:0;z-index:10;}
 	.amount {max-width:1000px;margin:100px auto 0 auto;}
 	.amount .inner{}/*padding:100px 470px 0 470px;*/
 	.amount .inner p.am_txt{font-family: Lato-Black;font-size: 44px;color: #222222;letter-spacing: -0.2px;line-height: 66px;text-align:left;}
