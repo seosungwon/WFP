@@ -729,12 +729,13 @@ letter-spacing: -0.2px;text-align: center;line-height: 30px;margin:0 auto;}
 .amount #apply_nw .apply_nw_list .common-btnType-18{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin-top:40px;text-decoration:none;}
 
 .amount .loan_pkg .loan_pkg_title {padding:40px 20px 60px 20px;}
-.amount .loan_pkg .loan_pkg_title p{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;line-height: 32px;}
-.amount .loan_pkg .loan_pkg_title ul{display:table;}
-.amount .loan_pkg .loan_pkg_title ul li {display:table-cell;width:50%;padding:0 10px 0 0;}
-.amount .loan_pkg .loan_pkg_title ul li span{display:inline-block;width:100%;}
-.amount .loan_pkg .loan_pkg_title ul li span img{max-width:100%;}
-.amount .loan_pkg .loan_pkg_title ul li:nth-child(2){padding-right:0;}
+.amount .loan_pkg .loan_pkg_title .tt-1{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;line-height: 32px;}
+.amount .loan_pkg .loan_pkg_title ul{}
+.amount .loan_pkg .loan_pkg_title ul:after{content:'';display:block;clear:both;}
+.amount .loan_pkg .loan_pkg_title ul li {width:50%;float:left;}
+.amount .loan_pkg .loan_pkg_title ul li .gap{margin-right:5px;}
+.amount .loan_pkg .loan_pkg_title ul li:nth-child(2) .gap{margin-left:5px;margin-right:0;}
+.amount .loan_pkg .loan_pkg_title ul li img{width:100%;}
 
 
 
