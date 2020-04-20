@@ -647,6 +647,7 @@ font-size: 36px;color: #FF7A01;letter-spacing: -0.2px;line-height: 44px;}
 [data-click="main-vsSlick"].loan_img .served p.s_txt1{font-family: Lato-Regular;font-size: 13px;color: #FFFFFF;letter-spacing: 0;text-align: center;}
 [data-click="main-vsSlick"].loan_img .served p.s_txt2{font-family: Lato-Black;font-size: 22px;color: #FFFFFF;letter-spacing: 0;text-align: center;}
 [data-click="main-vsSlick"].loan_img .served p.s_txt3{font-family: Lato-Regular;font-size: 13px;color: #FFFFFF;letter-spacing: 0;text-align: center;}
+[data-click="main-vsSlick"].loan_img .box-img img{width:200%;}
 
 .amount .inner{padding:60px 43px 70px 43px;}
 .amount .inner .loan{padding-top:5px;}
