@@ -659,23 +659,32 @@ letter-spacing: -0.2px;text-align: center;line-height: 30px;margin:0 auto;}
 .amount .apply .apply_title ul{padding-top:20px;}
 .amount .apply .apply_title ul li{font-family: Lato-Regular;font-size: 15px;color: #444444;letter-spacing: -0.2px;line-height: 21px;padding:0 0 0 27px;position:relative;}
 .amount .apply .apply_title ul li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:25px;height:25px;position:absolute;top:0;left:0;background-size:25px;background-image:url('../images/icon/ic_loans_eligilble_check.png');}
+
 .amount #benefit{background:#FA8E00;}
 .amount #benefit .benefit_list{background: #FA8E00;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
 .amount #benefit .benefit_list p{font-family: Lato-Black;font-size: 30px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 36px;}
 .amount #benefit .benefit_list p:after{content:"";display:block;width:20%;border-bottom:3px solid #fff;padding-top:20px;}
-.amount #benefit .benefit_list .benefit_title li{font-family:Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;padding:20px 10px 0 0;}
-.amount #benefit .benefit_list .benefit_title li span{display:block;font-family: Lato-Bold;font-size: 18px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 24px;margin-bottom:8px;}
+.amount #benefit .benefit_list .benefit_tit ul li{font-family:Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;padding:20px 10px 0 0;}
+.amount #benefit .benefit_list .benefit_tit ul li span{display:block;font-family: Lato-Bold;font-size: 18px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 24px;margin-bottom:8px;}
+.amount #benefit .benefit_list .benefit_tit2 ul li{font-family:Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;padding:20px 10px 0 0;}
+.amount #benefit .benefit_list .benefit_tit2 ul li span{display:block;font-family: Lato-Bold;font-size: 18px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 24px;margin-bottom:8px;}
 .amount #benefit .benefit_list .common-btnType-18{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin-top:40px;text-decoration:none;}
+
 .amount #personal{background:#fff;}
 .amount #personal .personal_list{background: #fff;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
-.amount #personal .personal_list p{font-family: Lato-Black;font-size: 30px;color: #222222;letter-spacing: -0.2px;line-height: 36px;}
+.amount #personal .personal_list p.txt-1{font-family: Lato-Bold;
+font-size: 20px;color: #222222;letter-spacing: -0.2px;line-height: 26px;}
+.amount #personal .personal_list p.personal_title{font-family:Lato-Black;font-size: 30px;color: #222222;letter-spacing: -0.2px;
+line-height: 36px;}
 .amount #personal .personal_list p.personal_title:after{content:"";display:block;width:20%;border-bottom:3px solid #FF7A01;padding-top:20px;}
 .amount #personal .personal_list ul{margin-top:32px;}
 .amount #personal .personal_list ul li{position:relative;padding:0 0 0 15px;}
+.amount #personal .personal_list ul li p.txt-2{font-family: Lato-Regular;font-size: 14px;color: #444444;letter-spacing: -0.2px;line-height: 20px;}
 .amount #personal .personal_list ul li p{display:block;font-family: Lato-Bold;font-size: 20px;color: #222222;letter-spacing: -0.2px;line-height: 26px;padding:6px 0 0 15px;}
-.amount #personal .personal_list ul li p span{display:block;font-family: Lato-Regular;font-size: 14px;color: #444444;letter-spacing: -0.2px;line-height: 20px;margin-top:8px;}
-.amount #personal .personal_list ul li span.num{position:absolute;top:3px;left:0;font-family: Lato-Black;font-size: 28px;color: #FF7A01;letter-spacing: -0.14px;}
+.amount #personal .personal_list ul li p img{display:none;}
+.amount #personal .personal_list ul li p.num{position:absolute;top:3px;left:0;font-family: Lato-Black;font-size: 28px;color: #FF7A01;letter-spacing: -0.14px;}
 .amount #personal .personal_list .common-btnType-15{font-family: Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;margin-top:40px;}
+
 .amount #finance{background: #333333;}
 .amount #finance .finance_list{background: #333333;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
 .amount #finance .finance_list p{font-family: Lato-Black;font-size: 30px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 36px;}
@@ -730,12 +739,16 @@ letter-spacing: -0.2px;text-align: center;line-height: 30px;margin:0 auto;}
 
 .amount .loan_pkg .loan_pkg_title {padding:40px 20px 60px 20px;}
 .amount .loan_pkg .loan_pkg_title .tt-1{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;line-height: 32px;}
-.amount .loan_pkg .loan_pkg_title ul{}
+.amount .loan_pkg .loan_pkg_title ul{margin-top:20px;}
 .amount .loan_pkg .loan_pkg_title ul:after{content:'';display:block;clear:both;}
 .amount .loan_pkg .loan_pkg_title ul li {width:50%;float:left;}
 .amount .loan_pkg .loan_pkg_title ul li .gap{margin-right:5px;}
 .amount .loan_pkg .loan_pkg_title ul li:nth-child(2) .gap{margin-left:5px;margin-right:0;}
 .amount .loan_pkg .loan_pkg_title ul li img{width:100%;}
+.amount .loan_pkg .loan_pkg_title span.tt-2{font-family: Lato-Bold;
+font-size: 14px;color: #FF8F00;letter-spacing: -0.2px;display:block;}
+.amount .loan_pkg .loan_pkg_title span.tt-3{font-family: Lato-Regular;
+font-size: 14px;color: #333333;letter-spacing: -0.17px;line-height: 20px;}
 
 
 
@@ -2183,14 +2196,36 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 	.amount .loan_list p.note{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;text-align:left;padding:11px 0 60px 0;}
 	.amount .loan_list p.note span{color:#ea849d;}
 
-	.amount .apply{overflow:hidden;}
+	.amount .apply{overflow:hidden;margin-top:65px;}
 	.amount .apply img{width:500px;}
-	.amount .apply .apply_title {float:right;width:460px;padding:20px 0 60px 0;}
+	.amount .apply .apply_title {position:relative;float:right;width:460px;padding:20px 0 60px 0;}
 	.amount .apply .apply_title p{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;}
 	.amount .apply .apply_title ul{padding-top:20px;}
-	.amount .apply .apply_title ul li{font-family: Lato-Regular;font-size: 15px;color: #444444;letter-spacing: -0.2px;line-height: 21px;padding:0 0 0 27px;position:relative;}
+	.amount .apply .apply_title ul li{font-family: Lato-Regular;font-size:18px;color: #444444;letter-spacing: -0.2px;line-height:28px;padding:0 0 0 27px;position:relative;}
 	.amount .apply .apply_title ul li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:25px;height:25px;position:absolute;top:0;left:0;background-size:25px;background-image:url('../images/icon/ic_loans_eligilble_check.png');}
+	.amount .apply .apply_title .common-btnType-15{position:absolute;top:240px;left:-20px;width:220px;}
 
+	.amount #benefit{background:#FA8E00;margin-top:65px;}
+	.amount #benefit .common-btnType-18{width:300px;margin:0 auto;}
+	.amount #benefit .benefit_list{background: #FA8E00;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
+	.amount #benefit .benefit_list p{font-family: Lato-Black;font-size: 40px;color: #FFFFFF;letter-spacing: -0.2px;text-align:center;}
+	.amount #benefit .benefit_list p:after{display:none;}
+	.amount #benefit .benefit_list .benefit_tit ul{display:table;}
+	.amount #benefit .benefit_list .benefit_tit ul li{font-family:Lato-Regular;font-size:16px;color: #FFFFFF;letter-spacing: -0.2px;line-height:24px;padding:20px 10px 0 0;display:table-cell;width:50%;}
+	.amount #benefit .benefit_list .benefit_tit2 ul{display:table;}
+	.amount #benefit .benefit_list .benefit_tit2 ul li{font-family:Lato-Regular;font-size:16px;color: #FFFFFF;letter-spacing: -0.2px;line-height:24px;padding:20px 10px 0 0;display:table-cell;width:50%;}
 
-
+	.amount #personal{background:#F7F7F7;}
+	.amount #personal .personal_list{max-width:1000px;background: #F7F7F7;margin:0 auto 0 auto;padding:80px 0 70px 0;}
+	.amount #personal .personal_list p.personal_title{font-family: Lato-Black;font-size: 30px;color: #222222;letter-spacing: -0.2px;line-height: 36px;text-align:center;}
+	.amount #personal .personal_list p.personal_title:after{content:"";display:block;width:7%;border-bottom:3px solid #FF7A01;padding-top:20px;margin:0 auto;}
+	.amount #personal .personal_list ul{margin-top:32px;display:table;padding-left:0;}
+	.amount #personal .personal_list ul li{display:table-cell;width:23%;position:relative;padding:0 25px 0 25px;border-radius: 3px;height:349px;margin:0 6px 0 0;background:#fff;}
+	.amount #personal .personal_list ul li p img{width:120px;position:absolute;bottom:0;right:0;display:block;}
+	.amount #personal .personal_list ul li p.txt-1{font-family: Lato-Bold;font-size: 20px;color: #222222;letter-spacing: -0.2px;line-height: 26px;padding:72px 0 0 0;}
+	.amount #personal .personal_list ul li p.txt-2{font-family: Lato-Regular;font-size: 16px;color: #444444;letter-spacing: -0.16px;line-height: 24px;height:120px;}
+	.amount #personal .personal_list ul li p.num{font-family: Lato-Black;font-size:36px;color: #FF7A01;letter-spacing: -0.18px;position:absolute;top:20px;left:10px;}
+	.amount #personal .personal_list .num_list{position:relative;}
+	.amount #personal .personal_list .common-btnType-15{font-family: Lato-Regular;font-size:14px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;margin-top:40px;width:118px;height:40px;line-height:40px;position:absolute;top:0;left:0;}
+	.amount #personal .personal_list ul li span{width:190px;height:120px;}
 }
