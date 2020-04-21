@@ -28,19 +28,23 @@
 		<section data-click="main-vsSlick" class="loan_img">
 			<div>
 				<div class="box-txt">
-					<p class="txt-1">Write it as a Personal Loan and read it as a <span class="point">a happy life!</span></p>
+					<p class="txt-1">Write it as a Personal Loan and read
+						it as a <span class="point">a happy life!</span></p>
 					<div class="box_btn">
-						<a href="#none" class="common-btnType-15 waves-effect waves-light">Apply Now!</a>
+						<a href="#none" class="common-btn-1">Apply Now!</a>
 					</div>
 					<div class="btn_txt">
-
 						<p>You can check your ‘Application Result’ in just 10 minutes!</p>
 					</div>
-					<div class="served">
-						<p class="s_txt1">SERVED</p>
-						<p class="s_txt2">OVER 2,880,000</p>
-						<p class="s_txt3">Satisfied Clients</p>
+					<!-- counter mobile -->
+					<div class="counter_wrap hide-on-mobile">
+						<p class="served">
+							<span class="s_txt1">SERVED</span>
+							<span class="s_txt2"><em>“</em>OVER<span class="counter">2,880,000</span><em>”</em></span>
+							<span class="s_txt3">Satisfied Clients</span>
+						</p>
 					</div>
+					<!-- //counter mobile -->
 				</div>
 				<div class="box-img imgC-5">
 					<img src="common/images/img/img_loans_top_salary_m.png" alt="">
@@ -48,6 +52,16 @@
 			</div>
 		</section>
 		<!-- //main-vsSlick -->
+
+		<!-- counter pc -->
+		<div class="counter_wrap hide-on-pc">
+			<p class="served">
+				<span class="s_txt1">SERVED</span>
+				<span class="s_txt2"><em>“</em>OVER<span class="counter">2,880,000</span><em>”</em></span>
+				<span class="s_txt3">Satisfied Clients</span>
+			</p>
+		</div>
+		<!-- counter pc -->
 
 		<!-- loanable amount -->
 		<div class="amount">
@@ -96,7 +110,7 @@
 						<li>Employed for at least 2 years and with minimum of P22,000 (Monthly income)</li>
 						<li>With active credit card and minimum credit limit of P20,000</li>
 					</ul>
-					<a href="#none" class="common-btnType-15 waves-effect waves-light btnSel-bg">Apply Now!</a>
+
 				</div>
 			</div>
 		</div>
@@ -554,5 +568,49 @@
 				$(this).parent('li').removeClass('sel');
 			}
 		});
+
+
+		/*sever_counter*/
+        // number counter
+        var fullTime = 1500;
+        var countTime = 10;
+
+        var numText = $(".counter").html();
+        var numTextArrayLeng = numText.length;
+        var c=0;
+        var textWriteTime = fullTime/numTextArrayLeng;
+
+        $(".counter").html("");
+        for (var i = numTextArrayLeng-1; i >= 0; i--) {
+            var numTextArrayI = numText.charAt(i);
+            $(".counter").append("<span></span>");
+            (function(numTextArrayI, i){
+                setTimeout(function(){
+                    printNum(numTextArrayI, i);
+                }, textWriteTime*c);
+                c++;
+            })(numTextArrayI, i);
+        }
+        function printNum(thisNumber, numArray){
+            for (var j = countTime; j > 0; j--) {
+                //$(".counter span:nth-of-type("+(numArray+1)+")").html(thisNumber);
+                (function(thisNumber, numArray, j){
+                    setTimeout(function(){
+                        aniNum(thisNumber, numArray, j);
+                    }, textWriteTime/countTime*j);
+                })(thisNumber, numArray, j);
+            }
+        }
+
+        function aniNum(thisNumber, numArray, j){
+            var randomNum = Math.floor(Math.random() * 9+1);
+            if (j == countTime) {
+                $(".counter span:nth-of-type("+(numArray+1)+")").html(thisNumber);
+            }else {
+                $(".counter span:nth-of-type("+(numArray+1)+")").html(randomNum);
+            }
+        }
+
 	});
 </script>
+

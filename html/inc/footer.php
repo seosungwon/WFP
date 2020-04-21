@@ -108,25 +108,47 @@
 <!-- 계산기 -->
 <!-- 계산기 버튼 -->
 <div data-control="cl">
-	<a href="#loanCalculator" class="btn-cl"></a>
+	<a href="#loanCalculator" class="btn-cl">
+		<span class="txt_n">Loan Calculator</span>
+	</a>
 </div>
 <!-- //계산기 버튼 -->
 
 <!-- loanCalculator layerpopup -->
-<div id="loanCalculator" class="popup_wrap rule type-3">
+<div id="loanCalculator" class="popup_wrap rule type-3 show">
 	<div class="gap-rule">
 		<div data-control="cl">
-			<a href="#loanCalculator" class="btn-cl"></a>
+			<a href="#loanCalculator" class="btn-cl">
+				<span class="txt_n">Loan Calculator</span>
+			</a>
 		</div>
 		<div class="box-rule">
 			<h3 class="header-rule type-2" style="border-bottom:0;">Loan Calculator</h3>
 		</div>
-		<div class="inner-rule">
-			계산기 콘텐츠 영역
+		<div class="inner-rule loan_wrap">
+			<!-- 계산기 콘텐츠 영역 -->
+			<div class="txt-ct inp_radioGap-1">
+				<div class="gap">
+					<span class="inp_radio type-3">
+						<input id="chk1" name="test" type="radio" checked="checked">
+						<label for="chk1">Credit Loan</label>
+					</span>
+				</div>
+				<div class="gap">
+					<span class="inp_radio type-3">
+						<input id="chk2" name="test" type="radio">
+						<label for="chk2">Secured Loan</label>
+					</span>
+				</div>
+			</div>
+			<p class="tt-3">Employment Type <strong>*</strong></p>
+			<div class="txt-ct" data-error="">
+				<select class="common-selectType" data-check="validation">
+					<option>Overseas Filipino Worker</option>
+				</select>
+				<!--  data-check="validation" 벨리데이션 체크 -->
+			</div>
 		</div>
-		<a href="#none" data-button="btn-prev2" class="sel" data-control="cl-close">
-			<p class="gap"><span></span><span></span><span></span></p>
-		</a>
 	</div>
 </div>
 <!-- //loanCalculator layerpopup -->
