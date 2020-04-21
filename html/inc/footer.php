@@ -128,25 +128,60 @@
 		<div class="inner-rule loan_wrap">
 			<!-- 계산기 콘텐츠 영역 -->
 			<div class="txt-ct inp_radioGap-1">
-				<div class="gap">
-					<span class="inp_radio type-3">
-						<input id="chk1" name="test" type="radio" checked="checked">
-						<label for="chk1">Credit Loan</label>
-					</span>
+				<!-- box-inputType-1 -->
+				<div class="box-inputType-1 type-3">
+					<ul>
+						<li>
+							<div>
+								<p class="tt-3">Province/NCR <strong>*</strong></p>
+								<div class="txt-ct inp_radioGap-1">
+									<div class="gap">
+										<span class="inp_radio type-3">
+											<input id="chk1" name="test" type="radio" checked="checked">
+											<label for="chk1">Province</label>
+										</span>
+									</div>
+									<div class="gap">
+										<span class="inp_radio type-3">
+											<input id="chk2" name="test" type="radio">
+											<label for="chk2">NCR</label>
+										</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<p class="tt-3">Sub Type <strong>*</strong></p>
+							<div class="txt-ct">
+								<select class="common-selectType">
+									<option value="" hidden="">Select</option>
+									<option>1</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<p class="tt-3">Month <strong>*</strong></p>
+							<div class="txt-ct displayTableType-1">
+								<div class="displayCell" style="width:50%;">
+									<select class="common-selectType">
+										<option value="" hidden>Month</option>
+										<option>1</option>
+									</select>
+									<span class="txt-error">Error message</span>
+								</div>
+								<div class="displayCell gap-1">
+									<p class="txt-1">Day <strong>*</strong></p>
+									<input type="tel" class="common-inputType" id="">
+								</div>
+								<div class="displayCell">
+									<p class="txt-1">Year <strong>*</strong></p>
+									<input type="tel" class="common-inputType" id="">
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
-				<div class="gap">
-					<span class="inp_radio type-3">
-						<input id="chk2" name="test" type="radio">
-						<label for="chk2">Secured Loan</label>
-					</span>
-				</div>
-			</div>
-			<p class="tt-3">Employment Type <strong>*</strong></p>
-			<div class="txt-ct" data-error="">
-				<select class="common-selectType" data-check="validation">
-					<option>Overseas Filipino Worker</option>
-				</select>
-				<!--  data-check="validation" 벨리데이션 체크 -->
+				<!-- //box-inputType-1 -->
 			</div>
 		</div>
 	</div>
