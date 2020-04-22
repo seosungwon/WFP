@@ -183,6 +183,12 @@
 				<!-- //box-inputType-1 -->
 
 				<!-- sliderbar -->
+				<!-- D 개발용 -->
+				<form method="post" action="form.php" id="formz">
+					<input type="hidden" id="input-sum" name="input-sum" value="">
+					<input type="hidden" id="input-time" name="input-time" value="">
+				</form>
+				<!-- //D 개발용 -->
 				<div class="row">
 					<div class="col-sm-8">
 					    <div class="common-calculator-wrp">
