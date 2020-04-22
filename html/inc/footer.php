@@ -133,25 +133,24 @@
 					<ul>
 						<li>
 							<div>
-								<p class="tt-3">Province/NCR <strong>*</strong></p>
 								<div class="txt-ct inp_radioGap-1">
 									<div class="gap">
 										<span class="inp_radio type-3">
 											<input id="chk1" name="test" type="radio" checked="checked">
-											<label for="chk1">Province</label>
+											<label for="chk1">Credit Loan</label>
 										</span>
 									</div>
 									<div class="gap">
 										<span class="inp_radio type-3">
 											<input id="chk2" name="test" type="radio">
-											<label for="chk2">NCR</label>
+											<label for="chk2">Secured Loan</label>
 										</span>
 									</div>
 								</div>
 							</div>
 						</li>
 						<li>
-							<p class="tt-3">Sub Type <strong>*</strong></p>
+							<p class="tt-3">Employment Status:</p>
 							<div class="txt-ct">
 								<select class="common-selectType">
 									<option value="" hidden="">Select</option>
@@ -160,28 +159,75 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-3">Month <strong>*</strong></p>
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Payment Term:</p>
 									<select class="common-selectType">
 										<option value="" hidden>Month</option>
 										<option>1</option>
 									</select>
 									<span class="txt-error">Error message</span>
 								</div>
-								<div class="displayCell gap-1">
-									<p class="txt-1">Day <strong>*</strong></p>
-									<input type="tel" class="common-inputType" id="">
-								</div>
-								<div class="displayCell">
-									<p class="txt-1">Year <strong>*</strong></p>
-									<input type="tel" class="common-inputType" id="">
+								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Monthly Add-On Rate:</p>
+									<select class="common-selectType">
+										<option value="" hidden>Month</option>
+										<option>1</option>
+									</select>
+									<span class="txt-error">Error message</span>
 								</div>
 							</div>
 						</li>
 					</ul>
 				</div>
 				<!-- //box-inputType-1 -->
+
+				<!-- sliderbar -->
+				<div class="row">
+					<div class="col-sm-8">
+					    <div class="common-calculator-wrp">
+					        <div class="calculator">
+					               <div class="slider-wrp">
+					                    <div class="slider-item">
+					                        <div class="calc-sum-wrp text-center">
+					                            <span id="calc-sum"></span>
+					                        </div>
+					                        <div class="calc-slider-sum" id="calc-slider-sum"></div>
+					                        <div class="row text-sum">
+					                        	<div class="col-xs-6 ">₱ 5 000</div>
+					                        	<div class="col-xs-6 text-right">₱ 50 000</div>
+					                        </div>
+					                    </div>
+					                    <div class="slider-item">
+					                        <div class="calc-time-wrp text-center">
+					                            <span id="calc-time"></span>
+					                        </div>
+					                        <div class="calc-slider-time" id="calc-slider-time"></div>
+					                        <div class="row text-sum">
+					                        	<div class="col-xs-6 ">from 61 days</div>
+					                        	<div class="col-xs-6 text-right">365 day</div>
+					                        </div>
+					                    </div>
+					                </div>
+					                <div class="count-loans">
+					                        <div class="row">
+					                        	<div class="col-xs-12 col-sm-4 text-center">LOAN AMOUNT<br><span id="count-sum">₱ 55 000</span></div>
+					                        	<div class="col-xs-12 col-sm-4 text-center">FEE<br><span id="count-fee">₱ 55 000</span></div>
+					                        	<div class="col-xs-12 col-sm-4 text-center">TOTAL REPAYMENT<br><span id="count-total">₱ 55 000</span></div>
+					                        </div>
+					                </div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<!-- //sliderbar -->
+
+
+				<!-- loan amount -->
+				<div class="total">
+
+				</div>
+				<!-- //loan amount -->
 			</div>
 		</div>
 	</div>
@@ -855,10 +901,12 @@
 <!-- //loanPossibility layerpopup -->
 
 <!-- 공통 : js -->
+<link rel="stylesheet" href="common/css/nouislider.css">
 <script src="common/js/jquery-1.12.1.min.js"></script>
 <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
 <script src="common/js/front.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="common/js/nouislider.min.js"></script>
 <!-- //공통 : js -->
 
 <script type="text/javascript">
@@ -995,6 +1043,70 @@
 		  // $('.layer_open_pop.test-btn').click();
 		  // $('[data-inquirystep="3"]').hide();
 		  // $('[data-inquirystep="4"]').show();
+
+
+		/*slider bar*/
+		if($('*').is('.calculator')) {
+	    //if($(this).hasClass('calculator')) {
+	    var calcTimeInput = document.getElementById('calc-time');
+	    var valueSum = 0;
+	    var valueTime = 0;
+	    var calcSumInput = document.getElementById('calc-sum');
+	    var countSum = document.getElementById('count-sum');
+	    var countFee = document.getElementById('count-fee');
+	    var countTotal = document.getElementById('count-total');
+	    var inputSum = document.getElementById('input-sum');
+	    var inputTime = document.getElementById('input-time');
+	    var percent = 0.01;
+
+	    var updateLoanDetails = function () {
+	    inputSum.value = Number(valueSum);
+	    inputTime.value = Number(valueTime);
+	    var valueFee = parseFloat(valueSum * percent * valueTime).toFixed(0);
+	    var valueTotal = Number(valueSum) + Number(valueFee);
+
+	    countSum.innerHTML = "₱ " + valueSum;
+	    countFee.innerHTML = "₱ " + valueFee;
+	    countTotal.innerHTML = "₱ " + valueTotal;
+	    };
+
+	    var  slider_sum = document.getElementById('calc-slider-sum');
+
+	    noUiSlider.create(slider_sum, {
+	    start: 5000,
+	    step: 1000,
+	    range: {
+	    min: 5000,
+	    max: 50000
+	    }
+	    });
+
+	    var  slider_time = document.getElementById('calc-slider-time');
+
+	    noUiSlider.create(slider_time, {
+	    start: 61,
+	    step: 1,
+	    range: {
+	    min: 61,
+	    max: 365
+	    }
+	    });
+
+
+	    slider_time.noUiSlider.on('update', function( values, handle ) {
+	    valueTime = Number(values[handle]);
+	    calcTimeInput.innerHTML = Number(valueTime) + " DAY";
+	    updateLoanDetails();
+	    });
+
+	    slider_sum.noUiSlider.on('update', function( values, handle ) {
+	    valueSum = Number(values[handle]);
+	    calcSumInput.innerHTML = "₱ " + valueSum;
+	    updateLoanDetails();
+	    });
+
+	    }
+
 	});
 </script>
 
