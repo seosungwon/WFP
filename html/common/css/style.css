@@ -1455,8 +1455,9 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
 /*sliderbar*/
 .inner-rule.loan_wrap .common-calculator-wrp {padding: 0px 0px 20px 40px;}
 .inner-rule.loan_wrap .common-calculator-wrp #calc-sum, .common-calculator-wrp #calc-time {font-weight: bold;font-size: 18px;}
-.inner-rule.loan_wrap .noUi-horizontal .noUi-handle {border:none;border-radius: 50%;background: #ff9500;background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9500), color-stop(100%, #ffa400));background: -webkit-linear-gradient(top, #ff9500 0%, #ffa400 100%);background: -ms-linear-gradient(top, #ff9500 0%, #ffa400 100%);background: linear, to bottom, #ff9500 0%, #ffa400 100%;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', endColorstr='#ffa400', GradientType=0 );cursor: pointer;box-shadow: 0 2px 5px -2px #333;width: 26px;height: 26px;right: -5px;top: -10px;}
+.inner-rule.loan_wrap .noUi-horizontal .noUi-handle {/*border:none;border-radius: 50%;background: #ff9500;background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9500), color-stop(100%, #ffa400));background: -webkit-linear-gradient(top, #ff9500 0%, #ffa400 100%);background: -ms-linear-gradient(top, #ff9500 0%, #ffa400 100%);background: linear, to bottom, #ff9500 0%, #ffa400 100%;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', endColorstr='#ffa400', GradientType=0 );cursor: pointer;box-shadow: 0 2px 5px -2px #333;width: 26px;height: 26px;right: -5px;top: -10px;*/
+background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;background-size:44px;width:44px;height:44px;}
 .inner-rule.loan_wrap .slider-item {margin: 28px 0px 40px 0px;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp, .slider-item .calc-time-wrp {margin-bottom: 10px;}
 .inner-rule.loan_wrap .slider-item .text-sum {margin-top: 8px;font-size: 14px;}

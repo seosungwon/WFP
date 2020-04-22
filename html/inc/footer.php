@@ -1053,65 +1053,65 @@
 
 		/*slider bar*/
 		if($('*').is('.calculator')) {
-	    //if($(this).hasClass('calculator')) {
-	    var calcTimeInput = document.getElementById('calc-time');
-	    var valueSum = 0;
-	    var valueTime = 0;
-	    var calcSumInput = document.getElementById('calc-sum');
-	    var countSum = document.getElementById('count-sum');
-	    var countFee = document.getElementById('count-fee');
-	    var countTotal = document.getElementById('count-total');
-	    var inputSum = document.getElementById('input-sum');
-	    var inputTime = document.getElementById('input-time');
-	    var percent = 0.01;
+			//if($(this).hasClass('calculator')) {
+			var calcTimeInput = document.getElementById('calc-time');
+			var valueSum = 0;
+			var valueTime = 0;
+			var calcSumInput = document.getElementById('calc-sum');
+			var countSum = document.getElementById('count-sum');
+			var countFee = document.getElementById('count-fee');
+			var countTotal = document.getElementById('count-total');
+			var inputSum = document.getElementById('input-sum');
+			var inputTime = document.getElementById('input-time');
+			var percent = 0.01;
 
-	    var updateLoanDetails = function () {
-	    inputSum.value = Number(valueSum);
-	    inputTime.value = Number(valueTime);
-	    var valueFee = parseFloat(valueSum * percent * valueTime).toFixed(0);
-	    var valueTotal = Number(valueSum) + Number(valueFee);
+			var updateLoanDetails = function () {
+				inputSum.value = Number(valueSum);
+				inputTime.value = Number(valueTime);
+				var valueFee = parseFloat(valueSum * percent * valueTime).toFixed(0);
+				var valueTotal = Number(valueSum) + Number(valueFee);
 
-	    countSum.innerHTML = "₱ " + valueSum;
-	    countFee.innerHTML = "₱ " + valueFee;
-	    countTotal.innerHTML = "₱ " + valueTotal;
-	    };
+				countSum.innerHTML = "₱ " + valueSum;
+				countFee.innerHTML = "₱ " + valueFee;
+				countTotal.innerHTML = "₱ " + valueTotal;
+			};
 
-	    var  slider_sum = document.getElementById('calc-slider-sum');
+			var  slider_sum = document.getElementById('calc-slider-sum');
 
-	    noUiSlider.create(slider_sum, {
-	    start: 5000,
-	    step: 1000,
-	    range: {
-	    min: 5000,
-	    max: 50000
-	    }
-	    });
+			noUiSlider.create(slider_sum, {
+				start: 5000,
+				step: 1000,
+				range: {
+					min: 5000,
+					max: 50000
+				}
+			});
 
-	    var  slider_time = document.getElementById('calc-slider-time');
+			var  slider_time = document.getElementById('calc-slider-time');
 
-	    noUiSlider.create(slider_time, {
-	    start: 61,
-	    step: 1,
-	    range: {
-	    min: 61,
-	    max: 365
-	    }
-	    });
+			noUiSlider.create(slider_time, {
+				start: 61,
+				step: 1,
+				range: {
+					min: 61,
+					max: 365
+				}
+			});
 
 
-	    slider_time.noUiSlider.on('update', function( values, handle ) {
-	    valueTime = Number(values[handle]);
-	    calcTimeInput.innerHTML = Number(valueTime) + " DAY";
-	    updateLoanDetails();
-	    });
+			slider_time.noUiSlider.on('update', function( values, handle ) {
+				valueTime = Number(values[handle]);
+				calcTimeInput.innerHTML = Number(valueTime) + " DAY";
+				updateLoanDetails();
+			});
 
-	    slider_sum.noUiSlider.on('update', function( values, handle ) {
-	    valueSum = Number(values[handle]);
-	    calcSumInput.innerHTML = "₱ " + valueSum;
-	    updateLoanDetails();
-	    });
+			slider_sum.noUiSlider.on('update', function( values, handle ) {
+				valueSum = Number(values[handle]);
+				calcSumInput.innerHTML = "₱ " + valueSum;
+				updateLoanDetails();
+			});
 
-	    }
+			}
 
 	});
 </script>
