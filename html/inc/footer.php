@@ -189,19 +189,21 @@
 					<input type="hidden" id="input-time" name="input-time" value="">
 				</form>
 				<!-- //D 개발용 -->
-				<div class="row">
+
 					<div class="col-sm-8">
 					    <div class="common-calculator-wrp">
 					        <div class="calculator">
 					               <div class="slider-wrp">
 					                    <div class="slider-item">
 					                        <div class="calc-sum-wrp text-center">
+					                        	<span class="calc_txt">Loan Amount:</span>
 					                            <span id="calc-sum"></span>
+					                            <span class="calc_txt2">peso</span>
 					                        </div>
 					                        <div class="calc-slider-sum" id="calc-slider-sum"></div>
 					                        <div class="row text-sum">
-					                        	<div class="col-xs-6 ">₱ 5 000</div>
-					                        	<div class="col-xs-6 text-right">₱ 50 000</div>
+					                        	<div class="col-xs-6 ">5,000</div>
+					                        	<div class="col-xs-6 text-right">50,000</div>
 					                        </div>
 					                    </div>
 					                    <div class="slider-item">
@@ -217,15 +219,21 @@
 					                </div>
 					                <div class="count-loans">
 					                        <div class="row">
-					                        	<div class="col-xs-12 col-sm-4 text-center">LOAN AMOUNT<br><span id="count-sum">₱ 55 000</span></div>
-					                        	<div class="col-xs-12 col-sm-4 text-center">FEE<br><span id="count-fee">₱ 55 000</span></div>
-					                        	<div class="col-xs-12 col-sm-4 text-center">TOTAL REPAYMENT<br><span id="count-total">₱ 55 000</span></div>
+					                        	<div class="col-xs-12 col-sm-4 text-center">Borrowing
+					                        		<span id="count-sum">50,000 peso</span>
+					                        	</div>
+					                        	<div class="col-xs-12 col-sm-4 text-center">Interest
+					                        		<span id="count-fee">8,442.00 peso</span>
+					                        	</div>
+					                        	<div class="col-xs-12 col-sm-4 text-center">Total repayment
+					                        		<span id="count-total">8,442.00 peso</span>
+					                        	</div>
 					                        </div>
 					                </div>
 					        </div>
 					    </div>
 					</div>
-				</div>
+
 				<!-- //sliderbar -->
 
 
@@ -1071,9 +1079,9 @@
 				var valueFee = parseFloat(valueSum * percent * valueTime).toFixed(0);
 				var valueTotal = Number(valueSum) + Number(valueFee);
 
-				countSum.innerHTML = "₱ " + valueSum;
-				countFee.innerHTML = "₱ " + valueFee;
-				countTotal.innerHTML = "₱ " + valueTotal;
+				countSum.innerHTML = " " + valueSum;/*"₱"*/
+				countFee.innerHTML = " " + valueFee;/*"₱"*/
+				countTotal.innerHTML = " " + valueTotal;/*"₱"*/
 			};
 
 			var  slider_sum = document.getElementById('calc-slider-sum');
@@ -1101,13 +1109,13 @@
 
 			slider_time.noUiSlider.on('update', function( values, handle ) {
 				valueTime = Number(values[handle]);
-				calcTimeInput.innerHTML = Number(valueTime) + " DAY";
+				calcTimeInput.innerHTML = Number(valueTime) + " ";
 				updateLoanDetails();
 			});
 
 			slider_sum.noUiSlider.on('update', function( values, handle ) {
 				valueSum = Number(values[handle]);
-				calcSumInput.innerHTML = "₱ " + valueSum;
+				calcSumInput.innerHTML = " " + valueSum;
 				updateLoanDetails();
 			});
 
