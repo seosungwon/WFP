@@ -693,12 +693,12 @@ letter-spacing: -0.2px;text-align: center;line-height: 30px;margin:0 auto;}
 .amount .loan_list p.note{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;text-align:left;padding:11px 0 60px 0;}
 .amount .loan_list p.note span{color:#ea849d;}
 
-.amount .apply img{max-width:100%;}
-.amount .apply .apply_title {padding:20px 20px 60px 20px;}
-.amount .apply .apply_title p{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;}
-.amount .apply .apply_title ul{padding-top:20px;}
-.amount .apply .apply_title ul li{font-family: Lato-Regular;font-size: 15px;color: #444444;letter-spacing: -0.2px;line-height: 21px;padding:0 0 0 27px;position:relative;}
-.amount .apply .apply_title ul li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:25px;height:25px;position:absolute;top:0;left:0;background-size:25px;background-image:url('../images/icon/ic_loans_eligilble_check.png');}
+.apply img{max-width:100%;}
+.apply .apply_title {padding:20px 20px 60px 20px;}
+.apply .apply_title p{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;}
+.apply .apply_title ul{padding-top:20px;}
+.apply .apply_title ul li{font-family: Lato-Regular;font-size: 15px;color: #444444;letter-spacing: -0.2px;line-height: 21px;padding:0 0 11px 27px;position:relative;}
+.apply .apply_title ul li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:25px;height:25px;position:absolute;top:0;left:0;background-size:25px;background-image:url('../images/icon/ic_loans_eligilble_check.png');}
 
 #benefit{background:#FA8E00;}
 #benefit .benefit_list{background: #FA8E00;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
@@ -767,7 +767,7 @@ line-height: 36px;}
 #apply_nw .apply_nw_list{background: #FA8E00;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
 #apply_nw .apply_nw_list span img{display:none;}
 #apply_nw .apply_nw_list p{font-family: Lato-Black;font-size: 30px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 36px;}
-#apply_nw .apply_nw_list p.apply_nw_title {font-family:Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;}
+#apply_nw .apply_nw_list p.apply_nw_title {font-family:Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;padding-top:10px;}
 #apply_nw .apply_nw_list .common-btnType-18{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin-top:40px;text-decoration:none;}
 
 .loan_pkg .loan_pkg_title {padding:40px 20px 60px 20px;}
@@ -2298,11 +2298,11 @@ text-align: right;}
 	.apply{overflow:hidden;margin:65px auto 0 auto;}
 	.apply img{width:500px;}
 	.apply .apply_title {position:relative;float:right;width:460px;padding:20px 0 60px 0;}
-	.apply .apply_title p{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;}
+	.apply .apply_title p{font-family: Lato-Bold;font-size: 32px;color: #222222;letter-spacing: -0.2px;line-height: 30px;}
 	.apply .apply_title ul{padding-top:20px;}
 	.apply .apply_title ul li{font-family: Lato-Regular;font-size:18px;color: #444444;letter-spacing: -0.2px;line-height:28px;padding:0 0 0 27px;position:relative;}
 	.apply .apply_title ul li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:25px;height:25px;position:absolute;top:0;left:0;background-size:25px;background-image:url('../images/icon/ic_loans_eligilble_check.png');}
-	.apply .apply_title .common-btnType-15{position:absolute;top:240px;left:-20px;width:220px;}
+	.apply .apply_title .common-btnType-15{position:absolute;top:275px;left:0;width:220px;}
 
 	#benefit{background:#FA8E00;margin-top:65px;}
 	#benefit .common-btnType-18{width:300px;margin:0 auto;}
@@ -2352,8 +2352,8 @@ text-align: right;}
 
 	#apply_nw{background:#FA8E00;}
 	#apply_nw .apply_nw_list{position:relative;background: #FA8E00;margin:0 auto 0 auto;padding:70px 20px 70px 20px;}
-	#apply_nw .apply_nw_list p{font-family: Lato-Black;font-size: 30px;color: #FFFFFF;letter-spacing: -0.2px;text-align:left;line-height: 36px;}
-	#apply_nw .apply_nw_list p.apply_nw_title {font-family:Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 20px;}
+	#apply_nw .apply_nw_list p{font-family: Lato-Black;font-size: 44px;color: #FFFFFF;letter-spacing: -0.18px;text-align:left;}
+	#apply_nw .apply_nw_list p.apply_nw_title {font-family:Lato-Regular;font-size: 18px;color: #FFFFFF;letter-spacing:-0.2px;}
 	#apply_nw .apply_nw_list .common-btnType-18{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin-top:40px;text-decoration:none; width:300px;}
 	#apply_nw .apply_nw_list span img{display:block;width:820px;position:absolute;top:0;right:-178px}
 
@@ -2372,14 +2372,15 @@ text-align: right;}
 	font-size:20px;color: #333333;letter-spacing: -0.2px;line-height: 20px;}
 
 	#wc_finance{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);}
-	#wc_finance .wc_finance_list{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
-	#wc_finance .wc_finance_list span img{width:500px;height:580px;}
+	#wc_finance .wc_finance_list{position:relative;background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin:0 auto 0 auto;padding:0 20px 70px 20px;}
+	#wc_finance .wc_finance_list span img{vertical-align:top;width:500px;}
 
 	#wc_finance .wc_finance_list p{font-family: Lato-Black;font-size: 28px;color: #101010;letter-spacing: -0.23px;line-height: 38px;padding-bottom:20px;}
 	#wc_finance .wc_finance_list p span{font-family: Lato-Regular;font-size: 22px;color: #222222;letter-spacing: -0.18px;line-height: 38px;}
 	#wc_finance .wc_finance_list ul li{background: #FFFFFF;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);border-radius: 3px;}
-	#wc_finance .wc_finance_list .wc_finance_title{width:321px;}
-
+	#wc_finance .wc_finance_list .tit_box{position:absolute;top:69px;right:0;}
+	#wc_finance .wc_finance_list .tit_box .wc_finance_title{font-family:Lato-Black;font-size: 40px;color: #101010;letter-spacing:-0.2px;line-height: 54px;width:100%;}
+	#wc_finance .wc_finance_list .tit_box .wc_finance_title span{font-family:Lato-Regular;font-size: 36px;color: #222222;letter-spacing:-0.2px;line-height: 54px;display:block;}
 	#wc_finance .wc_finance_list ul li .wcf_tp{position:relative;padding:42px 25px 16px 25px;}
 	#wc_finance .wc_finance_list ul li .wcf_tp p{font-family: Lato-Regular;font-size: 15px;color: #222222;letter-spacing: -0.2px;line-height: 22px;}
 	#wc_finance .wc_finance_list ul li .wcf_tp:after{content: '';display: block;clear: both;background-position: 0;background-repeat: no-repeat;width: 29px;height: 29px;position: absolute;top: 22px;left: 15px;background-size: 29px;background-image: url(../images/icon/ic_loans_review.png);opacity:0.5;}
@@ -2387,7 +2388,10 @@ text-align: right;}
 	#wc_finance .wc_finance_list ul li .wcf_tp p.wcf_txt3{font-family: Lato-Regular;font-size: 12px;color: #999999;letter-spacing: -0.2px;padding:0 0 62px 0;}
 	#wc_finance .wc_finance_list ul li .wcf_tp .common-btnType-15{width:140px;margin-left:0;}
 	[data-slick-vs="wcfinance"] .slick-dots{left:288px;right:0;text-align:center;top:10px;}
-	[data-slick-vs="wcfinance"] .slick-dots li button{outline:none;border:0;}
-	[data-slick-vs="wcfinance"] .slick-dots li button:before{background: #FF8F00;border-radius:100px;width:8px;height:8px;opacity:1;transition: all 0.5s;font-size: 8px;line-height:8px;}
-	[data-slick-vs="wcfinance"] .slick-dots li.slick-active{background: #D8D8D8;width:0;}
+
+[data-slick-vs="wcfinance"] .slick-dots button{background: #ccc;}
+	[data-slick-vs="wcfinance"] .slick-dots li button{outline:none;border:0;background: #ccc;}
+	[data-slick-vs="wcfinance"] .slick-dots li button:before{border-radius:100%;width:8px;height:8px;opacity:1;transition: all 0.5s;font-size: 8px;line-height:8px;}
+	[data-slick-vs="wcfinance"] .slick-dots li.slick-active{background: #ccc;width:0;}
+	[data-slick-vs="wcfinance"] .slick-dots li.slick-active button{background:#D8D8D8;border-radius:100%;}
 }

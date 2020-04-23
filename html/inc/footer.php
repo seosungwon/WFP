@@ -115,7 +115,7 @@
 <!-- //계산기 버튼 -->
 
 <!-- loanCalculator layerpopup -->
-<div id="loanCalculator" class="popup_wrap rule type-3 show">
+<div id="loanCalculator" class="popup_wrap rule type-3">
 	<div class="gap-rule">
 		<div data-control="cl">
 			<a href="#loanCalculator" class="btn-cl">
