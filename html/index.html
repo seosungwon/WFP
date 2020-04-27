@@ -28,10 +28,27 @@
 		<section data-click="main-vsSlick" class="mainVs">
 			<div>
 				<div class="box-txt">
-					<p class="txt-1">Now Offering<br> Higher Loan<br>
-					Amount with<br> Easy Process.</p>
-					<p class="txt-2"><span>Learn More</span></p>
+					<p class="txt-1">Now Offering Higher Loan<br>
+					Amount with Easy Process.</p>
+					<p class="txt-2 tx2"><span>Learn More</span></p>
+					 <!-- <div class="common-btnType-16">
+						<a href="#learnmore" class="btn_learnmore">LearnMore</a>
+					</div> -->
+					<!-- counter mobile -->
+					<div class="counter_total">
+						<div class="counter_wrap hide-on-mobile">
+							<p class="served">
+								<span class="s_txt1">SERVED</span>
+								<span class="s_txt2"><em>“</em>OVER<span class="counter">2,880,000</span><em>”</em></span>
+								<span class="s_txt3">Satisfied Clients</span>
+							</p>
+						</div>
+					</div>
+					<!-- //counter mobile -->
+
+
 				</div>
+
 				<div class="box-img imgC-1">
 					<img src="common/images/img/main_01.png" alt="">
 				</div>
@@ -299,7 +316,7 @@
 			speed: 600,
 			slidesToShow: 1,
 			adaptiveHeight: true,
-			autoplay: true, // true, false
+			autoplay: false, // true, false
 			autoplaySpeed: 1000,
 			arrows: true,
 			pauseOnHover:false,
@@ -393,5 +410,48 @@
 
 		$('body').css({"background":"#fff"});
 	});
+</script>
+
+<script type="text/javascript">
+	/*sever_counter*/
+        // number counter
+        var fullTime = 1500;
+        var countTime = 10;
+
+        var numText = $(".counter").html();
+        var numTextArrayLeng = numText.length;
+        var c=0;
+        var textWriteTime = fullTime/numTextArrayLeng;
+
+        $(".counter").html("");
+        for (var i = numTextArrayLeng-1; i >= 0; i--) {
+            var numTextArrayI = numText.charAt(i);
+            $(".counter").append("<span></span>");
+            (function(numTextArrayI, i){
+                setTimeout(function(){
+                    printNum(numTextArrayI, i);
+                }, textWriteTime*c);
+                c++;
+            })(numTextArrayI, i);
+        }
+        function printNum(thisNumber, numArray){
+            for (var j = countTime; j > 0; j--) {
+                //$(".counter span:nth-of-type("+(numArray+1)+")").html(thisNumber);
+                (function(thisNumber, numArray, j){
+                    setTimeout(function(){
+                        aniNum(thisNumber, numArray, j);
+                    }, textWriteTime/countTime*j);
+                })(thisNumber, numArray, j);
+            }
+        }
+
+        function aniNum(thisNumber, numArray, j){
+            var randomNum = Math.floor(Math.random() * 9+1);
+            if (j == countTime) {
+                $(".counter span:nth-of-type("+(numArray+1)+")").html(thisNumber);
+            }else {
+                $(".counter span:nth-of-type("+(numArray+1)+")").html(randomNum);
+            }
+        }
 </script>
 

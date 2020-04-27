@@ -19,7 +19,7 @@
 <!-- //공통 : skip_nav -->
 
 <!-- header -->
-<div data-target="header" id="gnb">
+<div data-target="header" id="gnb" class="bd_bt">
 	<!-- wd-inner -->
 	<div class="wd-inner">
 		<!-- box-info pc -->
