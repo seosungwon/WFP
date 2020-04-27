@@ -800,7 +800,6 @@ if( $('.btn-fixed').length > 0 ){
 				$items = me.selectors.tg;
 
 			$(window).on('load on resize scroll', function(event) {
-				console.log(event);
 				if($(this).width() <= 768) {// mobile script
 					$($items).not('.slick-initialized').slick({
 						/*dots: true,

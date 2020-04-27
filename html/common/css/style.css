@@ -613,6 +613,13 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .slick-dots li button:focus:before{opacity: 1;}
 .slick-dots li button:before{font-family: 'slick';font-size: 6px;line-height: 6px;position: absolute;top: 0;left: 0;width: 6px;height: 6px;content: '';text-align: center;background:#fff;opacity: .2;color: black;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;border-radius:100px;transition:all 0.5s;}
 .slick-dots li.slick-active button:before{opacity: 1;color: black;width:22px;opacity:0.4;}
+
+/* main slick */
+[data-click="main-vsSlick"].mainVs .slick-dots{}
+[data-click="main-vsSlick"].mainVs .slick-dots .btn-play,
+[data-click="main-vsSlick"].mainVs .slick-dots .btn-stop{display:none;}
+[data-click="main-vsSlick"].mainVs .slick-dots .show{display:block;}
+
 [data-click="main-vsSlick"],
 [data-click="main-vsSlick"] *{transition:none;}
 [data-click="main-vsSlick"] .box-txt{/* padding:189px 30px 22px 30px;position:absolute;top:0;left:0;right:0;bottom:0;z-index:20; */transform: translate(0px, -16%);padding:0 31px;z-index:20;position: relative;}
@@ -1537,6 +1544,13 @@ text-align: right;}
 	[data-target="nav"] > ul > li > ul > li > a{font-size:16px;color: #666;letter-spacing: -0.2px;text-align:left;line-height:60px;padding:0 0 0 22px;transition:all 0.5s;border-bottom:1px solid #E6E6E6;}
 	[data-target="nav"] > ul > li > ul > li > a:hover,
 	[data-target="nav"] > ul > li > ul > li > a:focus{background:transparent;text-decoration:underline;color:#FF7A01;}
+
+	/* main slick */
+	[data-click="main-vsSlick"].mainVs .btn-prev,
+	[data-click="main-vsSlick"].mainVs .btn-next{background-repeat:no-repeat;background-position:0;width:60px;height:60px;opacity:1;margin-top:-30px;}
+	[data-click="main-vsSlick"].mainVs .btn-prev{background-image:url(../images/btn/btn_main_arrow_left.png);left:160px;}
+	[data-click="main-vsSlick"].mainVs .btn-next{background-image:url(../images/btn/btn_main_arrow_right.png);right:160px;}
+	[data-click="main-vsSlick"].mainVs .slick-dots{bottom:300px;}
 
 	/* [data-target="box-gnb"]{position: fixed;top: 0px;right: 0;width:100%; text-align: center;height:55px;width: 433px;left: initial;}
 	[data-target="box-gnb"] .inner{position:static;background:transparent;overflow:initial;overflow-y:hidden;}

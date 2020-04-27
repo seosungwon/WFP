@@ -25,7 +25,7 @@
 		<!-- //commonTab -->
 
 		<!-- main-vsSlick -->
-		<section data-click="main-vsSlick">
+		<section data-click="main-vsSlick" class="mainVs">
 			<div>
 				<div class="box-txt">
 					<p class="txt-1">Now Offering<br> Higher Loan<br>
@@ -290,19 +290,54 @@
 <script src="common/js/slick.min.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$('[data-click="main-vsSlick"]').slick({
+		// data-click="main-vsSlick"
+		var $bnrMainTop = $('[data-click="main-vsSlick"]');
+
+		$bnrMainTop.slick({
 			dots: true,
 			infinite: true,
 			speed: 600,
 			slidesToShow: 1,
 			adaptiveHeight: true,
-			autoplay: false, // true, false
-			autoplaySpeed: 4000,
-			arrows: false
-			/*,
-			prevArrow: "<a href='#none' class='btn-prev'><span class='hidden'>이전 배너</span></a>",
-			nextArrow: "<a href='#none' class='btn-next'><span class='hidden'>다음 배너</span></a>"*/
+			autoplay: true, // true, false
+			autoplaySpeed: 1000,
+			arrows: true,
+			pauseOnHover:false,
+			prevArrow: "<a href='#none' class='btn-prev'></a>",
+			nextArrow: "<a href='#none' class='btn-next'></a>"
 		});
+
+		// play stop
+		var $slickImgPause = '<img src="common/images/btn/ic_main_banner_pause.png" alt="">',
+			$slickImgPlay = '<img src="common/images/btn/ic_main_banner_play.png" alt="">';
+
+		$bnrMainTop.find('.slick-dots').append('<li style="margin-left:35px;" class="line-bar"><a href="#none" class="btn-icon btn-stop show ">'+ $slickImgPause +'</a><a href="#none" class="btn-icon btn-play">'+ $slickImgPlay +'</a></li>');
+
+		$bnrMainTop.find('.btn-stop').click(function(e){
+			$(this).removeClass('show');
+			$bnrMainTop.find('.btn-play').addClass('show');
+			//$bnrMainTop.find('.btn-play').focus();
+			$bnrMainTop.slick('slickPause');
+			e.preventDefault();
+		});
+
+		$bnrMainTop.find('.btn-play').click(function(e){
+			$(this).removeClass('show');
+			$bnrMainTop.find('.btn-stop').addClass('show');
+			//$bnrMainTop.find('.btn-stop').focus();
+			$bnrMainTop.slick('slickPlay');
+			e.preventDefault();
+		});
+
+		// data-click="main-vsSlick" stop
+		/*$('.pause').on('click', function() {
+			$('.slick-slider').slick('slickPause');
+		});*/
+
+		// data-click="main-vsSlick" play
+		/*$('.play').on('click', function() {
+			$('.slick-slider').slick('slickPlay');
+		});*/
 
 		/*$(window).on('load resize', function(){
 			$('[data-target="footer"]').css({"border-top":"0"});
