@@ -1054,6 +1054,7 @@ line-height: 36px;}
 [data-control="cl"] a span.txt_n{display:none;}
 #loanCalculator{}
 #loanCalculator.show{display:block;}
+#loanCalculator .gap-2{height:150px;}
 #loanCalculator [data-button="btn-prev2"] span{background:#666;}
 #loanCalculator [data-control="cl"]{display:none;}
 

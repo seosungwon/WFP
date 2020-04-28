@@ -191,62 +191,62 @@
 				<!-- //D 개발용 -->
 
 				<div class="col-sm-8">
-				    <div class="common-calculator-wrp">
-				        <div class="calculator">
-				               <div class="slider-wrp">
-				                    <div class="slider-item">
-				                        <div class="calc-sum-wrp text-center">
-				                        	<span class="calc_txt">Loan Amount:</span>
-				                            <span id="calc-sum"></span>
-				                            <span class="calc_txt2">peso</span>
-				                        </div>
-				                        <div class="calc-slider-sum" id="calc-slider-sum"></div>
-				                        <div class="row text-sum">
-				                        	<div class="col-xs-6 num">20,000</div>
-				                        	<div class="col-xs-6 text-right ">500,000</div>
-				                        </div>
-				                    </div>
-				                    <div class="slider-item" style="display:none;">
-				                        <div class="calc-time-wrp text-center">
-				                            <span id="calc-time"></span>
-				                        </div>
-				                        <div class="calc-slider-time" id="calc-slider-time"></div>
-				                        <div class="row text-sum">
-				                        	<div class="col-xs-6 ">from 61 days</div>
-				                        	<div class="col-xs-6 text-right">365 day</div>
-				                        </div>
-				                    </div>
-				                </div>
-				                <div class="count-loans">
-			                        <div class="row">
-			                        	<div class="col-xs-12 col-sm-4 text-center">Borrowing
-			                        		<span class="calc_txt2">peso</span>
-			                        		<span id="count-sum">50,000</span>
-			                        	</div>
-			                        	<div class="col-xs-12 col-sm-4 text-center pt">Interest
-			                        		<span class="calc_txt2">peso</span>
-			                        		<span id="count-fee">8,442.00</span>
-			                        	</div>
-			                        	<div class="col-xs-12 col-sm-4 text-center">Total repayment
-			                        		<span class="calc_txt2">peso</span>
-			                        		<span id="count-total">8,442.00</span>
-			                        	</div>
-			                        </div>
-				                </div>
-				                <div class="loan_btn">
-				                	<a href="#none" class="common-btnType-15 waves-effect waves-light btnSel-bg" tabindex="0">Apply Now!</a>
-				                </div>
+					<div class="common-calculator-wrp">
+						<div class="calculator">
+							<div class="slider-wrp">
+								<div class="slider-item">
+									<div class="calc-sum-wrp text-center">
+										<span class="calc_txt">Loan Amount:</span>
+										<span id="calc-sum"></span>
+										<span class="calc_txt2">peso</span>
+									</div>
+									<div class="calc-slider-sum" id="calc-slider-sum"></div>
+									<div class="row text-sum">
+										<div class="col-xs-6 num">20,000</div>
+										<div class="col-xs-6 text-right ">500,000</div>
+									</div>
+								</div>
+								<div class="slider-item" style="display:none;">
+									<div class="calc-time-wrp text-center">
+										<span id="calc-time"></span>
+									</div>
+									<div class="calc-slider-time" id="calc-slider-time"></div>
+									<div class="row text-sum">
+										<div class="col-xs-6 ">from 61 days</div>
+										<div class="col-xs-6 text-right">365 day</div>
+									</div>
+								</div>
+							</div>
+							<div class="count-loans">
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 text-center">Borrowing
+										<span class="calc_txt2">peso</span>
+										<span id="count-sum">50,000</span>
+									</div>
+									<div class="col-xs-12 col-sm-4 text-center pt">Interest
+										<span class="calc_txt2">peso</span>
+										<span id="count-fee">8,442.00</span>
+									</div>
+									<div class="col-xs-12 col-sm-4 text-center">Total repayment
+										<span class="calc_txt2">peso</span>
+										<span id="count-total">8,442.00</span>
+									</div>
+								</div>
+							</div>
+							<div class="loan_btn">
+								<a href="#none" class="common-btnType-15 waves-effect waves-light btnSel-bg" tabindex="0">Apply Now!</a>
+							</div>
 
-				        </div>
+						</div>
 
-				    </div>
+					</div>
 				</div>
 				<!-- //sliderbar -->
 			</div>
+			<!-- 가상 공간 -->
+			<div class="gap-2"></div>
+			<!-- //가상 공간 -->
 		</div>
-		 <!-- 가상 공간 -->
-	<div class="gap"></div>
-	<!-- //가상 공간 -->
 	</div>
 
 	<a href="#none" data-button="btn-prev2" class="sel btn-close">
