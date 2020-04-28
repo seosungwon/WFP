@@ -1071,9 +1071,11 @@
 			var valueSum = 0;
 			var valueTime = 0;
 			var calcSumInput = document.getElementById('calc-sum');
-			var countSum = document.getElementById('count-sum');
-			var countFee = document.getElementById('count-fee');
-			var countTotal = document.getElementById('count-total');
+
+			var countSum = document.getElementById('count-sum'); // Borrowing
+			var countFee = document.getElementById('count-fee'); // Interest
+			var countTotal = document.getElementById('count-total'); // Total repayment
+
 			var inputSum = document.getElementById('input-sum');
 			var inputTime = document.getElementById('input-time');
 			var percent = 0.01;
@@ -1084,9 +1086,12 @@
 				var valueFee = parseFloat(valueSum * percent * valueTime).toFixed(0);
 				var valueTotal = Number(valueSum) + Number(valueFee);
 
-				countSum.innerHTML = " " + valueSum;/*"₱"*/
-				countFee.innerHTML = " " + valueFee;/*"₱"*/
-				countTotal.innerHTML = " " + valueTotal;/*"₱"*/
+				valueSumString = valueSum.toLocaleString();  // Borrowing
+				valueTotalString = valueTotal.toLocaleString();  // Interest / Total repayment
+
+				countSum.innerHTML = " " + valueSumString;/*"₱"*/
+				countFee.innerHTML = " " + valueTotalString;/*"₱"*/
+				countTotal.innerHTML = " " + valueTotalString;/*"₱"*/
 			};
 
 			var  slider_sum = document.getElementById('calc-slider-sum');
@@ -1120,7 +1125,8 @@
 
 			slider_sum.noUiSlider.on('update', function( values, handle ) {
 				valueSum = Number(values[handle]);
-				calcSumInput.innerHTML = " " + valueSum;
+				valueSum2 = valueSum.toLocaleString();
+				calcSumInput.innerHTML = " " + valueSum2;
 				updateLoanDetails();
 			});
 
