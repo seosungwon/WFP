@@ -115,7 +115,7 @@
 <!-- //계산기 버튼 -->
 
 <!-- loanCalculator layerpopup -->
-<div id="loanCalculator" class="popup_wrap rule type-3">
+<div id="loanCalculator" class="popup_wrap rule">
 	<div class="gap-rule">
 		<div data-control="cl">
 			<a href="#loanCalculator" class="btn-cl">
@@ -236,20 +236,22 @@
 				                <div class="loan_btn">
 				                	<a href="#none" class="common-btnType-15 waves-effect waves-light btnSel-bg" tabindex="0">Apply Now!</a>
 				                </div>
+
 				        </div>
+
 				    </div>
 				</div>
 				<!-- //sliderbar -->
-
-
-				<!-- loan amount -->
-				<div class="total">
-
-				</div>
-				<!-- //loan amount -->
 			</div>
 		</div>
+		 <!-- 가상 공간 -->
+	<div class="gap"></div>
+	<!-- //가상 공간 -->
 	</div>
+
+	<a href="#none" data-button="btn-prev2" class="sel btn-close">
+		<p class="gap"><span></span><span></span><span></span></p>
+	</a>
 </div>
 <!-- //loanCalculator layerpopup -->
 <!-- //계산기 -->
@@ -904,10 +906,11 @@
 				<a href="#none" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
 				<!-- //btn-fixed -->
 				<!-- //box-inputType-1 -->
-				<!-- 가상 공간 -->
+
+			</div>
+			<!-- 가상 공간 -->
 				<div class="gap"></div>
 				<!-- //가상 공간 -->
-			</div>
 			<!-- //inner-rule -->
 			<a href="#none" data-button="btn-prev2" class="sel btn-close">
 				<p class="gap"><span></span><span></span><span></span></p>

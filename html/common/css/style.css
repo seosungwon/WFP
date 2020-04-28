@@ -469,6 +469,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .popup_wrap .inner-rule .gap{height:150px;}
 .popup_wrap .inner-rule .gap.type-2{height:130px;}
 
+
 .popup_wrap.type-3{}
 .popup_wrap.type-3 .inner-rule{padding:0;}
 .popup_wrap.type-3 .inner-rule .t-1{color: #999;letter-spacing: -0.17px;line-height: 16px;background: #F5F5F5;padding:6px 10px 6px 20px;}
@@ -1495,8 +1496,8 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', endColorstr='#ffa400', GradientType=0 );cursor: pointer;box-shadow: 0 2px 5px -2px #333;width: 26px;height: 26px;right: -5px;top: -10px;*/
 background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;background-size:44px;width:44px;height:44px;}
 .inner-rule.loan_wrap .slider-item {margin: 28px 0px 40px 0px;}
-.inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;padding-right:133px;}
-.inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt2{font-family: Lato-Regular;font-size: 14px;color: #101010;letter-spacing: -0.2px;text-align: right;line-height: 19px;}
+.inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;padding-right:229px;}
+.inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt2{font-family: Lato-Regular;font-size: 14px;color: #101010;letter-spacing: -0.2px;text-align: right;line-height: 19px;width:100%;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp, .slider-item .calc-time-wrp {margin-bottom: 10px;}
 .inner-rule.loan_wrap .slider-item .text-sum {margin-top: 8px;font-size: 14px;}
 .inner-rule.loan_wrap .slider-item .text-sum .col-xs-6{display:table-cell;width:100%;}
@@ -1509,7 +1510,7 @@ background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;backgro
 .inner-rule.loan_wrap .count-loans .pt{padding: 16px 0 41px 0;}
 .inner-rule.loan_wrap .loan_btn .common-btnType-15{margin:40px 0 0 0;font-family: AppleSDGothicNeo-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.18px;text-align: center;}
 
-
+.popup_wrap .inner-rule.loan_wrap .gap .type-4{height:150px;}
 
 
 
