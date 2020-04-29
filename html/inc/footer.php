@@ -604,7 +604,7 @@
 <!-- //경고팝업 confirm layerpopup -->
 
 <!-- loanPossibility layerpopup -->
-<div id="loanPossibility" class="popup_wrap rule type-3">
+<div id="loanPossibility" class="popup_wrap rule type-3" style="display:block;">
 	<div class="gap-rule type-2">
 		<div class="box-rule">
 			<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Check your possible loan amount</h3>
@@ -768,26 +768,26 @@
 							<p class="lpd_tit">How much is your previous loan amount?</p>
 							<div class="txt-ct inp_radioGap-2" data-radio="collateral">
 								<span class="inp_radio type-2">
-									<input id="bhk1" data-ch="show" name="test5" type="radio" checked="checked">
+									<input id="bhk1" data-ch="show1" name="test5" type="radio" checked="checked">
 									<label for="bhk1">Non-collateral:</label>
 								</span>
-								<div class="txt-ct" data-error="">
-									<input type="text" data-radio="collateralInput" class="common-inputType" id="">
+								<div class="txt-ct data-tg" data-error="" data-ch-input="show1">
+									<input type="text" class="common-inputType" id="">
 									<span class="txt-error">Error message</span>
 									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
 								</div>
-								<span class="inp_radio type-2">
-									<input id="bhk2" data-ch="hide" name="test6" type="radio" checked="checked">
+								<span class="inp_radio type-2" data-radio="collateralInput">
+									<input id="bhk2" data-ch="show2" name="test5" type="radio">
 									<label for="bhk2">Collateral:</label>
 								</span>
-								<div class="txt-ct" data-error="">
-									<input type="text" data-radio="collateralInput" class="common-inputType" id="">
+								<div class="txt-ct data-tg" data-error="" data-ch-input="show2" style="display:none;">
+									<input type="text" class="common-inputType" id="">
 									<span class="txt-error">Error message</span>
 									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
 								</div>
 
 								<span class="inp_radio type-2">
-									<input id="bhk3"data-ch="show" name="test7" type="radio">
+									<input id="bhk3" name="test5" type="radio" data-ch="all-hide">
 									<label for="bhk3">No</label>
 								</span>
 
@@ -823,7 +823,7 @@
 							<p class="lpd_tit">Current salary (monthly)</p>
 							<p class="lpd_stit">Input your current monthly salary</p>
 							<div class="txt-ct" data-error="">
-								<input type="text" data-radio="collateralInput" class="common-inputType" id="" value="peso">
+								<input type="text" class="common-inputType" id="" value="peso">
 								<span class="txt-error">Error message</span>
 								<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
 							</div>
@@ -1066,12 +1066,27 @@
 		var $dataRadioColl = $('[data-radio="collateral"]'),
 			$dataInput = $('[data-radio="collateralInput"]');
 
+		// data-ch-input="show1"
+
 		$dataRadioColl.find('[data-ch]').click(function(){
-			if( $(this).attr('data-ch') == 'show' ){
+			var $tag = $(this).attr('data-ch');
+
+			console.log($tag);
+
+			$dataRadioColl.find('.data-tg').hide();
+			$dataRadioColl.find('[data-ch-input="' + $tag + '"]').show();
+
+			if( $tag == 'all-hide' ){
+				$dataRadioColl.find('.data-tg').hide();
+			}
+
+			/*if( $(this).attr('data-ch') == 'show' ){
+				console.log(1);
 				$dataInput.show();
 			}else{
+				console.log(2);
 				$dataInput.hide();
-			}
+			}*/
 		});
 
 		// 작업 완료시 삭제
