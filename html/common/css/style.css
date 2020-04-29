@@ -518,6 +518,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .popup_wrap.type-4 .t-3 span{display:block;color: #DF2451;}
 #INQUIRY,
 #INQUIRY *{transition:all 0.2s;}
+#INQUIRY .btn-fixed-inquery{left:10px;right:10px;bottom:10px;}
 .doc-step{overflow:auto;height:404px;}
 .doc-step .t-1,
 .doc-step .t-2{text-align:center;}
