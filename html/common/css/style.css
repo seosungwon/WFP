@@ -245,7 +245,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 
 /* common-btn fixed */
 .btn-fixed,
-.btn-fixed-inquery{position:fixed !important;bottom:0;left:0;right:0;z-index:1200 !important;}
+.btn-fixed-inquery{position:fixed !important;bottom:50px;left:20px;right:20px;z-index:1200 !important;}
 
 /* data-btn="top-fixed-btn" */
 [data-btn="top-fixed-btn"]{background:#fff;padding:10px 20px 20px 20px;}
@@ -471,6 +471,8 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .popup_wrap .inner-rule{text-align:left;padding:20px 25px;overflow:scroll;height:100%;font-family:'Lato-Regular';font-size: 12px;color: #222;letter-spacing: 0;}
 .popup_wrap .inner-rule .gap{height:150px;}
 .popup_wrap .inner-rule .gap.type-2{height:130px;}
+.popup_wrap .inner-rule .gap2{height:130px;}
+.popup_wrap .inner-rule .gap3{height:100px;}
 
 
 .popup_wrap.type-3{}
@@ -518,7 +520,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .popup_wrap.type-4 .t-3 span{display:block;color: #DF2451;}
 #INQUIRY,
 #INQUIRY *{transition:all 0.2s;}
-#INQUIRY .btn-fixed-inquery{left:10px;right:10px;bottom:10px;}
+#INQUIRY .btn-fixed-inquery{left:20px;right:20px;bottom:50px;}
 .doc-step{overflow:auto;height:404px;}
 .doc-step .t-1,
 .doc-step .t-2{text-align:center;}
@@ -1540,6 +1542,8 @@ background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;backgro
 
 
 
+
+
 /* pc _ 768~ */
 @media all and (min-width:768px) {
 
@@ -1676,6 +1680,7 @@ background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;backgro
 	.box-gapType-1 .inner-gap-1 .btn-fixedTwo .common-btnType-7{width:auto;float:none;width:300px;}
 	.box-gapType-1.gap-2{padding-top:100px;}
 	.box-gapType-1.gap-2 .inner-gap-1{width:321px;padding:173px 90px 40px 90px;}
+	.box-gapType-1.gap-3{padding-top:150px;}
 	.box-gapType-1 .inner-gap-1 .box-complete{position:initial;}
 	.box-gapType-1 .inner-gap-1 .box-complete .inner{padding:0;margin-bottom:-23px;}
 	.box-gapType-1 .inner-gap-1 .box-complete .inner:after{top:67px;margin-top:-106px;}
