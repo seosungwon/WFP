@@ -115,7 +115,7 @@
 <!-- //계산기 버튼 -->
 
 <!-- loanCalculator layerpopup -->
-<div id="loanCalculator" class="popup_wrap rule">
+<div id="loanCalculator" class="popup_wrap rule type-3">
 	<div class="gap-rule">
 		<div data-control="cl">
 			<a href="#loanCalculator" class="btn-cl">
@@ -141,7 +141,7 @@
 										</span>
 									</div>
 									<div class="gap">
-										<span class="inp_radio type-3">
+										<span class="inp_radio type-3 ir">
 											<input id="chk2" name="test" type="radio">
 											<label for="chk2">Secured Loan</label>
 										</span>
@@ -191,62 +191,67 @@
 				<!-- //D 개발용 -->
 
 				<div class="col-sm-8">
-					<div class="common-calculator-wrp">
-						<div class="calculator">
-							<div class="slider-wrp">
-								<div class="slider-item">
-									<div class="calc-sum-wrp text-center">
-										<span class="calc_txt">Loan Amount:</span>
-										<span id="calc-sum"></span>
-										<span class="calc_txt2">peso</span>
-									</div>
-									<div class="calc-slider-sum" id="calc-slider-sum"></div>
-									<div class="row text-sum">
-										<div class="col-xs-6 num">20,000</div>
-										<div class="col-xs-6 text-right ">500,000</div>
-									</div>
-								</div>
-								<div class="slider-item" style="display:none;">
-									<div class="calc-time-wrp text-center">
-										<span id="calc-time"></span>
-									</div>
-									<div class="calc-slider-time" id="calc-slider-time"></div>
-									<div class="row text-sum">
-										<div class="col-xs-6 ">from 61 days</div>
-										<div class="col-xs-6 text-right">365 day</div>
-									</div>
-								</div>
-							</div>
-							<div class="count-loans">
-								<div class="row">
-									<div class="col-xs-12 col-sm-4 text-center">Borrowing
-										<span class="calc_txt2">peso</span>
-										<span id="count-sum">50,000</span>
-									</div>
-									<div class="col-xs-12 col-sm-4 text-center pt">Interest
-										<span class="calc_txt2">peso</span>
-										<span id="count-fee">8,442.00</span>
-									</div>
-									<div class="col-xs-12 col-sm-4 text-center">Total repayment
-										<span class="calc_txt2">peso</span>
-										<span id="count-total">8,442.00</span>
-									</div>
-								</div>
-							</div>
-							<div class="loan_btn">
-								<a href="#none" class="common-btnType-15 waves-effect waves-light btnSel-bg" tabindex="0">Apply Now!</a>
-							</div>
+				    <div class="common-calculator-wrp">
+				        <div class="calculator">
+				               <div class="slider-wrp">
+				                    <div class="slider-item">
+				                        <div class="calc-sum-wrp text-center">
+				                        	<span class="calc_txt">Loan Amount:</span>
+				                            <span id="calc-sum"></span>
+				                            <span class="calc_txt2">peso</span>
+				                        </div>
+				                        <div class="calc-slider-sum" id="calc-slider-sum"></div>
+				                        <div class="row text-sum">
+				                        	<div class="col-xs-6 num">20,000</div>
+				                        	<div class="col-xs-6 text-right ">500,000</div>
+				                        </div>
+				                    </div>
+				                    <div class="slider-item" style="display:none;">
+				                        <div class="calc-time-wrp text-center">
+				                            <span id="calc-time"></span>
+				                        </div>
+				                        <div class="calc-slider-time" id="calc-slider-time"></div>
+				                        <div class="row text-sum">
+				                        	<div class="col-xs-6 ">from 61 days</div>
+				                        	<div class="col-xs-6 text-right">365 day</div>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="count-loans">
+			                        <div class="row">
+			                        	<div class="col-xs-12 col-sm-4 text-center">Borrowing
+			                        		<span class="calc_txt2">peso</span>
+			                        		<span id="count-sum">50,000</span>
+			                        	</div>
+			                        	<div class="col-xs-12 col-sm-4 text-center pt">Interest
+			                        		<span class="calc_txt2">peso</span>
+			                        		<span id="count-fee">8,442.00</span>
+			                        	</div>
+			                        	<div class="col-xs-12 col-sm-4 text-center pt2">Total repayment
+			                        		<span class="calc_txt2 ct2">peso</span>
+			                        		<span id="count-total">8,442.00</span>
+			                        	</div>
+			                        </div>
+				                </div>
+				                <div class="loan_btn">
+				                	<a href="#none" class="common-btnType-15 waves-effect waves-light btnSel-bg" tabindex="0">Apply Now!</a>
+				                </div>
+				                <div class="loan_txt">
+				                	<p>Monthly amortization above are indicative only.
+									The final loan amount, interest rate will be decided after reviewing the documents submitted.</p>
+				                </div>
 
-						</div>
+				        </div>
 
-					</div>
+				    </div>
 				</div>
 				<!-- //sliderbar -->
 			</div>
-			<!-- 가상 공간 -->
+			 <!-- 가상 공간 -->
 			<div class="gap-2"></div>
 			<!-- //가상 공간 -->
 		</div>
+
 	</div>
 
 	<a href="#none" data-button="btn-prev2" class="sel btn-close">
@@ -274,11 +279,12 @@
 			<div class="box-gapType-1 mobile-width400">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1">
-					<ul class="pt0">
+					<ul class="pt30">
 						<li>
-							<p class="tt-1">Last Name <strong>*</strong></p>
+							<!-- <p class="tt-1">Last Name <strong>*</strong></p> -->
 							<div class="txt-ct displayTableType-1" data-error="idTestIq">
 								<div class="displayCell">
+									<span class="txt-1">Last Name <strong>*</strong></span>
 									<input type="text" class="common-inputType" id="idTestIq" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 									<span class="txt-error">Error message</span>
 								</div>
@@ -293,19 +299,21 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">Contact Number <strong>*</strong></p>
+							<!-- <p class="tt-1">Contact Number <strong>*</strong></p> -->
 							<div class="txt-ct" data-error="">
+								<span class="txt-1">Contact Number <strong>*</strong></span>
 								<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
 								<p class="nt-1">Please provide a valid mobile number.</p>
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">Email Address <strong>*</strong></p>
+							<!-- <p class="tt-1">Contact Number <strong>*</strong></p> -->
 							<div class="txt-ct" data-error="">
+								<span class="txt-1">Email Address <strong>*</strong></span>
 								<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
-								<p class="nt-1">Please provide a valid Email address.</p>
+								<p class="nt-1">Please provide a valid mobile number.</p>
 							</div>
 						</li>
 					</ul>
@@ -335,9 +343,9 @@
 			<div class="box-gapType-1 mobile-width400">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1 type-2">
-					<ul>
+					<ul class="pt0">
 						<li>
-							<p class="tt-1">What would you like to learn more about?</p>
+							<p class="tt-3">What would you like to learn more about?</p>
 							<div class="txt-ct">
 								<select class="common-selectType">
 									<option value="" hidden="">Select</option>
@@ -348,19 +356,14 @@
 						</li>
 
 						<li>
-							<p class="tt-1">How can we help you?</p>
+							<p class="tt-3">How can we help you?</p>
 							<div class="txt-ct">
 								<textarea class="common-textareaType-1"></textarea>
 							</div>
 						</li>
 						<li>
-							<p class="tt-1">Attachment</p>
-							<div class="txt-ct">
-								<!--
-									**
-										url 알려 주시면 모바일에서 확인 테스트 하겠습니다.
-									**
-								-->
+							<p class="tt-3">Attachment</p>
+							<div class="txt-ct pb0">
 								<div data-control="fileBox">
 									<!-- front.js 에서 prepend로 뿌려 주고 있는 위치 -->
 									<!--
@@ -384,9 +387,13 @@
 				<div class="gap"></div>
 				<!-- //가상 공간 -->
 				<div class="btn-fixed-inquery pc-btnFixed">
-					<div class="btn-fixedTwo">
-						<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev" data-btn="prev"><span class="icon-1">BACK</span></a>
-						<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span>SEND</span></a>
+					<div class="btn-fixedTwo type-2">
+						<div>
+							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
+						</div>
+						<div>
+							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">SUBMIT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						</div>
 					</div>
 				</div>
 			</div>
