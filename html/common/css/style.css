@@ -474,6 +474,9 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 .popup_wrap .inner-rule .gap.type-2{height:130px;}
 .popup_wrap .inner-rule .gap2{height:130px;}
 .popup_wrap .inner-rule .gap3{height:100px;}
+.popup_wrap.rule [data-button="btn-prev2"]:after{content:'';display:block;clear:both;background:url('../images/btn/btn_close.jpg') no-repeat 0 0;position:absolute;top:0;right:0;width:28px;height:36px;transition:all 0.5s;}/* index id="loanPossibility"에 레이어팝업 닫기 버튼 모바일에서 안보여서 media 밖으로 빼놈 */
+
+
 
 
 .popup_wrap.type-3{}
@@ -1980,7 +1983,7 @@ background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;backgro
 	.popup_wrap.rule .gap-rule{position:fixed;width:640px;height:514px;left:50%;top:50%;margin:-320px 0 0 -257px;background:#fff;overflow:hidden;}
 	.popup_wrap.rule [data-button="btn-prev2"]{position:absolute;top:12px;right:14px;left:initial;width:28px;height:36px;}
 	.popup_wrap.rule [data-button="btn-prev2"] span{display:none;}
-	.popup_wrap.rule [data-button="btn-prev2"]:after{content:'';display:block;clear:both;background:url('../images/btn/btn_close.jpg') no-repeat 0 0;position:absolute;top:0;right:0;width:28px;height:36px;transition:all 0.5s;}
+	/* .popup_wrap.rule [data-button="btn-prev2"]:after{content:'';display:block;clear:both;background:url('../images/btn/btn_close.jpg') no-repeat 0 0;position:absolute;top:0;right:0;width:28px;height:36px;transition:all 0.5s;} */
 	.popup_wrap.rule [data-button="btn-prev2"]:hover:after{transform: rotate(180deg);}
 	.popup_wrap.rule .box-rule .header-rule{font-size:30px;text-align:left;border-bottom:0;padding:39px 47px 0 47px;font-weight:normal;}
 	.popup_wrap.rule .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 70px 0 70px;}
