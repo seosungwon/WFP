@@ -750,7 +750,7 @@
 		<!--  //inner-rule popup2 -->
 
 		<!-- inner-rule popup3 -->
-		<div class="inner-rule">
+		<div class="inner-rule" style="display:none;">
 			<p class="txt-3">Please fill out with complete details.<br>
 			You can confirm your loan possibility.</p>
 			<div class="list-step">
@@ -771,22 +771,23 @@
 									<input id="bhk1" data-ch="show1" name="test5" type="radio" checked="checked">
 									<label for="bhk1">Non-collateral:</label>
 								</span>
-								<div class="txt-ct data-tg" data-error="" data-ch-input="show1">
+								<p class="lpd_stit2">Input your loan amount</p>
+								<div class="txt-ct txt-peso data-tg" data-error="" data-ch-input="show1">
 									<input type="text" class="common-inputType" id="">
 									<span class="txt-error">Error message</span>
 									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
 								</div>
-								<span class="inp_radio type-2" data-radio="collateralInput">
+								<span class="inp_radio type-2 mt" data-radio="collateralInput">
 									<input id="bhk2" data-ch="show2" name="test5" type="radio">
 									<label for="bhk2">Collateral:</label>
 								</span>
-								<div class="txt-ct data-tg" data-error="" data-ch-input="show2" style="display:none;">
+								<div class="txt-ct txt-peso data-tg" data-error="" data-ch-input="show2" style="display:none;">
 									<input type="text" class="common-inputType" id="">
 									<span class="txt-error">Error message</span>
 									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
 								</div>
 
-								<span class="inp_radio type-2">
+								<span class="inp_radio type-2 mt">
 									<input id="bhk3" name="test5" type="radio" data-ch="all-hide">
 									<label for="bhk3">No</label>
 								</span>
@@ -822,8 +823,8 @@
 						<li>
 							<p class="lpd_tit">Current salary (monthly)</p>
 							<p class="lpd_stit">Input your current monthly salary</p>
-							<div class="txt-ct" data-error="">
-								<input type="text" class="common-inputType" id="" value="peso">
+							<div class="txt-ct txt-peso" data-error="">
+								<input type="text" class="common-inputType" id="" >
 								<span class="txt-error">Error message</span>
 								<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
 							</div>
@@ -857,7 +858,7 @@
 			<div class="box-gapType-1 mobile-width400 pt0">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1 type-2">
-					<ul class="pop_type1">
+					<ul class="pop_type1 pt0">
 						<li>
 							<div class="txt-ct peso_num">
 								<p class="txt1">Possible Loan Amount</p>
@@ -892,11 +893,11 @@
 		<!--  //inner-rule popup4 -->
 
 		<!-- inner-rule popup5 -->
-		<div class="inner-rule" style="display:none;">
+		<div class="inner-rule">
 			<div class="box-gapType-1 mobile-width400 pt0">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1 type-2">
-					<ul class="pop_type1">
+					<ul class="pop_type1 pt30">
 						<li>
 							<div class="txt-ct peso_num">
 								<p class="txt1">Possible Loan Amount</p>
