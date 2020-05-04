@@ -983,8 +983,10 @@ window.fileBox = fileBox;
 			$('[data-control="cl-close"]').click(function(){
 				$('#loanCalculator').removeClass('show');
 				$($items).find('.btn-cl').removeClass('show');
+				$('#loanCalculator').attr('style','');
 			});
 
+			// 계산기 on 버튼
 			$('#loanCalculator [data-control="cl"] a').click(function(){
 				$('#loanCalculator').removeClass('show');
 				$($items).find('.btn-cl').removeClass('show');
@@ -1029,8 +1031,6 @@ window.cl = cl;
 
 						$('[data-ckInfo]').hide();
 						$('[data-ckInfo="' + $cnt + '"]').show();
-
-						console.log($cnt);
 					}
 				});
 			}

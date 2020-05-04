@@ -257,7 +257,7 @@
 
 	</div>
 
-	<a href="#none" data-button="btn-prev2" class="sel btn-close">
+	<a href="#none" data-button="btn-prev2" class="sel btn-close" data-control="cl-close">
 		<p class="gap"><span></span><span></span><span></span></p>
 	</a>
 </div>
