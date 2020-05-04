@@ -127,7 +127,7 @@
 		</div>
 		<div class="inner-rule loan_wrap">
 			<!-- 계산기 콘텐츠 영역 -->
-			<div class="txt-ct inp_radioGap-1">
+			<div class="txt-ct inp_radioGap-1" data-event="ctTabContent">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1 type-3">
 					<ul>
@@ -136,20 +136,20 @@
 								<div class="txt-ct inp_radioGap-1">
 									<div class="gap">
 										<span class="inp_radio type-3">
-											<input id="chk1" name="test" type="radio" checked="checked">
+											<input id="chk1" name="test" type="radio" data-ck="1" checked="checked">
 											<label for="chk1">Credit Loan</label>
 										</span>
 									</div>
 									<div class="gap">
 										<span class="inp_radio type-3 ir">
-											<input id="chk2" name="test" type="radio">
+											<input id="chk2" name="test" type="radio" data-ck="2">
 											<label for="chk2">Secured Loan</label>
 										</span>
 									</div>
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-ckInfo="1">
 							<p class="tt-3">Employment Status:</p>
 							<div class="txt-ct">
 								<select class="common-selectType">
@@ -158,7 +158,7 @@
 								</select>
 							</div>
 						</li>
-						<li>
+						<li data-ckInfo="1">
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Payment Term:</p>
@@ -178,6 +178,9 @@
 								</div>
 							</div>
 						</li>
+						<li data-ckInfo="2">
+							여기
+						</li>
 					</ul>
 				</div>
 				<!-- //box-inputType-1 -->
@@ -193,7 +196,7 @@
 				<div class="col-sm-8">
 				    <div class="common-calculator-wrp">
 				        <div class="calculator">
-				               <div class="slider-wrp">
+				               <div class="slider-wrp" data-ckInfo="1">
 				                    <div class="slider-item">
 				                        <div class="calc-sum-wrp text-center">
 				                        	<span class="calc_txt">Loan Amount:</span>
@@ -956,6 +959,7 @@
 	footerSite.initialize(); // 공통 prototype footer family site
 	fileBox.initialize(); // inquiry input file prototype script
 	cl.initialize(); // data-control="cl" prototype script
+	ctTabContent.initialize(); // data-event="ctTabContent" prototype script
 
 	$(function(){
 		/*

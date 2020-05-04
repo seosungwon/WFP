@@ -871,7 +871,6 @@ if( $('.btn-fixed').length > 0 ){
 	window.wcfinance = wcfinance;
 }(jQuery, window));
 
-
 (function ($, window, undefined){
 	"use strict";
 	/**
@@ -994,6 +993,60 @@ window.fileBox = fileBox;
 	};
 
 window.cl = cl;
+}(jQuery, window));
+
+(function ($, window, undefined){
+	"use strict";
+	/**
+		* @description 계산기 tab 버튼 click
+		* @modify 20200504 추가
+	*/
+	var ctTabContent = {
+		/** 플러그인명 */
+		bindjQuery: 'ctTabContent',
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			ctTabContent: '[data-event="ctTabContent"]'
+		},
+		initialize: function(){
+			var me = this;
+
+			me._change();
+		},
+		_change: function (){
+			var me = this,
+			$items = me.selectors.ctTabContent,
+			$target = $($items).find('[type="radio"]');
+
+			// data-ck="1" / data-ck="2" 추출 해서 data-ckInfo="" cnt 값 찾기
+			function cntShow(){
+				$target.each(function(){
+					if( $(this).is(":checked") ){
+						var $cnt = $(this).attr('data-ck');
+
+						$('[data-ckInfo]').hide();
+						$('[data-ckInfo="' + $cnt + '"]').show();
+
+						console.log($cnt);
+					}
+				});
+			}
+
+			// 실행
+			cntShow();
+
+			// click
+			$target.click(function(){
+				cntShow();
+			});
+
+		}
+	};
+
+window.ctTabContent = ctTabContent;
 }(jQuery, window));
 
 // footer sub page
