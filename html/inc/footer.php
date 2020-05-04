@@ -413,7 +413,7 @@
 <div id="loanStatus" class="popup_wrap rule type-3">
 	<div class="gap-rule">
 		<div class="box-rule">
-			<h3 class="header-rule type-2" style="border-bottom:0;">Status of your loan application</h3>
+			<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Status of your loan application</h3>
 		</div>
 		<!-- data-inquiryStep 3 -->
 		<div class="inner-rule" data-inquiryStep="3">
@@ -422,7 +422,7 @@
 				<div class="box-inputType-1">
 					<ul class="pcon">
 						<li>
-							<p class="tt-1">Contact Number <strong>*</strong></p>
+							<p class="tt-3">Contact Number <strong>*</strong></p>
 							<div class="txt-ct" data-error="">
 								<input type="text" class="common-inputType" id="" data-checkInquiry="loanStatusValidation"><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
@@ -522,8 +522,9 @@
 					</div>
 					<!-- //box-loanStep -->
 					<!-- btn-fixed-inquery -->
-					<a href="#confirm" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">CONFIRM</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+					<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span>CONFIRM</span></a><!-- class=" btnSel-bg" 추가 버튼활성화 -->
 					<!-- //btn-fixed-inquery -->
+
 					<!-- 가상 공간 -->
 					<div class="gap"></div>
 					<!-- //가상 공간 -->
@@ -547,7 +548,7 @@
 
 		<!-- popup1 -->
 		<!-- inner-rule -->
-		<div class="inner-rule" style="display:none;">
+		<div class="inner-rule">
 			<div class="box-complete">
 				<div class="inner_1">
 					<p class="txt1">
@@ -604,13 +605,13 @@
 <!-- //경고팝업 confirm layerpopup -->
 
 <!-- loanPossibility layerpopup -->
-<div id="loanPossibility" class="popup_wrap rule type-3" style="display:block;">
+<div id="loanPossibility" class="popup_wrap rule type-3" style="display:none;">
 	<div class="gap-rule type-2">
 		<div class="box-rule">
 			<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Check your possible loan amount</h3>
 		</div>
 		<!-- inner-rule popup1 -->
-		<div class="inner-rule" style="display:none;">
+		<div class="inner-rule">
 			<p class="txt-3">Please fill out with complete details.<br>
 			You can confirm your loan possibility.</p>
 			<div class="list-step">
@@ -671,16 +672,20 @@
 				<!-- //box-inputType-1 -->
 			</div>
 			<!-- btn-fixed-inquery -->
-			<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">CHECK</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+			<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span class="icon-1">CHECK</span></a><!-- class=" btnSel-bg" 추가 버튼활성화 -->
 			<!-- //btn-fixed-inquery -->
 
 			<!-- 가상 공간 -->
 			 <div class="gap3"></div>
 			<!-- //가상 공간 -->
 
-			<a href="#none" class="sel btn-close">
+			<a href="#none" data-button="btn-prev2" class="sel btn-close">
 				<p class="gap"><span></span><span></span><span></span></p>
 			</a>
+
+			<!-- 가상 공간 -->
+			 <div class="gap3"></div>
+			<!-- //가상 공간 -->
 		</div>
 		<!-- //inner-rule popup1 -->
 
@@ -893,7 +898,7 @@
 		<!--  //inner-rule popup4 -->
 
 		<!-- inner-rule popup5 -->
-		<div class="inner-rule">
+		<div class="inner-rule" style="display:none;">
 			<div class="box-gapType-1 mobile-width400 pt0">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1 type-2">

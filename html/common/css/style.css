@@ -81,6 +81,7 @@ body.fx{overflow:hidden;}
 .pt40{padding-top:40px !important;}
 .pt70{padding-top:70px !important;}
 .pb20{padding-bottom:20px !important;}
+.pb40{padding-bottom:40px !important;}
 
 /*margin*/
 .mt0{margin-top:0px !important;}
@@ -651,7 +652,7 @@ border: 1px solid #fff;border-radius: 1px;border-radius: 1px;padding:0 12px;}
 [data-click="main-vsSlick"] .txt-1{font-family: Lato-Black;font-size: 36px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 44px;position: absolute;top:115px;left: 0px;right: 0px;margin:0 auto;}
 [data-click="main-vsSlick"] .txt-1 span.point{font-family: Lato-Black;font-size: 36px;color: #FF7A01;letter-spacing: -0.2px;line-height: 44px;}
 [data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a{font-family: Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;display:block;}
-[data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a:after{content:'';display:block;clear:both;background-repeat:no-repeat;background-position:0;background-size:16px;width:16px;height:16px;position:absolute;top:190px;right:112px;background-image:url('../images/icon/ic_arrow_more_white.png');}
+[data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a:after{content:'';display:block;clear:both;background-repeat:no-repeat;background-position:0;background-size:16px;width:16px;height:16px;position:absolute;top:191px;right:95px;background-image:url('../images/icon/ic_arrow_more_white.png');}
 [data-click="main-vsSlick"] .txt-1 strong{color:#df2451;display:block;}
 [data-click="main-vsSlick"] .txt-2{position:absolute;top:321px;left:100px;font-family: Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;text-align:center;}
 /*[data-click="main-vsSlick"] .txt-2 span:after{content:'';display:block;clear:both;background-repeat:no-repeat;background-position:0;background-size:16px;width:16px;height:16px;position:absolute;top:3px;right:-14px;background-image:url('../images/icon/ic_arrow_more_white.png');}*/
@@ -1592,7 +1593,7 @@ background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;backgro
 	[data-target="nav"] > ul > li:hover ul{opacity:1;visibility:visible;transition:all 0.2s;}
 	[data-target="nav"] > ul > li > ul > li > a{font-size:16px;color: #666;letter-spacing: -0.2px;text-align:left;line-height:60px;padding:0 0 0 22px;transition:all 0.5s;border-bottom:1px solid #E6E6E6;}
 	[data-target="nav"] > ul > li > ul > li > a:hover,
-	[data-target="nav"] > ul > li > ul > li > a:focus{background:transparent;text-decoration:underline;color:#FF7A01;}
+	[data-target="nav"] > ul > li > ul > li > a:focus{background:transparent;text-decoration:underline;color:#FF7A01;text-decoration:none;}
 
 	/* main slick */
 	[data-click="main-vsSlick"].mainVs .btn-prev,
