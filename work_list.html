@@ -1,109 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title></title>
+
+</head>
+<body>
+
+<script src="static/js/jquery-1.12.1.min.js"></script>
+<script src="static/js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+
+	});
+</script>
+
+<style type="text/css">
+html{-webkit-text-size-adjust: antialiased;-moz-osx-font-smoothing: grayscale;}
+html, body{width:100%; height:100%;}
+body,h1,h2,h3,h4,h5,h6,input,button{font-family:'Lato-Regular', Dotum,'돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-size:12px;}
+caption, legend{font-size: 0;line-height: 0;text-indent: -5000px;}
+a{color:#666;text-decoration:none;}
+a:hover{text-decoration:underline;}
+i,em,address{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+body{transition:none;background:#fff;}
+#wrap{margin:10px;}
+.cred{color:#f00 !important;}
+.cblue{color:#05f!important;}
+.txtc{text-align:center !important;}
+.c1{background:#e8e8e8;}
+.s_tit{font-size:18px;font-weight:bold;color:#666;}
+.history{}
+.history .ht_table{border-collapse:collapse;border-color:#ccc;border-spacing:0;border-style:solid;border-width:1px;width:100%;}
+.history .ht_table th,
+.history .ht_table td{border-style:solid;border-width:0px;color:#000;font-family:Arial, sans-serif;font-size:12px;overflow:hidden;padding:10px 5px;word-break:normal;border-bottom:1px solid #ccc;}
+.history .ht_table
+
+.web_list{margin-top:20px !important;}
+.web_list .tg{border-collapse:collapse;border-color:#ccc;border-spacing:0;border-style:solid;border-width:1px;width:100%;margin-top:20px;}
+.web_list .tg th{background-color:#ccc;border-style:solid;border-width:0px;color:#000;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;border-color:inherit;font-size:12px;text-align:center;vertical-align:middle;font-weight:bold;}
+.web_list .tg td{border-color:#9ABAD9;border-style:solid;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;border-color:inherit;font-size:12px;text-align:left;vertical-align:middle;border:1px solid #ccc;}
 
 
-<!-- wrap -->
+
+
+</style>
 
 <div id="wrap">
-	<div class="list_wrap">
-		<table border="0" class="working-list">
-        <colgroup>
-            <col style="width:5%;"/>
-            <col style="width:auto;"/>
-            <col style="width:30%;"/>
-            <col style="width:15%;"/>
-            <col style="width:10%;"/>
-            <col style="width:10%;"/>
-            <col style="width:7%;"/>
-        </colgroup>
-        <thead>
-        <tr>
-            <th>No</th>
-            <th>Depth</th>
-            <th>File Directory (URL)</th>
-            <th>
-                <select name="select" id="">
-                    <option value="">담당자</option>
-                </select>
-            </th>
-            <th>
-                <select name="select">
-                    <option value="">date</option>
-                </select>
-            </th>
-            <th>검수 상태</th>
-            <th>퍼블 상태</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="linetitle">
-            <td>
-                <div class="sub-tit">서브 타이틀</div>
-            </td>
-        </tr>
-        <tr>
-            <td>*** > *** > 조회</td>
-            <td>/index.html</td>
-            <td>김재희</td>
-            <td>2017-02-12</td>
-            <td>검수요청</td>
-            <td><span class="state"><span class="complete"></span></span></td>
-        </tr>
-        <tr>
-            <td>*** > *** > 퇴직</td>
-            <td>/info/sub.html</td>
-            <td>홍길동</td>
-            <td>2017-02-13</td>
-            <td>검수완료</td>
-            <td><span class="state"><span class="complete"></span></span></td>
-        </tr>
-        <tr class="del">
-            <td>*** > *** > 등록</td>
-            <td>/html/temp04.html</td>
-            <td>홍길동</td>
-            <td>2017-02-15</td>
-            <td>검수완료</td>
-            <td><span class="state"><span class="delete"></span></span></td>
-        </tr>
-        <tr class="linetitle">
-            <td><div class="sub-tit">서브 타이틀</div></td>
-        </tr>
-        <tr>
-            <td>코이카 > 게시판 > 상세</td>
-            <td>/html/temp01.html</td>
-            <td>홍길동</td>
-            <td>2017-02-12</td>
-            <td>검수요청</td>
-            <td><span class="state"><span class="edit"></span></span></td>
-        </tr>
-        <tr>
-            <td>코이카 > 게시판 > 쓰기</td>
-            <td>/html/temp02.html</td>
-            <td>홍길동</td>
-            <td>2017-02-13</td>
-            <td>검수완료</td>
-            <td><span class="state"><span class="complete"></span></span></td>
-        </tr>
-        <tr>
-            <td>코이카 > 게시판 > 읽기</td>
-            <td>/html/temp02.html</td>
-            <td>김재희</td>
-            <td>2017-02-11</td>
-            <td>검수요청</td>
-            <td><span class="state"><span class="undecided"></span></span></td>
-        </tr>
-        <tr>
-            <td>코이카 > 게시판 > 읽기</td>
-            <td>/html/temp02.html</td>
-            <td>홍길동</td>
-            <td>2017-02-11</td>
-            <td>검수요청</td>
-            <td><span class="state"><span class="undecided"></span></span></td>
-        </tr>
-        </tbody>
 
-    </table>
+	<!-- 수정 히스토리 -->
+	<div class="history">
+		<p class="s_tit">WFP 수정 히스토리</p>
+		<table class="ht_table">
+			<caption>수정 히스토리</caption>
+			<colgroup>
+				<col width="10%">
+				<col width="20%">
+				<col width="auto">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th rowspan="2">2020-04-30</th>
+					<td>수정</td>
+					<td>testtesttesttesttesttesttesttesttest</td>
+				</tr>
+				<tr>
+					<td>수정</td>
+					<td>testtesttesttesttesttesttesttesttest</td>
+				</tr>
+		</tbody>
+		</table>
 	</div>
+	<!-- //수정 히스토리 -->
+
+	<!-- 퍼블리싱 리스트 -->
+	<div class="web_list">
+		<table class="tg">
+			<caption>퍼블리싱 리스트</caption>
+			<colgroup>
+				<col width="10%">
+				<col width="10%">
+				<col width="10%">
+				<col width="10%">
+				<col width="10%">
+				<col width="auto">
+				<col width="10%">
+				<col width="10%">
+				<col width="10%">
+			</colgroup>
+			<tbody>
+			  <tr>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>3Depth</th>
+				<th>4Depth</th>
+				<th>파일명</th>
+				<th>URL</th>
+				<th>완료일</th>
+				<th>기타</th>
+			  </tr>
+			  <tr>
+				<td class="c1"></td>
+				<td>main</td>
+				<td></td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/index.html" target="_blank">index.html</a></td>
+				<td>http://172.15.5.88//WFP/html/index.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td rowspan="5">loan</td>
+				<td>Personal Loans</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/loan_personal.html" target="_blank">loan_personal.html</a></td>
+				<td>http://172.15.5.88//WFP/html/loan_personal.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Salary Loan</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="cblue">디자인 추가예정</td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Business Loan</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="cblue">디자인 추가예정</td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Auto Loan</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="cblue">디자인 추가예정</td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Truck Loan</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="cred">삭제</td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>FAQs</td>
+				<td></td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/faqs.html" target="_blank">faqs.html</a></td>
+				<td>http://172.15.5.88//WFP/html/faqs.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td rowspan="3">About Us</td>
+				<td>Our Story</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/aboutus_ourstory.html" target="_blank">aboutus_ourstory.html</a></td>
+				<td>http://172.15.5.88//WFP/html/aboutus_ourstory.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Welcome Group Info</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/aboutus_welcomegroup_info.html" target="_blank">aboutus_welcomegroup_info.html</a></td>
+				<td>http://172.15.5.88//WFP/html/aboutus_welcomegroup_info.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Branch</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/aboutus_branches.html" target="_blank">aboutus_branches.html</a></td>
+				<td>http://172.15.5.88//WFP/html/aboutus_branches.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td rowspan="2">Blog</td>
+				<td>블로그</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/blog.html" target="_blank">blog.html</a></td>
+				<td>http://172.15.5.88//WFP/html/blog.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>블로그 상세</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/blog_detail.html" target="_blank">blog_detail.html</a></td>
+				<td>http://172.15.5.88//WFP/html/blog_detail.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td rowspan="3">Apply</td>
+				<td>step1</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/apply_step_1.html" target="_blank">apply_step_1.html</a></td>
+				<td>http://172.15.5.88//WFP/html/apply_step_1.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>step2</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/apply_step_2.html" target="_blank">apply_step_2.html</a></td>
+				<td>http://172.15.5.88//WFP/html/apply_step_2.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>step3</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/apply_step_3_complete.html" target="_blank">apply_step_3_complete.html</a></td>
+				<td>http://172.15.5.88//WFP/html/apply_step_3_complete.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Privacy Policy</td>
+				<td></td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/privacy_policy.html" target="_blank">privacy_policy.html</a></td>
+				<td>http://172.15.5.88//WFP/html/privacy_policy.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Declaration</td>
+				<td></td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/declaration.html" target="_blank">declaration.html</a></td>
+				<td>http://172.15.5.88//WFP/html/declaration.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td rowspan="3">popup</td>
+				<td>404</td>
+				<td>404_error</td>
+				<td><a href="http://172.15.5.88//WFP/html/404error.html" target="_blank">404error.html</a></td>
+				<td>http://172.15.5.88//WFP/html/404error.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>500</td>
+				<td>500_error</td>
+				<td><a href="http://172.15.5.88//WFP/html/500error.html" target="_blank">500error.html</a></td>
+				<td>http://172.15.5.88//WFP/html/500error.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td>Inquiry</td>
+				<td></td>
+				<td><a href="http://172.15.5.88//WFP/html/Inquiry.html" target="_blank">Inquiry.html</a></td>
+				<td>http://172.15.5.88//WFP/html/Inquiry.html</td>
+				<td class="txtc">2020-04-30</td>
+				<td></td>
+			  </tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //ㄴ퍼블리싱 리스트 -->
 </div>
-<!-- //wrap -->
 
 
-
+</body>
+</html>

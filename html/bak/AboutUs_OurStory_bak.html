@@ -1,0 +1,98 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap" class="gb-fff pdt0">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+		<!-- commonTab -->
+		<section data-slick-vs="commonTab">
+			<div>
+				<a href="#none" class="sel" data-index="1">Our Story</a>
+			</div>
+			<div>
+				<a href="#none" data-index="2">Welcome Group Info.</a>
+			</div>
+			<div>
+				<a href="#none" data-index="3">Branch</a>
+			</div>
+		</section>
+		<!-- //commonTab -->
+
+		<!-- pc-common-wd940 -->
+		<div class="pc-common-wd940">
+			<!-- top-ttGap-1 -->
+			<div class="top-ttGap-1">
+				<h3 class="common-ttType-1">Our Story</h3>
+				<p class="common-txtType-2">Welcome Finance Philippines offers Non-collateral and Collateral loan product that fit with the needs and goals of Filipino Market.</p>
+				<!-- common-tabType-2 -->
+				<div class="common-tabType-2" data-target="tab" style="display:none;">
+					<a href="#none" class="sel-tab"></a>
+					<ul>
+						<li class="sel"><a href="#none">Our Story</a></li>
+						<li><a href="#none">Welcome Group Info </a></li>
+						<li><a href="#none">News</a></li>
+						<li><a href="#none">Branches</a></li>
+					</ul>
+				</div>
+				<!-- //common-tabType-2 -->
+				<!-- <p class="common-txtType-3">Korea's trusted financing company is now within your reach.</p> -->
+			</div>
+			<!-- //top-ttGap-1 -->
+			<!-- box-contents -->
+			<div class="box-contents">
+				<img src="common/images/img/aboutUs_OurStorypc.png" alt="" style="width:100%;">
+				<!-- inner-contents -->
+				<div class="inner-contents">
+					<p class="ct-txt-1">Welcome Finance Inc. (Philippines) is a subsidiary of Welcome Financial Group of Korea.<br>We also have other subsidiaries in Cambodia and Laos.</p>
+					<p class="ct-txt-1">At Welcome Finance, we are offering competitive financial assistance with both collateral and non-collateral loan products.<br>We are dedicated to focusing on helping enrich the lives of Filipinos and promoting community-based lending with the help of our growing branches all over the Philippines.</p>
+					<p class="ct-txt-1">Welcome Finance endeavours to showcase the<br> innovative and tech-savvy culture of Korea and the warm-hearted hospitality<br>of Filipinos in fulfilling our objective to improve the<br> lives of our clients.</p>
+					<p class="ct-txt-1">Korean Smart. Filipino Heart</p>
+				</div>
+				<!-- //inner-contents -->
+			</div>
+			<!-- //box-contents -->
+		</div>
+		<!-- //pc-common-wd940 -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script src="common/js/slick.min.js"></script>
+<script type="text/javascript">
+	tabCommon.initialize(); // 공통 tabCommon load click // class="common-tabType-2"
+
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileSns = new HeaderSplit(null, null);
+
+		/*
+			* pc sub location menu
+			* var subLocation = new SubLocation('1뎁스', '2뎁스 활성화', '2뎁스 선택');
+		*/
+		var subLocation = new SubLocation('3', null, null);
+
+		$('body').attr('data-page', 'h1-logo'); // logo type
+	});
+</script>
+
+<script type="text/javascript">
+	$(function(){
+
+		// data-slick-vs="commonTab" prototype
+		commonTab.initialize();
+
+		setTimeout(function(){
+			// 해당 페이지 tab 활성화
+			var slideNo = $('[data-slick-vs="commonTab"] .sel').data('index');
+
+			$('[data-slick-vs="commonTab"]').slick('slickGoTo', slideNo - 1);
+		}, 500);
+	});
+</script>

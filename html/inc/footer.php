@@ -33,7 +33,7 @@
 					<li><a href="#none">Salary Loan</a><span>|</span></li>
 					<li><a href="#none">Business Loan</a><span>|</span></li>
 					<li><a href="#none">Auto Loan</a><span>|</span></li>
-					<li><a href="#none">Truck loan</a></li>
+					<!-- <li><a href="#none">Truck loan</a></li> -->
 				</ul>
 				<ul class="bt_list2">
 					<li><a href="#none">FAQs</a><span>|</span></li>
@@ -179,7 +179,65 @@
 							</div>
 						</li>
 						<li data-ckInfo="2">
-							여기
+							<div class="txt-ct displayTableType-1">
+								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Car kinds:</p>
+									<select class="common-selectType">
+										<option value="" hidden>Select</option>
+										<option>1</option>
+									</select>
+									<span class="txt-error">Year Made:</span>
+								</div>
+								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Monthly Add-On Rate:</p>
+									<select class="common-selectType">
+										<option value="" hidden>Select</option>
+										<option>1</option>
+									</select>
+									<span class="txt-error">Error message</span>
+								</div>
+							</div>
+						</li>
+						<li data-ckInfo="2">
+							<div class="txt-ct displayTableType-1">
+								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Purchased Year:</p>
+									<select class="common-selectType">
+										<option value="" hidden>Select</option>
+										<option>1</option>
+									</select>
+									<span class="txt-error">Error message</span>
+								</div>
+								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Purchased Amount:</p>
+									<input type="text" class="common-inputType" id="idTestIq" data-checkinquiry="validation">
+									<!-- <select class="common-selectType">
+										<option value="" hidden>Month</option>
+										<option>1</option>
+									</select> -->
+									<span class="txt-error">Error message</span>
+								</div>
+							</div>
+						</li>
+						<li data-ckInfo="2">
+							<div class="txt-ct displayTableType-1">
+								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Recorded Mileage:</p>
+									<select class="common-selectType">
+										<option value="" hidden>Select</option>
+										<option>1</option>
+									</select>
+									<span class="txt-error">Error message</span>
+								</div>
+								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Select payment term:</p>
+									<select class="common-selectType">
+										<option value="" hidden>Select</option>
+										<option>1</option>
+									</select>
+									<span class="txt-error">Error message</span>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -220,7 +278,7 @@
 				                        </div>
 				                    </div>
 				                </div>
-				                <div class="count-loans">
+				                <div class="count-loans" data-ckinfo="1">
 			                        <div class="row">
 			                        	<div class="col-xs-12 col-sm-4 text-center">Borrowing
 			                        		<span class="calc_txt2">peso</span>
@@ -233,6 +291,19 @@
 			                        	<div class="col-xs-12 col-sm-4 text-center pt2">Total repayment
 			                        		<span class="calc_txt2 ct2">peso</span>
 			                        		<span id="count-total">8,442.00</span>
+			                        	</div>
+			                        </div>
+				                </div>
+				                <div class="count-loans" data-ckinfo="2">
+			                        <div class="row">
+			                        	<div class="col-xs-12 col-sm-4 text-center pt pt0">Credit by OECR
+			                        		<span class="calc_txt2">peso</span>
+			                        		<span id="count-sum2">500,000</span>
+			                        	</div>
+			                        	<div class="col-xs-12 col-sm-4 text-center pt2">Monthly<br>Installment
+			                        		<span class="calc_txt2 ct2 ct3">peso</span>
+			                        		<span id="count-total2">8,442.00</span>
+			                        		<span class="in_case">* In case) Monthly Interest : 1.6%</span>
 			                        	</div>
 			                        </div>
 				                </div>

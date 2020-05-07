@@ -62,7 +62,7 @@
 									<a href="#none" data-d2Index="2">Salary Loan</a>
 									<a href="#none" data-d2Index="3">Business Loan</a>
 									<a href="#none" data-d2Index="4">Auto Loan</a>
-									<a href="#none" data-d2Index="5">Truck Loan</a>
+									<!-- <a href="#none" data-d2Index="5">Truck Loan</a> -->
 								</li>
 							</ul>
 						</li>
@@ -154,9 +154,9 @@
 						<li data-d2Index="4">
 							<a href="#none">Auto Loan</a>
 						</li>
-						<li data-d2Index="5">
+						<!-- <li data-d2Index="5">
 							<a href="#none">Truck Loan</a>
-						</li>
+						</li> -->
 					</ul>
 					<!-- //Loans -->
 				</div>
