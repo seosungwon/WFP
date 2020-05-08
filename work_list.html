@@ -31,13 +31,14 @@ body{transition:none;background:#fff;}
 .cred{color:#f00 !important;}
 .cblue{color:#05f!important;}
 .txtc{text-align:center !important;}
+.txtl{text-align:left !important;}
 .c1{background:#e8e8e8;}
 .s_tit{font-size:18px;font-weight:bold;color:#666;}
 .history{}
 .history .ht_table{border-collapse:collapse;border-color:#ccc;border-spacing:0;border-style:solid;border-width:1px;width:100%;}
-.history .ht_table th,
-.history .ht_table td{border-style:solid;border-width:0px;color:#000;font-family:Arial, sans-serif;font-size:12px;overflow:hidden;padding:10px 5px;word-break:normal;border-bottom:1px solid #ccc;}
-.history .ht_table
+.history .ht_table th{text-align:center;}
+.history .ht_table td{border-style:solid;border-width:0px;color:#000;font-family:Arial, sans-serif;font-size:12px;overflow:hidden;padding:10px 5px;word-break:normal;border-bottom:1px solid #ccc;text-align:left;}
+
 
 .web_list{margin-top:20px !important;}
 .web_list .tg{border-collapse:collapse;border-color:#ccc;border-spacing:0;border-style:solid;border-width:1px;width:100%;margin-top:20px;}
@@ -58,18 +59,22 @@ body{transition:none;background:#fff;}
 			<caption>수정 히스토리</caption>
 			<colgroup>
 				<col width="10%">
-				<col width="20%">
+				<col width="10%">
 				<col width="auto">
 			</colgroup>
 			<tbody>
 				<tr>
-					<th rowspan="2">2020-04-30</th>
+					<th rowspan="2">2020-05-08</th>
 					<td>수정</td>
-					<td>testtesttesttesttesttesttesttesttest</td>
+					<td>
+						404error.html<br>
+						500error.html<br>
+						- 간격수정
+					</td>
 				</tr>
 				<tr>
-					<td>수정</td>
-					<td>testtesttesttesttesttesttesttesttest</td>
+					<td></td>
+					<td></td>
 				</tr>
 		</tbody>
 		</table>
@@ -78,6 +83,7 @@ body{transition:none;background:#fff;}
 
 	<!-- 퍼블리싱 리스트 -->
 	<div class="web_list">
+		<p class="s_tit">퍼블리싱</p>
 		<table class="tg">
 			<caption>퍼블리싱 리스트</caption>
 			<colgroup>
@@ -265,13 +271,13 @@ body{transition:none;background:#fff;}
 			  </tr>
 			  <tr>
 				<td></td>
-				<td rowspan="3">popup</td>
+				<td rowspan="2">popup</td>
 				<td>404</td>
 				<td>404_error</td>
 				<td><a href="http://172.15.5.88//WFP/html/404error.html" target="_blank">404error.html</a></td>
 				<td>http://172.15.5.88//WFP/html/404error.html</td>
 				<td class="txtc">2020-04-30</td>
-				<td></td>
+				<td class="cblue">2020-05-08 수정</td>
 			  </tr>
 			  <tr>
 				<td></td>
@@ -280,16 +286,7 @@ body{transition:none;background:#fff;}
 				<td><a href="http://172.15.5.88//WFP/html/500error.html" target="_blank">500error.html</a></td>
 				<td>http://172.15.5.88//WFP/html/500error.html</td>
 				<td class="txtc">2020-04-30</td>
-				<td></td>
-			  </tr>
-			  <tr>
-				<td></td>
-				<td>Inquiry</td>
-				<td></td>
-				<td><a href="http://172.15.5.88//WFP/html/Inquiry.html" target="_blank">Inquiry.html</a></td>
-				<td>http://172.15.5.88//WFP/html/Inquiry.html</td>
-				<td class="txtc">2020-04-30</td>
-				<td></td>
+				<td class="cblue">2020-05-08 수정</td>
 			  </tr>
 			</tbody>
 		</table>
