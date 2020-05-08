@@ -1994,15 +1994,15 @@ text-align: right;padding-top:30px;}
 	.popup_wrap.rule [data-button="btn-prev2"]:hover:after{transform: rotate(180deg);}
 	.popup_wrap.rule .box-rule .header-rule{font-size:30px;text-align:left;border-bottom:0;padding:39px 47px 0 47px;font-weight:normal;}
 	.popup_wrap.rule .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 70px 0 70px;}
-	.popup_wrap.rule .inner-rule{border-top:0;line-height:15px;height:260px;overflow-x:hidden;margin:4px 25px 0 25px;}
+	.popup_wrap.rule .inner-rule{border-top:0;line-height:15px;height:260px;overflow-x:hidden;margin:4px 0 0 0;}/*margin:4px 25px 0 25px;*/
 	.popup_wrap.rule .fix_area{position:static;bottom:initial;left:initial;right:initial;padding:21px 160px 0 160px;}
 	.popup_wrap.rule .inner-rule .gap{display:none;}
 
 	/* inquiry popup */
 	#INQUIRY.popup_wrap.rule .box-rule .header-rule{text-align:center;}
-	#INQUIRY.popup_wrap.type-3 .gap-rule{width:500px;height: 654px;margin-top: -327px;margin-left:-250px;}
+	#INQUIRY.popup_wrap.type-3 .gap-rule{width:360px;margin-top: -327px;margin-left:-250px;}/*width:500px;height: 654px;*/
 	#INQUIRY.popup_wrap.type-3 .gap-rule.type-2{height:726px;margin-top:-363px;}
-	#INQUIRY.popup_wrap.type-3 .inner-rule{padding-left:65px;padding-right:65px;}
+	#INQUIRY.popup_wrap.type-3 .inner-rule{padding:20px 20px;}/*padding-left:65px;padding-right:65px;*/
 	#INQUIRY.popup_wrap.type-3 .inner-rule .txt-3{padding-top:0;}
 	#INQUIRY.popup_wrap.type-3 .box-gapType-1{padding-top:0;}
 	#INQUIRY .btn-fixed-inquery{position:static !important;margin-top:20px;height:50px;line-height:50px;}
@@ -2173,16 +2173,17 @@ text-align: right;padding-top:30px;}
 
 	.list-news{width:100%;display:flex;flex-wrap:wrap;}
 	.list-news:after{content:'';display:block;clear:both;}
-	.list-news li{width:300px;/* flex:0 0 30%; */border:1px solid #E6E6E6;margin:40px 16px 0 0;display:flex;align-items:flex-end;}
-	/*.list-news li{float:left;width:298px;height:478px;border: 1px solid #E6E6E6;margin-right:20px;margin-bottom:40px;}*/
+	/*.list-news li{width:300px;border:1px solid #E6E6E6;margin:40px 16px 0 0;display:flex;align-items:flex-end;}*/
+	.list-news li{float:left;width:298px;height:478px;border: 1px solid #E6E6E6;margin-right:16px;margin-bottom:40px;}
 	.list-news li:nth-child(3n){margin-right:0;}
 	.list-news li a{}
 	.list-news li a:hover{}
 	.list-news li img{width:100%;}
 	.list-news li .box-txt{height:245px;padding:33px 23px 70px 23px;position:relative;}
 	.list-news li .box-txt .t-1{}
-	.list-news li .box-txt .t-2{}
-	.list-news li .box-txt .t-3{line-height:20px;position:absolute;top:138px;left:24px;width:250px;}
+	.list-news li .box-txt .t-2{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 20px;padding: 0 0 16px 0;}
+	.list-news li .box-txt .t-3{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 18px;padding: 0 0 30px 0; min-height: 36px;}
+	/*.list-news li .box-txt .t-3{line-height:20px;position:absolute;top:138px;left:24px;width:250px;}*/
 	.list-news li .box-txt .t-4{position:absolute;bottom:31px;left:24px;}
 	.list-news li .box-txt .t-4 span{font-size:14px;}
 	.list-news li .box-txt .t-4 span:after{margin-top:-8px;}
@@ -2244,7 +2245,7 @@ text-align: right;padding-top:30px;}
 	.popup_wrap.type-2 .box-mypageIntro ul li a{height:90px;padding:23px 24px 34px 24px;}
 	.popup_wrap.type-2 .box-mypageIntro ul li.icon-1 a:after,
 	.popup_wrap.type-2 .box-mypageIntro ul li.icon-2 a:after{background-size:82px;top:13px;right:-7px;}
-	.popup_wrap.type-3 .inner-rule{overflow:hidden;margin-top:-3px;height:auto;padding:24px 27px;}
+	.popup_wrap.type-3 .inner-rule{overflow:hidden;margin-top:-3px;height:auto;padding:24px 0 66px 0;}/*padding:24px 27px;*/
 	.popup_wrap.type-3 .gap-rule{height:auto;margin-top:-313px;margin-left:-320px;}/*height:626px;*/
 	.popup_wrap.type-3 .gap-rule.type-2{height:auto;margin-top:-428px;margin-left:-320px;}
 	.popup_wrap.type-3 .gap-rule.type-3{height:500px;margin-top:-250px;}
