@@ -53,7 +53,8 @@
 			</div>
 			<div class="box-text">
 				<p class="txt-1">Corporate details: Welcome Finance INC. Sec Reg. No: CS201406256 COA NO: 1082</p>
-				<p class="txt-2">Direct No. : (02) 8657 2400     Mobile No. Smart : (02) 998 5941076     Mobile No. Globe : (02) 917 8263957<br>(Monday ~ Friday, 9:00am ~ 6:00pm) Unit 1804-1806 The Taipan Place Bldg.F.Ortigas Jr.Rd Ortigas Center Pasig City</p>
+				<p class="txt-2">Direct No. : (02) 8657 2400     Mobile No. Smart : (02) 998 5941076     Mobile No. Globe : (02) 917 8263957</p>
+				<p class="txt-2_1">(Monday ~ Friday, 9:00am ~ 6:00pm) Unit 1804-1806 The Taipan Place Bldg.F.Ortigas Jr.Rd Ortigas Center Pasig City</p>
 				<p class="txt-3">Copyright ⓒ 2019 Welcome Finance Inc. All rights reserved.</p>
 				<!-- <p class="txt-1">Direct No(02) 657 2400<span class="line"></span>Mobile No. Smart(02) 998 5941076
 				Mobile No. Globe(02) 917 8263957</p>
@@ -74,11 +75,14 @@
 				<li>Payment : PDC (Post Dated Check)</li>
 				<li>Ac tual amortization : To be discussed on the release date</li>
 				<li>Duration : 6 ~ 36Months</li>
-				<li>Other fees :</li>
-				<ul>
-					<li>- Disbursment fee : 3% of loan amount</li>
-					<li>- Notarial fee : P400</li>
-					<li>- Doc stamp : P200 P1.50 Cent per P1,000 of loan amount</li>
+				<ul class="list1">
+					<li>Other fees :
+						<ul>
+							<li>- Disbursment fee : 3% of loan amount</li>
+							<li>- Notarial fee : P400</li>
+							<li>- Doc stamp : P200 P1.50 Cent per P1,000 of loan amount</li>
+						</ul>
+					</li>
 				</ul>
 			</ul>
 			<p>Example</p>
@@ -91,8 +95,8 @@
 				</li>
 			</ul>
 			<ul class="list1">
-				<li>
-					<ul>Other fees
+				<li>Other fees
+					<ul>
 						<li>- Disbursment fee : P1,500</li>
 						<li>- Notarial fee : P400</li>
 						<li>- Doc stamp : P375</li>
