@@ -1060,27 +1060,20 @@ line-height: 36px;}
 [data-target="footer"] .list-familySite.on > a:after{transform: rotate(180deg);}
 [data-target="footer"] .list-familySite.on ul{height:auto;padding:20px 15px;border-bottom:1px solid #686868;opacity:1;visibility:visible;}
 [data-target="footer"] .box-text{}
-[data-target="footer"] .box-text .txt-1{font-family: Lato-Regular;
-font-size: 14px;
-color: #808080;
-letter-spacing: -0.2px;
-line-height: 20px;}
-[data-target="footer"] .box-text .txt-2{font-family: Lato-Regular;
-font-size: 14px;
-color: #CCCCCC;
-letter-spacing: -0.2px;
-line-height: 20px;padding-top:12px;}
+[data-target="footer"] .box-text .txt-1{position:relative;font-family: Lato-Regular;font-size: 14px;color: #808080;letter-spacing: -0.2px;line-height: 20px;}
+[data-target="footer"] .box-text .txt-1:nth-child(1){top:-3px;right:-1px;}
+[data-target="footer"] .box-text .txt-2{position:relative;font-family: Lato-Regular;font-size: 14px;color: #CCCCCC;letter-spacing: -0.2px;line-height: 20px;padding-top:12px;}
+[data-target="footer"] .box-text .txt-2:nth-child(2){top:-2px;right:-1px;}
 /*[data-target="footer"] .box-text .txt-2{color:#fff;opacity:0.4;margin:10px 0 23px 0;}margin:0 0 13px 0;*/
-[data-target="footer"] .box-text .txt-2_1{font-family: Lato-Regular;
-font-size: 12px;
-color: #808080;
-letter-spacing: -0.2px;
-line-height: 16px;}
-[data-target="footer"] .box-text .txt-3{font-family: Lato-Regular;
-font-size: 12px;
-color: #808080;
-letter-spacing: -0.2px;
-padding-top:20px;}
+[data-target="footer"] .box-text .txt-2_1{font-family: Lato-Regular;font-size: 12px;color: #808080;letter-spacing: -0.2px;line-height: 16px;}
+[data-target="footer"] .box-text .txt-3{position:relative;font-family: Lato-Regular;font-size: 12px;color: #808080;letter-spacing: -0.2px;padding:20px 0 40px 0;}
+[data-target="footer"] .box-text .txt-3:after{content:'';clear:both;display:block;
+height:1px;position:absolute;left:-20px;right:-20px;bottom:0;border-bottom:1px solid #ffffff1a;}
+[data-target="footer"] .foot_de{}
+[data-target="footer"] .foot_de p{padding:20px 0 5px 0;font-family: Lato-Regular;font-size: 12px;color: #808080;letter-spacing: -0.2px;line-height: 18px;}
+[data-target="footer"] .foot_de .f_list1 .list1 > li{position:relative;padding:0 0 4px 10px;font-family: Lato-Regular;font-size: 12px;color: #808080;letter-spacing: -0.2px;line-height: 18px;}
+[data-target="footer"] .foot_de .f_list1 .list1 > li:after{content: '';display: block;clear: both;background: #999;width: 2px;height: 2px;position: absolute;top: 8px;left:0;}
+
 
 /* footer data-event="cl" */
 [data-control="cl"] a{position:fixed;bottom:30px;right:10px;background: #FF7A01;box-shadow: 0 6px 10px 0 rgba(0,0,0,0.30);width:60px;height:60px;border-radius:100px;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat center 16px;background-size:28px;z-index:999;}
@@ -1506,11 +1499,8 @@ color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;padding:0 0 20px 0;}
 [data-target="footer"] .box-text2 ul li span{padding:0 12px;}/*padding:0 5px;*/
 [data-target="footer"] .ico_fb{background:url('../images/icon/ic_footer_facebook.png') no-repeat;background-size:30px;width:30px;height:30px;display:inline-block;text-indent: -9999em;margin:46px 0 10px 0;}/*margin:20px 0 15px 0;*/
 /*[data-target="footer"] .ico_fb img{width:30px;padding:25px 0 15px 0;}*/
-.foot_de{}
-.foot_de {font-size: 12px;color: #808080;letter-spacing: -0.17px;background:#333; border-top:1px solid #474747;padding:0 20px 45px 20px;}/*padding:0 20px 31px 20px;*/
-.foot_de .list1 > li{position:relative;padding:1px 0 0 6px;}
-.foot_de .list1 > li:after{content: '';display: block;clear: both;background: #999;width: 2px;height: 2px;position: absolute;top: 8px;left:0;}
-.foot_de p{margin:31px 0 7px 0;}/*margin-top:20px;*/
+
+
 
 
 
@@ -1862,12 +1852,12 @@ text-align: right;padding-top:30px;}
 
 	/* footer */
 	#box-footer{background: #333;}
-	#box-footer .wd-inner{max-width:980px;margin:0 auto;}
+	#box-footer .wd-inner{max-width:1120px;margin:0 auto;overflow:hidden;}/*max-width:980px;*/
 	[data-target="footer"]{background:#333;padding:21px 20px;position:relative;z-index:1200;/* border-top:1px solid #ccc; */}
 	[data-page="main"] [data-target="footer"]{}
 	[data-page="sub"] [data-target="footer"]{position:relative;bottom:0;}
 
-	[data-target="footer"] .list-familySite{position:absolute;top:21px;right:60px;width:169px;}
+	[data-target="footer"] .list-familySite{position:absolute;top:21px;right:60px;width:169px;}/*position:absolute;top:21px;right:60px;width:169px;*/
 	[data-target="footer"] .list-familySite a{height:34px;line-height:34px;border-bottom:1px solid #666;color:#fff;}
 	[data-target="footer"] .list-familySite > a:after{background-image:url('../images/icon/icon_footer_pc_arrow_up.png');width:10px;height:10px;background-size:10px;}
 	[data-target="footer"] .list-familySite ul{position:absolute;top:-209px;left:0;width:164px;transition:none;background:#fff;border:1px solid #ccc;padding:15px 19px;width:136px;}
@@ -1882,10 +1872,12 @@ text-align: right;padding-top:30px;}
     color: #ccc;
     letter-spacing: -0.2px;
     line-height: 18px;}
-	[data-target="footer"] .box-text .txt-3{    font-size: 12px;
-    color: #ccc;
-    letter-spacing: -0.2px;
-    line-height: 18px;}
+	[data-target="footer"] .box-text .txt-3{position:relative;font-family: Lato-Regular;font-size: 12px;color: #808080;letter-spacing: -0.2px;padding:20px 0 40px 0;}
+    [data-target="footer"] .box-text .txt-3:after{content:'';clear:both;display:block;height:1px;position:absolute;left:-20px;right:-20px;bottom:0;border-bottom:1px solid #ffffff1a;}
+    [data-target="footer"] .foot_de .f_list1{position:relative;float:left;width:50%;}
+    [data-target="footer"] .foot_de .f_list1:after{content:'';clear: both;display:block;}
+
+
 
 	/* footer data-event="cl" */
 	[data-control="cl"] a{position:fixed;bottom:unset;top:50%;margin-top:-55px;right:0;background: #FF7A01;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);border-radius: 4px 0 0 5px;border-radius: 4px 0px 0px 5px;z-index:2000;height:110px;width:90px;transition:all 0.3s;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat 31px 18px;background-size:28px;}

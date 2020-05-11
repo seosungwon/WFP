@@ -63,50 +63,57 @@
 				Center Pasig City</p>
 				<p class="txt-3">Copyright ⓒ 2019 Welcome Finance Inc. All rights reserved.</p> -->
 			</div>
-
+			<!-- foot_de -->
+			<div class="foot_de ">
+				<!-- wd-inner -->
+				<div class="wd-inner">
+					<div class="f_list1">
+						<p>Repayment Details</p>
+						<ul class="list1">
+							<li>Payment : PDC (Post Dated Check)</li>
+							<li>Ac tual amortization : To be discussed on the release date</li>
+							<li>Duration : 6 ~ 36Months</li>
+							<ul class="list1">
+								<li>Other fees :
+									<ul>
+										<li>- Disbursment fee : 3% of loan amount</li>
+										<li>- Notarial fee : P400</li>
+										<li>- Doc stamp : P200 P1.50 Cent per P1,000 of loan amount</li>
+									</ul>
+								</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="f_list1">
+						<p class="">Example</p>
+						<ul class="list1">
+							<li>In case of loan amount in P50,000
+								<ul>
+									<li>- Duration:12months</li>
+									<li>- Monthly Interest:106%(19.2% per annual)</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="list1">
+							<li>Other fees
+								<ul>
+									<li>- Disbursment fee : P1,500</li>
+									<li>- Notarial fee : P400</li>
+									<li>- Doc stamp : P375</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //wd-inner -->
+			</div>
+			<!-- //foot_de -->
 		</div>
+		<!-- //footer -->
 	</div>
 	<!-- //wd-inner -->
-	<div class="foot_de">
-		<!-- wd-inner -->
-		<div class="wd-inner">
-			<p>Repayment Details</p>
-			<ul class="list1">
-				<li>Payment : PDC (Post Dated Check)</li>
-				<li>Ac tual amortization : To be discussed on the release date</li>
-				<li>Duration : 6 ~ 36Months</li>
-				<ul class="list1">
-					<li>Other fees :
-						<ul>
-							<li>- Disbursment fee : 3% of loan amount</li>
-							<li>- Notarial fee : P400</li>
-							<li>- Doc stamp : P200 P1.50 Cent per P1,000 of loan amount</li>
-						</ul>
-					</li>
-				</ul>
-			</ul>
-			<p>Example</p>
-			<ul class="list1">
-				<li>In case of loan amount in P50,000
-					<ul>
-						<li>- Duration:12months</li>
-						<li>- Monthly Interest:106%(19.2% per annual)</li>
-					</ul>
-				</li>
-			</ul>
-			<ul class="list1">
-				<li>Other fees
-					<ul>
-						<li>- Disbursment fee : P1,500</li>
-						<li>- Notarial fee : P400</li>
-						<li>- Doc stamp : P375</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<!-- //wd-inner -->
-	</div>
-	<!-- //footer -->
+
+
 </div>
 
 <!-- 계산기 -->
