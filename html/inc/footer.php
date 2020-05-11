@@ -1,19 +1,19 @@
 
 <div id="box-footer">
-	<!-- wd-inner -->
-	<div class="wd-inner">
-		<!-- box-help -->
-		<!-- <div class="box-help">
-			<div class="inner">
-				<p class="txt-1">Need help?</p>
-				<p class="txt-2">Any questions about your loan application? We’re here for you!</p>
-				<p class="btn-1"><a href="#INQUIRY" class="common-btnType-3 waves-effect waves-light layer_open_pop">INQUIRY</a></p>
-			</div>
-		</div> -->
-		<!-- //box-help -->
+	<!-- box-help -->
+	<!-- <div class="box-help">
+		<div class="inner">
+			<p class="txt-1">Need help?</p>
+			<p class="txt-2">Any questions about your loan application? We’re here for you!</p>
+			<p class="btn-1"><a href="#INQUIRY" class="common-btnType-3 waves-effect waves-light layer_open_pop">INQUIRY</a></p>
+		</div>
+	</div> -->
+	<!-- //box-help -->
 
-		<!-- footer -->
-		<div data-target="footer">
+	<!-- footer -->
+	<div data-target="footer">
+		<!-- wd-inner -->
+		<div class="wd-inner">
 			<div class="list-familySite">
 				<a href="#none">Family Site</a>
 				<ul>
@@ -51,7 +51,10 @@
 				<a href="https://www.facebook.com/WelcomeFinancePh" target="_blank"></a>
 				<!-- <img src="common/images/icon/ic_footer_facebook.png" alt=""> -->
 			</div>
-			<div class="box-text">
+		</div>
+		<div class="box-text">
+			<!-- wd-inner -->
+			<div class="wd-inner">
 				<p class="txt-1">Corporate details: Welcome Finance INC. Sec Reg. No: CS201406256 COA NO: 1082</p>
 				<p class="txt-2">Direct No. : (02) 8657 2400     Mobile No. Smart : (02) 998 5941076     Mobile No. Globe : (02) 917 8263957</p>
 				<p class="txt-2_1">(Monday ~ Friday, 9:00am ~ 6:00pm) Unit 1804-1806 The Taipan Place Bldg.F.Ortigas Jr.Rd Ortigas Center Pasig City</p>
@@ -63,57 +66,55 @@
 				Center Pasig City</p>
 				<p class="txt-3">Copyright ⓒ 2019 Welcome Finance Inc. All rights reserved.</p> -->
 			</div>
+			<!-- //wd-inner -->
+		</div>
+		<div class="line"></div>
+		<!-- wd-inner -->
+		<div class="wd-inner">
 			<!-- foot_de -->
-			<div class="foot_de ">
-				<!-- wd-inner -->
-				<div class="wd-inner">
-					<div class="f_list1">
-						<p>Repayment Details</p>
+			<div class="foot_de">
+				<div class="f_list1">
+					<p>Repayment Details</p>
+					<ul class="list1">
+						<li>Payment : PDC (Post Dated Check)</li>
+						<li>Ac tual amortization : To be discussed on the release date</li>
+						<li>Duration : 6 ~ 36Months</li>
 						<ul class="list1">
-							<li>Payment : PDC (Post Dated Check)</li>
-							<li>Ac tual amortization : To be discussed on the release date</li>
-							<li>Duration : 6 ~ 36Months</li>
-							<ul class="list1">
-								<li>Other fees :
-									<ul>
-										<li>- Disbursment fee : 3% of loan amount</li>
-										<li>- Notarial fee : P400</li>
-										<li>- Doc stamp : P200 P1.50 Cent per P1,000 of loan amount</li>
-									</ul>
-								</li>
-							</ul>
-						</ul>
-					</div>
-					<div class="f_list1">
-						<p class="">Example</p>
-						<ul class="list1">
-							<li>In case of loan amount in P50,000
+							<li>Other fees :
 								<ul>
-									<li>- Duration:12months</li>
-									<li>- Monthly Interest:106%(19.2% per annual)</li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="list1">
-							<li>Other fees
-								<ul>
-									<li>- Disbursment fee : P1,500</li>
+									<li>- Disbursment fee : 3% of loan amount</li>
 									<li>- Notarial fee : P400</li>
-									<li>- Doc stamp : P375</li>
+									<li>- Doc stamp : P200 P1.50 Cent per P1,000 of loan amount</li>
 								</ul>
 							</li>
 						</ul>
-					</div>
+					</ul>
 				</div>
-				<!-- //wd-inner -->
+				<div class="f_list1">
+					<p class="">Example</p>
+					<ul class="list1">
+						<li>In case of loan amount in P50,000
+							<ul>
+								<li>- Duration:12months</li>
+								<li>- Monthly Interest:106%(19.2% per annual)</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="list1">
+						<li>Other fees
+							<ul>
+								<li>- Disbursment fee : P1,500</li>
+								<li>- Notarial fee : P400</li>
+								<li>- Doc stamp : P375</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<!-- //foot_de -->
 		</div>
-		<!-- //footer -->
 	</div>
-	<!-- //wd-inner -->
-
-
+	<!-- //footer -->
 </div>
 
 <!-- 계산기 -->

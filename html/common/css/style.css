@@ -1044,7 +1044,7 @@ line-height: 36px;}
 .sub-location .inner > ul > li.sel > a{color:#DF2451 !important;}
 
 /* footer */
-[data-target="footer"]{background:#333;padding:20px 20px 31px 20px;}
+[data-target="footer"]{background:#333;padding:20px 20px 31px 20px;/* overflow:hidden; */}
 [data-target="footer"].btn-gap{padding-bottom:90px;}
 [data-target="footer"] .list-familySite{margin:0 0 20px 0;}/*margin:0 0 25px 0;*/
 [data-target="footer"] .list-familySite > a{display:block;border-bottom:1px solid #686868;position:relative;font-size: 14px;color: #fff;letter-spacing: -0.2px;line-height: 40px;}
@@ -1070,6 +1070,7 @@ line-height: 36px;}
 [data-target="footer"] .box-text .txt-3:after{content:'';clear:both;display:block;
 height:1px;position:absolute;left:-20px;right:-20px;bottom:0;border-bottom:1px solid #ffffff1a;}
 [data-target="footer"] .foot_de{}
+[data-target="footer"] .foot_de:after{content:'';display:block;clear:both;}
 [data-target="footer"] .foot_de p{padding:20px 0 5px 0;font-family: Lato-Regular;font-size: 12px;color: #808080;letter-spacing: -0.2px;line-height: 18px;}
 [data-target="footer"] .foot_de .f_list1 .list1 > li{position:relative;padding:0 0 4px 10px;font-family: Lato-Regular;font-size: 12px;color: #808080;letter-spacing: -0.2px;line-height: 18px;}
 [data-target="footer"] .foot_de .f_list1 .list1 > li:after{content: '';display: block;clear: both;background: #999;width: 2px;height: 2px;position: absolute;top: 8px;left:0;}
@@ -1573,6 +1574,9 @@ text-align: right;padding-top:30px;}
 
 /* pc _ 768~ */
 @media all and (min-width:768px) {
+	/* pc 최소값 */
+	html,
+	body{min-width:1120px;}
 
 	/*header Btn*/
 	.common-btnType-16{display: inline-block;text-align: center;height:29px;line-height: 24px;font-size: 13px;letter-spacing: -0.2px;border: 1px solid #fff;padding: 0 20px;position:absolute;background: rgba(255,255,255,0.10);z-index:1000 !important;}/*padding: 0 12px;position:absolute;top:-15px;right:20px;*/
@@ -1852,7 +1856,7 @@ text-align: right;padding-top:30px;}
 
 	/* footer */
 	#box-footer{background: #333;}
-	#box-footer .wd-inner{max-width:1120px;margin:0 auto;overflow:hidden;}/*max-width:980px;*/
+	#box-footer .wd-inner{max-width:1120px;margin:0 auto;/* overflow:hidden; */}/*max-width:980px;*/
 	[data-target="footer"]{background:#333;padding:21px 20px;position:relative;z-index:1200;/* border-top:1px solid #ccc; */}
 	[data-page="main"] [data-target="footer"]{}
 	[data-page="sub"] [data-target="footer"]{position:relative;bottom:0;}
@@ -1866,18 +1870,18 @@ text-align: right;padding-top:30px;}
 	[data-target="footer"] .list-familySite ul li a:focus{text-decoration:underline;}
 	[data-target="footer"] .list-familySite.on > a{border-bottom:1px solid #666;}
 	[data-target="footer"] .list-familySite.on ul{border-bottom:1px solid #ccc;padding:8px 16px;}
-	[data-target="footer"] .box-text{padding-top:20px;}
+	[data-target="footer"] .box-text{padding-top:20px;overflow:hidden;}
+	[data-target="footer"] .box-text .wd-inner{position:static;}
 	[data-target="footer"] .box-text .txt-1,
 	[data-target="footer"] .box-text .txt-2{    font-size: 12px;
     color: #ccc;
     letter-spacing: -0.2px;
     line-height: 18px;}
 	[data-target="footer"] .box-text .txt-3{position:relative;font-family: Lato-Regular;font-size: 12px;color: #808080;letter-spacing: -0.2px;padding:20px 0 40px 0;}
-    [data-target="footer"] .box-text .txt-3:after{content:'';clear:both;display:block;height:1px;position:absolute;left:-20px;right:-20px;bottom:0;border-bottom:1px solid #ffffff1a;}
+    [data-target="footer"] .box-text .txt-3:after{/* content:'';clear:both;display:block;height:1px;position:absolute;left:-100%;right:-100%;bottom:0;border-bottom:1px solid #ffffff1a; */display:none;}
+    [data-target="footer"] .line{border-bottom:1px solid #ffffff1a;height:1px;margin:0 -20px;}
     [data-target="footer"] .foot_de .f_list1{position:relative;float:left;width:50%;}
     [data-target="footer"] .foot_de .f_list1:after{content:'';clear: both;display:block;}
-
-
 
 	/* footer data-event="cl" */
 	[data-control="cl"] a{position:fixed;bottom:unset;top:50%;margin-top:-55px;right:0;background: #FF7A01;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);border-radius: 4px 0 0 5px;border-radius: 4px 0px 0px 5px;z-index:2000;height:110px;width:90px;transition:all 0.3s;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat 31px 18px;background-size:28px;}
