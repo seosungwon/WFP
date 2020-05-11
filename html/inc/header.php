@@ -37,9 +37,7 @@
 		<a href="#none" class="btn-home" title="home"></a> -->
 
 		<!-- btn_Inquiry -->
-		<div class="common-btnType-16">
-			<a href="#INQUIRY" class="layer_open_pop btn_inquiry">Inquiry</a>
-		</div>
+		<a href="#INQUIRY" class="common-btnType-16 layer_open_pop btn_inquiry">Inquiry</a>
 		<!-- //btn_Inquiry -->
 
 		<!-- box-gnb -->
