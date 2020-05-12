@@ -348,9 +348,9 @@
 
 <!-- INQUIRY layerpopup -->
 <div id="INQUIRY" class="popup_wrap rule type-3">
-	<div class="gap-rule">
+	<div class="gap-rule gapty1">
 		<div class="box-rule">
-			<h3 class="header-rule type-2" style="border-bottom:0;">Inquiry</h3>
+			<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Inquiry</h3>
 		</div>
 		<!-- data-inquiryStep 1 -->
 		<div class="inner-rule" data-inquiryStep="1">
@@ -406,7 +406,9 @@
 				<!-- //box-inputType-1 -->
 			</div>
 			<!-- btn-fixed-inquery -->
-			<a href="#none" data-btn-inquery="motion" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+			<div class="common_gaptp">
+				<a href="#none" data-btn-inquery="motion" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+			</div>
 			<!-- //btn-fixed-inquery -->
 			<!-- 가상 공간 -->
 			<div class="gap"></div>
@@ -496,7 +498,7 @@
 
 <!-- loanStatus layerpopup -->
 <div id="loanStatus" class="popup_wrap rule type-3">
-	<div class="gap-rule">
+	<div class="gap-rule gapty1">
 		<div class="box-rule">
 			<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Status of your loan application</h3>
 		</div>
@@ -544,7 +546,9 @@
 				</div>
 			</div>
 			<!-- btn-fixed-inquery -->
-			<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">CHECK</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+			<div class="common_gaptp">
+				<a href="#none" data-btn-inquery="motion2" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">CHECK</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+			</div>
 			<!-- //btn-fixed-inquery -->
 			<!-- 가상 공간 -->
 			<div class="gap"></div>
@@ -560,61 +564,67 @@
 
 			<!-- box-loanIng -->
 			<div class="box-loanIng mobile-width400">
-				<!-- pp-info -->
-				<div class="pp-info gap-2">
-					<ul class="bd_line">
-						<li>
-							<span class="txt-1 pt0">Name</span>
-							<span class="txt-2">Maria Christina C. Satiago</span>
-						</li>
-						<li>
-							<span class="txt-1 pt0">Product Type</span>
-							<span class="txt-2">Salary Loan</span>
-						</li>
-					</ul>
+				<!-- box-inputType-1 -->
+				<div class="box-inputType-1">
+					<!-- pp-info -->
+					<div class="pp-info gap-2">
+						<ul class="bd_line">
+							<li>
+								<span class="txt-1 pt0">Name</span>
+								<span class="txt-2">Maria Christina C. Satiago</span>
+							</li>
+							<li>
+								<span class="txt-1 pt0">Product Type</span>
+								<span class="txt-2">Salary Loan</span>
+							</li>
+						</ul>
 
-					<!-- box-loanStep -->
-					<div class="box-loanStep">
-						<ol>
-							<li class="end">
-								<span class="cnt"><span>1</span></span>
-								<span class="tt-1">Apply</span>
-								<span class="tt-2">Review the application from, submitted</span>
-								<span class="time"><span class="day">04/10/2019</span> 09:30</span>
-							</li>
-							<li class="end">
-								<span class="cnt"><span>2</span></span>
-								<span class="tt-1">Processing</span>
-								<span class="tt-2">Review the document submitted</span>
-								<span class="time"><span class="day">04/10/2019</span> 09:30</span>
-							</li>
-							<li class="ing">
-								<span class="cnt"><span>3</span></span>
-								<span class="tt-1">Evaluation</span>
-								<span class="tt-2">Evaluation Credit</span>
-							</li>
-							<li>
-								<span class="cnt"><span>4</span></span>
-								<span class="tt-1">Approval</span>
-								<span class="tt-2"></span>
-							</li>
-							<li>
-								<span class="cnt"><span>5</span></span>
-								<span class="tt-1">Disbursment</span>
-								<span class="tt-2"></span>
-							</li>
-						</ol>
+						<!-- box-loanStep -->
+						<div class="box-loanStep">
+							<ol>
+								<li class="end">
+									<span class="cnt"><span>1</span></span>
+									<span class="tt-1">Apply</span>
+									<span class="tt-2">Review the application from, submitted</span>
+									<span class="time"><span class="day">04/10/2019</span> 09:30</span>
+								</li>
+								<li class="end">
+									<span class="cnt"><span>2</span></span>
+									<span class="tt-1">Processing</span>
+									<span class="tt-2">Review the document submitted</span>
+									<span class="time"><span class="day">04/10/2019</span> 09:30</span>
+								</li>
+								<li class="ing">
+									<span class="cnt"><span>3</span></span>
+									<span class="tt-1">Evaluation</span>
+									<span class="tt-2">Evaluation Credit</span>
+								</li>
+								<li>
+									<span class="cnt"><span>4</span></span>
+									<span class="tt-1">Approval</span>
+									<span class="tt-2"></span>
+								</li>
+								<li>
+									<span class="cnt"><span>5</span></span>
+									<span class="tt-1">Disbursment</span>
+									<span class="tt-2"></span>
+								</li>
+							</ol>
+						</div>
+						<!-- //box-loanStep -->
+						<!-- btn-fixed-inquery -->
+						<div class="common_gaptp">
+							<a href="#none" data-btn-inquery="motion2" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span>CONFIRM</span></a><!-- class=" btnSel-bg" 추가 버튼활성화 -->
+						</div>
+						<!-- //btn-fixed-inquery -->
+
+						<!-- 가상 공간 -->
+						<div class="gap"></div>
+						<!-- //가상 공간 -->
 					</div>
-					<!-- //box-loanStep -->
-					<!-- btn-fixed-inquery -->
-					<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span>CONFIRM</span></a><!-- class=" btnSel-bg" 추가 버튼활성화 -->
-					<!-- //btn-fixed-inquery -->
-
-					<!-- 가상 공간 -->
-					<div class="gap"></div>
-					<!-- //가상 공간 -->
+					<!-- //pp-info -->
 				</div>
-				<!-- //pp-info -->
+				<!-- //box-inputType-1 -->
 			</div>
 			<!-- //box-loanIng -->
 			<!-- //data-inquiryStep 4 -->
@@ -757,7 +767,9 @@
 				<!-- //box-inputType-1 -->
 			</div>
 			<!-- btn-fixed-inquery -->
-			<a href="#none" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span class="icon-1">CHECK</span></a><!-- class=" btnSel-bg" 추가 버튼활성화 -->
+			<div class="common_gaptp">
+				<a href="#none" data-btn-inquery="motion2" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span class="icon-1">NEXT</span></a><!-- class=" btnSel-bg" 추가 버튼활성화 -->
+			</div>
 			<!-- //btn-fixed-inquery -->
 
 			<!-- 가상 공간 -->
