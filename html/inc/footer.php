@@ -47,16 +47,15 @@
 					<li><a href="#none">Privacy Policy</a></li>
 				</ul>
 			</div>
-			<div class="ico_fb">
-				<a href="https://www.facebook.com/WelcomeFinancePh" target="_blank"></a>
-				<!-- <img src="common/images/icon/ic_footer_facebook.png" alt=""> -->
-			</div>
+			<!-- Icon_facebook -->
+			<a href="https://www.facebook.com/WelcomeFinancePh" target="_blank" class="ico_fb"></a>
+			<!-- //Icon_facebook -->
 		</div>
 		<div class="box-text">
 			<!-- wd-inner -->
 			<div class="wd-inner">
 				<p class="txt-1">Corporate details: Welcome Finance INC. Sec Reg. No: CS201406256 COA NO: 1082</p>
-				<p class="txt-2">Direct No. : (02) 8657 2400     Mobile No. Smart : (02) 998 5941076     Mobile No. Globe : (02) 917 8263957</p>
+				<p class="txt-2">Direct No. : (02) 8657 2400 <span>Mobile No. Smart : (02) 998 5941076</span><span>Mobile No. Globe : (02) 917 8263957</span></p>
 				<p class="txt-2_1">(Monday ~ Friday, 9:00am ~ 6:00pm) Unit 1804-1806 The Taipan Place Bldg.F.Ortigas Jr.Rd Ortigas Center Pasig City</p>
 				<p class="txt-3">Copyright ⓒ 2019 Welcome Finance Inc. All rights reserved.</p>
 				<!-- <p class="txt-1">Direct No(02) 657 2400<span class="line"></span>Mobile No. Smart(02) 998 5941076
