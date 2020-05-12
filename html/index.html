@@ -261,7 +261,7 @@
 
 		<!-- inquiry here -->
 		<div class="inquiry_box">
-			<img src="common/images/img/img_loans_inquiry.png" alt="">
+			<img src="common/images/img/img_loans_inquiry.png" alt="" class="hide-on-pc">
 			<div class="inquiry_txt">
 				<p class="it_1">Still have questions?</p>
 				<p class="it_2">We have answers, and we’re happy to help.</p>
@@ -286,12 +286,12 @@
 
 		$bnrMainTop.slick({
 			dots: true,
-			infinite: true,
+			infinite: true, // true, false
 			speed: 600,
 			slidesToShow: 1,
-			adaptiveHeight: true,
-			autoplay: false, // true, false
-			autoplaySpeed: 1000,
+			adaptiveHeight: false, // 높이 false 고정
+			autoplay: false, // 자동 시작
+			autoplaySpeed: 5000,
 			arrows: true,
 			pauseOnHover:false,
 			prevArrow: "<a href='#none' class='btn-prev'></a>",

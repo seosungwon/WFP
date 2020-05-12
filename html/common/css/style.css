@@ -628,7 +628,7 @@ line-height: 28px;}*/
 [data-click="main-vsSlick"].mainVs .slick-list{}
 [data-click="main-vsSlick"].mainVs .slick-active{}
 [data-click="main-vsSlick"].mainVs .box-img{}
-[data-click="main-vsSlick"].mainVs .box-img img{width:335%;}
+[data-click="main-vsSlick"].mainVs .box-img img{/* width:335%; */height:728px;width:auto;position:relative;left:50%;margin-left:-578px;}
 [data-click="main-vsSlick"].mainVs .slick-dots{bottom:342px;}
 [data-click="main-vsSlick"].mainVs .slick-dots li,
 [data-click="main-vsSlick"].mainVs .slick-dots li.slick-active button:before{width:6px;}
@@ -934,15 +934,15 @@ font-size: 14px;color: #333333;letter-spacing: -0.17px;line-height: 20px;}
 .news_blog ul li .blog_tp p.txt4 a:after{content: '';display: block;clear: both;background-position: 0;background-repeat: no-repeat;width: 16px;height: 16px;position: absolute;bottom:49px;left:122px;background-size:16px;background-image: url(../images/icon/ic_arrow_map.png);}
 
 /*inquiry here*/
-.inquiry_box{position:relative;}/*margin:60px 0 0 0;*/
+.inquiry_box{position:relative;background:#fa7d00;}/*margin:60px 0 0 0;*/
 /*.inquiry_box img{max-width:100%;width:100%;height:270px;vertical-align:middle;}*/
 /*.inquiry_box .inquiry_txt {position:absolute;top:40%;left:50%;transform:translate(-50%, -50%);}*/
 
 
-.inquiry_box .inquiry_txt{background-repeat: no-repeat;height:270px;background-size:360px;background-image: url(../images/img/img_loans_inquiry.png);background-position:right 0;}
+.inquiry_box .inquiry_txt{background-repeat: no-repeat;height:270px;background-size:auto 270px;background-image: url(../images/img/img_loans_inquiry.png);background-position:right 0;}
 .inquiry_box .inquiry_txt p.it_1{font-family: Lato-Black;font-size: 30px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 35px;}/*margin-top:31px;*/
 .inquiry_box .inquiry_txt p.it_2{font-family: Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 20px;margin-top:5px;}
-.inquiry_box .common-btnType-18{width:320px;margin-top:15px;font-family:Lato-Regular;font-size: 16px;color: #FF7A01;letter-spacing: -0.2px;text-align: center;text-decoration:none;}
+.inquiry_box .common-btnType-18{width:320px;margin:15px auto 0 auto;font-family:Lato-Regular;font-size: 16px;color: #FF7A01;letter-spacing: -0.2px;text-align: center;text-decoration:none;}
 
 
 
@@ -2398,7 +2398,7 @@ text-align: right;padding-top:30px;}
 	/*inquiry here*/
 	.inquiry_box{position:relative;max-width:980px;margin:60px auto 0 auto;}
 	.inquiry_box img{max-width:100%;}
-	.inquiry_box .inquiry_txt {position:absolute;top:50%;left:30%;transform:translate(-50%, -50%);}
+	.inquiry_box .inquiry_txt {position:absolute;top:50%;left:30%;transform:translate(-50%, -50%);background:none;}
 	.inquiry_box .inquiry_txt p.it_1{font-family: Lato-Black;font-size: 48px;color: #FFFFFF;letter-spacing: -0.2px;margin-top:0;}
 	.inquiry_box .inquiry_txt p.it_2{font-family: Lato-Regular;font-size: 18px;color: #FFFFFF;letter-spacing: -0.2px;text-align:left;}
 	.inquiry_box .common-btnType-18{width:260px;margin-top:15px;text-decoration:none;font-family: Lato-Bold;font-size: 18px;color: #FF7A01;letter-spacing: -0.2px;text-align: center;}
@@ -2529,7 +2529,7 @@ line-height: 26px;}
 	.company .company_title .box-contents {margin-top:50px;}
 	.company .company_title .box-contents .box-brandInfo{padding:0;}
 
-	#apply_nw{background:#FA8E00;}
+	#apply_nw{background:#FA8E00;overflow:hidden;}
 	#apply_nw .apply_nw_list{position:relative;background: #FA8E00;margin:0 auto 0 auto;padding:70px 20px 70px 20px;}
 	#apply_nw .apply_nw_list p{font-family: Lato-Black;font-size: 44px;color: #FFFFFF;letter-spacing: -0.18px;text-align:left;}
 	#apply_nw .apply_nw_list p.apply_nw_title {font-family:Lato-Regular;font-size: 18px;color: #FFFFFF;letter-spacing:-0.2px;}
