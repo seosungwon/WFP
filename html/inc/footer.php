@@ -350,7 +350,7 @@
 <div id="INQUIRY" class="popup_wrap rule type-3">
 	<div class="gap-rule gapty1">
 		<div class="box-rule">
-			<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Inquiry</h3>
+			<h3 class="header-rule type-2" style="border-bottom:0;">Inquiry</h3>
 		</div>
 		<!-- data-inquiryStep 1 -->
 		<div class="inner-rule" data-inquiryStep="1">
@@ -370,12 +370,12 @@
 							<div class="txt-ct displayTableType-1" data-error="idTestIq">
 								<div class="displayCell">
 									<span class="txt-1">Last Name <strong>*</strong></span>
-									<input type="text" class="common-inputType" id="idTestIq" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									<input type="text" class="common-inputType" id="idTestIq" ><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 									<span class="txt-error">Error message</span>
 								</div>
 								<div class="displayCell">
 									<span class="txt-1">First Name <strong>*</strong></span>
-									<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									<input type="text" class="common-inputType" id="" ><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								</div>
 								<div class="displayCell">
 									<span class="txt-1">Middle Name</span>
@@ -387,7 +387,7 @@
 							<!-- <p class="tt-1">Contact Number <strong>*</strong></p> -->
 							<div class="txt-ct" data-error="">
 								<span class="txt-1">Contact Number <strong>*</strong></span>
-								<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+								<input type="text" class="common-inputType" id="" ><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
 								<p class="nt-1">Please provide a valid mobile number.</p>
 							</div>
@@ -396,7 +396,7 @@
 							<!-- <p class="tt-1">Contact Number <strong>*</strong></p> -->
 							<div class="txt-ct" data-error="">
 								<span class="txt-1">Email Address <strong>*</strong></span>
-								<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+								<input type="text" class="common-inputType" id=""><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
 								<p class="nt-1">Please provide a valid mobile number.</p>
 							</div>
@@ -407,7 +407,7 @@
 			</div>
 			<!-- btn-fixed-inquery -->
 			<div class="common_gaptp">
-				<a href="#none" data-btn-inquery="motion" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<a href="#none" data-btn-inquery="motion" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 			</div>
 			<!-- //btn-fixed-inquery -->
 			<!-- 가상 공간 -->
@@ -418,6 +418,7 @@
 			</a>
 		</div>
 		<!-- //data-inquiryStep 1 -->
+
 		<!-- data-inquiryStep 2 -->
 		<div class="inner-rule" data-inquiryStep="2">
 			<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
@@ -429,7 +430,7 @@
 			</div>
 			<div class="box-gapType-1 mobile-width400">
 				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-2">
+				<div class="box-inputType-1">
 					<ul class="pt0">
 						<li>
 							<p class="tt-3">What would you like to learn more about?</p>
@@ -468,21 +469,24 @@
 							</div>
 						</li>
 					</ul>
+					<!-- btn -->
+					<div class="btn-fixed-inquery pc-btnFixed" >
+						<div class="btn-fixedTwo type-2">
+							<div>
+								<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
+							</div>
+							<div>
+								<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span class="icon-1">SUBMIT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+							</div>
+						</div>
+					</div>
+					<!-- //btn -->
 				</div>
 				<!-- //box-inputType-1 -->
 				<!-- 가상 공간 -->
-				<div class="gap2"></div>
+				<div class="gap"></div>
 				<!-- //가상 공간 -->
-				<div class="btn-fixed-inquery pc-btnFixed">
-					<div class="btn-fixedTwo type-2">
-						<div>
-							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
-						</div>
-						<div>
-							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span class="icon-1">SUBMIT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
-						</div>
-					</div>
-				</div>
+
 			</div>
 			<!-- 가상 공간 -->
 			<div class="gap"></div>
@@ -492,6 +496,7 @@
 				<p class="gap"><span></span><span></span><span></span></p>
 			</a>
 		</div>
+		<!-- //data-inquiryStep 2 -->
 	</div>
 </div>
 <!-- //INQUIRY layerpopup -->
@@ -545,6 +550,7 @@
 					Please contact us by INQUIRY.</span>
 				</div>
 			</div>
+
 			<!-- btn-fixed-inquery -->
 			<div class="common_gaptp">
 				<a href="#none" data-btn-inquery="motion2" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">CHECK</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->

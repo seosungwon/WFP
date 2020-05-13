@@ -433,7 +433,7 @@ line-height: 28px;}*/
 .box-gapType-1{padding:0 20px;}
 
 /* list-step */
-.list-step{text-align:center;padding:0 0 28px 0;}
+.list-step{text-align:center;padding:0 0 30px 0;}/*padding:0 0 28px 0;*/
 .list-step li{display:inline-block;padding:0 7px;position:relative;}
 .list-step li:after{content:'';display:block;clear:both;position:absolute;top:11px;right:-6px;border-top:2px dotted #ccc;width:9px;}
 .list-step li:last-child:after{display:none;}
@@ -465,8 +465,8 @@ line-height: 28px;}*/
 .popup_wrap.rule{background:#fff;}
 .popup_wrap.rule .gap-rule{height:100%;}
 .popup_wrap .box-rule{}
-.popup_wrap .box-rule .header-rule{text-align:center;font-family:'Lato-Regular';font-size: 30px;color: #222;letter-spacing: -0.2px;text-align: center;height:60px;line-height:60px;border-bottom:1px solid #e5e5e5;font-weight:normal;}
-.popup_wrap .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 20px 0 20px;}/* /WFP/html/index.html padding-bottom */
+.popup_wrap .box-rule .header-rule{text-align:center;font-family:'Lato-Regular';font-size: 30px;color: #222;letter-spacing: -0.2px;text-align: center;line-height:60px;border-bottom:1px solid #e5e5e5;font-weight:normal;}/*height:60px;*/
+.popup_wrap .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size:30px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 20px 0 20px;}
 .popup_wrap .box-rule .header-rule.type-2.gap-1{padding-bottom:30px;}
 .popup_wrap.type-2 .inner-rule{overflow:hidden;}
 .popup_wrap.type-2 .box-rule .header-rule{border-bottom:0;font-weight:normal;}
@@ -483,7 +483,7 @@ line-height: 28px;}*/
 .popup_wrap.type-3{}
 .popup_wrap.type-3 .inner-rule{padding:0;}
 .popup_wrap.type-3 .inner-rule .t-1{color: #999;letter-spacing: -0.17px;line-height: 16px;background: #F5F5F5;padding:6px 10px 6px 20px;}
-.popup_wrap.type-3 .inner-rule .txt-3{font-family: Lato-Regular;font-size: 16px;color: #222;letter-spacing: -0.2px;text-align: center;line-height: 22px;padding:21px 0 20px 0;}
+.popup_wrap.type-3 .inner-rule .txt-3{font-family: Lato-Regular;font-size:15px;color: #222;letter-spacing: -0.2px;text-align: center;line-height: 22px;padding:10px 0 30px 0;}/*padding:21px 0 20px 0;*/
 .popup_wrap.type-3 .inner-rule .txt-4{font-family: Lato-Regular;font-size: 12px;color: #999;letter-spacing: -0.2px;text-align: center;line-height: 16px;}
 .popup_wrap.type-3 .type-gap{position:relative;padding:19px 20px;}
 .popup_wrap.type-3 .type-gap .t-2{font-size: 16px;color: #222;letter-spacing: -0.2px;line-height: 21px;display:block;padding:0 0 10px 0;}
@@ -1598,7 +1598,7 @@ text-align: right;padding-top:30px;}
 	body{min-width:1120px;}
 
 	/*common_gaptp 버튼 공통*/
-	.common_gaptp [data-type="btn_gaptp"]{width:320px;margin:0 auto;}
+	.common_gaptp [data-type="btn_gaptp"]{width:320px;margin:0 auto !important;}
 
 	/*box-inputType-1*/
 	.box-inputType-1{padding:0 50px 28px 50px;}
@@ -2043,17 +2043,18 @@ text-align: right;padding-top:30px;}
 	/* .popup_wrap.rule [data-button="btn-prev2"]:after{content:'';display:block;clear:both;background:url('../images/btn/btn_close.jpg') no-repeat 0 0;position:absolute;top:0;right:0;width:28px;height:36px;transition:all 0.5s;} */
 	.popup_wrap.rule [data-button="btn-prev2"]:hover:after{transform: rotate(180deg);}
 	.popup_wrap.rule .box-rule .header-rule{font-size:30px;text-align:left;border-bottom:0;padding:39px 47px 0 47px;font-weight:normal;}
-	.popup_wrap.rule .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 70px 30px 70px;}
+	.popup_wrap.rule .box-rule .header-rule.type-2{font-family: Lato-Bold;font-size:30px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 70px 0 70px;}
+	.popup_wrap.rule .box-rule .header-rule.type-3{font-family: Lato-Bold;font-size: 28px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 36px;padding:60px 70px 10px 70px;}
 	.popup_wrap.rule .inner-rule{border-top:0;line-height:15px;height:260px;overflow-x:hidden;margin:4px 0 0 0;}/*margin:4px 25px 0 25px;*/
 	.popup_wrap.rule .fix_area{position:static;bottom:initial;left:initial;right:initial;padding:21px 160px 0 160px;}
 	.popup_wrap.rule .inner-rule .gap{display:none;}
 
 	/* inquiry popup */
 	#INQUIRY.popup_wrap.rule .box-rule .header-rule{text-align:center;}
-	#INQUIRY.popup_wrap.type-3 .gap-rule{width:360px;margin-top: -327px;margin-left:-250px;}/*width:500px;height: 654px;*/
+	#INQUIRY.popup_wrap.type-3 .gap-rule{width:420px;margin-top: -327px;margin-left:-210px;}/*margin-left:-250px;*/
 	#INQUIRY.popup_wrap.type-3 .gap-rule.type-2{height:726px;margin-top:-363px;}
-	#INQUIRY.popup_wrap.type-3 .inner-rule{padding:20px 20px;}/*padding-left:65px;padding-right:65px;*/
-	#INQUIRY.popup_wrap.type-3 .inner-rule .txt-3{padding-top:0;}
+	#INQUIRY.popup_wrap.type-3 .inner-rule{padding:0 0 50px 0;}/*padding-left:65px;padding-right:65px;*/
+	/*#INQUIRY.popup_wrap.type-3 .inner-rule .txt-3{padding-top:0;font-family: Lato-Regular;font-size: 15px;color: #222222;letter-spacing: -0.19px;text-align: center;line-height: 20px;}*/
 	#INQUIRY.popup_wrap.type-3 .box-gapType-1{padding-top:0;}
 	#INQUIRY .btn-fixed-inquery{position:static !important;margin-top:20px;height:50px;line-height:50px;}
 	#INQUIRY .common-btnType-7 span{font-size:16px;letter-spacing: -0.18px;font-family: Lato-Regular;}
@@ -2297,7 +2298,7 @@ text-align: right;padding-top:30px;}
 	.popup_wrap.type-2 .box-mypageIntro ul li.icon-2 a:after{background-size:82px;top:13px;right:-7px;}
 	.popup_wrap.type-3 .inner-rule{overflow:hidden;margin-top:-3px;height:auto;padding:24px 0 66px 0;}/*padding:24px 27px;*/
 	.popup_wrap.type-3 .gap-rule{height:auto;margin-top:-313px;margin-left:-320px;}/*height:626px;*/
-	.popup_wrap.type-3 .gap-rule.gapty1{margin-left:-210px;}
+	.popup_wrap.type-3 .gap-rule.gapty1{margin-left:-210px;width:420px;}
 	.popup_wrap.type-3 .gap-rule.type-2{height:auto;margin-top:-428px;margin-left:-320px;}
 	.popup_wrap.type-3 .gap-rule.type-3{height:500px;margin-top:-250px;}
 	.popup_wrap.type-3 .inner-rule .t-1{font-size: 14px;color: #666;line-height: 20px;background:#fff;padding:0 0 0 20px;}
