@@ -451,7 +451,7 @@
 						</li>
 						<li>
 							<p class="tt-3">Attachment</p>
-							<div class="txt-ct pb0">
+							<div class="txt-ct ">
 								<div data-control="fileBox">
 									<!-- front.js 에서 prepend로 뿌려 주고 있는 위치 -->
 									<!--
