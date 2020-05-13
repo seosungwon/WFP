@@ -471,7 +471,8 @@ line-height: 28px;}*/
 .popup_wrap.type-2 .inner-rule{overflow:hidden;}
 .popup_wrap.type-2 .box-rule .header-rule{border-bottom:0;font-weight:normal;}
 .popup_wrap .inner-rule{text-align:left;padding:20px 25px;overflow:scroll;height:100%;font-family:'Lato-Regular';font-size: 12px;color: #222;letter-spacing: 0;}
-.popup_wrap .inner-rule .iq_pop{max-height:130px;}
+.popup_wrap .inner-rule.iq_pop{max-height:559px;}
+.popup_wrap .inner-rule.iq_pop .gap{height:50px;}
 .popup_wrap .inner-rule .gap{height:150px;}
 .popup_wrap .inner-rule .gap.type-2{height:130px;}
 .popup_wrap .inner-rule .gap2{height:130px;}

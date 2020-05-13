@@ -481,12 +481,11 @@
 						</div>
 					</div>
 					<!-- //btn -->
+					<!-- 가상 공간 -->
+					<div class="gap"></div>
+					<!-- //가상 공간 -->
 				</div>
 				<!-- //box-inputType-1 -->
-				<!-- 가상 공간 -->
-				<div class="gap"></div>
-				<!-- //가상 공간 -->
-
 			</div>
 			<!-- 가상 공간 -->
 			<div class="gap"></div>
