@@ -420,7 +420,7 @@
 		<!-- //data-inquiryStep 1 -->
 
 		<!-- data-inquiryStep 2 -->
-		<div class="inner-rule" data-inquiryStep="2">
+		<div class="inner-rule iq_pop" data-inquiryStep="2">
 			<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
 			<div class="list-step">
 				<ol>
@@ -709,7 +709,7 @@
 <div id="loanPossibility" class="popup_wrap rule type-3" style="display:none;">
 	<div class="gap-rule type-2">
 		<div class="box-rule">
-			<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Check your possible loan amount</h3>
+			<h3 class="header-rule type-2" style="border-bottom:0;">Check your possible loan amount</h3>
 		</div>
 		<!-- inner-rule popup1 -->
 		<div class="inner-rule">
