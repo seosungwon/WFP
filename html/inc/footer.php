@@ -641,25 +641,28 @@
 <!-- //loanStatus layerpopup -->
 
 <!-- 경고팝업 confirm layerpopup -->
-<div id="confirm" class="popup_wrap rule type-3">
-	<div class="gap-rule type-3">
-
+<div id="confirm" class="popup_wrap rule type-3" style="display:none;">
+	<div class="gap-rule type-4 popbox_center">
 		<!-- popup1 -->
-		<!-- inner-rule -->
-		<div class="inner-rule">
+		<div class="inner-rule" style="display:block;">
 			<div class="box-complete">
+				<div class="inner_img">
+					<img src="common/images/icon/ic_popup_question.png" alt="">
+				</div>
 				<div class="inner_1">
 					<p class="txt1">
 						Unable to find your loan history!
 					</p>
 					<p class="txt2">
-						※ Forget the contact No.
-						on your Application?
+						※ Forget the contact No.<br>
+						on your Application?<br>
 						Please contact us by INQUIRY.
 					</p>
 				</div>
 				<!-- btn-fixed -->
-				<a href="#complate" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">APPLY NOW!</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<div class="common_gaptp type_font1">
+					<a href="#complate" data-btn-inquery="motion2" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">APPLY NOW!</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				</div>
 				<!-- //btn-fixed -->
 			</div>
 			<!-- 닫기 버튼 -->
@@ -668,13 +671,14 @@
 			</a>
 			<!-- //닫기 버튼 -->
 		</div>
-		<!-- //inner-rule -->
 		<!-- //popup1 -->
 
 		<!-- popup2 -->
-		<!-- inner-rule -->
-		<div class="inner-rule">
+		<div class="inner-rule" style="display:none;">
 			<div class="box-complete">
+				<div class="inner_img">
+					<img src="common/images/icon/ic_popup_ellipsis.png" alt="">
+				</div>
 				<div class="inner_2">
 					<p class="txt1">
 						Unfortunately,<br>
@@ -687,7 +691,9 @@
 					</p>
 				</div>
 				<!-- btn-fixed -->
-				<a href="#complate" data-btn-inquery="motion2" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">APPLY NOW!</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<div class="common_gaptp type_font1">
+					<a href="#complate" data-btn-inquery="motion2" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light btnSel-bg layer_open_pop">APPLY NOW!</a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				</div>
 				<!-- //btn-fixed -->
 			</div>
 			<!-- 닫기 버튼 -->
@@ -696,7 +702,6 @@
 			</a>
 			<!-- //닫기 버튼 -->
 		</div>
-		<!-- //inner-rule -->
 		<!-- //popup2 -->
 	</div>
 </div>
@@ -797,55 +802,55 @@
 				<ol>
 					<li class="end"><span><span>1</span></span></li>
 					<li class="ing"><span><span>2</span></span></li>
-					<li><span><span>3</span></span></li>
+					<li class=""><span><span>3</span></span></li>
 				</ol>
 			</div>
 			<div class="box-gapType-1 mobile-width400 pt0">
 				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-2">
+				<div class="box-inputType-1 type-2 tp2">
 					<ul class="pt0">
 						<li>
 							<p class="lpd_tit">Have checking accounts?</p>
 							<div class="txt-ct inp_radioGap-2">
-							<span class="inp_radio type-2 tp1">
-								<input id="ahk1" name="test2" type="radio" checked="checked">
-								<label for="ahk1">Yes</label>
-							</span>
-							<span class="inp_radio type-2 tp1">
-								<input id="ahk2" name="test2" type="radio">
-								<label for="ahk2">No</label>
-							</span>
-						</div>
+								<span class="inp_radio type-2 tp1">
+									<input id="bhk8" name="b" type="radio" checked="checked">
+									<label for="bhk8">Yes</label>
+								</span>
+								<span class="inp_radio type-2 tp1">
+									<input id="bhk9" name="b" type="radio">
+									<label for="bhk9">No</label>
+								</span>
+							</div>
 						</li>
 						<li>
 							<p class="lpd_tit">With credit card account?</p>
 							<div class="txt-ct inp_radioGap-2">
-							<span class="inp_radio type-2 tp1">
-								<input id="ahk3" name="test3" type="radio" checked="checked">
-								<label for="ahk3">Yes</label>
-							</span>
-							<span class="inp_radio type-2 tp1">
-								<input id="ahk4" name="test3" type="radio">
-								<label for="ahk4">No</label>
-							</span>
-						</div>
+								<span class="inp_radio type-2 tp1">
+									<input id="bhk10" name="c" type="radio" checked="checked">
+									<label for="bhk10">Yes</label>
+								</span>
+								<span class="inp_radio type-2 tp1">
+									<input id="bhk11" name="c" type="radio">
+									<label for="bhk11">No</label>
+								</span>
+							</div>
 						</li>
 					</ul>
+					<!-- btn-fixedTwo -->
+					<div class="btn-fixedTwo type-2 pc_btn">
+						<div>
+							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
+						</div>
+						<div>
+							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">NEXT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						</div>
+					</div>
+					<!-- //btn-fixedTwo -->
 				</div>
-
 				<!-- //box-inputType-1 -->
-
-				<!-- btn-fixed -->
-				<div class="btn-fixedTwo type-2">
-					<div>
-						<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
-					</div>
-					<div>
-						<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light "><span class="icon-1">NEXT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
-					</div>
-				</div>
-				<!-- //btn-fixed -->
-
+				<!-- 가상 공간 -->
+				<div class="gap"></div>
+				<!-- //가상 공간 -->
 			</div>
 			<!-- //inner-rule -->
 			<a href="#none" data-button="btn-prev2" class="sel btn-close">
@@ -855,7 +860,7 @@
 		<!--  //inner-rule popup2 -->
 
 		<!-- inner-rule popup3 -->
-		<div class="inner-rule">
+		<div class="inner-rule" style="display:none;">
 			<p class="txt-3">Please fill out with complete details.<br>
 			You can confirm your loan possibility.</p>
 			<div class="list-step">
@@ -936,7 +941,7 @@
 						</li>
 					</ul>
 					<!-- btn-fixedTwo -->
-					<div class="btn-fixedTwo type-2">
+					<div class="btn-fixedTwo type-2 pc_btn">
 						<div>
 							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
 						</div>
@@ -962,7 +967,7 @@
 		<div class="inner-rule" style="display:none;">
 			<div class="box-gapType-1 mobile-width400 pt0">
 				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-2">
+				<div class="box-inputType-1 type-2 pt30">
 					<ul class="pop_type1 pt0">
 						<li>
 							<div class="txt-ct peso_num">
@@ -983,7 +988,9 @@
 					</ul>
 				</div>
 				<!-- btn-fixed -->
-				<a href="#none" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
+				<div class="common_gaptp">
+				<a href="#none" data-type="btn_gaptp" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
+				</div>
 				<!-- //btn-fixed -->
 				<!-- //box-inputType-1 -->
 				<!-- 가상 공간 -->
@@ -998,7 +1005,7 @@
 		<!--  //inner-rule popup4 -->
 
 		<!-- inner-rule popup5 -->
-		<div class="inner-rule" style="display:none;">
+		<div class="inner-rule">
 			<div class="box-gapType-1 mobile-width400 pt0">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1 type-2">
@@ -1022,7 +1029,9 @@
 					</ul>
 				</div>
 				<!-- btn-fixed -->
-				<a href="#none" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
+				<div class="common_gaptp">
+				<a href="#none" data-type="btn_gaptp" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
+				</div>
 				<!-- //btn-fixed -->
 				<!-- //box-inputType-1 -->
 
