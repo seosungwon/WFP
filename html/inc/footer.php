@@ -134,13 +134,13 @@
 			</a>
 		</div>
 		<div class="box-rule">
-			<h3 class="header-rule type-2" style="border-bottom:0;">Loan Calculator</h3>
+			<h3 class="header-rule type-2 pb30" style="border-bottom:0;">Loan Calculator</h3>
 		</div>
 		<div class="inner-rule loan_wrap">
 			<!-- 계산기 콘텐츠 영역 -->
 			<div class="txt-ct inp_radioGap-1" data-event="ctTabContent">
 				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-3">
+				<div class="box-inputType-1 type-3 calculator_type">
 					<ul>
 						<li>
 							<div>
@@ -269,10 +269,8 @@
 				                    <div class="slider-item">
 				                        <div class="calc-sum-wrp text-center">
 				                        	<span class="calc_txt">Loan Amount:</span>
-				                        	<div class="gap-type-1">
-					                            <span id="calc-sum"></span>
-					                            <span class="calc_txt2">peso</span>
-					                        </div>
+				                            <span id="calc-sum"></span>
+				                            <span class="calc_txt2">peso</span>
 				                        </div>
 				                        <div class="calc-slider-sum" id="calc-slider-sum"></div>
 				                        <div class="row text-sum">
@@ -1246,7 +1244,6 @@
 			var  slider_sum = document.getElementById('calc-slider-sum');
 
 			noUiSlider.create(slider_sum, {
-				connect: "lower",
 				start: 20000,
 				step: 1,
 				range: {
@@ -1258,7 +1255,6 @@
 			var  slider_time = document.getElementById('calc-slider-time');
 
 			noUiSlider.create(slider_time, {
-				connect: "lower",
 				start: 61,
 				step: 1,
 				range: {
