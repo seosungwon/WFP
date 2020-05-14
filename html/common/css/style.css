@@ -84,6 +84,7 @@ body.fx{overflow:hidden;}
 .pt70{padding-top:70px !important;}
 .pb0{padding-bottom:0px !important;}
 .pb20{padding-bottom:20px !important;}
+.pb30{padding-bottom:30px !important;}
 .pb40{padding-bottom:40px !important;}
 .plr20{padding:0 20px !important;}
 
@@ -1572,9 +1573,7 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', endColorstr='#ffa400', GradientType=0 );cursor: pointer;box-shadow: 0 2px 5px -2px #333;width: 26px;height: 26px;right: -5px;top: -10px;*/
 background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;background-size:44px;width:44px;height:44px;}
 .inner-rule.loan_wrap .slider-item {margin: 0 0px 40px 0px;}
-.inner-rule.loan_wrap .slider-item .calc-sum-wrp:after{content:'';display:block;clear:both;}
-.inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;/* padding-right:133px; */float:left;width:40%;}
-.inner-rule.loan_wrap .slider-item .gap-type-1{float:right;width:60%;text-align:right;}
+.inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;padding-right:133px;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt2{font-family: Lato-Regular;font-size: 14px;color: #101010;letter-spacing: -0.2px;text-align: right;line-height: 19px;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp, .slider-item .calc-time-wrp {margin-bottom: 10px;}
 .inner-rule.loan_wrap .slider-item .text-sum {margin-top: 8px;font-size: 14px;}
@@ -1624,6 +1623,8 @@ text-align: right;padding-top:30px;}
 
 	/*box-inputType-1*/
 	.box-inputType-1{padding:0 50px 28px 50px;}
+	.box-inputType-1.calculator_type{padding:0 0 28px 0;}/*계산기 좌우 여백*/
+
 
 	/*header Btn*/
 	.common-btnType-16{display: inline-block;text-align: center;height:29px;line-height: 24px;font-size: 13px;letter-spacing: -0.2px;border: 1px solid #fff;padding: 0 20px;position:absolute;background: rgba(255,255,255,0.10);z-index:1000 !important;}/*padding: 0 12px;position:absolute;top:-15px;right:20px;*/
@@ -1942,6 +1943,7 @@ text-align: right;padding-top:30px;}
 	#loanCalculator.show,
 	#loanCalculator.show .gap-rule{right:0;}
 	#loanCalculator.show [data-control="cl"] a{right:420px;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat 31px 18px;background-size:28px;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 18px;}
+	#loanCalculator .inner-rule.loan_wrap{padding:0 50px;}
 	#loanCalculator .inner-rule.loan_wrap .gap{display:block;height:auto;}
 	#loanCalculator .inner-rule.loan_wrap .gap .inp_radio type-3{padding:0 24px;}
 	#loanCalculator .inner-rule.loan_wrap .gap .inp_radio.type-3 input:checked + label:before {content: '';background: url(../images/icon/btn_apply_check_s.png) -5px 0 no-repeat;background-size: 22px;}
