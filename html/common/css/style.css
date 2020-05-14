@@ -1621,6 +1621,7 @@ text-align: right;padding-top:30px;}
 	html,
 	body{min-width:1120px;}
  *{background:red;}
+ *{background:blue;}
 	/*common_gaptp 버튼 공통*/
 	.common_gaptp [data-type="btn_gaptp"]{width:320px;margin:0 auto !important;}
 
