@@ -269,8 +269,10 @@
 				                    <div class="slider-item">
 				                        <div class="calc-sum-wrp text-center">
 				                        	<span class="calc_txt">Loan Amount:</span>
-				                            <span id="calc-sum"></span>
-				                            <span class="calc_txt2">peso</span>
+				                        	<div class="gap-type-1">
+					                            <span id="calc-sum"></span>
+					                            <span class="calc_txt2">peso</span>
+					                        </div>
 				                        </div>
 				                        <div class="calc-slider-sum" id="calc-slider-sum"></div>
 				                        <div class="row text-sum">
@@ -1244,6 +1246,7 @@
 			var  slider_sum = document.getElementById('calc-slider-sum');
 
 			noUiSlider.create(slider_sum, {
+				connect: "lower",
 				start: 20000,
 				step: 1,
 				range: {
@@ -1255,6 +1258,7 @@
 			var  slider_time = document.getElementById('calc-slider-time');
 
 			noUiSlider.create(slider_time, {
+				connect: "lower",
 				start: 61,
 				step: 1,
 				range: {

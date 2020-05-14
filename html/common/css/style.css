@@ -1572,7 +1572,9 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;margin-bottom:25px;}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', endColorstr='#ffa400', GradientType=0 );cursor: pointer;box-shadow: 0 2px 5px -2px #333;width: 26px;height: 26px;right: -5px;top: -10px;*/
 background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;background-size:44px;width:44px;height:44px;}
 .inner-rule.loan_wrap .slider-item {margin: 0 0px 40px 0px;}
-.inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;padding-right:133px;}
+.inner-rule.loan_wrap .slider-item .calc-sum-wrp:after{content:'';display:block;clear:both;}
+.inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;/* padding-right:133px; */float:left;width:40%;}
+.inner-rule.loan_wrap .slider-item .gap-type-1{float:right;width:60%;text-align:right;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt2{font-family: Lato-Regular;font-size: 14px;color: #101010;letter-spacing: -0.2px;text-align: right;line-height: 19px;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp, .slider-item .calc-time-wrp {margin-bottom: 10px;}
 .inner-rule.loan_wrap .slider-item .text-sum {margin-top: 8px;font-size: 14px;}
