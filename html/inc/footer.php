@@ -504,7 +504,7 @@
 <div id="loanStatus" class="popup_wrap rule type-3">
 	<div class="gap-rule gapty1">
 		<div class="box-rule">
-			<h3 class="header-rule type-2 gap-1" style="border-bottom:0;">Status of your loan application</h3>
+			<h3 class="header-rule type-2" style="border-bottom:0;">Status of your loan application</h3>
 		</div>
 		<!-- data-inquiryStep 3 -->
 		<div class="inner-rule" data-inquiryStep="3">
@@ -585,7 +585,7 @@
 						</ul>
 
 						<!-- box-loanStep -->
-						<div class="box-loanStep">
+						<div class="box-loanStep pp-info2">
 							<ol>
 								<li class="end">
 									<span class="cnt"><span>1</span></span>
@@ -646,7 +646,7 @@
 <div id="confirm" class="popup_wrap rule type-3" style="display:none;">
 	<div class="gap-rule type-4 popbox_center">
 		<!-- popup1 -->
-		<div class="inner-rule" style="display:block;">
+		<div class="inner-rule" style="display:none;">
 			<div class="box-complete">
 				<div class="inner_img">
 					<img src="common/images/icon/ic_popup_question.png" alt="">
@@ -966,7 +966,7 @@
 		<!--  //inner-rule popup3 -->
 
 		<!-- inner-rule popup4 -->
-		<div class="inner-rule" style="display:none;">
+		<div class="inner-rule" style="display:block;">
 			<div class="box-gapType-1 mobile-width400 pt0">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1 type-2 pt30">
@@ -1007,7 +1007,7 @@
 		<!--  //inner-rule popup4 -->
 
 		<!-- inner-rule popup5 -->
-		<div class="inner-rule">
+		<div class="inner-rule" style="display:none;">
 			<div class="box-gapType-1 mobile-width400 pt0">
 				<!-- box-inputType-1 -->
 				<div class="box-inputType-1 type-2">
