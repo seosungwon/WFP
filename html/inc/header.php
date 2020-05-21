@@ -73,7 +73,7 @@
 								<li>
 									<a href="#none" data-d2Index="1">Our Story</a>
 									<a href="#none" data-d2Index="2">Welcome Group Info</a>
-									<a href="#none" data-d2Index="3">Branch</a>
+									<a href="#none" data-d2Index="3">Branches</a>
 								</li>
 							</ul>
 						</li>

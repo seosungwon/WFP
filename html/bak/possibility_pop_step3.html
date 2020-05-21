@@ -1,0 +1,192 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<!-- box-gapType-1 -->
+		<div id="no-layer" class="box-gapType-1 mobile-width400">
+
+			<!-- inner-gap-1 -->
+			<div class="inner-gap-1">
+				<!-- box-possibility -->
+				<div class="box-possibility b_tit">
+					<h3>Check your possible<br>loan amount</h3>
+					<p class="txt-2">Please fill out with complete details.<br>You can confirm your loan possibility.</p>
+					<div class="list-step">
+						<ol>
+							<li><span><span>1</span></span></li>
+							<li><span><span>2</span></span></li>
+							<li class="ing"><span><span>3</span></span></li>
+						</ol>
+					</div>
+				</div>
+				<!-- //box-possibility -->
+
+				<!-- box-inputType-1 -->
+				<!-- box-inputType-1 -->
+				<div class="box-inputType-1 type-2 tp2">
+					<ul class="pt0">
+						<li>
+							<p class="lpd_tit">How much is your previous loan amount?</p>
+							<div class="txt-ct inp_radioGap-2" data-radio="collateral">
+								<span class="inp_radio type-2">
+									<input id="bhk1" data-ch="show1" name="test5" type="radio" checked="checked">
+									<label for="bhk1">Non-collateral:</label>
+								</span>
+								<p class="lpd_stit2">Input your loan amount</p>
+								<div class="txt-ct txt-peso data-tg" data-error="" data-ch-input="show1">
+									<input type="text" class="common-inputType" id="">
+									<span class="txt-error">Error message</span>
+									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
+								</div>
+								<span class="inp_radio type-2 mt" data-radio="collateralInput">
+									<input id="bhk2" data-ch="show2" name="test5" type="radio">
+									<label for="bhk2">Collateral:</label>
+								</span>
+								<div class="txt-ct txt-peso data-tg" data-error="" data-ch-input="show2" style="display:none;">
+									<input type="text" class="common-inputType" id="">
+									<span class="txt-error">Error message</span>
+									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
+								</div>
+
+								<span class="inp_radio type-2 mt">
+									<input id="bhk3" name="test5" type="radio" data-ch="all-hide">
+									<label for="bhk3">No</label>
+								</span>
+
+							</div>
+						</li>
+						<li>
+							<p class="lpd_tit">Do you have overdue in your previous loans?</p>
+							<div class="txt-ct inp_radioGap-2">
+								<span class="inp_radio type-2 tp1">
+									<input id="bhk4" name="b" type="radio" checked="checked">
+									<label for="bhk4">Yes</label>
+								</span>
+								<span class="inp_radio type-2 tp1">
+									<input id="bhk5" name="b" type="radio">
+									<label for="bhk5">No</label>
+								</span>
+							</div>
+						</li>
+						<li>
+							<p class="lpd_tit">Do you settle all your loans?</p>
+							<div class="txt-ct inp_radioGap-2">
+								<span class="inp_radio type-2 tp1">
+									<input id="bhk6" name="c" type="radio" checked="checked">
+									<label for="bhk6">Yes</label>
+								</span>
+								<span class="inp_radio type-2 tp1">
+									<input id="bhk7" name="c" type="radio">
+									<label for="bhk7">No</label>
+								</span>
+							</div>
+						</li>
+						<li>
+							<p class="lpd_tit">Current salary (monthly)</p>
+							<p class="lpd_stit">Input your current monthly salary</p>
+							<div class="txt-ct txt-peso" data-error="">
+								<input type="text" class="common-inputType" id="" >
+								<span class="txt-error">Error message</span>
+								<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
+							</div>
+						</li>
+					</ul>
+					<!-- btn-fixed -->
+					<div class="btn-fixedTwo pop_btn_arrow2 type-2">
+						<div>
+							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
+						</div>
+						<div>
+							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+						</div>
+					</div>
+					<!-- //btn-fixed -->
+				</div>
+				<!-- //box-inputType-1 -->
+				<!-- //box-inputType-1 -->
+			</div>
+			<!-- //inner-gap-1 -->
+
+		</div>
+		<!-- //box-gapType-1 -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileHeader = new HeaderSplit(null, null);
+
+		/*
+			* validation check button motion
+		*/
+		var $validationTg = $('[data-check="validation"]');
+
+		$validationTg.on('keypress focusout', function(){
+			var v = 0;
+
+			$validationTg.each(function(){
+				if( $(this).val().length == 0 ){
+					++v;
+					return;
+				}
+			});
+
+			if( v == 0 ){
+				var validationButton = new ValidationButton($(this));
+			}else if( v > 0 ){
+				var validationButton = new ValidationButton();
+			}
+		});
+
+		// $('body').attr("data-target","no-nav");
+
+		// data-ch-input="show1"
+
+		$dataRadioColl.find('[data-ch]').click(function(){
+			var $tag = $(this).attr('data-ch');
+
+			console.log($tag);
+
+			$dataRadioColl.find('.data-tg').hide();
+			$dataRadioColl.find('[data-ch-input="' + $tag + '"]').show();
+
+			if( $tag == 'all-hide' ){
+				$dataRadioColl.find('.data-tg').hide();
+			}
+
+			/*if( $(this).attr('data-ch') == 'show' ){
+				console.log(1);
+				$dataInput.show();
+			}else{
+				console.log(2);
+				$dataInput.hide();
+			}*/
+		});
+	});
+
+	/*
+		* error focus function
+		* new ErrorUi('에러 값 id'));
+	*/
+	function errorFocus(tg){
+		var errorUi = new ErrorUi(tg);
+	}
+
+	// error focus test
+	errorFocus('idTest');
+
+	// data-target="footer" remove
+	var footerHide = new FooterHide('none', '');
+</script>

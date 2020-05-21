@@ -1,0 +1,143 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<!-- box-gapType-1 -->
+		<div id="no_layer" class="box-gapType-1 mobile-width400">
+
+			<!-- inner-gap-1 -->
+			<div class="inner-gap-1">
+				<!-- box-gapSingUp -->
+				<div class="box-possible ">
+					<h3>Check your possible loan amount</h3>
+					<p class="txt-2">Please fill out with complete details. You can confirm your loan possibility.</p>
+					<div class="list-step">
+						<ol>
+							<li class="ing"><span><span>1</span></span></li>
+							<li><span><span>2</span></span></li>
+							<li><span><span>3</span></span></li>
+						</ol>
+					</div>
+				</div>
+				<!-- //box-gapSingUp -->
+
+				<!-- box-inputType-1 -->
+				<div class="box-inputType-1">
+					<ul class="pt0">
+						<li>
+							<p class="lpd_tit">Employment status</p>
+							<p class="tt-3">Select <strong>*</strong></p>
+							<div class="txt-ct">
+								<select class="common-selectType">
+									<option value="" hidden="">Select</option>
+									<option>1</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<p class="tt-3">Select <strong>*</strong></p>
+							<div class="txt-ct">
+								<select class="common-selectType">
+									<option value="" hidden="">Select</option>
+									<option>1</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<p class="lpd_tit">Business License date</p>
+							<p class="tt-3">Month <strong>*</strong></p>
+							<div class="txt-ct displayTableType-1" data-error="">
+								<div class="displayCell" style="width:50%;">
+									<select class="common-selectType">
+										<option value="" hidden>Month</option>
+										<option>1</option>
+									</select>
+
+									<span class="txt-error">Error message</span>
+								</div>
+								<div class="displayCell gap-1">
+									<p class="txt-1">Day <strong>*</strong></p>
+									<input type="tel" class="common-inputType" id="">
+								</div>
+								<div class="displayCell">
+									<p class="txt-1">Year <strong>*</strong></p>
+									<input type="tel" class="common-inputType" id="">
+								</div>
+							</div>
+							<p class="s_ps">Please fill out the date of permit by Major or Barangay</p>
+						</li>
+					</ul>
+					<!-- btn-fixed -->
+					<div class="btn_arrow">
+						<a href="#none" data-btn="motion" class="common-btnType-14 waves-effect waves-light"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+					<!-- //btn-fixed -->
+					</div>
+				</div>
+
+
+
+
+			</div>
+			<!-- //inner-gap-1 -->
+		</div>
+		<!-- //box-gapType-1 -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileHeader = new HeaderSplit(null, null);
+
+		/*
+			* validation check button motion
+		*/
+		var $validationTg = $('[data-check="validation"]');
+
+		$validationTg.on('keypress focusout', function(){
+			var v = 0;
+
+			$validationTg.each(function(){
+				if( $(this).val().length == 0 ){
+					++v;
+					return;
+				}
+			});
+
+			if( v == 0 ){
+				var validationButton = new ValidationButton($(this));
+			}else if( v > 0 ){
+				var validationButton = new ValidationButton();
+			}
+		});
+
+		//$('body').attr("data-target","no-nav");
+	});
+
+	/*
+		* error focus function
+		* new ErrorUi('에러 값 id'));
+	*/
+	function errorFocus(tg){
+		var errorUi = new ErrorUi(tg);
+	}
+
+	// error focus test
+	errorFocus('idTest');
+
+	// data-target="footer" remove
+	var footerHide = new FooterHide('none', '');
+</script>

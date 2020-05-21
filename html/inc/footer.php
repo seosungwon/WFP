@@ -161,7 +161,7 @@
 							</div>
 						</li>
 						<li data-ckInfo="1">
-							<p class="tt-3">Employment Status:</p>
+							<p class="tt-3">Employment Status</p>
 							<div class="txt-ct">
 								<select class="common-selectType">
 									<option value="" hidden="">Select</option>
@@ -172,7 +172,7 @@
 						<li data-ckInfo="1">
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Payment Term:</p>
+									<p class="tt-3">Payment Term</p>
 									<select class="common-selectType">
 										<option value="" hidden>Month</option>
 										<option>1</option>
@@ -180,7 +180,7 @@
 									<span class="txt-error">Error message</span>
 								</div>
 								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Monthly Add-On Rate:</p>
+									<p class="tt-3">Monthly Add-On Rate</p>
 									<select class="common-selectType">
 										<option value="" hidden>Month</option>
 										<option>1</option>
@@ -192,15 +192,15 @@
 						<li data-ckInfo="2">
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Car kinds:</p>
+									<p class="tt-3">Car kinds</p>
 									<select class="common-selectType">
 										<option value="" hidden>Select</option>
 										<option>1</option>
 									</select>
-									<span class="txt-error">Year Made:</span>
+									<span class="txt-error">Year Made</span>
 								</div>
 								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Monthly Add-On Rate:</p>
+									<p class="tt-3">Monthly Add-On Rate</p>
 									<select class="common-selectType">
 										<option value="" hidden>Select</option>
 										<option>1</option>
@@ -212,7 +212,7 @@
 						<li data-ckInfo="2">
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Purchased Year:</p>
+									<p class="tt-3">Purchased Year</p>
 									<select class="common-selectType">
 										<option value="" hidden>Select</option>
 										<option>1</option>
@@ -220,7 +220,7 @@
 									<span class="txt-error">Error message</span>
 								</div>
 								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Purchased Amount:</p>
+									<p class="tt-3">Purchased Amount</p>
 									<input type="text" class="common-inputType" id="idTestIq" data-checkinquiry="validation">
 									<!-- <select class="common-selectType">
 										<option value="" hidden>Month</option>
@@ -233,7 +233,7 @@
 						<li data-ckInfo="2">
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Recorded Mileage:</p>
+									<p class="tt-3">Recorded Mileage</p>
 									<select class="common-selectType">
 										<option value="" hidden>Select</option>
 										<option>1</option>
@@ -268,7 +268,7 @@
 				               <div class="slider-wrp" data-ckInfo="1">
 				                    <div class="slider-item">
 				                        <div class="calc-sum-wrp text-center">
-				                        	<span class="calc_txt">Loan Amount:</span>
+				                        	<span class="calc_txt">Loan Amount</span>
 				                            <div class="gap-type-1">
 					                            <span id="calc-sum"></span>
 					                            <span class="calc_txt2">peso</span>
@@ -309,7 +309,7 @@
 				                </div>
 				                <div class="count-loans" data-ckinfo="2">
 			                        <div class="row">
-			                        	<div class="col-xs-12 col-sm-4 text-center pt pt0">Credit by OECR
+			                        	<div class="col-xs-12 col-sm-4 text-center pt pt0">Credit by ORCR
 			                        		<span class="calc_txt2">peso</span>
 			                        		<span id="count-sum2">500,000</span>
 			                        	</div>
@@ -321,7 +321,7 @@
 			                        </div>
 				                </div>
 				                <div class="loan_btn">
-				                	<a href="#none" class="common-btnType-15 waves-effect waves-light btnSel-bg" tabindex="0">Apply Now!</a>
+				                	<a href="#none" class="common-btnType-15 waves-effect waves-light btnSel-bg" tabindex="0">APPLY NOW!</a>
 				                </div>
 				                <div class="loan_txt">
 				                	<p>Monthly amortization above are indicative only.
@@ -356,7 +356,8 @@
 		</div>
 		<!-- data-inquiryStep 1 -->
 		<div class="inner-rule " data-inquiryStep="1">
-			<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
+			<p class="txt-3">Any questions about application of product<br>
+			and Welcome Finance? We're here for you!</p>
 			<div class="list-step">
 				<ol>
 					<li class="ing"><span><span>1</span></span></li>
@@ -400,7 +401,7 @@
 								<span class="txt-1">Email Address <strong>*</strong></span>
 								<input type="text" class="common-inputType" id=""><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
-								<p class="nt-1">Please provide a valid mobile number.</p>
+								<p class="nt-1">Please provide a calid Email address</p>
 							</div>
 						</li>
 					</ul>
@@ -521,6 +522,9 @@
 							</div>
 						</li>
 						<li>
+							<p class="tt-3">Date of Birth <strong>*</strong></p>
+						</li>
+						<li>
 							<p class="tt-3">Month <strong>*</strong></p>
 							<div class="txt-ct displayTableType-1" data-error="">
 								<div class="displayCell" style="width:50%;">
@@ -544,7 +548,7 @@
 				</div>
 				<!-- //box-inputType-1 -->
 				<div class="common-notiList-4 nl_type1">
-					<span>※ Forget the contact No.<br>
+					<span>※ Forget the contact No.
 					On your Application?<br>
 					Please contact us by INQUIRY.</span>
 				</div>
@@ -646,7 +650,7 @@
 <div id="confirm" class="popup_wrap rule type-3" style="display:none;">
 	<div class="gap-rule type-4 popbox_center">
 		<!-- popup1 -->
-		<div class="inner-rule" style="display:none;">
+		<div class="inner-rule" style="display:block;">
 			<div class="box-complete">
 				<div class="inner_img">
 					<img src="common/images/icon/ic_popup_question.png" alt="">
@@ -676,7 +680,7 @@
 		<!-- //popup1 -->
 
 		<!-- popup2 -->
-		<div class="inner-rule" style="display:none;">
+		<div class="inner-rule" style="display:block;">
 			<div class="box-complete">
 				<div class="inner_img">
 					<img src="common/images/icon/ic_popup_ellipsis.png" alt="">
@@ -709,348 +713,7 @@
 </div>
 <!-- //경고팝업 confirm layerpopup -->
 
-<!-- loanPossibility layerpopup -->
-<div id="loanPossibility" class="popup_wrap rule type-3 " style="display:none;">
-	<div class="gap-rule type-2 gapty2">
-		<div class="box-rule">
-			<h3 class="header-rule type-2" style="border-bottom:0;">Check your possible loan amount</h3>
-		</div>
-		<!-- inner-rule popup1 -->
-		<div class="inner-rule" style="display:none;">
-			<p class="txt-3">Please fill out with complete details.<br>
-			You can confirm your loan possibility.</p>
-			<div class="list-step">
-				<ol>
-					<li class="ing"><span><span>1</span></span></li>
-					<li><span><span>2</span></span></li>
-					<li><span><span>3</span></span></li>
-				</ol>
-			</div>
-			<div class="box-gapType-1 mobile-width400 pt0">
-				<!-- box-inputType-1 -->
-				<div class="box-inputType-1">
-					<ul class="pt0">
-						<li>
-							<p class="lpd_tit">Employment status</p>
-							<p class="tt-3">Select <strong>*</strong></p>
-							<div class="txt-ct">
-								<select class="common-selectType">
-									<option value="" hidden="">Select</option>
-									<option>1</option>
-								</select>
-							</div>
-						</li>
-						<li>
-							<p class="tt-3">Select <strong>*</strong></p>
-							<div class="txt-ct">
-								<select class="common-selectType">
-									<option value="" hidden="">Select</option>
-									<option>1</option>
-								</select>
-							</div>
-						</li>
-						<li class="pt40">
-							<p class="lpd_tit">Business License date</p>
-							<p class="tt-3">Month <strong>*</strong></p>
-							<div class="txt-ct displayTableType-1" data-error="">
-								<div class="displayCell" style="width:50%;">
-									<select class="common-selectType">
-										<option value="" hidden>Month</option>
-										<option>1</option>
-									</select>
 
-									<span class="txt-error">Error message</span>
-									<p class="nt-1">Please fill out the date of permit by Major or Barangay</p>
-								</div>
-								<div class="displayCell gap-1">
-									<p class="txt-1">Day <strong>*</strong></p>
-									<input type="tel" class="common-inputType" id="">
-								</div>
-								<div class="displayCell">
-									<p class="txt-1">Year <strong>*</strong></p>
-									<input type="tel" class="common-inputType" id="">
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<!-- //box-inputType-1 -->
-			</div>
-			<!-- btn-fixed-inquery -->
-			<div class="common_gaptp">
-				<a href="#none" data-btn-inquery="motion2" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span class="icon-1">NEXT</span></a><!-- class=" btnSel-bg" 추가 버튼활성화 -->
-			</div>
-			<!-- //btn-fixed-inquery -->
-
-			<!-- 가상 공간 -->
-			 <div class="gap"></div>
-			<!-- //가상 공간 -->
-
-			<a href="#none" data-button="btn-prev2" class="sel btn-close">
-				<p class="gap"><span></span><span></span><span></span></p>
-			</a>
-
-			<!-- 가상 공간 -->
-			 <div class="gap"></div>
-			<!-- //가상 공간 -->
-		</div>
-		<!-- //inner-rule popup1 -->
-
-		<!-- inner-rule popup2 -->
-		<div class="inner-rule" style="display:none;">
-			<p class="txt-3">Please fill out with complete details.<br>
-			You can confirm your loan possibility.</p>
-			<div class="list-step">
-				<ol>
-					<li class="end"><span><span>1</span></span></li>
-					<li class="ing"><span><span>2</span></span></li>
-					<li class=""><span><span>3</span></span></li>
-				</ol>
-			</div>
-			<div class="box-gapType-1 mobile-width400 pt0">
-				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-2 tp2">
-					<ul class="pt0">
-						<li>
-							<p class="lpd_tit">Have checking accounts?</p>
-							<div class="txt-ct inp_radioGap-2">
-								<span class="inp_radio type-2 tp1">
-									<input id="bhk8" name="b" type="radio" checked="checked">
-									<label for="bhk8">Yes</label>
-								</span>
-								<span class="inp_radio type-2 tp1">
-									<input id="bhk9" name="b" type="radio">
-									<label for="bhk9">No</label>
-								</span>
-							</div>
-						</li>
-						<li>
-							<p class="lpd_tit">With credit card account?</p>
-							<div class="txt-ct inp_radioGap-2">
-								<span class="inp_radio type-2 tp1">
-									<input id="bhk10" name="c" type="radio" checked="checked">
-									<label for="bhk10">Yes</label>
-								</span>
-								<span class="inp_radio type-2 tp1">
-									<input id="bhk11" name="c" type="radio">
-									<label for="bhk11">No</label>
-								</span>
-							</div>
-						</li>
-					</ul>
-					<!-- btn-fixedTwo -->
-					<div class="btn-fixedTwo type-2 pc_btn">
-						<div>
-							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
-						</div>
-						<div>
-							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">NEXT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
-						</div>
-					</div>
-					<!-- //btn-fixedTwo -->
-				</div>
-				<!-- //box-inputType-1 -->
-				<!-- 가상 공간 -->
-				<div class="gap"></div>
-				<!-- //가상 공간 -->
-			</div>
-			<!-- //inner-rule -->
-			<a href="#none" data-button="btn-prev2" class="sel btn-close">
-				<p class="gap"><span></span><span></span><span></span></p>
-			</a>
-		</div>
-		<!--  //inner-rule popup2 -->
-
-		<!-- inner-rule popup3 -->
-		<div class="inner-rule" style="display:none;">
-			<p class="txt-3">Please fill out with complete details.<br>
-			You can confirm your loan possibility.</p>
-			<div class="list-step">
-				<ol>
-					<li class="end"><span><span>1</span></span></li>
-					<li class="end"><span><span>2</span></span></li>
-					<li class="ing"><span><span>3</span></span></li>
-				</ol>
-			</div>
-			<div class="box-gapType-1 mobile-width400 pt0">
-				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-2 tp2">
-					<ul class="pt0">
-						<li>
-							<p class="lpd_tit">How much is your previous loan amount?</p>
-							<div class="txt-ct inp_radioGap-2" data-radio="collateral">
-								<span class="inp_radio type-2">
-									<input id="bhk1" data-ch="show1" name="test5" type="radio" checked="checked">
-									<label for="bhk1">Non-collateral:</label>
-								</span>
-								<p class="lpd_stit2">Input your loan amount</p>
-								<div class="txt-ct txt-peso data-tg" data-error="" data-ch-input="show1">
-									<input type="text" class="common-inputType" id="">
-									<span class="txt-error">Error message</span>
-									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
-								</div>
-								<span class="inp_radio type-2 mt" data-radio="collateralInput">
-									<input id="bhk2" data-ch="show2" name="test5" type="radio">
-									<label for="bhk2">Collateral:</label>
-								</span>
-								<div class="txt-ct txt-peso data-tg" data-error="" data-ch-input="show2" style="display:none;">
-									<input type="text" class="common-inputType" id="">
-									<span class="txt-error">Error message</span>
-									<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
-								</div>
-
-								<span class="inp_radio type-2 mt">
-									<input id="bhk3" name="test5" type="radio" data-ch="all-hide">
-									<label for="bhk3">No</label>
-								</span>
-
-							</div>
-						</li>
-						<li>
-							<p class="lpd_tit">Do you have overdue in your previous loans?</p>
-							<div class="txt-ct inp_radioGap-2">
-								<span class="inp_radio type-2 tp1">
-									<input id="bhk4" name="b" type="radio" checked="checked">
-									<label for="bhk4">Yes</label>
-								</span>
-								<span class="inp_radio type-2 tp1">
-									<input id="bhk5" name="b" type="radio">
-									<label for="bhk5">No</label>
-								</span>
-							</div>
-						</li>
-						<li>
-							<p class="lpd_tit">Do you settle all your loans?</p>
-							<div class="txt-ct inp_radioGap-2">
-								<span class="inp_radio type-2 tp1">
-									<input id="bhk6" name="c" type="radio" checked="checked">
-									<label for="bhk6">Yes</label>
-								</span>
-								<span class="inp_radio type-2 tp1">
-									<input id="bhk7" name="c" type="radio">
-									<label for="bhk7">No</label>
-								</span>
-							</div>
-						</li>
-						<li>
-							<p class="lpd_tit">Current salary (monthly)</p>
-							<p class="lpd_stit">Input your current monthly salary</p>
-							<div class="txt-ct txt-peso" data-error="">
-								<input type="text" class="common-inputType" id="" >
-								<span class="txt-error">Error message</span>
-								<!-- <p class="nt-1">Please provide a valid mobile number.</p> -->
-							</div>
-						</li>
-					</ul>
-					<!-- btn-fixedTwo -->
-					<div class="btn-fixedTwo type-2 pc_btn">
-						<div>
-							<a href="#none" class="common-btnType-9 waves-effect waves-light btn-prev"><span class="icon-1">BACK</span></a>
-						</div>
-						<div>
-							<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light"><span class="icon-1">SUBMIT</scspan></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
-						</div>
-					</div>
-					<!-- //btn-fixedTwo -->
-				</div>
-				<!-- //box-inputType-1 -->
-				<!-- 가상 공간 -->
-				<div class="gap"></div>
-				<!-- //가상 공간 -->
-			</div>
-			<!-- //inner-rule -->
-			<a href="#none" data-button="btn-prev2" class="sel btn-close">
-				<p class="gap"><span></span><span></span><span></span></p>
-			</a>
-		</div>
-		<!--  //inner-rule popup3 -->
-
-		<!-- inner-rule popup4 -->
-		<div class="inner-rule" style="display:block;">
-			<div class="box-gapType-1 mobile-width400 pt0">
-				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-2 pt30">
-					<ul class="pop_type1 pt0">
-						<li>
-							<div class="txt-ct peso_num">
-								<p class="txt1">Possible Loan Amount</p>
-								<p class="num">460,000</p>
-								<p class="txt2">PESO</p>
-							</div>
-						</li>
-						<li>
-							<div class="txt-ct">
-								<p class="txt3">
-									※ Estimated result only.<br>
-									The final result will be decided after<br> reviewing submitted documents.<br>
-									Thank you.
-								</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<!-- btn-fixed -->
-				<div class="common_gaptp">
-				<a href="#none" data-type="btn_gaptp" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
-				</div>
-				<!-- //btn-fixed -->
-				<!-- //box-inputType-1 -->
-				<!-- 가상 공간 -->
-				<div class="gap"></div>
-				<!-- //가상 공간 -->
-			</div>
-			<!-- //inner-rule -->
-			<a href="#none" data-button="btn-prev2" class="sel btn-close">
-				<p class="gap"><span></span><span></span><span></span></p>
-			</a>
-		</div>
-		<!--  //inner-rule popup4 -->
-
-		<!-- inner-rule popup5 -->
-		<div class="inner-rule" style="display:none;">
-			<div class="box-gapType-1 mobile-width400 pt0">
-				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-2">
-					<ul class="pop_type1 pt30">
-						<li>
-							<div class="txt-ct peso_num">
-								<p class="txt1">Possible Loan Amount</p>
-								<p class="num">460,000</p>
-								<p class="txt2">PESO</p>
-							</div>
-						</li>
-						<li>
-							<div class="txt-ct">
-								<p class="txt3">
-									※ Estimated result only.<br>
-									The final result will be decided after<br> reviewing submitted documents.<br>
-									Thank you.
-								</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<!-- btn-fixed -->
-				<div class="common_gaptp">
-				<a href="#none" data-type="btn_gaptp" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
-				</div>
-				<!-- //btn-fixed -->
-				<!-- //box-inputType-1 -->
-
-			</div>
-			<!-- 가상 공간 -->
-				<div class="gap"></div>
-				<!-- //가상 공간 -->
-			<!-- //inner-rule -->
-			<a href="#none" data-button="btn-prev2" class="sel btn-close">
-				<p class="gap"><span></span><span></span><span></span></p>
-			</a>
-		</div>
-		<!--  //inner-rule popup5 -->
-
-	</div>
-</div>
-<!-- //loanPossibility layerpopup -->
 
 <!-- 공통 : js -->
 <link rel="stylesheet" href="common/css/nouislider.css">
@@ -1180,32 +843,6 @@
 			$INQUIRYtg.removeClass('type-2');
 		});
 
-		// data-radio="collateral" click
-		var $dataRadioColl = $('[data-radio="collateral"]'),
-			$dataInput = $('[data-radio="collateralInput"]');
-
-		// data-ch-input="show1"
-
-		$dataRadioColl.find('[data-ch]').click(function(){
-			var $tag = $(this).attr('data-ch');
-
-			console.log($tag);
-
-			$dataRadioColl.find('.data-tg').hide();
-			$dataRadioColl.find('[data-ch-input="' + $tag + '"]').show();
-
-			if( $tag == 'all-hide' ){
-				$dataRadioColl.find('.data-tg').hide();
-			}
-
-			/*if( $(this).attr('data-ch') == 'show' ){
-				console.log(1);
-				$dataInput.show();
-			}else{
-				console.log(2);
-				$dataInput.hide();
-			}*/
-		});
 
 		// 작업 완료시 삭제
 		  // $('.layer_open_pop.test-btn').click();
