@@ -42,7 +42,7 @@
 					<li><a href="#none">Branches</a><span>|</span></li>
 					<li><a href="#none">Blog</a><span>|</span></li>
 					<li><a href="#loanStatus" class="layer_open_pop test-btn">Loan Status</a><span>|</span></li>
-					<li><a href="#loanPossibility" class="layer_open_pop test-btn">Loan Possibility</a><span>|</span></li>
+					<li><a href="#none">Loan Possibility</a><span>|</span></li>
 					<li><a href="#none">Declaration</a><span>|</span></li>
 					<li><a href="#none">Privacy Policy</a></li>
 				</ul>
@@ -523,8 +523,6 @@
 						</li>
 						<li>
 							<p class="tt-3">Date of Birth <strong>*</strong></p>
-						</li>
-						<li>
 							<p class="tt-3">Month <strong>*</strong></p>
 							<div class="txt-ct displayTableType-1" data-error="">
 								<div class="displayCell" style="width:50%;">
@@ -548,7 +546,7 @@
 				</div>
 				<!-- //box-inputType-1 -->
 				<div class="common-notiList-4 nl_type1">
-					<span>※ Forget the contact No.
+					<span>&#8251; Forget the contact No.
 					On your Application?<br>
 					Please contact us by INQUIRY.</span>
 				</div>
@@ -712,6 +710,60 @@
 	</div>
 </div>
 <!-- //경고팝업 confirm layerpopup -->
+
+<!-- loanPossibility layerpopup -->
+<div id="loanPossibility" class="popup_wrap rule type-3 " style="display:none;">
+	<div class="gap-rule type-2 gapty2">
+		<div class="box-rule">
+			<h3 class="header-rule type-2" style="border-bottom:0;">Check your possible loan amount</h3>
+		</div>
+		<!-- inner-rule popup5 -->
+		<div class="inner-rule">
+			<div class="box-gapType-1 mobile-width400 pt0">
+				<!-- box-inputType-1 -->
+				<div class="box-inputType-1 type-2">
+					<ul class="pop_type1 pt30">
+						<li>
+							<div class="txt-ct peso_num">
+								<p class="txt1">Possible Loan Amount</p>
+								<p class="num">460,000</p>
+								<p class="txt2">PESO</p>
+							</div>
+						</li>
+						<li>
+							<div class="txt-ct">
+								<p class="txt3">
+									※ Estimated result only.<br>
+									The final result will be decided after<br> reviewing submitted documents.<br>
+									Thank you.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- btn-fixed -->
+				<div class="common_gaptp">
+				<a href="#none" data-type="btn_gaptp" class="common-btnType-2 waves-effect waves-light">APPLY NOW!</a>
+				</div>
+				<!-- //btn-fixed -->
+				<!-- //box-inputType-1 -->
+			</div>
+			<!-- 가상 공간 -->
+				<div class="gap"></div>
+				<!-- //가상 공간 -->
+			<!-- //inner-rule -->
+			<a href="#none" data-button="btn-prev2" class="sel btn-close">
+				<p class="gap"><span></span><span></span><span></span></p>
+			</a>
+		</div>
+		<!--  //inner-rule popup5 -->
+	</div>
+</div>
+<!-- //loanPossibility layerpopup -->
+
+
+
+
 
 
 
