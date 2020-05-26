@@ -2498,7 +2498,7 @@ text-align: right;padding-top:30px;}
 
 	.popup_wrap.type-3 .gap-rule{height:auto;margin-top:-313px;margin-left:-320px;}/*height:626px;*/
 	.popup_wrap.type-3 .gap-rule.gapty1{margin-left:-210px;width:420px;}
-	.popup_wrap.type-3 .gap-rule.type-2{height:auto;margin-top:-428px;margin-left:-320px;}
+	.popup_wrap.type-3 .gap-rule.type-2{height:auto;margin-top:-289px;margin-left:-320px;}/*2020-05-26 margin-top:-428px;*/
 	.popup_wrap.type-3 .gap-rule.type-2.gapty2{margin-left:-210px;}
 	.popup_wrap.type-3 .gap-rule.type-3{height:500px;margin-top:-250px;}
 
@@ -2717,7 +2717,7 @@ text-align: right;padding-top:30px;}
 	.amount .inner.pd_all{padding:0;}
 	.amount .inner .am_txt{padding-top:0;}
 	.amount .inner p.am_txt{font-family: Lato-Black;font-size: 44px;color: #222222;letter-spacing: -0.2px;line-height: 66px;text-align:left;}
-	.amount .inner .loan{padding-top:70px;}
+	.amount .inner .loan{margin-top:70px;}
 	.amount .inner .loan ul{overflow:hidden;}
 	.amount .inner .loan ul li{float:left;padding:0 100px 0 0;}/*padding:0 76px 0 0;*/
 	.amount .inner .loan ul li p.tit_1{font-family: Lato-Bold;font-size: 18px;color: #222222;letter-spacing: -0.2px;line-height: 30px;text-align:left;}
@@ -2741,9 +2741,10 @@ text-align: right;padding-top:30px;}
 	.loan_list .amount ul.dot1 > li:after{content: '';display: block;clear: both;background: #444;width:6px;height:6px;position: absolute;top:23px;left:4px;background-size:6px;border-radius:6px;}
 	.loan_list .amount ul.dot1 li ul.line_list li{background:0 none;padding-left:0;}
 	.loan_list .amount:nth-child(2){clear:both;}
-	.loan_list .amount .inner .loan{float:left; width:479px;height:auto;}
-	.loan_list .amount .inner .loan.first{border-right:1px solid #00000033;}
-	.loan_list .amount .inner .loan.last{padding-left:40px;}
+	.loan_list .amount .inner .loan{}
+	.loan_list .amount .inner .loan.auto_loan{float:left; width:479px;height:auto;border-right:1px solid #00000033;}
+
+	.loan_list .amount .inner .loan.last{padding-left:40px;border-right:none;}
 	.loan_list .amount .inner .loan ul li p{text-align:left;}
 	.loan_list .amount .inner .loan ul li{padding-top:50px;}
 	.loan_list .amount .inner .loan .auto_tit{font-family: Lato-Black;font-size: 44px;color: #222222;letter-spacing: -0.2px;line-height: 66px;text-align:left;padding-top:30px;}
