@@ -424,7 +424,8 @@
 
 		<!-- data-inquiryStep 2 -->
 		<div class="inner-rule" data-inquiryStep="2">
-			<p class="txt-3">Any questions about your loan<br> application?  We’re here for you!</p>
+			<p class="txt-3">Any questions about application of product<br>
+			and Welcome Finance? We're here for you!</p>
 			<div class="list-step">
 				<ol>
 					<li class="end"><span><span>1</span></span></li>
