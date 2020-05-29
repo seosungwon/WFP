@@ -1786,6 +1786,9 @@ text-align: right;padding-top:30px;}
 	html,
 	body{min-width:1120px;}
 
+	/* common layer 콘텐츠 body bg */
+	.commonLayerBackground-1{background:#f5f5f5;}
+
 	/* common-tt */
 	.top-ttGap-1.gap_line{margin:0 8px;}
 

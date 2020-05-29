@@ -339,6 +339,13 @@ $(function(){
 	if( $('[data-slick-vs="commonTab"]').length >= 1 ){ // 있을때
 		$('body').attr('data-page2', 'commonTabShow');
 	}
+
+	// common layer 콘텐츠 body bg script
+	var $tgLayer = $('.inner-gap-1');
+
+	if( $tgLayer.length >= 1 ){
+		$('body').addClass('commonLayerBackground-1');
+	}
 });
 
 // mobile header guide HeaderSplit
