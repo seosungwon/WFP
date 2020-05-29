@@ -25,7 +25,7 @@
 				<!-- //box-gapSingUp -->
 
 				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 bit_type">
+				<div class="box-inputType-1 bit_type gap-type-1">
 					<ul class="pt0">
 						<li>
 							<p class="lpd_tit">How much is your previous loan amount?</p>
@@ -34,7 +34,7 @@
 									<input id="bhk1" data-ch="show1" name="test5" type="radio" checked="checked">
 									<label for="bhk1">Non-collateral:</label>
 								</span>
-								<p class="lpd_stit">Input your loan amount</p>
+								<p class="lpd_stit data-tg" data-ch-input="show1">Input your loan amount</p>
 								<div class="txt-ct txt-peso data-tg" data-error="" data-ch-input="show1">
 									<input type="text" class="common-inputType" id="">
 									<span class="txt-error">Error message</span>
@@ -44,6 +44,7 @@
 									<input id="bhk2" data-ch="show2" name="test5" type="radio">
 									<label for="bhk2">Collateral:</label>
 								</span>
+								<p class="lpd_stit data-tg" data-ch-input="show2" style="display:none;">Input your loan amount</p>
 								<div class="txt-ct txt-peso data-tg" data-error="" data-ch-input="show2" style="display:none;">
 									<input type="text" class="common-inputType" id="">
 									<span class="txt-error">Error message</span>
@@ -70,7 +71,7 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1 t1">Do you settle all your loans?</p>
+							<p class="tt-1 t1 gap-typeIn-1">Do you settle all your loans?</p>
 							<div class="txt-ct inp_radioGap-2">
 								<span class="inp_radio type-2 tp1">
 									<input id="chk5" name="test2" type="radio" checked="checked">
@@ -83,7 +84,7 @@
 							</div>
 						</li>
 						<li>
-							<p class="tt-1 t1">Current salary (monthly)</p>
+							<p class="tt-1 t1 gap-typeIn-1">Current salary (monthly)</p>
 							<p class="lpd_stit">Input your current monthly salary</p>
 							<!-- <div class="txt-ct inp_radioGap-2">
 								<span class="inp_radio type-2 tp1">
@@ -172,8 +173,6 @@
 
 		$dataRadioColl.find('[data-ch]').click(function(){
 			var $tag = $(this).attr('data-ch');
-
-			console.log($tag);
 
 			$dataRadioColl.find('.data-tg').hide();
 			$dataRadioColl.find('[data-ch-input="' + $tag + '"]').show();

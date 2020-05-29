@@ -3008,6 +3008,9 @@ text-align: right;padding-top:30px;}
 
 	/*PC pop_possibility step1~3*/
 	#no_layer .box-inputType-1{}
+		#no_layer .box-inputType-1.gap-type-1{margin-top:13px;}
+		#no_layer .box-inputType-1.gap-type-1 > ul > li{padding-bottom:35px;}
+		#no_layer .box-inputType-1.gap-type-1 .gap-typeIn-1{margin-top:-12px;}
 		#no_layer .box-inputType-1{padding:0;}
 		#no_layer .box-possible{padding:0;}
 		#no_layer .box-possible h3{font-family: Lato-Bold;font-size: 36px;color: #222222;letter-spacing: -0.18px;text-align: center;padding:25px 60px 22px 60px;}
