@@ -977,6 +977,8 @@ window.fileBox = fileBox;
 			var me = this,
 			$items = me.selectors.datacl;
 
+			$($items).show();
+
 			$($items).find('.btn-cl').click(function(){
 				if( !$(this).is('.show') ){
 					$('#loanCalculator').addClass('show');

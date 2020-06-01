@@ -1181,6 +1181,7 @@ height:1px;position:absolute;left:-20px;right:-20px;bottom:0;border-bottom:1px s
 
 
 /* footer data-event="cl" */
+[data-control="cl"]{display:none;}
 [data-control="cl"] a{position:fixed;bottom:30px;right:10px;background: #FF7A01;box-shadow: 0 6px 10px 0 rgba(0,0,0,0.30);width:60px;height:60px;border-radius:100px;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat center 16px;background-size:28px;z-index:999;}
 [data-control="cl"] a span.txt_n{display:none;}
 #loanCalculator{}

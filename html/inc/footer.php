@@ -782,7 +782,7 @@
 	gnbMenu.initialize(); // 공통 prototype header gnb
 	footerSite.initialize(); // 공통 prototype footer family site
 	fileBox.initialize(); // inquiry input file prototype script
-	cl.initialize(); // data-control="cl" prototype script
+	//cl.initialize(); // data-control="cl" prototype script
 	ctTabContent.initialize(); // data-event="ctTabContent" prototype script
 
 	$(function(){
