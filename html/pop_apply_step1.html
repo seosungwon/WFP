@@ -1,0 +1,217 @@
+<?php include 'inc/header.php';?><!-- 공통 header include -->
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- 공통 : skipCt -->
+	<div id="skipCt">
+
+		<!-- box-gapType-1 -->
+		<div id="no_layer" class="box-gapType-1 mobile-width400">
+
+			<!-- inner-gap-1 -->
+			<div class="inner-gap-1 gap_top">
+				<!-- box-gapSingUp -->
+				<div class="box_apply common_top">
+					<h3 class="fontT1">Apply Now!</h3>
+					<p class="txt-2 t2">Please fill out with complete details and<br> we will contact you immediately.</p>
+					<div class="list-step list_step2">
+						<ol>
+							<li class="ing"><span><span>1</span></span></li>
+							<li><span><span>2</span></span></li>
+						</ol>
+					</div>
+				</div>
+				<!-- //box-gapSingUp -->
+
+				<!-- box-inputType-1 -->
+				<div class="box-inputType-1 box-inputType-apply">
+					<ul class="pt0">
+						<li>
+							<p class="lpd_tit lpd_tit2">Contact Information</p>
+							<div class="txt-ct displayTableType-1" data-error="idTest">
+								<div class="displayCell">
+									<p class="txt-1 txt-1_1">Last Name <strong>*</strong></p>
+									<input type="text" class="common-inputType" id="idTest" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
+									<span class="txt-error">Error message</span>
+								</div>
+								<div class="displayCell">
+									<p class="txt-1">First Name <strong>*</strong></p>
+									<input type="text" class="common-inputType" id="" data-check="validation"><!--  data-check="validation" 벨리데이션 체크 -->
+								</div>
+								<div class="displayCell">
+									<p class="txt-1">Middle Name</p>
+									<input type="text" class="common-inputType" id=""><!-- 필수 입력 아님 -->
+								</div>
+							</div>
+						</li>
+						<li>
+							<p class="tt-3">Contact Number <strong>*</strong></p>
+							<input type="text" class="common-inputType" id="" data-check="validation">
+							<p class="s_ps2">Please provide a valid mobile number as we will notify you of your application status via SMS.</p>
+						</li>
+						<li>
+							<p class="tt-3">Mobile OS(Operating System) <strong>*</strong></p>
+							<div class="txt-ct">
+								<select class="common-selectType">
+									<option value="" hidden="">Select</option>
+									<option>1</option>
+								</select>
+							</div>
+							<p class="s_ps2">Please select mobile OS<br>
+							ex) Android / iOS / Others</p>
+						</li>
+						<li>
+							<p class="tt-3">Email Address <strong>*</strong></p>
+							<input type="text" class="common-inputType" id="" data-check="validation">
+							<p class="s_ps2">Please provide a valid Email address as we will notify you of your application status via Email. </p>
+						</li>
+						<li>
+							<p class="tt-3">TIN Number(ID) <strong>*</strong></p>
+							<input type="text" class="common-inputType" id="" data-check="validation">
+						</li>
+						<li>
+							<p class="lpd_tit">Date of Birth</p>
+							<p class="tt-3">Month <strong>*</strong></p>
+							<div class="txt-ct displayTableType-1" data-error="">
+								<div class="displayCell" style="width:50%;">
+									<select class="common-selectType">
+										<option value="" hidden>Select</option>
+										<option>1</option>
+									</select>
+
+									<span class="txt-error">Error message</span>
+								</div>
+								<div class="displayCell gap-1">
+									<p class="txt-1">Day <strong>*</strong></p>
+									<input type="tel" class="common-inputType" id="">
+								</div>
+								<div class="displayCell">
+									<p class="txt-1">Year <strong>*</strong></p>
+									<input type="tel" class="common-inputType" id="">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- box-inputType-1 -->
+				<div class="box-inputType-1">
+					<ul class="pt0">
+						<li>
+							<p class="tt-1 t1">Have your own car?</p>
+							<div class="txt-ct inp_radioGap-2">
+								<span class="inp_radio type-2 tp1">
+									<input id="chk3" name="test2" type="radio" checked="checked">
+									<label for="chk3">Yes</label>
+								</span>
+								<span class="inp_radio type-2 tp1">
+									<input id="chk4" name="test2" type="radio">
+									<label for="chk4">No</label>
+								</span>
+							</div>
+						</li>
+						<li class="last">
+							<p class="tt-1 t1 t1_1">Are you using online banking?</p>
+							<div class="txt-ct inp_radioGap-2">
+								<span class="inp_radio type-2 tp1">
+									<input id="chk5" name="test3" type="radio" checked="checked">
+									<label for="chk5">Yes</label>
+								</span>
+								<span class="inp_radio type-2 tp1">
+									<input id="chk6" name="test3" type="radio">
+									<label for="chk6">No</label>
+								</span>
+							</div>
+						</li>
+						<li>
+							<!-- box_inp -->
+							<div class="box_inp type-2 pc-inlineBlock" data-ck="#layer1">
+								<span class="inp_check">
+									<input id="chk" name="" type="checkbox" checked="checked">
+									<label for="chk">I have read and agree the</label>
+								</span>
+							</div>
+							<p class="ruleTxt-layer">
+								<a href="#layer1" class="layer_open_pop">declaration</a> &
+								<a href="#layer1" class="layer_open_pop">privacy policy.</a>
+							</p>
+							<!-- //box_inp -->
+						</li>
+					</ul>
+					<!-- common-notiList-1 -->
+					<div class="common-notiList-1 type-2 type-2_2">
+						<span>Loan Application Process is for <em>FREE</em>.<br>No initial Cash Needed!</span>
+					</div>
+					<!-- //common-notiList-1 -->
+					<!-- btn-fixed -->
+					<div class="btn_arrow">
+						<a href="#none" data-btn="motion" class="common-btnType-14 waves-effect waves-light btnSel-bg"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+					</div>
+					<!-- //btn-fixed -->
+				</div>
+				<!-- box-inputType-1 -->
+
+
+
+
+			</div>
+			<!-- //inner-gap-1 -->
+		</div>
+		<!-- //box-gapType-1 -->
+
+	</div>
+	<!-- //공통 : skipCt -->
+</div>
+<!-- //wrap -->
+
+
+
+<?php include 'inc/footer.php';?><!-- 공통 footer include -->
+
+<script type="text/javascript">
+	$(function(){
+		/*
+			* mobile header script common
+			* new HeaderSplit('버튼 기능', 'home 버튼'));
+		*/
+		var mobileHeader = new HeaderSplit(null, null);
+
+		/*
+			* validation check button motion
+		*/
+		var $validationTg = $('[data-check="validation"]');
+
+		$validationTg.on('keypress focusout', function(){
+			var v = 0;
+
+			$validationTg.each(function(){
+				if( $(this).val().length == 0 ){
+					++v;
+					return;
+				}
+			});
+
+			if( v == 0 ){
+				var validationButton = new ValidationButton($(this));
+			}else if( v > 0 ){
+				var validationButton = new ValidationButton();
+			}
+		});
+
+		//$('body').attr("data-target","no-nav");
+	});
+
+	/*
+		* error focus function
+		* new ErrorUi('에러 값 id'));
+	*/
+	function errorFocus(tg){
+		var errorUi = new ErrorUi(tg);
+	}
+
+	// error focus test
+	errorFocus('idTest');
+
+	// data-target="footer" remove
+	var footerHide = new FooterHide('none', '');
+</script>
