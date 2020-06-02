@@ -50,7 +50,7 @@
 				</div>
 				<!-- //box-login -->
 				<!-- nav -->
-				<nav data-target="nav">
+				<nav data-target="nav" class="type-2">
 					<ul>
 						<li>
 							<a href="#none" data-index="1"><span>Loans</span></a>
@@ -64,7 +64,7 @@
 								</li>
 							</ul>
 						</li>
-						<li>
+						<li class="dt2">
 							<a href="#none" data-index="2">FAQs</a>
 						</li>
 						<li>
@@ -77,7 +77,7 @@
 								</li>
 							</ul>
 						</li>
-						<li>
+						<li class="dt2">
 							<a href="#none" data-index="4">Blog</a>
 						</li>
 					</ul>
