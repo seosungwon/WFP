@@ -193,12 +193,14 @@
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell txt-peso" style="width:50%;">
 									<p class="tt-3">Loan Amount</p>
-									<input type="text" class="common-inputType " id="idTestIq" data-checkinquiry="validation">
-									<!-- <select class="common-selectType">
-										<option value="" hidden>Month</option>
-										<option>1</option>
-									</select> -->
-									<span class="txt-error">Error message</span>
+									<p style="position:relative;">
+										<input type="text" class="common-inputType " id="idTestIq" data-checkinquiry="validation">
+										<!-- <select class="common-selectType">
+											<option value="" hidden>Month</option>
+											<option>1</option>
+										</select> -->
+										<span class="txt-error">Error message</span>
+									</p>
 								</div>
 							</div>
 						</li>
