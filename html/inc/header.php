@@ -45,16 +45,16 @@
 			<!-- inner -->
 			<div class="inner">
 				<!-- box-login -->
-				<div class="box-login mlogo">
+				<div class="box-login mlogo logo_type1">
 					<a href="#none"><img src="common/images/logo/img_header_logo_color.png" alt=""></a>
 				</div>
 				<!-- //box-login -->
 				<!-- nav -->
-				<nav data-target="nav" class="type-2">
+				<nav data-target="nav">
 					<ul>
-						<li>
+						<li class="dt1">
 							<a href="#none" data-index="1"><span>Loans</span></a>
-							<ul >
+							<ul>
 								<li>
 									<a href="#none" data-d2Index="1">Personal Loan</a>
 									<a href="#none" data-d2Index="2">Salary Loan</a>
@@ -65,9 +65,9 @@
 							</ul>
 						</li>
 						<li class="dt2">
-							<a href="#none" data-index="2">FAQs</a>
+							<a href="#none" data-index="2"><span>FAQs</span></a>
 						</li>
-						<li>
+						<li class="dt1 dt1_1">
 							<a href="#none" data-index="3"><span>About Us</span></a>
 							<ul>
 								<li>
@@ -77,8 +77,8 @@
 								</li>
 							</ul>
 						</li>
-						<li class="dt2">
-							<a href="#none" data-index="4">Blog</a>
+						<li class="dt2 line_no">
+							<a href="#none" data-index="4"><span>Blog</span></a>
 						</li>
 					</ul>
 				</nav>

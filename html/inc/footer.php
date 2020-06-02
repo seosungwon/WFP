@@ -160,7 +160,7 @@
 								</div>
 							</div>
 						</li>
-						<li data-ckInfo="1">
+						<!-- <li data-ckInfo="1">
 							<p class="tt-3">Employment Status</p>
 							<div class="txt-ct">
 								<select class="common-selectType">
@@ -168,9 +168,17 @@
 									<option>1</option>
 								</select>
 							</div>
-						</li>
+						</li> -->
 						<li data-ckInfo="1">
 							<div class="txt-ct displayTableType-1">
+								<div class="displayCell" style="width:50%;">
+									<p class="tt-3">Employment Status</p>
+									<select class="common-selectType">
+										<option value="" hidden>Employed</option>
+										<option>1</option>
+									</select>
+									<span class="txt-error">Error message</span>
+								</div>
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Payment Term</p>
 									<select class="common-selectType">
@@ -179,12 +187,17 @@
 									</select>
 									<span class="txt-error">Error message</span>
 								</div>
-								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Monthly Add-On Rate</p>
-									<select class="common-selectType">
+							</div>
+						</li>
+						<li data-ckInfo="1">
+							<div class="txt-ct displayTableType-1">
+								<div class="displayCell txt-peso" style="width:50%;">
+									<p class="tt-3">Loan Amount</p>
+									<input type="text" class="common-inputType " id="idTestIq" data-checkinquiry="validation">
+									<!-- <select class="common-selectType">
 										<option value="" hidden>Month</option>
 										<option>1</option>
-									</select>
+									</select> -->
 									<span class="txt-error">Error message</span>
 								</div>
 							</div>
