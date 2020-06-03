@@ -182,7 +182,7 @@
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Payment Term</p>
 									<select class="common-selectType">
-										<option value="" hidden>Month</option>
+										<option value="" hidden>Select</option>
 										<option>1</option>
 									</select>
 									<span class="txt-error">Error message</span>
@@ -191,7 +191,7 @@
 						</li>
 						<li data-ckInfo="1">
 							<div class="txt-ct displayTableType-1">
-								<div class="displayCell txt-peso" style="width:50%;">
+								<div class="displayCell txt-peso">
 									<p class="tt-3">Loan Amount</p>
 									<p style="position:relative;">
 										<input type="text" class="common-inputType " id="idTestIq" data-checkinquiry="validation">
@@ -203,6 +203,7 @@
 									</p>
 								</div>
 							</div>
+							<p class="txt_loan">Please enter between 20,000~50,000p</p>
 						</li>
 						<li data-ckInfo="2">
 							<div class="txt-ct displayTableType-1">
@@ -283,7 +284,7 @@
 				               <div class="slider-wrp" data-ckInfo="1">
 				                    <div class="slider-item">
 				                        <div class="calc-sum-wrp text-center">
-				                        	<span class="calc_txt">Loan Amount</span>
+				                        	<span class="calc_txt">Monthly Add-On Rate</span>
 				                            <div class="gap-type-1">
 					                            <span id="calc-sum"></span>
 					                            <span class="calc_txt2">peso</span>
@@ -291,8 +292,15 @@
 				                        </div>
 				                        <div class="calc-slider-sum" id="calc-slider-sum"></div>
 				                        <div class="row text-sum">
-				                        	<div class="col-xs-6 num">20,000</div>
-				                        	<div class="col-xs-6 text-right ">500,000</div>
+				                        	<!-- <div class="col-xs-6 num">20,000</div>
+				                        	<div class="col-xs-6 text-right ">500,000</div> -->
+				                        	<ul class="loan_num">
+				                        		<li>1.6</li>
+				                        		<li>2.0</li>
+				                        		<li>2.5</li>
+				                        		<li>3.0</li>
+				                        		<li>4.0</li>
+				                        	</ul>
 				                        </div>
 				                    </div>
 				                    <div class="slider-item" style="display:none;">
