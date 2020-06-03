@@ -2045,8 +2045,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 
 	[data-click="main-vsSlick"].type-2 .slick-slide:after{display:block;opacity:1;}
 	[data-click="main-vsSlick"].bg-1 .slick-slide:after{background-image:url('../images/img/img_loans_top_salary_pc.png');}
-	[data-click="main-vsSlick"].bg-2 .slick-slide:after{background-image:url('../images/img/bg_main_tablet.png');}
-	[data-click="main-vsSlick"].bg-3 .slick-slide:after{background-image:url('../images/img/bg_main_tablet.png');}
+	[data-click="main-vsSlick"].bg-2 .slick-slide:after{background-image:url('../images/img/img_loans_top_business.png');}
+	[data-click="main-vsSlick"].bg-3 .slick-slide:after{background-image:url('../images/img/img_loans_top_auto_pc.png');}
 	[data-click="main-vsSlick"].bg-4 .slick-slide:after{background-image:url('../images/img/bg_main_tablet.png');}
 
 	/*[data-click="main-vsSlick"] .box-txt .txt-1 span:after{content:'';display:block;clear:both;background-repeat:no-repeat;background-position:0;background-size:16px;width:16px;height:16px;position:absolute;top:190px;right:112px;background-image:url('../images/icon/ic_arrow_more_white.png');}*/
@@ -2345,7 +2345,9 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	[data-click="main-vsSlick"] .box-txt .txt-1.m_txt{top:60px;}
 	[data-click="main-vsSlick"].maintype .box-txt .txt-1.m_txt{top:98px;left:7px;}/*2020-05-26*/
 	[data-click="main-vsSlick"] .box-txt .txt-1.loan_tit{text-align:left;line-height:74px;font-size:56px;}/*line-height:0;*/
-	[data-click="main-vsSlick"] .box-txt .txt-1 span{display:block;margin-top:0;font-family: Lato-Black;font-size: 56px;color: #FF7A01;letter-spacing: -0.21px;line-height: 74px;}/*margin-top:60px;*/
+	[data-click="main-vsSlick"] .box-txt .txt-1 span{display:block;margin-top:0;font-family: Lato-Black;font-size: 56px;color: #FF7A01;letter-spacing: -0.21px;line-height: 74px;}/*
+	margin-top:60px;*/
+	[data-click="main-vsSlick"] .box-txt .txt-1 span.c_loan{display:inline-block;}
 	[data-click="main-vsSlick"] .box-txt .txt-1 span.point{display:inline-block;}
 	[data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a{margin:0 auto;border:1px solid #fff;color:#fff;padding:10px 54px;vertical-align:middle;display: inline-block;height: 20px;line-height: 17px;font-size:14px;}
 	[data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a.s_more{position:absolute;top:228px;left:850px;}/*2020-05-18 추가*/
@@ -3013,7 +3015,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.box-mainCt .counter_total .counter_wrap2 .served span.s_txt3{font-family: Lato-Regular;font-size: 30px;color: #FFFFFF;letter-spacing: 0;}
 
 	.amount {max-width:1000px;margin:0 auto 0 auto;}/*margin:100px auto 0 auto;*/
-	.amount .inner{padding:100px 20px 50px 20px;}
+	.amount .inner{padding:100px 20px 50px 20px; border-bottom:1px solid #e6e6e6;}
 	.amount .inner.pd_all{padding:0;}
 	.amount .inner .am_txt{padding-top:0;}
 	.amount .inner p.am_txt{font-family: Lato-Black;font-size: 44px;color: #222222;letter-spacing: -0.2px;line-height: 66px;text-align:left;}
@@ -3073,6 +3075,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.apply .apply_title ul li{font-family: Lato-Regular;font-size:18px;color: #444444;letter-spacing: -0.2px;line-height:28px;padding:0 0 5px 48px;position:relative;}
 	.apply .apply_title ul li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:25px;height:25px;position:absolute;top:0;left:14px;background-size:25px;background-image:url('../images/icon/ic_loans_eligilble_check.png');}
 	.apply .apply_title .common-btnType-15{position:absolute;top:260px;left:20px;width:220px;font-family: Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.18px;text-align: center;text-decoration:none;}
+	.apply .apply_title p:nth-child(1){top:-2px;}/*2020-06-03 loan -> Who is eligible to apply? 위치값*/
 
 
 	#benefit{background:#FA8E00;margin-top:65px;}
