@@ -2041,12 +2041,13 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	[data-click="main-vsSlick"] .txt-4{font-size:26px;line-height:32px;}
 	[data-click="main-vsSlick"] .txt-4 br{display:block;}
 	[data-click="main-vsSlick"] .img-1 img{width:257px;}
-	[data-click="main-vsSlick"] .slick-slide:after{background-repeat:repeat-y;background-position:0;content:'';clear:both;position:absolute;top:0;left:0;bottom:0;background-color:transparent;}/*2020-05-25 display:block;*/
-	[data-click="main-vsSlick"].loan_img .slick-slide:before
-	.bg-1 .slick-slide:after{background-image:url('../images/bg/bg_main_tablet.png');}
-	[data-click="main-vsSlick"].bg-2 .slick-slide:after{background-image:url('../images/bg/bg_main_tablet.png');}
-	[data-click="main-vsSlick"].bg-3 .slick-slide:after{background-image:url('../images/bg/bg_main_tablet.png');}
-	[data-click="main-vsSlick"].bg-4 .slick-slide:after{background-image:url('../images/bg/bg_main_tablet.png');}
+	[data-click="main-vsSlick"] .slick-slide:after{background-image:url('../images/bg/bg_main_tablet.png');background-repeat:repeat-y;background-position:0;content:'';clear:both;position:absolute;top:0;left:0;bottom:0;background-color:transparent;}/*2020-05-25 display:none; 삭제 이유는 index.html background 보여서 삭제함 */
+
+	[data-click="main-vsSlick"].type-2 .slick-slide:after{display:block;opacity:1;}
+	[data-click="main-vsSlick"].bg-1 .slick-slide:after{background-image:url('../images/img/img_loans_top_salary_pc.png');}
+	[data-click="main-vsSlick"].bg-2 .slick-slide:after{background-image:url('../images/img/bg_main_tablet.png');}
+	[data-click="main-vsSlick"].bg-3 .slick-slide:after{background-image:url('../images/img/bg_main_tablet.png');}
+	[data-click="main-vsSlick"].bg-4 .slick-slide:after{background-image:url('../images/img/bg_main_tablet.png');}
 
 	/*[data-click="main-vsSlick"] .box-txt .txt-1 span:after{content:'';display:block;clear:both;background-repeat:no-repeat;background-position:0;background-size:16px;width:16px;height:16px;position:absolute;top:190px;right:112px;background-image:url('../images/icon/ic_arrow_more_white.png');}*/
 
