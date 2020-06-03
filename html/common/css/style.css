@@ -88,6 +88,7 @@ body.fx{overflow:hidden;}
 .pb20{padding-bottom:20px !important;}
 .pb30{padding-bottom:30px !important;}
 .pb40{padding-bottom:40px !important;}
+.pb42{padding-bottom:42px !important;}
 .pb50{padding-bottom:50px !important;}
 .plr20{padding:0 20px !important;}
 
@@ -2535,6 +2536,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.common-tabType-2 ul li.sel a:after{content:'';display:block;clear:both;background: #FF7A01;position:absolute;bottom:0;left:0;right:0;height:2px;}
 	.common-tabType-2 ul li.sel a:after{bottom:0;}
 	.common-tabType-2 ul li.sel a:before{bottom:0;background:#fff;}
+	.common-tabType-2.faq_mu ul li a{font-size:15px;height:58px;}/*2020-06-03 faq 메뉴 글자 사이즈 수정*/
+	.common-tabType-2.faq_mu ul li.sel a{font-family: Lato-Bold;font-size: 15px;color: #FF7A01;letter-spacing: -0.19px;text-align: center;}/*faqs 메뉴 선택시 색깔 bold로 변경*/
 	.common-tabType-3 li a{font-size:16px;letter-spacing:-0.2px;padding:6px 0;}
 	.common-tabType-4{padding:20px;}
 	.common-tabType-4 > a:after{right:19px;}
@@ -2720,8 +2723,10 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 
 
 	.top-ttGap-2.ttgap-1{padding:0 0 40px 0;}
+	.top-ttGap-2.ttgap-1.ttgap-2{padding:0;}
 	.common-blogtype1{font-family: Lato-Bold;font-size:40px;color: #222222;letter-spacing: -0.2px;}
 	.common-blogtype2{font-family: Lato-Regular;font-size:15px;color: #222222;letter-spacing: -0.2px;line-height: 20px;padding-top:20px;}
+	.common-blogtype2.pb_type1{padding-bottom:42px;}
 	.box-blogView{border-top:1px solid #E6E6E6;padding-top:30px;margin-top:9px;}
 	.box-blogView *{vertical-align:middle;}
 	.box-blogView .blog_img{display:inline-block;}
