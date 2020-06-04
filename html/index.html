@@ -284,7 +284,17 @@
 			arrows: true,
 			pauseOnHover:false,
 			prevArrow: "<a href='#none' class='btn-prev'></a>",
-			nextArrow: "<a href='#none' class='btn-next'></a>"
+			nextArrow: "<a href='#none' class='btn-next'></a>",
+			responsive:[
+			    {
+			      breakpoint: 1025,
+			      settings: {
+			        prevArrow:false,
+			        nextArrow:false,
+
+			      }
+			    }
+			]
 		});
 
 		// play stop

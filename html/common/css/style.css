@@ -1962,13 +1962,6 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 
 
 
-
-
-
-
-
-
-
 /* pc _ 768~ */
 @media all and (min-width:768px) {
 	/* pc 최소값 */
@@ -2280,7 +2273,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.our_story{padding:120px 0 70px 0;}
 	.our_story .inner{max-width:1000px;margin:0 auto;position:relative;text-align:right;}
 	.our_story img{width:500px;height:700px;}
-	.our_story .st_type1{position:absolute;top:50px;left:-41px;width:539px;margin:0;padding:80px 70px 108px 70px;}/*position:absolute;top:170px;left:0;width:500px;margin:0;*/
+	.our_story .st_type1{position:absolute;top:50px;left:14px;width:448px;margin:0;padding:80px 88px 108px;}/*position:absolute;top:170px;left:0;width:500px;margin:0;*/
 	/*.our_story .st_type1{background:#fff;padding:40px 25px 46px 25px;margin:-50px 20px 0 20px;position:relative;z-index:2;}*/
 	.our_story .st_type1 *{text-align:left;}
 	.our_story .st_type1 p{font-family: Lato-Regular;font-size: 16px;color: #444444;letter-spacing: -0.2px;}
@@ -2301,6 +2294,13 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	height: 176px;
 	z-index:100;*/
 }
+
+
+
+
+
+
+
 
 	/*news_blog*/
 
@@ -2387,7 +2387,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	*/
 	[data-click="main-vsSlick"] .box-txt .txt-1 span.pc_txt{width:1000px;}
 	[data-click="main-vsSlick"] .box-txt .txt-1.m_txt{top:60px;}
-	[data-click="main-vsSlick"].maintype .box-txt .txt-1.m_txt{top:98px;left:7px;padding:0 200px;width:auto;}/*2020-05-26*/
+	[data-click="main-vsSlick"].maintype .box-txt .txt-1.m_txt{top:98px;left:7px;}/*2020-05-26*/
 	[data-click="main-vsSlick"] .box-txt .txt-1.loan_tit{text-align:left;line-height:74px;font-size:56px;}/*line-height:0;*/
 	[data-click="main-vsSlick"] .box-txt .txt-1 span{display:block;margin-top:0;font-family: Lato-Black;font-size: 56px;color: #FF7A01;letter-spacing: -0.21px;line-height: 74px;}/*
 	margin-top:60px;*/
