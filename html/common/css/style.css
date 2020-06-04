@@ -2387,7 +2387,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	*/
 	[data-click="main-vsSlick"] .box-txt .txt-1 span.pc_txt{width:1000px;}
 	[data-click="main-vsSlick"] .box-txt .txt-1.m_txt{top:60px;}
-	[data-click="main-vsSlick"].maintype .box-txt .txt-1.m_txt{top:98px;left:7px;}/*2020-05-26*/
+	[data-click="main-vsSlick"].maintype .box-txt .txt-1.m_txt{top:98px;left:7px;padding:0 200px;width:auto;}/*2020-05-26*/
 	[data-click="main-vsSlick"] .box-txt .txt-1.loan_tit{text-align:left;line-height:74px;font-size:56px;}/*line-height:0;*/
 	[data-click="main-vsSlick"] .box-txt .txt-1 span{display:block;margin-top:0;font-family: Lato-Black;font-size: 56px;color: #FF7A01;letter-spacing: -0.21px;line-height: 74px;}/*
 	margin-top:60px;*/
