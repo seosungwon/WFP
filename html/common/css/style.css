@@ -2026,7 +2026,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 
 	/* main slick */
 	[data-click="main-vsSlick"].mainVs .btn-prev,
-	[data-click="main-vsSlick"].mainVs .btn-next{background-repeat:no-repeat;background-position:0;width:60px;height:60px;opacity:1;margin-top:-300px;}/*margin-top:-275px;*/
+	[data-click="main-vsSlick"].mainVs .btn-next{background-repeat:no-repeat;background-position:0;width:60px;height:60px;opacity:0;margin-top:-300px;}/*margin-top:-275px;*/
 	[data-click="main-vsSlick"].mainVs .btn-prev{background-image:url(../images/btn/btn_main_arrow_left.png);left:160px;}
 	[data-click="main-vsSlick"].mainVs .btn-next{background-image:url(../images/btn/btn_main_arrow_right.png);right:160px;}/*right:160px;*/
 	[data-click="main-vsSlick"].mainVs .slick-dots{bottom:607px;}
@@ -3394,13 +3394,13 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	#no_layer .box-inputType-1 .send-email{font-family:'Lato-Bold';font-size: 16px;color: #F4811F;letter-spacing: -0.2px;line-height: 40px;margin-top:-20px;margin-bottom:5px;}
 	#no_layer .box-inputType-1 .txt-2{color: #999;letter-spacing: -0.2px;line-height: 16px;margin:0 0 19px 0;}
 	#no_layer .box-inputType-1 > ul > li .txt-ct .common-btnType-8{position:absolute;top:0;right:-1px;padding:0 20px;width:49px;}
-
-
-
-
-
-
 	/*PC Blog detail02*/
 
 
+}
+
+/* main slick btn show hide */
+@media all and (min-width:1400px) {
+	[data-click="main-vsSlick"].mainVs .btn-prev,
+	[data-click="main-vsSlick"].mainVs .btn-next{opacity:1;}
 }
