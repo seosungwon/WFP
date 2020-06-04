@@ -424,7 +424,7 @@
 								<span class="txt-1">Email Address <strong>*</strong></span>
 								<input type="text" class="common-inputType" id=""><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
-								<p class="nt-1">Please provide a calid Email address</p>
+								<p class="nt-1">Please provide a valid Email address</p>
 							</div>
 						</li>
 					</ul>
@@ -433,7 +433,7 @@
 			</div>
 			<!-- btn-fixed-inquery -->
 			<div class="common_gaptp">
-				<a href="#none" data-btn-inquery="motion" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light btnSel-bg"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+				<a href="#none" data-btn-inquery="motion" data-type="btn_gaptp" class="common-btnType-15 waves-effect waves-light"><span class="icon-1">NEXT</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 			</div>
 			<!-- //btn-fixed-inquery -->
 			<!-- 가상 공간 -->

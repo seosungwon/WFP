@@ -146,6 +146,7 @@ body{-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-higlight-color:rgba(
 .common-txtType-3{font-family: Lato-Regular;color: #666;letter-spacing: -0.17px;line-height: 16px;}
 .common-blogtype1{font-family: Lato-Bold;font-size: 32px;color: #222222;letter-spacing: -0.2px;}
 .common-blogtype2{font-family: Lato-Regular;font-size: 14px;color: #222222;letter-spacing: -0.2px;line-height: 20px;padding-top:12px;}
+.common-blogtype2.pb_type1{padding-bottom:20px;}
 
 /* common-btn */
 .common-btnGap-1{}
@@ -705,7 +706,7 @@ color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 28px;}
 [data-click="main-vsSlick"] .txt-2 br{display:none;}
 /*[data-click="main-vsSlick"] .txt-1{font-family: Lato-Bold;font-size: 30px;color: #fff;letter-spacing: -0.2px;line-height: 34px;padding:2px 0 18px 0;}*/
 [data-click="main-vsSlick"] .txt-1{font-family: Lato-Black;font-size:30px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height:38px;position: absolute;top:100px;left:-10px;right: 0px;margin:0 auto;width:300px;}/*2020-05-25 top:87px;left: 0px;font-size: 36px;*/
-[data-click="main-vsSlick"] .txt-1.t_1{top:113px;left:0;}/*2020-06-04 메인 상단 텍스트*/
+[data-click="main-vsSlick"] .box-txt.t_1 .txt-1{top:113px;left:0;}/*2020-06-04 메인 상단 텍스트*/
 [data-click="main-vsSlick"] .txt-1 br.none{display:none;}/*2020-05-25 추가*/
 [data-click="main-vsSlick"] .txt-1 span.point{font-family: Lato-Black;font-size: 36px;color: #FF7A01;letter-spacing: -0.2px;line-height: 44px;}
 [data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a{font-family: Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;display:block;}
@@ -713,7 +714,7 @@ color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 28px;}
 [data-click="main-vsSlick"].maintype .box-txt .txt-1 span.tx1 a.s_more{position:static;}
 [data-click="main-vsSlick"].maintype .box-txt .txt-1 span.tx1 a.s_more img{width:16px;display:inline-block;vertical-align:middle;}
 [data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a.s_more.s_more2{padding-top:21px;}/*2020-06-04 learn more padding값 추가*/
-[data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a:after{content:'';display:block;clear:both;background-repeat:no-repeat;background-position:0;background-size:16px;width:16px;height:16px;position:absolute;top:16px;left:72px;background-image:url('../images/icon/ic_arrow_more_white.png');}/*top:191px;right:110px;*/
+/*[data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a:after{content:'';display:block;clear:both;background-repeat:no-repeat;background-position:0;background-size:16px;width:16px;height:16px;position:absolute;top:16px;left:72px;background-image:url('../images/icon/ic_arrow_more_white.png');}*//*2020-06-04 메인 learn more 화살표 */
 [data-click="main-vsSlick"] .txt-1 strong{color:#df2451;display:block;}
 [data-click="main-vsSlick"] .txt-2{position:absolute;top:321px;left:100px;font-family: Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;text-align:center;}
 /*[data-click="main-vsSlick"] .txt-2 span:after{content:'';display:block;clear:both;background-repeat:no-repeat;background-position:0;background-size:16px;width:16px;height:16px;position:absolute;top:3px;right:-14px;background-image:url('../images/icon/ic_arrow_more_white.png');}*/
@@ -2721,6 +2722,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	/*.list-news li{width:300px;border:1px solid #E6E6E6;margin:40px 16px 0 0;display:flex;align-items:flex-end;}*/
 	.list-news li{float:left;width:298px;min-height:478px;border: 1px solid #E6E6E6;margin-right:16px;margin-bottom:40px;}
 	.list-news.blog_box li{min-height:415px;}/*blog box 높이 값*/
+	.list-news.blog_box.bg_mg li:hover{border:1px solid #FF7A01;}/*blog li 라인 색상 추가*/
 	.list-news li:nth-child(3n){margin-right:0;}
 	.list-news li a{}
 	.list-news li a:hover{}
@@ -2995,7 +2997,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.news_blog ul{position: relative;}
 	.news_blog ul li{width:316px;margin:20px 0 20px 20px;background: #FFFFFF;border: 1px solid #E6E6E6;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);}/*margin:20px 0 0 0;*/
 	.news_blog.nb_mg ul li{box-shadow:none;}
-	.news_blog.nb_mg ul li:hover{border:1px solid #FF7A01;}
+	.news_blog.nb_mg ul li:hover{border:1px solid #FF7A01;}/*blog hover border적용*/
 	.news_blog ul li:nth-child(1){margin-left:0;}
 	.news_blog ul li .blog_tp img{max-width:100%;}
 	.news_blog ul li .blog_tp p.txt1{font-family: Lato-Regular;font-size: 20px;color: #222222;letter-spacing: -0.2px;padding:30px 0 0 25px;}
@@ -3008,6 +3010,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.news_blog ul li .blog_tp p.txt4 a:after{content: '';display: block;clear: both;background-position: 0;background-repeat: no-repeat;width: 16px;height: 16px;position: absolute;bottom:30px;left:76px;background-size:20px;background-image: url(../images/icon/ic_arrow_map.png);}/*left:100px;*/
 	.news_blog ul li .blog_tp p.txt4.t-1 a{font-family: Lato-Regular;font-size: 14px;color: #FF7A01;letter-spacing: -0.2px;}
 	.news_blog ul li .blog_tp p.txt4.t-1 a:after{left:100px;}
+	.news_blog ul li .blog_tp:hover{cursor:pointer;text-decoration:underline;}
+
 
 	/*main : inquiry here*/
 	.inquiry_box{position:relative;max-width:980px;margin:60px auto 0 auto;}
@@ -3224,6 +3228,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_pkg .loan_pkg_title ul li img{width:100%;}
 	.loan_pkg .loan_pkg_title span.tt-2{font-family: Lato-Bold;font-size: 16px;color: #FF7A01;letter-spacing: -0.11px;display:block;}
 	.loan_pkg .loan_pkg_title span.tt-3{font-family: Lato-Regular;font-size: 16px;color: #444444;letter-spacing: -0.21px;line-height: 24px;}
+	.loan_pkg .loan_pkg_title .gap .pkg_tit{margin:12px 0 40px 0;}
+	.loan_pkg .loan_pkg_title .gap .pkg_tit:nth-child(3){margin-bottom:0;}
 
 	#wc_finance{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin-top:140px;}	#wc_finance .wc_finance_list{position:relative;background-image: inear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin:0 auto 0 auto;padding:0 20px 0 20px;}
 	#wc_finance .wc_finance_list span img{vertical-align:top;width:500px;}
