@@ -140,7 +140,7 @@
 			<!-- 계산기 콘텐츠 영역 -->
 			<div class="txt-ct inp_radioGap-1" data-event="ctTabContent">
 				<!-- box-inputType-1 -->
-				<div class="box-inputType-1 type-3 calculator_type">
+				<div class="box-inputType-1 type-3 calculator_type pb0">
 					<ul>
 						<li>
 							<div>
@@ -284,8 +284,8 @@
 				               <div class="slider-wrp" data-ckInfo="1">
 				                    <div class="slider-item">
 				                        <div class="calc-sum-wrp text-center">
-				                        	<span class="calc_txt">Monthly Add-On Rate</span>
-				                            <div class="gap-type-1">
+				                        	<span class="calc_txt type1">Monthly Add-On Rate</span>
+				                            <div class="gap-type-1" style="display:none;">
 					                            <span id="calc-sum"></span>
 					                            <span class="calc_txt2">peso</span>
 					                        </div>
