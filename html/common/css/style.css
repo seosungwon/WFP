@@ -821,9 +821,7 @@ color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 28px;}
 .loan_list .amount p.note{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;text-align:left;padding:11px 0 60px 0;}
 .loan_list .amount p.note span{color:#ea849d;}
 .loan_list .amount .inner .loan li.li_last:nth-child(3){padding-bottom:71px;}
-.loan_list .amount .inner .loan .loan_at2{background:red;}
-.loan_list .amount .inner .loan .loan_at2:after{content:'';display:block;clear:both;background:red;}
-.loan_list .amount .inner .loan .loan_at2:before{background:red;}
+.loan_list .amount .inner .loan .loan_at2{background:#ccc;}
 
 
 
