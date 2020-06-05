@@ -6,6 +6,9 @@
 	<div id="skipCt">
 		<!-- commonTab -->
 		<section data-slick-vs="commonTab">
+			<!--
+				*** 텝 메뉴 추가시 pc mobile 확인 필요 + 하단 script 수정 하기
+			 -->
 			<div>
 				<a href="#none" data-index="1">Personal Loans</a>
 			</div>
@@ -19,7 +22,7 @@
 				<a href="#none" class="sel" data-index="4">Auto Loan</a>
 			</div>
 			<!-- <div>
-				<a href="#none" data-index="5">Truck Loan</a>
+				<a href="#none" class="sel" data-index="5">Truck Loan</a>
 			</div> -->
 		</section>
 		<!-- //commonTab -->
@@ -594,7 +597,11 @@
 			// 해당 페이지 tab 활성화
 			var slideNo = $('[data-slick-vs="commonTab"] .sel').data('index');
 
-			$('[data-slick-vs="commonTab"]').slick('slickGoTo', slideNo - 1);
+			if( slideNo == 4 ){ // auto laon
+				$('[data-slick-vs="commonTab"]').slick('slickGoTo', 1);
+			}else if( slideNo == 5 ){ // truck loan
+				$('[data-slick-vs="commonTab"]').slick('slickGoTo', 2);
+			}
 		}, 500);
 		// //data-slick-vs="commonTab" prototype
 
