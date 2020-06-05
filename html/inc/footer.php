@@ -235,14 +235,18 @@
 									</select>
 									<span class="txt-error">Error message</span>
 								</div>
-								<div class="displayCell" style="width:50%;">
-									<p class="tt-3">Purchased Amount</p>
-									<input type="text" class="common-inputType" id="idTestIq" data-checkinquiry="validation">
-									<!-- <select class="common-selectType">
-										<option value="" hidden>Month</option>
-										<option>1</option>
-									</select> -->
-									<span class="txt-error">Error message</span>
+								<div class="txt-ct displayTableType-1">
+									<div class="displayCell txt-peso"style="width:100%;">
+										<p class="tt-3">Loan Amount</p>
+										<p style="position:relative;">
+											<input type="text" class="common-inputType " id="idTestIq" data-checkinquiry="validation">
+											<!-- <select class="common-selectType">
+												<option value="" hidden>Month</option>
+												<option>1</option>
+											</select> -->
+											<span class="txt-error">Error message</span>
+										</p>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -265,6 +269,7 @@
 									<span class="txt-error">Error message</span>
 								</div>
 							</div>
+
 						</li>
 					</ul>
 				</div>
@@ -313,7 +318,14 @@
 				                        	<div class="col-xs-6 text-right">365 day</div>
 				                        </div>
 				                    </div>
+				                    <!-- btn -->
+				                    <div class="btn_arrow2">
+										<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light "><span>CALCULATE</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+									</div>
+									<!-- // btn -->
 				                </div>
+
+
 				                <div class="count-loans" data-ckinfo="1">
 			                        <div class="row">
 			                        	<div class="col-xs-12 col-sm-4 text-center">Borrowing
@@ -330,6 +342,11 @@
 			                        	</div>
 			                        </div>
 				                </div>
+				                <!-- btn -->
+				                <div class="btn_arrow2">
+									<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span>CALCULATE</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
+								</div>
+								<!-- // btn -->
 				                <div class="count-loans" data-ckinfo="2">
 			                        <div class="row">
 			                        	<div class="col-xs-12 col-sm-4 text-center pt pt0">Credit by ORCR

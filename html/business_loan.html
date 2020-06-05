@@ -71,7 +71,7 @@
 					<div class="inner">
 						<p class="am_txt">Business Loan that offers up to<br> 2Million Pesos!</p>
 						<div class="loan loan_li">
-							<ul>
+							<ul class="list_type1 type2">
 								<li>
 									<p class="tit_1">Loanable Amount</p>
 									<p class="tit_num">₱20,000-₱200,000</p>
@@ -85,10 +85,26 @@
 									<p class="tit_num">3% <span>per month</span></p>
 								</li>
 							</ul>
+							<div class="loan_at2 at1">
+								<p class="tit_list">Payment Method</p>
+								<ul class="dot1">
+									<li>Post Dated Check</li>
+								</ul>
+								<p class="tit_list tl tt1">Requirements</p>
+								<ul class="dot1 last">
+									<li>Two (2) Valid government IDs<span>*</span></li>
+									<li>Three (3) months Bank Statement</li>
+									<li>DTI Permit / SEC Registration</li>
+									<li>Latest Mayor’s Permit</li>
+									<li>Latest ITR with Audited Financial Statements(optional)</li>
+									<li>Utility Bill (under your residential address)</li>
+									<li>3 Trade Reference / List of Suppliers</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="loan_at">
+				<!-- <div class="loan_at">
 					<div class="amount">
 						<p class="tit_list">Payment Method</p>
 						<ul class="dot1">
@@ -105,7 +121,7 @@
 							<li>3 Trade Reference / List of Suppliers</li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="apply">
 					<img src="common/images/img/img_loans_eligible.png" alt="">
@@ -350,7 +366,7 @@
 					<div class="company_title">
 						<p class="c_tit1">Company Details</p>
 						<p class="c_tit2">Welcome Finance Inc. (Philippines) is a subsidiary of Welcome Financial Group of Korea.<br>
-						Welcome Finance is offering competitive financial assistance with both collateral and non-collateral products.Welcome has 9 active branches in the Philippines namely.</p>
+						Welcome Finance is offering competitive financial assistance with both collateral and non-collateral products.<br>Welcome has 9 active branches in the Philippines namely.</p>
 						<div class="box-contents bc1">
 							<!-- box-brandInfo -->
 							<div class="box-brandInfo gapType-1">
@@ -586,7 +602,11 @@
 			// 해당 페이지 tab 활성화
 			var slideNo = $('[data-slick-vs="commonTab"] .sel').data('index');
 
-			$('[data-slick-vs="commonTab"]').slick('slickGoTo', slideNo - 1);
+			if( slideNo == 4 ){ // auto laon
+				$('[data-slick-vs="commonTab"]').slick('slickGoTo', 1);
+			}else if( slideNo == 5 ){ // truck loan
+				$('[data-slick-vs="commonTab"]').slick('slickGoTo', 2);
+			}
 		}, 500);
 		// //data-slick-vs="commonTab" prototype
 

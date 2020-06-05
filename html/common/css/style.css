@@ -305,6 +305,7 @@ line-height: 28px;}*/
 
 /* common-inputType */
 .common-inputType{background:#f0f0f0;height:38px;line-height:38px;border:1px solid #f0f0f0;font-size: 12px;color: #999;letter-spacing: -0.2px;text-indent:12px;width:100%;transition:all 0.3s;font-size:15px;color:#222;}
+.common-inputType2{background:#f0f0f0;height:38px;line-height:38px;border:1px solid #f0f0f0;font-size: 12px;color: #999;letter-spacing: -0.2px;text-indent:12px;width:100%;transition:all 0.3s;font-size:15px;color:#222;}
 
 /*계산기 loan amount peso 입력*/
 .popup_wrap .inner-rule .displayCell{position:relative;}
@@ -314,6 +315,14 @@ line-height: 28px;}*/
 .popup_wrap .inner-rule.loan_wrap .slider-item .loan_num{}
 .popup_wrap .inner-rule.loan_wrap .slider-item .loan_num li{display:inline-block;padding-right:53px;font-family: Lato-Regular;font-size: 13px;color: #999999;letter-spacing: -0.2px;}
 .popup_wrap .inner-rule.loan_wrap .slider-item .loan_num li:nth-child(5){padding-right:0;}
+
+.popup_wrap .inner-rule.loan_wrap .btn_arrow2{margin:30px 0 40px 0;}
+.popup_wrap .inner-rule.loan_wrap .btn_arrow2 .common-btnType-7{opacity: 0.8;
+font-family: Lato-Regular;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: -0.2px;
+text-align: center;line-height:40px;width:55%;height:40px;margin:0 auto;}
 
 /* common-selectType */
 .common-selectType{background:#f0f0f0;height:40px;line-height:40px;border:1px solid #f0f0f0;letter-spacing: -0.2px;text-indent:7px;width:100%;transition:all 0.5s;font-size:12px;color:#999;}
@@ -821,7 +830,13 @@ color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 28px;}
 .loan_list .amount p.note{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;text-align:left;padding:11px 0 60px 0;}
 .loan_list .amount p.note span{color:#ea849d;}
 .loan_list .amount .inner .loan li.li_last:nth-child(3){padding-bottom:71px;}
-.loan_list .amount .inner .loan .loan_at2{background:#ccc;}
+.loan_list .amount .inner .loan .loan_at2{background:#f7f7f7;margin:0 -20px;padding:0 20px;}/*2020-06-05*/
+.loan_list .amount .inner .loan .loan_at2.at1{padding-top:50px;}/*2020-06-05*/
+.loan_list .amount .inner .loan_at2 ul.dot1.last li:last-child{padding-bottom:60px;}
+.loan_list .amount .loan_at2.at2{clear:both;padding:0 20px;}
+.loan_list .amount .loan_at2 ul.dot1 li.auto_last{padding-bottom:60px;}
+
+
 
 
 
@@ -1773,7 +1788,7 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;padding:10px 0 27px 0;}
 .inner-rule.loan_wrap .noUi-horizontal .noUi-handle {/*border:none;border-radius: 50%;background: #ff9500;background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9500), color-stop(100%, #ffa400));background: -webkit-linear-gradient(top, #ff9500 0%, #ffa400 100%);background: -ms-linear-gradient(top, #ff9500 0%, #ffa400 100%);background: linear, to bottom, #ff9500 0%, #ffa400 100%;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', endColorstr='#ffa400', GradientType=0 );cursor: pointer;box-shadow: 0 2px 5px -2px #333;width: 26px;height: 26px;right: -5px;top: -10px;*/
 background:url('../images/icon/ic_calculator_control.png') no-repeat 0 0;background-size:44px;width:44px;height:44px;}
-.inner-rule.loan_wrap .slider-item {margin: 0 0px 40px 0px;}
+.inner-rule.loan_wrap .slider-item {margin: 0 0px 30px 0px;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp:after{content:'';display:block;clear:both;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;float:left;width:40%;}
 .inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt.type1{width:43%;padding-bottom:10px;}/*2020-06-04 계산기*/
@@ -2355,13 +2370,15 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	/*계산기 loan amount peso 입력*/
 	.popup_wrap .inner-rule .displayCell{position:relative;}
 	.popup_wrap .inner-rule .displayCell.txt-peso{padding-right: 100px;width:47%;display:block;font-family: Lato-Regular;font-size: 12px;color: #999999;letter-spacing: -0.2px;}
-	.popup_wrap .inner-rule .displayCell.txt-peso:after{content: 'PESO';position: absolute;top:32px;right: -1px;font-family: Lato-Regular;font-size: 12px;color: #999999;letter-spacing: -0.2px;text-align: right;background:#f0f0f0;padding:5px 10px 5px 10px;}
+	.popup_wrap .inner-rule .displayCell.txt-peso:after{content: 'PESO';position: absolute;top:32px;right:0;font-family: Lato-Regular;font-size: 12px;color: #999999;letter-spacing: -0.2px;text-align: right;padding:5px 10px 5px 10px;}
 	.popup_wrap .inner-rule .txt_loan{font-family: Lato-Regular;font-size: 12px;color: #999999;letter-spacing: -0.2px;line-height: 16px;padding-top:2px;}
 	.popup_wrap .inner-rule.loan_wrap .slider-item .loan_num{}
 	.popup_wrap .inner-rule.loan_wrap .slider-item .loan_num li{display:inline-block;padding-right:53px;font-family: Lato-Regular;font-size: 13px;color: #999999;letter-spacing: -0.2px;}
 	.popup_wrap .inner-rule.loan_wrap .slider-item .loan_num li:nth-child(5){padding-left:10px;}
 	.popup_wrap .inner-rule.loan_wrap .slider-item .calc-sum-wrp .calc_txt.type1{width:43%;padding-bottom:10px;}/*2020-06-04 계산기*/
-
+	/*2020-06-05 계산기 calculate버튼 추가*/
+	.popup_wrap .inner-rule.loan_wrap .btn_arrow2{margin:30px 0 40px 0;}
+	.popup_wrap .inner-rule.loan_wrap .btn_arrow2 .common-btnType-7{opacity: 0.8;font-family: Lato-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height:40px;width:55%;height:40px;margin:0 auto;}
 
 
 
@@ -3094,6 +3111,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_list .amount p.note{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;text-align:left;padding:2px 0 90px 0;}/*padding:11px 0 60px 0;*/
 	.loan_list .amount p.note span{color:#ea849d;}
 	.loan_list .amount ul.dot1 > li:after{content: '';display: block;clear: both;background: #444;width:6px;height:6px;position: absolute;top:23px;left:4px;background-size:6px;border-radius:6px;}
+	.loan_list .amount .loan_at2 ul.dot1 > li:after{top:13px;}/*2020-06-05*/
+	.loan_list .amount .loan_at2.at2 ul.dot1 > li:after{top:22px;}/*2020-06-05*/
 	.loan_list .amount ul.dot1 li ul.line_list li{background:0 none;padding-left:0;}
 	.loan_list .amount:nth-child(2){clear:both;}
 	.autoLoan .inner{float:left; width:49%;height:auto;}
@@ -3108,6 +3127,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_list .amount .inner .loan ul li p{text-align:left;}
 	.loan_list .amount .inner .loan ul li{padding-top:50px;}
 	.loan_list .amount .inner .loan.loan_li ul.list_type1{border-bottom:1px solid #e6e6e6;}
+	.loan_list .amount .inner .loan.loan_li ul.list_type1.type2{padding-bottom:50px;}
 	.loan_list .amount .inner .loan.loan_li ul li{padding-top:0;}
 	.loan_list .amount .inner .loan .auto_tit{font-family: Lato-Black;font-size: 44px;color: #222222;letter-spacing: -0.2px;line-height: 66px;text-align:left;padding-top:30px;border-top:0;}
 	.loan_list .amount .inner .loan .am_txt{font-family: Lato-Regular;font-size: 20px;color: #222222;letter-spacing: -0.17px;text-align:left;min-height:60px;}
@@ -3117,7 +3137,10 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_list .loan_at .amount ul.dot1 li{font-family: Lato-Regular;font-size: 18px;color: #444444;letter-spacing: -0.2px;line-height: 40px;padding:0px 0 0 18px;position:relative;}
 	.loan_list .amount .inner .loan_at2 .dot1 li{clear:both;}
 	.loan_list .amount .inner .loan li.li_last:nth-child(3){padding-bottom:0;}
-
+	.loan_list .amount .inner .loan .loan_at2{background:none;}
+	.loan_list .amount .inner .loan .loan_at2.at1{padding-top:50px;}
+	.loan_list .amount .loan_at2.at2{clear:both;padding:55px 0 0 22px;}
+	.loan_list .amount .inner .loan .am_txt.type1{padding-left:0;}
 
 
 	.apply{max-width:1000px;overflow:hidden;margin:65px auto 0 auto;background:#fff;}
