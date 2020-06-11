@@ -557,6 +557,12 @@
 
 <script src="common/js/slick.min.js"></script>
 <script type="text/javascript">
+	/*
+		* pc sub location menu
+		* var subLocation = new SubLocation('1뎁스', '2뎁스 활성화', '2뎁스 선택');
+	*/
+	var subLocation = new SubLocation('1', '1', '1');
+
 	$(function(){
 		$('[data-click="main-vsSlick"]').slick({
 			dots: true,
@@ -688,21 +694,6 @@
                 $(".counter span:nth-of-type("+(numArray+1)+")").html(randomNum);
             }
         }
-
-        function(){
-
-
-		/*
-			* pc sub location menu
-			* var subLocation = new SubLocation('1뎁스', '2뎁스 활성화', '2뎁스 선택');
-		*/
-		var subLocation = new SubLocation('1', '1', '1');
-
-		$('body').attr('data-index', 'h1-logo'); // logo type
-
-
-		}
-
 	});
 </script>
 
