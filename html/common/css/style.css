@@ -75,6 +75,13 @@ body.fx{overflow:hidden;}
 .skip a:focus{display:inline-block;top:0;left:0;z-index:9999;width:20%;height:30px;background:#000;line-height:30px;color:#fff;text-align:center}
 #skipCt{}
 
+/*말줄임*/
+/*.txt_space{display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:320px;}*/
+.txt_space{overflow: hidden;text-overflow: ellipsis;display: -webkit-box; -webkit-line-clamp: 6; /* 라인수 */ -webkit-box-orient: vertical; word-wrap:break-word; line-height: 2.4em; height: 3.6em;}
+
+
+
+
 
 
 /*padding*/
@@ -809,7 +816,7 @@ color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 28px;}
 .loan_list .amount p.tit_list.tl{padding-top:23px;}
 .loan_list .amount ul.dot1 li{font-family: Lato-Regular;font-size: 15px;color: #444444;letter-spacing: -0.2px;line-height:30px;padding:0px 0 0 18px;position:relative;}/*padding:1px 0 0 10px;*/
 .loan_list .amount ul.dot1 > li:after{content: '';display: block;clear: both;background: #444;width:4px;height:4px;position: absolute;top:14px;left:4px;background-size:4px;border-radius:4px;}
-.loan_list .amount ul.dot1 li span{color:#ea849d;}
+.loan_list .amount ul.dot1 li span{color:#e02955;}
 .loan_list .amount ul.dot1 li ul.line_list li{background:0 none;padding-left:0;}
 .loan_list .amount ul.dot1 li ul.line_list li em{padding-left:7px;}
 .loan_list{background:#fff;padding:0;}/*padding:60px 20px;*/
@@ -828,6 +835,7 @@ color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 28px;}
 .loan_list .loan_at .amount ul.dot1 li ul.line_list li em{padding-left:7px;}
 /*.loan_list .amount ul.dot1 li:nth-child(3){background:0 none !important;}*/
 .loan_list .amount p.note{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;text-align:left;padding:11px 0 60px 0;}
+.loan_list .amount p.note.nt1{padding-top:7px;}
 .loan_list .amount p.note span{color:#ea849d;}
 .loan_list .amount .inner .loan li.li_last:nth-child(3){padding-bottom:71px;}
 .loan_list .amount .inner .loan .loan_at2{background:#f7f7f7;margin:0 -20px;padding:0 20px;}/*2020-06-05*/
@@ -897,11 +905,14 @@ line-height: 36px;}
 #finance .finance_list .common-btnType-18{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin:40px 0 0 0;text-decoration:none;}
 #finance .finance_list .common-btnType-18:after{border:1px solid #fff;}
 
+
 #faqs .faqs_title{background: #fff;margin:0 auto 0 auto;padding:60px 20px 60px 20px;}
 #faqs .faqs_title p{font-family: Lato-Black;font-size:28px;color: #222222;letter-spacing: -0.2px;line-height: 36px;}
 #faqs .faqs_title .inner-ct p{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;line-height: 22px;}
 #faqs .faqs_title .box-contents {margin-top:50px;}
 #faqs .faqs_title .box-contents .box-brandInfo{padding:0;}
+
+
 
 #wc_finance{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);}
 #wc_finance .wc_finance_list{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin:0 auto 0 auto;padding:60px 20px 60px 20px;}
@@ -955,6 +966,7 @@ line-height: 36px;}
 .loan_pkg .loan_pkg_title ul li img{width:100%;}
 .loan_pkg .loan_pkg_title span.tt-2{font-family: Lato-Bold;font-size: 16px;color: #FF7A01;letter-spacing: -0.11px;display:block;}
 .loan_pkg .loan_pkg_title span.tt-3{font-family: Lato-Regular;font-size: 16px;color: #444444;letter-spacing: -0.21px;line-height: 24px;}
+.loan_pkg .loan_pkg_title .gap .pkg_tit.tit1{margin-bottom:0;}
 
 
 
@@ -1055,6 +1067,7 @@ line-height: 36px;}
 .news_blog .inner .blog_tit a span:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:15px;height:15px;position:absolute;top:3px;right:-22px;background-size:15px;background-image:url('../images/icon/ic_arrow_more_gray.png');}
 .news_blog .slick-list ul li{margin:20px 10px;background: #FFFFFF;border: 1px solid #E6E6E6;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);}/*2020-05-18 margin:20px 10px;;*/
 .news_blog .slick-list ul li{margin:20px 20px;}
+.news_blog .slick-list ul li .blog_tp{height:452px;}
 .news_blog .slick-list ul li .blog_tp img{max-width:100%;}
 .news_blog .slick-list ul li .blog_tp p.txt1{font-family: Lato-Regular;font-size: 20px;color: #222222;letter-spacing: -0.2px;padding:30px 45px 20px 33px;}
 .news_blog .slick-list ul li .blog_tp p.txt2{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;padding:0 25px 20px 35px;}
@@ -1062,6 +1075,7 @@ line-height: 36px;}
 .news_blog .slick-list ul li .blog_tp p.txt4 {font-family: Lato-Regular;font-size: 14px;letter-spacing: -0.2px;padding:66px 25px 30px 35px;}
 .news_blog .slick-list ul li .blog_tp p.txt4 a{color: #FF7A01;position:relative;}
 .news_blog .slick-list ul li .blog_tp p.txt4 a:after{content: '';display: block;clear: both;background-position: 0;background-repeat: no-repeat;width: 16px;height: 16px;position: absolute;top:3px;left:76px;background-size:16px;background-image: url(../images/icon/ic_arrow_map.png);}
+.news_blog .slick-list ul li .blog_tp p.txt4.t4{padding-top:40px;}/*news&blog 게시물 3번째*/
 
 
 /*inquiry here*/
@@ -1197,6 +1211,7 @@ line-height: 36px;}
 .sub-location .inner > ul{display:none;}
 [data-target="nav"] > ul > li > ul > li > a.sel,
 .sub-location .inner > ul > li.sel > a{color:#DF2451 !important;}
+/*.sub-location .inner > ul > li.sel > a{color:#DF2451 !important;}*/
 
 /* footer */
 [data-target="footer"]{background:#333;padding:20px 20px 31px 20px;/* overflow:hidden; */}
@@ -1469,6 +1484,7 @@ line-height: 20px;}
 .box-contents .list-txt li .txt-2{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 20px;}
 .box-contents .list-txt li .txt-1{}
 .box-contents .list-txt li .txt-2{color: #F4811F;}
+.box-contents .inner-contents .ct-txt-1.cf_type{margin-bottom:60px;}/* 2020-06-09 contents footer 사이 간격 */
 
 .box-welcomeChart{}
 .box-welcomeChart{padding:37px 20px;}
@@ -1515,11 +1531,14 @@ line-height: 20px;}
 .box-brandInfo > ul > li > .box-ct .inner-ct .link-map-2 span:after{content: '';display: block;clear: both;background-position: 0;background-repeat: no-repeat;width: 16px;height: 16px;position: absolute;bottom: 0;left:74px;background-size: 16px;background-image: url(../images/icon/ic_arrow_map.png);}
 .box-brandInfo > ul > li.sel > a:after{background-image:url('../images/icon/icon_arrow_2sel.jpg');}
 .box-brandInfo > ul > li.sel > .box-ct{display:block;}
+.box-brandInfo > ul > li.cf_type{margin-bottom:60px;}
+
 .box-brandInfo.faq{padding-top:0;margin-top:-20px;}
 .box-brandInfo.faq .q{font-family: Lato-Regular;font-size: 16px;color: #999;letter-spacing: -0.2px;line-height: 20px;position:absolute;top:18px;left:14px;width:39px;}
 .box-brandInfo.faq .inner-ct{}
-.box-brandInfo.faq > ul > li > a{padding-left:60px;}/*padding-left:35px;*/
+.box-brandInfo.faq > ul > li > a{padding-left:60px;}/*padding-left:35px;*/\
 .box-brandInfo.faq .inner-ct p{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 18px;margin-left:17px;margin-bottom:6px;}/*text-indent:-17px;*/
+.box-brandInfo.faq > ul.faq_list > li > a{padding-left:53px;}/*faq 모바일*/
 
 
 /*FAQs*/
@@ -1549,6 +1568,7 @@ line-height: 20px;}
 .list-news li .box-txt .t-4 span{font-family: Lato-Regular;font-size: 16px;color:#FF7A01;letter-spacing: -0.2px;position:relative;}
 .list-news li .box-txt .t-4 span:after{content:'';display:block;clear:both;background:url('../images/icon/ic_arrow_map.png') no-repeat 0 0;background-size:11px 17px;position:absolute;top:50%;right:-16px;width:11px;height:17px;margin-top:-7px;}
 .list-news li .box-txt .t-4.t4 span:after{content: '';display: block;clear: both; background-position: 0;background-repeat: no-repeat;width: 16px;height: 16px;position: absolute;bottom: 30px;left: 88px;background-size: 16px;background-image: url(../images/icon/ic_arrow_map.png);}/*blog arrow 수정*/
+.space{display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:320px;}
 
 /*Mobile blog_detail*/
 /*.box-contents{}
@@ -1716,8 +1736,11 @@ line-height: 20px;}
 .box-addLoan .common-btnType-2{}
 
 [data-slick-vs="commonTab"]{background: #FFFFFF;box-shadow: 0 1px 0 0 rgba(0,0,0,0.10);padding:0 20px 0 20px;position:relative;margin-top:55px;}
-[data-slick-vs="commonTab"]:before{content:'';display:block;clear:both;position:absolute;top:0;right:0;bottom:0;width:30px;height:100%;background:url('../images/bg/bg_next_shadow.png') repeat-y 0 0;z-index:1000;}
-[data-slick-vs="commonTab"]:after{content:'';display:block;clear:both;}
+
+/*[data-slick-vs="commonTab"]:before{content:'';display:block;clear:both;position:absolute;top:0;right:0;bottom:0;width:30px;height:100%;background:url('../images/bg/bg_next_shadow.png') repeat-y 0 0;z-index:1000;}*/
+[data-slick-vs="commonTab"]:before{content:'';display:block;clear:both;position:absolute;top:0;right:0;bottom:0;width:30px;height:100%;background-image: linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%, #D8D8D8 100%);z-index:1000;}
+[data-slick-vs="commonTab"]:after{content:'';display:block;clear:both;background-image: linear-gradient(270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%, #D8D8D8 100%);}
+
 [data-slick-vs="commonTab"] a{display:block;height:54px;line-height:54px;text-align:center;font-family: NotoSansCJKkr-Regular;font-size: 14px;color: #666666;position:relative;padding:0 2px;margin-right:18px;}/*
 margin-right:15px;*/
 [data-slick-vs="commonTab"] a:focus,
@@ -1923,7 +1946,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	#no_layer .box-inputType-1.apply_type1 > ul > li:nth-child(7){padding-bottom:31px;}
 	#no_layer .box-inputType-1.apply_type1 > ul > li:nth-child(9){padding-bottom:40px;}
 	#no_layer .box-inputType-1.apply_type2 > ul > li:nth-child(1){padding-bottom:14px;}
-	#no_layer .box-inputType-1.apply_type2 li .tt-1.t1{padding-bottom:15px;}
+	#no_layer .box-inputType-1.apply_type2 li .tt-1.t1{padding-bottom:10px;}
 	#no_layer .box-inputType-1.apply_type2 .common-notiList-1{margin:-6px 0 20px 0;}
 
 
@@ -2290,7 +2313,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.our_story .st_type1 *{text-align:left;}
 	.our_story .st_type1 p{font-family: Lato-Regular;font-size: 16px;color: #444444;letter-spacing: -0.2px;}
 	.our_story .st_type1 p.title{font-family: Lato-Black;font-size: 40px;color: #222222;letter-spacing: -0.2px;}
-	.our_story .st_type1 .title2 p{padding-top:30px;}
+	.our_story .st_type1 .title2 p{padding-top:20px;}/*padding-top:30px;*/
 	.our_story .st_type1 .title2 p.last{padding-top:49px;}
 	.our_story .img_story{position:relative;}
 	.our_story .img_story:after {display:none;
@@ -2305,7 +2328,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	background: #f5f5f5;
 	height: 176px;
 	z-index:100;*/
-}
+	}
+	.our_story .st_type1 .title2 .tit1{padding-top:35px;}
 
 
 
@@ -2424,6 +2448,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.box-savings{position:absolute;top:341px;right:0;width:375px;bottom:0;/* padding:273px 32px 123px 32px; */height:auto;}
 	[data-click="main-vsSlick"] .slick-slide:after{background-image:url('../images/img/img_main_top_01.png');}
 	[data-click="main-vsSlick"] .box-txt .txt-1.tt1{margin:0;width:100%;}/*2020-06-03 메인 상단 문구 사이즈 추가*/
+	[data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a.s_more.s_more2{padding-top:7px;}
+	[data-click="main-vsSlick"] .box-txt .txt-1 span.tx1 a.s_more.s_more2 em{text-transform: uppercase;}/*PC learn more버튼 소문자 -> 대문자로*/
 
 
 
@@ -2595,6 +2621,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.common-tabType-2 ul li.sel a:before{bottom:0;background:#fff;}
 	.common-tabType-2.faq_mu ul li a{font-size:15px;height:58px;}/*2020-06-03 faq 메뉴 글자 사이즈 수정*/
 	.common-tabType-2.faq_mu ul li.sel a{font-family: Lato-Bold;font-size: 15px;color: #FF7A01;letter-spacing: -0.19px;text-align: center;}/*faqs 메뉴 선택시 색깔 bold로 변경*/
+	.common-tabType-2 ul.faq_list li a{color:#999;}/*2020-06-09 faq tab 비활성화 텍스트*/
+
 	.common-tabType-3 li a{font-size:16px;letter-spacing:-0.2px;padding:6px 0;}
 	.common-tabType-4{padding:20px;}
 	.common-tabType-4 > a:after{right:19px;}
@@ -2663,6 +2691,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.box-contents.con_type1 .inner-contents .ct-txt-1.last{padding-bottom:50px;}
 	.box-contents.con_type1 .inner-contents .ct-txt-1 span.policy_stxt{padding-top:20px;font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;line-height: 20px;}
 	.box-contents.con_type1 .inner-contents .t_txt{padding-bottom:10px;}
+	.box-contents.con_type1 .inner-contents .policy_wrap .ct-txt-1:last-child{padding-bottom:60px;}
+	.box-contents.con_type1 .inner-contents .ct-txt-1.txt-2{padding-bottom:60px;}
 
 
 	/* about us */
@@ -2699,6 +2729,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	/*.box-brandInfo.faq > ul > li > a{padding-left:84px;}*/
 
 	.box-brandInfo.faq > ul > li > a{padding-left:108px;}
+	.box-brandInfo.faq > ul.faq_list > li > a{padding-left:80px;}
 	.box-brandInfo.faq > ul > li > a span.q{padding-right:60px;}
 	.box-brandInfo.faq .q{font-family: Lato-Regular;font-size:18px;color: #999;letter-spacing: -0.2px;line-height: 20px;position: absolute;top: 18px;left:19px;width: 39px;}
 	.box-brandInfo.faq > ul > li > .box-ct{padding:20px 20px 40px 20px;min-height:auto;}/*padding:18px 14px;*/
@@ -2706,6 +2737,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.box-brandInfo.faq > ul > li > .box-ct .inner-ct{width:auto;float:none;}
 	.box-brandInfo.faq .box-ct span {font-family: Lato-Regular;font-size: 18px;color: #FF7A01;letter-spacing: -0.23px;line-height: 20px;}
 	.box-brandInfo.faq .inner-ct p{margin-left:88px;}
+	.box-brandInfo.faq .inner-ct.ct_txt p{margin-left:60px;}/*loan faq*/
 	.box-brandInfo.faq .inner-ct p span.inner_txt1{display: inline-block;font-family: Lato-Regular;letter-spacing: -0.23px;line-height: 20px;width: 15px;text-indent: 0;font-size: 18px;color: #FF7A01;padding-right: 10px;position: absolute;top: 0;left: 0;}
 	.box-brandInfo.faq .box-ct span.inner_txt2{font-family: Lato-Regular;font-size: 16px;color: #666;letter-spacing: -0.2px;line-height: 20px;}
 
@@ -2741,6 +2773,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.list-news li a:hover{}
 	.list-news li img{width:100%;}
 	.list-news li .box-txt{min-height:245px;padding:33px 23px 70px 23px;position:relative;}
+	.list-news li .box-txt:hover{cursor:pointer;text-decoration:underline;}
 	.list-news li .box-txt.bt1{min-height:265px;padding:33px 23px 0 23px;}/*blog box 텍스트 높이 값*/
 	.list-news li .box-txt .t-1{}
 	.list-news li .box-txt .t-2{font-family: Lato-Regular;font-size: 14px;color: #666;letter-spacing: -0.2px;line-height: 20px;padding: 0 0 16px 0;}
@@ -2794,7 +2827,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.box-blogView .blog_img{display:inline-block;}
 	.box-blogView .img-w100{width:100%;padding-top:20px;}
 	.box-blogView .box-ttInfo{margin:0 0 0 0;}
-	.box-blogView .box-ttInfo .blog_txt1{font-family: Lato-Regular;font-size:16px;color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;}
+	.box-blogView .box-ttInfo .blog_txt1{font-family: Lato-Bold;font-size:16px;color: #FF7A01;letter-spacing: -0.2px;line-height: 18px;}
 	.box-blogView .box-ttInfo .blog_txt2{font-family: Lato-Regular;font-size:24px;color: #222222;letter-spacing: -0.18px;margin-top:5px;}
 	.box-blogView .box-ttInfo .blog_txt3{font-family: Lato-Bold;font-size: 16px;color: #FF7A01;letter-spacing: -0.23px;line-height: 18px;}
 	.box-blogView .box-ttInfo .blog_txt4{font-family: Lato-Regular;font-size: 24px;color: #222222;letter-spacing: -0.18px;}
@@ -2988,6 +3021,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
     .type_loan .loan_tp p.title.tit2:after{content:'';display:block;clear:both;background-image:url('../images/icon/ic_arrow_more_gray.png');background-size:24px 24px;background-repeat:no-repeat;width:24px;height:24px;position:absolute;top:48%;left:125px;}
 	.type_loan .loan_tp p.type_1{font-family: Lato-Regular;font-size: 15px;color: #444444;letter-spacing: -0.2px;line-height: 24px;padding:10px 0 27px 0;}
 	.type_loan .loan_tp p.type_1.t1{padding:10px 0 0 0;height:104px;}/*2020-06-03 추가*/
+	.type_loan .loan_tp p.type_1.t1.t2{height:82px;}
 	.box-listEtc li a .txt-1{font-family: Lato-Bold;font-size: 24px;color: #222222;letter-spacing: -0.2px;}
 	.box-listEtc li a .txt-2{font-family: Lato-Regular;font-size: 15px;color: #666666;letter-spacing: -0.2px;line-height: 24px;}
 	.box-listEtc li a:after{content: '';display: block;clear: both;position: absolute;top:45px;left:188px;width: 24px;height: 24px;background-image: url(../images/icon/ic_arrow_more_gray.png);background-size: 24px;background-repeat: no-repeat;background-position: 0;transition: all 0.5s;margin-top: -13px;}
@@ -3019,7 +3053,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.news_blog ul li .blog_tp p.txt4 {font-family: Lato-Regular;font-size: 14px;letter-spacing: -0.2px;padding:66px 0 30px 25px;}
 	.news_blog ul li .blog_tp p.txt4 a{color: #FF7A01;}
 	.news_blog .inner .blog_tit{padding:70px 0 0 0;}
-	.news_blog .inner .blog_tit a span {font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;position: absolute;top: 82px;right:30px;}
+	.news_blog .inner .blog_tit.bt_1{padding:120px 0 0 0;}
+	.news_blog .inner .blog_tit a span {font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;position: absolute;top: 139px;right:30px;}
 	.news_blog ul li .blog_tp p.txt4 a:after{content: '';display: block;clear: both;background-position: 0;background-repeat: no-repeat;width: 16px;height: 16px;position: absolute;bottom:30px;left:76px;background-size:20px;background-image: url(../images/icon/ic_arrow_map.png);}/*left:100px;*/
 	.news_blog ul li .blog_tp p.txt4.t-1 a{font-family: Lato-Regular;font-size: 14px;color: #FF7A01;letter-spacing: -0.2px;}
 	.news_blog ul li .blog_tp p.txt4.t-1 a:after{left:100px;}
@@ -3092,6 +3127,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.amount .inner .loan{margin-top:70px;}
 	.amount .inner .loan ul{overflow:hidden;}
 	.amount .inner .loan ul li{float:left;padding:0 70px 0 0;}/*padding:0 76px 0 0;*/
+	.amount .inner .loan.loan2 ul li{padding-right:103px;}
 	.amount .inner .loan ul li p.tit_1{font-family: Lato-Bold;font-size: 18px;color: #222222;letter-spacing: -0.2px;line-height: 30px;text-align:left;}
 	.amount .inner .loan ul li p.tit_num{font-family: Lato-Black;font-size: 38px;color: #FF7A01;letter-spacing: -0.2px;line-height: 43px;}
 	.amount .inner .loan ul li.loan_last{padding-right:0;}
@@ -3103,15 +3139,18 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_list .amount:nth-child(2){background: #F7F7F7;}
 	.loan_list .amount p.tit_list{font-family: Lato-Bold;font-size:18px;color: #222222;letter-spacing: -0.17px;line-height: 30px;text-align:left;}/*font-size: 15px;*/
 	/*.loan_list .amount p.tit_list:nth-child(1){border-top:1px solid #ccc;} 2020-05-26*/
+	.loan_list .amount .at3 p.tit_list {padding-bottom:15px;}
 	.loan_list .amount p.tit_list.tl{padding-top:41px;}
-	.loan_list .amount ul.dot1 li{font-family: Lato-Regular;font-size:18px;color: #444444;letter-spacing: -0.2px;line-height: 32px;padding:10px 0 0 25px;position:relative;}/*font-size: 15px;padding:1px 0 0 10px;*/
+	.loan_list .amount ul.dot1 li{font-family: Lato-Regular;font-size:18px;color: #444444;letter-spacing: -0.2px;line-height: 32px;padding:10px 0 0 28px;position:relative;}/*font-size: 15px;padding:1px 0 0 10px;*/
 	/*.loan_list .amount ul li:after{content: '';display: block;clear: both;background: #444;width:5px;height:5px;position: absolute;top:17px;left:8px;border-radius:5px;}width: 4px;height: 4px;position: absolute;top:15px;left: 0;*/
 	/*.loan_list .amount ul.dot1 > li:after{content: '';display: block;clear: both;background: #444;width:4px;height:4px;position: absolute;top:14px;left:4px;background-size:4px;border-radius:4px;}*/
 	.loan_list .amount ul li span{color:#ea849d;}
 	.loan_list .amount p.note{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;text-align:left;padding:2px 0 90px 0;}/*padding:11px 0 60px 0;*/
 	.loan_list .amount p.note span{color:#ea849d;}
-	.loan_list .amount ul.dot1 > li:after{content: '';display: block;clear: both;background: #444;width:6px;height:6px;position: absolute;top:23px;left:4px;background-size:6px;border-radius:6px;}
+	.loan_list .amount .loan_at2 ul.dot1.dt1 li{padding-bottom:8px;}
+	.loan_list .amount ul.dot1 > li:after{content: '';display: block;clear: both;background: #444;width:6px;height:6px;position: absolute;top:23px;left:10px;background-size:6px;border-radius:6px;}
 	.loan_list .amount .loan_at2 ul.dot1 > li:after{top:13px;}/*2020-06-05*/
+	.loan_list .amount .loan_at2 ul.dot1.dt1 > li:after{top:13px;}
 	.loan_list .amount .loan_at2.at2 ul.dot1 > li:after{top:22px;}/*2020-06-05*/
 	.loan_list .amount ul.dot1 li ul.line_list li{background:0 none;padding-left:0;}
 	.loan_list .amount:nth-child(2){clear:both;}
@@ -3133,6 +3172,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_list .amount .inner .loan .am_txt{font-family: Lato-Regular;font-size: 20px;color: #222222;letter-spacing: -0.17px;text-align:left;min-height:60px;}
 	.loan_list .loan_at{background:#F7F7F7;}
 	.loan_list .loan_at .amount{position:relative;padding:30px 0 90px 0;}
+	.loan_list .loan_at .amount.at4{position:relative;padding-left:39px;}/*20200610*/
 	.loan_list .loan_at .amount p.tit_list{position:relative;font-family: Lato-Bold;font-size: 18px;color: #222222;letter-spacing: -0.2px;line-height: 30px;text-align:left;}
 	.loan_list .loan_at .amount ul.dot1 li{font-family: Lato-Regular;font-size: 18px;color: #444444;letter-spacing: -0.2px;line-height: 40px;padding:0px 0 0 18px;position:relative;}
 	.loan_list .amount .inner .loan_at2 .dot1 li{clear:both;}
@@ -3141,24 +3181,38 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_list .amount .inner .loan .loan_at2.at1{padding-top:50px;}
 	.loan_list .amount .loan_at2.at2{clear:both;padding:55px 0 0 22px;}
 	.loan_list .amount .inner .loan .am_txt.type1{padding-left:0;}
+	.loan_list .loan_at .amount ul.dot1 > li:after{content: '';display: block;clear: both;background: #444;width:6px;height:6px;position: absolute;top:16px;left:4px;background-size:6px;border-radius:6px;}
+	.loan_list .loan_at.at3 .tit_list{padding-bottom:15px;}
+	.loan_list .amount ul.dot1 li span{color:#e02955;}
+	.loan_list .amount p.note.nt1{padding:7px 0 0 11px;}
+
 
 
 	.apply{max-width:1000px;overflow:hidden;margin:65px auto 0 auto;background:#fff;}
-	.apply img{width:500px;height:340px;}
+	.apply img{width:500px;height:340px;padding-left:44px;}
 	/*.apply img{max-width:100%;width:100%;height:340px;}*/
-	.apply .apply_title {position:relative;float:right;width:460px;padding:20px 0 39px 0;}/*padding:20px 0 60px 0;*/
+	.apply.ap1 img{padding-left:18px;}/*2020-06-10 auto loan*/
+	.apply .apply_title {position:relative;float:right;width:414px;padding:20px 0 39px 0;}/*padding:20px 0 60px 0;*/
+	.apply .apply_title.a_tit{width:440px;}/*2020-06-10 auto loan */
 	.apply .apply_title p{font-family: Lato-Bold;font-size: 32px;color: #222222;letter-spacing: -0.2px;line-height: 30px;}
 	.apply .apply_title ul{padding-top:20px;}
+	.apply .apply_title.a_tit1 ul{padding-top:7px;}
 	.apply .apply_title ul li{font-family: Lato-Regular;font-size:18px;color: #444444;letter-spacing: -0.2px;line-height:28px;padding:0 0 5px 48px;position:relative;}
 	.apply .apply_title ul li:after{content:'';display:block;clear:both;background-position:0;background-repeat:no-repeat;width:25px;height:25px;position:absolute;top:0;left:14px;background-size:25px;background-image:url('../images/icon/ic_loans_eligilble_check.png');}
 	.apply .apply_title .common-btnType-15{position:absolute;top:260px;left:20px;width:220px;font-family: Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.18px;text-align: center;text-decoration:none;}
 	.apply .apply_title p:nth-child(1){top:-2px;left:16px;}/*2020-06-03 loan -> Who is eligible to apply? 위치값*/
-	.apply .apply_title .btn_arrow.ba_btn1 .common-btnType-15{margin:-21px 0 0 0;}/*2020-06-03 버튼 위치값 추가*/
+	.apply .apply_title .btn_arrow.ba_btn1.btn1 .common-btnType-15{margin:10px 0 0 0;}/*버튼 위치값 추가*/
+	.apply .apply_title .btn_arrow.ba_btn1.btn2 .common-btnType-15{margin:-55px 0 0 0;}/*버튼 위치값 추가*/
+	.apply .apply_title .btn_arrow.ba_btn1.btn3 .common-btnType-15{margin:-55px 0 0 0;}/*버튼 위치값 추가*/
+	.apply .apply_title .btn_arrow.ba_btn1.btn4 .common-btnType-15{margin:-18px 0 0 0;}/*버튼 위치값 추가*/
+	.apply .apply_title ul li:nth-child(1){top:13px;}
+	.apply .apply_title ul li:nth-child(2){top:20px;}
+	.apply .apply_title ul li:nth-child(3){top:24px;}
 
 
 	#benefit{background:#FA8E00;margin-top:65px;}
 	#benefit .common-btnType-18{width:300px;margin:0 auto;}
-	#benefit .benefit_list{background: #FA8E00;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
+	#benefit .benefit_list{background: #FA8E00;margin:0 auto 0 auto;padding:86px 20px 83px 20px;}
 	#benefit .benefit_list p{font-family: Lato-Black;font-size: 40px;color: #FFFFFF;letter-spacing: -0.2px;text-align:center;}
 	#benefit .benefit_list p:after{display:none;}
 	#benefit .benefit_list p br{display:none;}
@@ -3171,12 +3225,13 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	#benefit .benefit_list .benefit_tit2 ul li{font-family:Lato-Regular;font-size:16px;color: #FFFFFF;letter-spacing: -0.2px;line-height:24px;padding:20px 10px 0 0;display:table-cell;width:50%;}*/
 	#benefit .benefit_list .benefit_tit ul li span{font-family: Lato-Bold;font-size: 24px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 26px;padding:0  0 15px 0;}
 	#benefit .benefit_list .btn_arrow .common-btnType-18{font-family: Lato-Bold;font-size: 18px;color: #FF7A01;letter-spacing: -0.2px;text-align: center;height:64px;line-height:64px;margin-top:50px;}
+	#benefit .benefit_list .btn_arrow.btna1 .common-btnType-18{margin-top:52px;}
 
 
 	#personal{background:#F7F7F7;}
-	#personal .personal_list{max-width:1000px;background: #F7F7F7;margin:0 auto 0 auto;padding:60px 0 100px 0;}
+	#personal .personal_list{max-width:1000px;background: #F7F7F7;margin:0 auto 0 auto;padding:80px 0 100px 0;}
 	#personal .personal_list p.personal_title{font-family: Lato-Black;font-size: 40px;color: #222222;letter-spacing: -0.2px;text-align: center;}
-	#personal .personal_list p.personal_title:after{content:"";display:block;width:7%;border-bottom:3px solid #FF7A01;padding-top:20px;margin:0 auto;}
+	#personal .personal_list p.personal_title:after{content:"";display:block;width:8%;border-bottom:3px solid #FF7A01;padding-top:33px;margin:0 auto;}
 	#personal .personal_list ul{margin-top:70px;}
 	#personal .personal_list.psl_h ul{margin-top:50px;}/*2020-06-03*/
 	#personal .personal_list ul li{display:inline-block;width:190px;position:relative;padding:72px 25px 0 25px;border-radius: 3px;height:277px;margin:0 6px 0 0;background:#fff;vertical-align:top;}
@@ -3194,38 +3249,49 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	#personal .personal_list ul li:nth-child(4) .txt-1{padding-top:0;}
 	#personal .personal_list p.personal_title{font-family: Lato-Black;font-size: 40px;color: #222222;letter-spacing: -0.2px;text-align: center;}
 	#personal .personal_list p.personal_title br{display:none;}
-	#personal .personal_list ul li:nth-child(1) p.num{top:0;}
-	#personal .personal_list ul li:nth-child(2) p.num{top:0;}
-	#personal .personal_list ul li:nth-child(3) p.num{top:0;}
-	#personal .personal_list ul li:nth-child(4) p.num{top:0;}
+	#personal .personal_list ul li:nth-child(1) p.num{top:18px;}
+	#personal .personal_list ul li:nth-child(2) p.num{top:17px;}
+	#personal .personal_list ul li:nth-child(3) p.num{top:19px;}
+	#personal .personal_list ul li:nth-child(4) p.num{top:17px;}
 	#personal .personal_list .common-btnType-15{font-family: Lato-Regular;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;margin:30px 0 0 0;}
 	#personal .personal_list ul li.last{margin-right:0;}
 
 	#finance{background: #333333;}
-	#finance .finance_list{background: #333333;margin:0 auto 0 auto;padding:60px 20px 70px 20px;}
+	#finance .finance_list{background: #333333;margin:0 auto 0 auto;padding:80px 20px 94px 20px;}
 	#finance .finance_list p.s_line{font-family: Lato-Black;font-size:44px;color: #FFFFFF;letter-spacing: -0.2px;line-height:66px;}
+	#finance .finance_list p.s_line:after{width:43%;}
+	#finance .finance_list p.s_line:after{content:"";display:block;width:54%;border-bottom:3px solid #FF7A01;padding-top:0;}/*2020-06-11 width:43% ;*/
+	#finance .finance_list p.s_line.line2:after{content:"";display:block;width:43%;border-bottom:3px solid #FF7A01;padding-top:0;}
 	#finance .finance_list .finance_title li p.s_tit{font-family: Lato-Black;font-size: 22px;color: #FFFFFF;letter-spacing: -0.2px;line-height: 26px;}
 	#finance .finance_list .finance_title li p.s_tit em{font-family: Lato-Black;font-size: 22px;color: #FF7A01;letter-spacing: -0.2px;line-height: 26px;}
 	#finance .finance_list .finance_title li{font-family:Lato-Regular;font-size:16px;color: #FFFFFF;letter-spacing: -0.2px;line-height:24px;padding:20px 10px 0 0;}
+	#finance .finance_list .finance_title.f_tit li{font-family:Lato-Regular;font-size:16px;color: #FFFFFF;letter-spacing: -0.2px;line-height:24px;margin-top:30px;padding:0;}
+	#finance .finance_list .finance_title.f_tit li:nth-child(1){margin-top:43px;}
 	#finance .finance_list .finance_title li span{display:block;font-family: Lato-Bold;font-size:22px;color: #FFFFFF;letter-spacing: -0.2px;line-height:26px;margin-bottom:8px;}
 	#finance .finance_list .finance_title li span em{color: #FF7A01;}
 	#finance .finance_list .btn_arrow .common-btnType-18{font-family: Lato-Bold;font-size: 18px;color: #FF7A01;letter-spacing: -0.2px;text-align: center;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);margin-top:40px;text-decoration:none;width:300px;}
+	#finance .finance_list .btn_arrow.btn_a1 .common-btnType-18{height:64px;line-height:64px;}
 	/*#finance .finance_list .btn_arrow .common-btnType-18:after{}*/
-	#finance .finance_list p.s_line:after{width:43%;}
+
+	#finance .finance_list .finance_title li p.tit_detail{font-family: Lato-Regular;font-size:16px;color: #FFFFFF;letter-spacing: -0.2px;line-height:24px;margin-top:8px;}
 
 	#faqs .faqs_title{background: #fff;margin:0 auto 0 auto;padding:90px 20px 0 20px;}
 	#faqs .faqs_title p.tit-1{font-family: Lato-Black;font-size: 40px;color: #222222;letter-spacing: -0.2px;text-align: center;}
 	#faqs .faqs_title .inner-ct p{font-family: Lato-Regular;font-size: 14px;color: #666666;letter-spacing: -0.2px;line-height: 22px;}
 	#faqs .faqs_title .box-contents {margin-top:50px;}
 	#faqs .faqs_title .box-contents .box-brandInfo{padding:0;}
+	#faqs .faqs_title .tit-1.s_line:after{content: "";display: block;width: 80px;border-bottom: 3px solid #FF7A01;padding-top:30px;margin: 0 auto;}
+
+
 
 	.company .company_title{background: #fff;margin:0 auto 0 auto;padding:150px 20px 140px 20px;}
 	.company .company_title .c_tit1{font-family: Lato-Black;font-size: 40px;color: #222222;letter-spacing: -0.2px;text-align:center;}
-	.company .company_title .c_tit1:after{content: "";display: block;
-    width:80px;border-bottom: 3px solid #FF7A01;padding-top: 20px;margin:0 auto;}
+	.company .company_title .c_tit1:after{content: "";display: block;width:80px;border-bottom: 3px solid #FF7A01;padding-top:20px;margin:0 auto;}
+	.company .company_title .c_tit1.ctit1:after{content: "";display: block;width:80px;border-bottom: 3px solid #FF7A01;padding-top:30px;margin:0 auto;}
 	.company .company_title .c_tit2{font-family: Lato-Regular;font-size: 14px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 20px;padding:30px 0 60px 0;}
 	.company .company_title .box-contents {margin-top:50px;}
 	.company .company_title .box-contents .box-brandInfo{padding:0;}
+	.company .company_title .c_tit2.ct1{padding:30px 0 40px 0;}
 
 	#apply_nw{background:#FA8E00;overflow:hidden;}
 	#apply_nw .apply_nw_list{position:relative;background: #FA8E00;margin:0 auto 0 auto;padding:57px 20px 54px 20px;}
@@ -3251,6 +3317,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_pkg .loan_pkg_title span.tt-3{font-family: Lato-Regular;font-size: 16px;color: #444444;letter-spacing: -0.21px;line-height: 24px;}
 	.loan_pkg .loan_pkg_title .gap .pkg_tit{margin:12px 0 40px 0;}
 	.loan_pkg .loan_pkg_title .gap .pkg_tit:nth-child(3){margin-bottom:0;}
+	.loan_pkg .loan_pkg_title .gap:hover{cursor:pointer;text-decoration:underline;}/*How about other Welcome Finance's Loan Packages*/
 
 	#wc_finance{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin-top:140px;}	#wc_finance .wc_finance_list{position:relative;background-image: inear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin:0 auto 0 auto;padding:0 20px 0 20px;}
 	#wc_finance .wc_finance_list span img{vertical-align:top;width:500px;}
@@ -3271,9 +3338,10 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	[data-slick-vs="wcfinance"] {width:50%;position:absolute;top:208px;right:0;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);}/*top:270px;*/
 	[data-slick-vs="wcfinance"] .slick-dots{top:10px;right:24px;text-align:right;}
 	[data-slick-vs="wcfinance"] .slick-dots li button{outline:none;border:0;}
-	[data-slick-vs="wcfinance"] .slick-dots li button:before{border-radius:100%;width:8px;height:8px;opacity:1;transition: all 0.5s;font-size: 8px;line-height:8px;}
+	[data-slick-vs="wcfinance"] .slick-dots li button:before{border-radius:100%;width:10px;height:10px;opacity:1;transition: all 0.5s;font-size: 8px;line-height:8px;}
 	[data-slick-vs="wcfinance"] .slick-dots li.slick-active{background: #ccc;width:4px;}
 	[data-slick-vs="wcfinance"] .slick-dots li.slick-active button:before{background: #FF8F00;border-radius:100%;}
+	[data-slick-vs="wcfinance"] .slick-dots li{position: relative;display: inline-block;width: 4px;height: 6px;margin: 0 8px;padding: 0;cursor: pointer;}/*dot사이간격*/
 
 	/*appy_step*/
 	.box-gapSingUp.b_tit h3{font-family: Lato-Bold;font-size:36px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 22px;}

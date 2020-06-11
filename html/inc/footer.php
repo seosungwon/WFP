@@ -343,7 +343,7 @@
 			                        </div>
 				                </div>
 				                <!-- btn -->
-				                <div class="btn_arrow2">
+				                <div class="btn_arrow2" data-ckinfo="2">
 									<a href="#none" data-btn="motion" class="common-btnType-7 waves-effect waves-light btnSel-bg"><span>CALCULATE</span></a><!-- class="btnSel-bg" 추가 버튼활성화 -->
 								</div>
 								<!-- // btn -->
@@ -564,22 +564,22 @@
 						</li>
 						<li>
 							<p class="tt-3">Date of Birth <strong>*</strong></p>
-							<p class="tt-3">Month <strong>*</strong></p>
+							<!-- <p class="tt-3">Month <strong>*</strong></p> -->
 							<div class="txt-ct displayTableType-1" data-error="">
 								<div class="displayCell" style="width:50%;">
 									<select class="common-selectType" data-checkInquiry="loanStatusValidation"><!--  data-checkInquiry="loanStatusValidation" 벨리데이션 체크 -->
 										<option value="" hidden>Month</option>
-										<option>1</option>
+										<option>Month</option>
 									</select>
 									<span class="txt-error">Error message</span>
 								</div>
 								<div class="displayCell gap-1">
-									<p class="txt-1">Day <strong>*</strong></p>
-									<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation">
+									<!-- <p class="txt-1">Day <strong>*</strong></p> -->
+									<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation" value="Day">
 								</div>
 								<div class="displayCell">
-									<p class="txt-1">Year <strong>*</strong></p>
-									<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation">
+									<!-- <p class="txt-1">Year <strong>*</strong></p> -->
+									<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation" value="Year">
 								</div>
 							</div>
 						</li>
@@ -776,7 +776,6 @@
 								<p class="txt3">
 									※ Estimated result only.<br>
 									The final result will be decided after<br> reviewing submitted documents.<br>
-									Thank you.
 								</p>
 							</div>
 						</li>
