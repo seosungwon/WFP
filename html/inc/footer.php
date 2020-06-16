@@ -194,7 +194,7 @@
 								<div class="displayCell txt-peso">
 									<p class="tt-3">Loan Amount</p>
 									<p style="position:relative;">
-										<input type="text" class="common-inputType " id="idTestIq" data-checkinquiry="validation">
+										<input type="text" class="common-inputType " id="">
 										<!-- <select class="common-selectType">
 											<option value="" hidden>Month</option>
 											<option>1</option>
@@ -239,7 +239,7 @@
 									<div class="displayCell txt-peso"style="width:100%;">
 										<p class="tt-3">Loan Amount</p>
 										<p style="position:relative;">
-											<input type="text" class="common-inputType " id="idTestIq" data-checkinquiry="validation">
+											<input type="text" class="common-inputType " id="">
 											<!-- <select class="common-selectType">
 												<option value="" hidden>Month</option>
 												<option>1</option>
@@ -413,12 +413,12 @@
 							<div class="txt-ct displayTableType-1" data-error="idTestIq">
 								<div class="displayCell">
 									<span class="txt-1">Last Name <strong>*</strong></span>
-									<input type="text" class="common-inputType" id="idTestIq" ><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 									<span class="txt-error">Error message</span>
 								</div>
 								<div class="displayCell">
 									<span class="txt-1">First Name <strong>*</strong></span>
-									<input type="text" class="common-inputType" id="" ><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+									<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								</div>
 								<div class="displayCell">
 									<span class="txt-1">Middle Name</span>
@@ -430,7 +430,7 @@
 							<!-- <p class="tt-1">Contact Number <strong>*</strong></p> -->
 							<div class="txt-ct" data-error="">
 								<span class="txt-1">Contact Number <strong>*</strong></span>
-								<input type="text" class="common-inputType" id="" ><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+								<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
 								<p class="nt-1">Please provide a valid mobile number.</p>
 							</div>
@@ -439,7 +439,7 @@
 							<!-- <p class="tt-1">Contact Number <strong>*</strong></p> -->
 							<div class="txt-ct" data-error="">
 								<span class="txt-1">Email Address <strong>*</strong></span>
-								<input type="text" class="common-inputType" id=""><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
+								<input type="text" class="common-inputType" id="" data-checkInquiry="validation"><!--  data-checkInquiry="validation" 벨리데이션 체크 -->
 								<span class="txt-error">Error message</span>
 								<p class="nt-1">Please provide a valid Email address</p>
 							</div>
@@ -836,11 +836,13 @@
 			$validationTgIq.each(function(){
 				if( $(this).val().length == 0 ){
 					++vIq;
+
 					return;
 				}
 			});
 
 			if( vIq == 0 ){
+				console.log(vIq);
 				$dataBtnInquery.addClass('btnSel-bg');
 			}else if( vIq > 0 ){
 				$dataBtnInquery.removeClass('btnSel-bg');
@@ -868,7 +870,7 @@
 				$INQUIRYtg.addClass('type-2');
 			}else{
 				// 벨리데이션 함수 호출...
-				alert("return false");
+				//alert("return false");
 			}
 		});
 
