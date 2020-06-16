@@ -1283,7 +1283,7 @@ height:1px;position:absolute;left:-20px;right:-20px;bottom:0;border-bottom:1px s
 .box-listEtc li a:active,
 .box-listEtc li a:focus{background:#F5F5F5;text-decoration:none;}
 .box-listEtc li a:hover:after,
-.box-listEtc li a:active:after,
+.box-listEtc li a:active:after
 /* .box-listEtc li a:focus:after{background-image:url('../images/btn/btn_list_on.png');} */
 .box-listEtc li.le3{margin-top:-10px;}
 
