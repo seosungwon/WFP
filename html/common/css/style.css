@@ -1736,7 +1736,7 @@ line-height: 20px;}
 .box-addLoan .t-2 strong{color: #DF2451;;font-weight:normal;}
 .box-addLoan .common-btnType-2{}
 
-[data-slick-vs="commonTab"]{background: #FFFFFF;box-shadow: 0 1px 0 0 rgba(0,0,0,0.10);padding:0 20px 0 20px;position:relative;margin-top:55px;background:url('../images/bg/tab_bg_left.png') repeat-y 0 0;z-index:1000;}/*background-image: linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%, #D8D8D8 100%); 추가*/
+[data-slick-vs="commonTab"]{background: #FFFFFF;box-shadow: 0 1px 0 0 rgba(0,0,0,0.10);padding:0 0 0 20px;position:relative;margin-top:55px;background:url('../images/bg/tab_bg_left.png') repeat-y 0 0;}/*background-image: linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%, #D8D8D8 100%); 추가*/
 
 /*[data-slick-vs="commonTab"]:before{content:'';display:block;clear:both;position:absolute;top:0;right:0;bottom:0;width:30px;height:100%;background:url('../images/bg/bg_next_shadow.png') repeat-y 0 0;z-index:1000;}*/
 /*[data-slick-vs="commonTab"]:before{content:'';display:block;clear:both;position:absolute;top:0;right:0;bottom:0;width:30px;height:100%;background-image: linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%, #D8D8D8 100%);}
@@ -3323,7 +3323,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.loan_pkg .loan_pkg_title .gap .pkg_tit:nth-child(3){margin-bottom:0;}
 	.loan_pkg .loan_pkg_title .gap:hover{cursor:pointer;text-decoration:underline;}/*How about other Welcome Finance's Loan Packages*/
 
-	#wc_finance{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin-top:140px;}	#wc_finance .wc_finance_list{position:relative;background-image: inear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin:0 auto 0 auto;padding:0 20px 0 20px;}
+	#wc_finance{background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin-top:140px;}
+	#wc_finance .wc_finance_list{position:relative;background-image: linear-gradient(270deg, #F5F5F5 0%, #F0F0F0 76%);margin:0 auto 0 auto;padding:0 20px 0 20px;}
 	#wc_finance .wc_finance_list span img{vertical-align:top;width:500px;}
 
 	#wc_finance .wc_finance_list p{font-family: Lato-Black;font-size: 28px;color: #101010;letter-spacing: -0.23px;line-height: 38px;padding-bottom:0;}/*padding-bottom:20px;*/
@@ -3346,6 +3347,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	[data-slick-vs="wcfinance"] .slick-dots li.slick-active{background: #ccc;width:4px;}
 	[data-slick-vs="wcfinance"] .slick-dots li.slick-active button:before{background: #FF8F00;border-radius:100%;}
 	[data-slick-vs="wcfinance"] .slick-dots li{position: relative;display: inline-block;width: 4px;height: 6px;margin: 0 8px;padding: 0;cursor: pointer;}/*dot사이간격*/
+	#wc_finance .wc_finance_list p.wcf_txt1{height:147px;}/*padding-bottom:16px;*/
 
 	/*appy_step*/
 	.box-gapSingUp.b_tit h3{font-family: Lato-Bold;font-size:36px;color: #222222;letter-spacing: -0.2px;text-align: center;line-height: 22px;}
