@@ -10,7 +10,7 @@
 				*** 텝 메뉴 추가시 pc mobile 확인 필요 + 하단 script 수정 하기
 			 -->
 			<div>
-				<a href="#none" data-index="1">Personal Loans</a>
+				<a href="#none" data-index="1">Personal Loan</a>
 			</div>
 			<div>
 				<a href="#none" data-index="2">Salary Loan</a>
@@ -44,14 +44,14 @@
 					<!-- counter mobile -->
 					<div class="counter_wrap hide-on-mobile">
 						<p class="served">
-							<span class="s_txt1">SERVED</span>
-							<span class="s_txt2"><em>“</em>OVER<span class="counter">2,880,000</span><em>”</em></span>
+							<span class="s_txt1">Served</span>
+							<span class="s_txt2"><em>“</em>OVER <span class="counter"> 2,880,000</span><em>”</em></span>
 							<span class="s_txt3">Satisfied Clients</span>
 						</p>
 					</div>
 					<!-- //counter mobile -->
 				</div>
-				<div class="box-img imgC-5">
+				<div class="box-img">
 					<img src="common/images/img/img_loans_top_auto_m.png" alt="">
 				</div>
 			</div>
@@ -548,6 +548,12 @@
 
 <script src="common/js/slick.min.js"></script>
 <script type="text/javascript">
+	/*
+		* pc sub location menu
+		* var subLocation = new SubLocation('1뎁스', '2뎁스 활성화', '2뎁스 선택');
+	*/
+	var subLocation = new SubLocation('1', '4', '4');
+
 	$(function(){
 		$('[data-click="main-vsSlick"]').slick({
 			dots: true,

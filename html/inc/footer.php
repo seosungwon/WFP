@@ -575,11 +575,11 @@
 								</div>
 								<div class="displayCell gap-1">
 									<!-- <p class="txt-1">Day <strong>*</strong></p> -->
-									<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation" value="Day">
+									<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation" placeholder="Day">
 								</div>
 								<div class="displayCell">
 									<!-- <p class="txt-1">Year <strong>*</strong></p> -->
-									<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation" value="Year">
+									<input type="tel" class="common-inputType" id="" data-checkInquiry="loanStatusValidation" placeholder="Year">
 								</div>
 							</div>
 						</li>
