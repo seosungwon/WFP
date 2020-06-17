@@ -768,11 +768,12 @@ if( $('.btn-fixed').length > 0 ){
 						autoplay: false,
 						autoplaySpeed: 4000,
 						arrows: false*/
+						slidesToShow: 3.5,
 						dots: false,
-						infinite: true,
+						infinite: false,
 						arrows: false,
 						infinite: false,
-						variableWidth: true
+						variableWidth: false
 					});
 				}else {// pc script
 					$('[data-slick-vs="commonTab"]').slick('unslick');
