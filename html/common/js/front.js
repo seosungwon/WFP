@@ -773,7 +773,7 @@ if( $('.btn-fixed').length > 0 ){
 						infinite: false,
 						arrows: false,
 						infinite: false,
-						variableWidth: false
+						variableWidth: true
 					});
 				}else {// pc script
 					$('[data-slick-vs="commonTab"]').slick('unslick');
