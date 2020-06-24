@@ -42,6 +42,7 @@
 	font-style: normal;
 }
 
+/**{border:1px solid red;}*/
 /* css_reset */
 html{-webkit-text-size-adjust: antialiased;-moz-osx-font-smoothing: grayscale;}
 html, body{width:100%; height:100%;}
@@ -249,7 +250,7 @@ letter-spacing: -0.2px;
 text-align: center;
 line-height: 28px;}*/
 .common-btnType-18:after{content:"";display:block;clear:both;top:0;left:0;right:0;bottom:0;opacity:0.6;position:absolute;font-size:16px;}/*border: 1px solid #FF7A01;*/
-.common-btn-1 {display: block;font-family: 'Roboto-Bold';color: #fff;font-size: 18px;text-align: center;height:60px;line-height: 54px;border-radius:2px;/* background: #f10553; */box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.20);animation: bgrotate2 2s linear infinite;background: linear-gradient(270deg, #FA7500 0%, #FFAA00 100%);background-size: 400% 400%;}/*height:54px;*/
+.common-btn-1 {display: block;font-family: 'Roboto-Bold';color: #fff;font-size: 18px;text-align: center;height:60px;line-height:60px;border-radius:2px;/* background: #f10553; */box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.20);animation: bgrotate2 2s linear infinite;background: linear-gradient(270deg, #FA7500 0%, #FFAA00 100%);background-size: 400% 400%;}/*height:54px;*/
 @keyframes bgrotate2 {
 	0% {
 		background-position: 0% 50%
@@ -334,6 +335,7 @@ text-align: center;line-height:40px;width:55%;height:40px;margin:0 auto;}
 /* common-selectType */
 .common-selectType{background:#f0f0f0;height:40px;line-height:40px;border:1px solid #f0f0f0;letter-spacing: -0.2px;text-indent:7px;width:100%;transition:all 0.5s;font-size:12px;color:#999;}
 .common-selectType.type-1{background:#fff;border:1px solid #ccc;}
+.common-selectType.type-1_1{padding-left:7px;text-indent:0;}/*2020-06-24 추가*/
 
 /* common-inputType / common-selectType :: focus */
 .common-inputType:focus,
@@ -2184,7 +2186,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.box-gapType-1 .inner-gap-1 .box-complete .inner:after{top:67px;margin-top:-106px;}
 
 
-	.box-gapType-1 .inner-gap-1 .box-complete.type-2{margin-top:9px;}
+	.box-gapType-1 .inner-gap-1 .box-complete.type-2{margin-top:9px;top:27%;}/*2020-06-24 top:27%추가;*/
 	.box-gapType-1 .inner-gap-1 .box-complete.type-2 .inner:after{top:112px;margin-top:0;}
 	.box-gapType-1 .inner-gap-1 .box-complete.type-2 .inner .txt-1.gap{font-family: Lato-Bold;font-size: 20px;color: #222222;letter-spacing: -0.22px;text-align: center;line-height: 28px;padding-top:181px;}
 
@@ -2197,6 +2199,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	.box-gapType-1 .inner-gap-1 .box-complete .inner .txt-2.t2{line-height:20px;margin:0 0;}
 	.box-gapType-1 .inner-gap-1 .common-btnType-7.gap{margin-top:13px;width:320px;}
 	.box-gapType-1 .inner-gap-1 .box-complete.type-2 .inner .btn_arrow .common-btnType-2{width:320px;margin:0 auto;}
+
 
 	/* common-tt */
 	.top-ttGap-1{padding:0;}
