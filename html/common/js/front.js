@@ -770,7 +770,6 @@ if( $('.btn-fixed').length > 0 ){
 						arrows: false*/
 						slidesToShow: 3.5,
 						dots: false,
-						infinite: false,
 						arrows: false,
 						infinite: false,
 						variableWidth: true
@@ -819,7 +818,6 @@ if( $('.btn-fixed').length > 0 ){
 						autoplaySpeed: 4000,
 						arrows: false*/
 						dots: true,
-						infinite: true,
 						arrows: false,
 						infinite: false
 						//variableWidth: true
@@ -867,7 +865,6 @@ if( $('.btn-fixed').length > 0 ){
 					autoplaySpeed: 4000,
 					arrows: false*/
 					dots: true,
-					infinite: true,
 					arrows: false,
 					infinite: true // true 루프... false 루프x
 					//variableWidth: true

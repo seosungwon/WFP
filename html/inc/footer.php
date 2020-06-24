@@ -236,7 +236,7 @@
 									<span class="txt-error">Error message</span>
 								</div>
 								<div class="txt-ct displayTableType-1">
-									<div class="displayCell txt-peso"style="width:100%;">
+									<div class="displayCell txt-peso" style="width:100%;">
 										<p class="tt-3">Loan Amount</p>
 										<p style="position:relative;">
 											<input type="text" class="common-inputType " id="">

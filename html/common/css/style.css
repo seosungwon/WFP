@@ -1253,7 +1253,12 @@ height:1px;position:absolute;left:-20px;right:-20px;bottom:0;border-bottom:1px s
 [data-control="cl"] a{position:fixed;bottom:30px;right:10px;background: #FF7A01;box-shadow: 0 6px 10px 0 rgba(0,0,0,0.30);width:60px;height:60px;border-radius:100px;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat center 16px;background-size:28px;z-index:999;}
 [data-control="cl"] a span.txt_n{display:none;}
 #loanCalculator{}
+
 #loanCalculator.show{display:block;}
+#loanCalculator.show,
+#loanCalculator.show .gap-rule{right:0;}
+#loanCalculator.show [data-control="cl"] a{right:420px;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat 31px 18px;background-size:28px;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 18px;}
+
 #loanCalculator .gap-2{height:150px;}
 #loanCalculator [data-button="btn-prev2"] span{background:#666;}
 #loanCalculator [data-control="cl"]{display:none;}
@@ -1798,9 +1803,6 @@ color: #444444;letter-spacing: -0.2px;line-height: 24px;padding:10px 0 27px 0;}
 .type_loan .loan_list{margin-top:30px;}
 .type_loan .loan_list img{width:100%;text-align:center;}
 
-#loanCalculator.show,
-#loanCalculator.show .gap-rule{right:0;}
-#loanCalculator.show [data-control="cl"] a{right:420px;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat 31px 18px;background-size:28px;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 18px;}
 #loanCalculator .inner-rule.loan_wrap{padding:0 24px;}
 #loanCalculator .inp_radioGap-1 .inp_radio label{top:0;}
 #loanCalculator .inner-rule.loan_wrap .gap{display:block;height:auto;}
@@ -2379,15 +2381,15 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	/* footer data-event="cl" */
 	[data-control="cl"] a{position:fixed;bottom:unset;top:50%;margin-top:-55px;right:0;background: #FF7A01;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);border-radius: 4px 0 0 5px;border-radius: 4px 0px 0px 5px;z-index:2000;height:110px;width:90px;transition:all 0.3s;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat 31px 18px;background-size:28px;}
 	[data-control="cl"] a span.txt_n{display:block;position:absolute;top:55px;left:0;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 18px;}
-	#loanCalculator{width:420px;top:0;right:-100%;bottom:0;left:unset;transition:all 0.5s;display:block;}
-	#loanCalculator .gap-rule{left:unset;margin:0;width:420px;top:0;right:-100%;bottom:0;transition:all 0.5s;overflow:inherit;}
+	#loanCalculator{width:420px;top:0;right:-100%;bottom:0;left:-100%;transition:all 0.5s;display:block;}/* left:unset; 이거 뭔지 몰라서 left:-100%; 변경 함 */
+	#loanCalculator .gap-rule{left:-100%;margin:0;width:420px;top:0;right:-100%;bottom:0;transition:all 0.5s;overflow:inherit;}
 	#loanCalculator.popup_wrap.rule [data-button="btn-prev2"]{display:none;}
 	#loanCalculator [data-control="cl"]{display:block;}
 	#loanCalculator [data-control="cl"] a{transition:0;position:absolute;top:50%;margin-top:-55px;right:0;bottom:0;}
 
 	/* [data-control="cl"] a.show{right:420px;} */
 	#loanCalculator.show,
-	#loanCalculator.show .gap-rule{right:0;}
+	#loanCalculator.show .gap-rule{right:0;left:auto;}
 	#loanCalculator.show [data-control="cl"] a{right:420px;background:#FF7A01 url('../images/icon/ic_main_calculator.png')no-repeat 31px 18px;background-size:28px;font-size: 16px;color: #FFFFFF;letter-spacing: -0.2px;text-align: center;line-height: 18px;}
 	#loanCalculator .inner-rule.loan_wrap{padding:0 50px;}
 	#loanCalculator .inner-rule.loan_wrap .gap{display:block;height:auto;}
