@@ -173,7 +173,7 @@
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Employment Status</p>
-									<select class="common-selectType">
+									<select class="common-selectType type-1_1">
 										<option value="" hidden>Employed</option>
 										<option>1</option>
 									</select>
@@ -181,7 +181,7 @@
 								</div>
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Payment Term</p>
-									<select class="common-selectType">
+									<select class="common-selectType type-1_1">
 										<option value="" hidden>Select</option>
 										<option>1</option>
 									</select>
@@ -209,7 +209,7 @@
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Car kinds</p>
-									<select class="common-selectType">
+									<select class="common-selectType type-1_1">
 										<option value="" hidden>Select</option>
 										<option>1</option>
 									</select>
@@ -217,7 +217,7 @@
 								</div>
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Monthly Add-On Rate</p>
-									<select class="common-selectType">
+									<select class="common-selectType type-1_1">
 										<option value="" hidden>Select</option>
 										<option>1</option>
 									</select>
@@ -229,7 +229,7 @@
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Purchased Year</p>
-									<select class="common-selectType">
+									<select class="common-selectType type-1_1">
 										<option value="" hidden>Select</option>
 										<option>1</option>
 									</select>
@@ -254,7 +254,7 @@
 							<div class="txt-ct displayTableType-1">
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Recorded Mileage</p>
-									<select class="common-selectType">
+									<select class="common-selectType type-1_1">
 										<option value="" hidden>Select</option>
 										<option>1</option>
 									</select>
@@ -262,7 +262,7 @@
 								</div>
 								<div class="displayCell" style="width:50%;">
 									<p class="tt-3">Select payment term:</p>
-									<select class="common-selectType">
+									<select class="common-selectType type-1_1">
 										<option value="" hidden>Select</option>
 										<option>1</option>
 									</select>

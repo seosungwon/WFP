@@ -2080,7 +2080,7 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 	[data-click="main-vsSlick"].mainVs .slick-dots li.slick-active button:before{width:10px;height:10px;}
 	[data-click="main-vsSlick"] .slick-dots .btn-icon img{width:20px;
 		height:20px;}
-	[data-click="main-vsSlick"].mainVs .slick-dots .btn-icon{}
+	[data-click="main-vsSlick"].mainVs .slick-dots .btn-icon{position:relative;top:2px;}
 
 	/* [data-target="box-gnb"]{position: fixed;top: 0px;right: 0;width:100%; text-align: center;height:55px;width: 433px;left: initial;}
 	[data-target="box-gnb"] .inner{position:static;background:transparent;overflow:initial;overflow-y:hidden;}
@@ -3087,6 +3087,8 @@ font-size: 14px;color: #999999;letter-spacing: -0.17px;text-align: right;padding
 
 	/*sub_loan*/
 	[data-click="main-vsSlick"].loan_img .box-txt{max-width:1000px;margin:0 auto 0 auto;position: absolute;top:47%;left:38px;right: 0px;transform: translate(0px, -50%);text-align:left;padding-top:0;padding-left:0;}/*top:50%;left:0;*/
+	[data-click="main-vsSlick"].loan_img .box-txt.boxt1{width:1000px;}
+
 	[data-click="main-vsSlick"].loan_img,
 	[data-click="main-vsSlick"].loan_img .box-img{height:610px;}
 	[data-click="main-vsSlick"].loan_img .box-img.imgC-5{background-image:url(../images/img/img_loans_top_personal.png);}
